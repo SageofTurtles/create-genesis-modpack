@@ -1,0 +1,14 @@
+<recipetype:minecraft:crafting>.removeByName("create_connected:crafting/kinetics/empty_fan_catalyst_from_seething");
+<recipetype:minecraft:crafting>.removeByName("create_connected:crafting/kinetics/empty_fan_catalyst_from_sanding");
+<recipetype:minecraft:crafting>.removeByName("create_connected:crafting/kinetics/empty_fan_catalyst_from_freezing");
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_block>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_slab>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_beam>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_vertical_step>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_stairs>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_fence>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_fence_gate>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_wall>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_board>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_box>);
+<recipetype:minecraft:crafting>.removeByInput(<item:create_connected:copycat_catwalk>);

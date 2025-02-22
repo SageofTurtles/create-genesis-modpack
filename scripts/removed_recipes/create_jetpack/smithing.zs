@@ -1,0 +1,1 @@
+<recipetype:minecraft:smithing>.removeByName("create_jetpack:netherite_jetpack_upgrade_from_netherite");

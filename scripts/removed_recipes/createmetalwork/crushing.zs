@@ -1,0 +1,1 @@
+<recipetype:create:crushing>.removeByModid("createmetalwork");

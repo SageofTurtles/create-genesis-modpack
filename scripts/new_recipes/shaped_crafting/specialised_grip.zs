@@ -1,0 +1,9 @@
+<recipetype:minecraft:crafting>.addShaped(
+  "specialised_grip_shaped_crafting",
+  <item:cgm:specialised_grip>,
+  [
+    [<item:create:brass_sheet>],
+    [<tag:items:forge:stripped_logs>],
+    [<item:create:brass_nugget>]
+  ]
+);

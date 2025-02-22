@@ -1,0 +1,9 @@
+<recipetype:create:deploying>.addRecipe(
+  "medium_scope_deploying",
+  <item:minecraft:spyglass>,
+  <item:minecraft:glass_pane>,
+  [
+    <item:cgm:medium_scope>
+  ],
+  false
+);

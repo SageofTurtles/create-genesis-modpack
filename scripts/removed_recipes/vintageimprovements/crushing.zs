@@ -1,0 +1,1 @@
+<recipetype:create:crushing>.removeByName("vintageimprovements:crushing/basalt");

@@ -1,0 +1,15 @@
+<recipetype:minecraft:crafting>.addShapeless(
+  "organic_compost_shapeless_crafting",
+  <item:farmersdelight:organic_compost>,
+  [
+    <item:minecraft:dirt>,
+    <item:createaddition:biomass>,
+    <item:createaddition:biomass>,
+    <item:minecraft:bone_meal>,
+    <item:minecraft:bone_meal>,
+    <item:minecraft:bone_meal>,
+    <item:farmersdelight:tree_bark>,
+    <item:farmersdelight:tree_bark>,
+    <item:farmersdelight:tree_bark>
+  ]
+);

@@ -1,0 +1,1 @@
+<recipetype:create:item_application>.removeByName("design_decor:item_application/aluminum_boiler_special");

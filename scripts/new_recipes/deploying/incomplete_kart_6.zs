@@ -1,0 +1,9 @@
+<recipetype:create:deploying>.addRecipe(
+  "incomplete_kart_6_deploying",
+  <item:create_kart:incomplete_kart_stage_5>,
+  <item:interiors:red_floor_chair>,
+  [
+    <item:create_kart:incomplete_kart_stage_6>
+  ],
+  false
+);

@@ -1,0 +1,9 @@
+<recipetype:create:deploying>.addRecipe(
+  "kart_item_deploying",
+  <item:create_kart:incomplete_kart_stage_10>,
+  <item:create_kart:kart_motor>,
+  [
+    <item:create_kart:kart_item>
+  ],
+  false
+);

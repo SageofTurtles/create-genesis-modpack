@@ -1,0 +1,9 @@
+<recipetype:create:deploying>.addRecipe(
+  "weighted_stock_deploying",
+  <item:cgm:tactical_stock>,
+  <item:create:brass_sheet>,
+  [
+    <item:cgm:weighted_stock>
+  ],
+  false
+);
