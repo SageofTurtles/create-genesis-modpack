@@ -1,0 +1,9 @@
+<recipetype:minecraft:crafting>.addShaped(
+  "bell_shaped_crafting",
+  <item:minecraft:bell>,
+  [
+    [<item:minecraft:air>,<item:create:brass_sheet>,<item:minecraft:air>],
+    [<item:minecraft:stick>,<item:create:brass_nugget>,<item:minecraft:stick>],
+    [<item:minecraft:stick>,<item:create:brass_sheet>,<item:minecraft:stick>]
+  ]
+);
