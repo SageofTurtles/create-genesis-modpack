@@ -1,5 +1,5 @@
 <recipetype:minecraft:crafting>.addShaped(
-  "sophisticatedbackpacks_batter_upgrade_shaped_crafting",
+  "sophisticatedbackpacks_battery_upgrade_shaped_crafting",
   <item:sophisticatedbackpacks:battery_upgrade>,
   [
     [<item:minecraft:redstone>, <item:createaddition:modular_accumulator>, <item:minecraft:redstone>],
