@@ -1,0 +1,79 @@
+=======================
+  BRACKET EXPRESSIONS
+=======================
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/BracketHandlers
+
+
+One critical element of using CraftTweaker is understanding how bracket expressions work.  Most bracket expressions will contain three components, formatted like this:
+
+  <type:modID:object>
+
+The "type" identifies which kind of bracket expression this is, such as 'item', 'block', 'fluid', 'potion', 'resource', or 'recipetype'.  The "modID" is the namespace for the mod this object or class is added by (this namespace or mod ID is the same as would be used in commands, such as for summoning an item or mob).  For vanilla objects and classes, the mod ID is simply 'minecraft'.  Finally, the "object" identifies what specifically the bracket expression will reference within that type and mod ID.  Some examples:
+
+  Item:         <item:minecraft:apple>, <item:create:andesite_alloy>
+  Fluid:        <fluid:createmetalwork:molten_brass>
+  Potion:       <potion:genesis_additions:blindness>
+  Recipe Type:  <recipetype:minecraft:crafting>, <recipetype:create:mixing>
+
+One noteworthy exception to the three-component format is a tag, which has a four-component bracket expression:
+
+  <tag:type:modID:object>
+
+Tags have their own category of types.  This means that the first component in these bracket expressions must simply be 'tag', then the type will be the kind of tag referenced ('items', 'blocks', 'entities', 'fluids', etc.).  "Type" here refers to the type of tag used (such as block, item, fluid, entity, etc.), which are defined by Minecraft (see https://minecraft.wiki/w/Tag#Java_Edition_2).  After the type, the mod ID and object or class are used the same as in the previous examples.  For instance:
+
+  //  References items belonging to the '#genesis_additions:wither_skeleton_bones' tag
+  <tag:items:genesis_additions:wither_skeleton_bones>
+
+  //  References blocks with axes as the primary mining tool
+  <tag:blocks:minecraft:mineable/axe>
+
+  //  References items belonging to the '#minecraft:wool' tag
+  <tag:items:minecraft:wool>
+
+  //  References fluids with the '#minecraft:lava' tag
+  <tag:fluids:minecraft:lava>
+
+Another less-common exception to the normal bracket expression is a reference to an item or fluid with an NBT tag included.  This will be used for potion recipes in particular, as in the examples below (note that these are still considered 'item' bracket expressions):
+
+  //  References a swiftness potion as an item
+  <item:minecraft:potion>.withTag({Potion: "minecraft:swiftness"})
+
+  //  References swiftness potion as a fluid (added by Create mixing recipes)
+  <fluid:create:potion>.withTag({Potion: "minecraft:swiftness"})
+
+  //  References extended duration blindness potion added by the Genesis: Additions mod as a fluid
+  <fluid:create:potion>.withTag({Potion: "genesis_additions:long_blindness"})
+
+Most standard kinds of expressions can be understood fairly easily, but here are a list of common ones you might have use for.  Note that recipes you add will typically use the tags for 'items' or 'fluids', if any.
+
+  //  References a recipe type
+  <recipetype:minecraft:crafting>
+
+  //  References dirt (block form)
+  <block:minecraft:dirt>
+
+  //  References dirt (item form)
+  <item:minecraft:dirt>
+
+  //  References water (fluid form)
+  <fluid:minecraft:water>
+
+  //  References the Riptide enchantment
+  <enchantment:minecraft:riptide>
+
+  //  References the pig entity type
+  <entitytype:minecraft:pig>
+
+  //  References an effect, such as from a potion or beacon
+  <mobeffect:minecraft:haste>
+
+  //  References a villager profession
+  <profession:minecraft:armorer>
+  <villagertype:minecraft:armorer>
+
+  //  References a sound event
+  <soundevent:minecraft:ambient.cave>
+
+  //  References a potion type
+  <potion:minecraft:swiftness>

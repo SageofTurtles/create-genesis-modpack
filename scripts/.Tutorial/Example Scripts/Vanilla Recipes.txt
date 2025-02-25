@@ -1,0 +1,199 @@
+============
+  BLASTING
+============
+
+Bracket Expression:  <recipetype:minecraft:blasting>
+Recipe Manager:  BlastFurnaceRecipeManager
+Uses:  Blast Furnace
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/manager/BlastFurnaceRecipeManager
+
+
+//  Add a recipe to output an item
+//  'X' represents the amount of XP produced as a decimal (for example, '1.0')
+//  'Y' represents the cook time in seconds (must be at least 1)
+<recipetype:minecraft:blasting>.addRecipe(
+  "recipe_name",
+  <item_output_expression>,
+  <item_input_expression>,
+  X,
+  Y
+);
+
+
+====================
+  CAMPFIRE COOKING
+====================
+
+Bracket Expression:  <recipetype:minecraft:campfire_cooking>
+Recipe Manager:  CampFireRecipeManager
+Uses:  Campfire
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/manager/CampFireRecipeManager
+
+
+//  Add a recipe to output an item
+//  'X' represents the amount of XP produced as a decimal (for example, '1.0')
+//  'Y' represents the cook time in seconds (must be at least 1)
+<recipetype:minecraft:campfire_cooking>.addRecipe(
+  "recipe_name",
+  <item_output_expression>,
+  <item_input_expression>,
+  X,
+  Y
+);
+
+
+==============
+  COMPOSTING
+==============
+
+Uses:  Composter
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/misc/Composter/
+
+
+//  Add a chance to compost an input item
+//  'X' represents the chance of raising the compost level by 1
+//  'X' formatted as a decimal (for example, '0.50' is a 50% chance)
+composter.setValue(<item_input_expression>, X);
+
+
+============
+  CRAFTING
+============
+
+Bracket Expression:  <recipetype:minecraft:crafting>
+Recipe Manager:  CraftingTableRecipeManager
+Uses:  Crafting Table (or 2x2 crafting grid in player's inventory)
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/manager/CraftingTableRecipeManager
+
+
+//  Add a shaped crafting recipe to output an item
+//  These recipes require items to be input in a specific pattern.
+//  Rows and/or columns of inputs can be added/removed for the desired pattern, up to 3x3.
+//  For empty spaces in the pattern, use the input '<item:minecraft:air>'.
+//  Best practice is to remove any empty rows/columns from the script.
+<recipetype:minecraft:crafting>.addShaped(
+  "recipe_name",
+  <item_output_expression> * count,
+  [
+    [<row1_column1_item_input_expression>, <row1_column2_item_input_expression>],
+    [<row2_column1_item_input_expression>, <row2_column2_item_input_expression>]
+  ]
+);
+
+
+//  Add a shapeless crafting recipe to output an item
+//  These recipes do not require items to be input in any specific pattern.
+//  Each input must be listed separately in the array, up to 9 entries total.
+<recipetype:minecraft:crafting>.addShapeless(
+  "recipe_name",
+  <item_output_expression> * count,
+  [
+    <item_input_expression>,
+    <item_input_expression>
+  ]
+);
+
+
+============
+  SMELTING
+============
+
+Bracket Expression:  <recipetype:minecraft:smelting>
+Recipe Manager:  FurnaceRecipeManager
+Uses:  Furnace
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/manager/FurnaceRecipeManager
+
+
+//  Add a recipe to output an item
+//  'X' represents the amount of XP produced as a decimal (for example, '1.0')
+//  'Y' represents the cook time in ticks (vanilla default is 200)
+<recipetype:minecraft:smelting>.addRecipe(
+  "recipe_name",
+  <item_output_expression>,
+  <item_input_expression>,
+  X,
+  Y
+);
+
+
+============
+  SMITHING
+============
+
+Bracket Expression:  <recipetype:minecraft:smithing>
+Recipe Manager:  SmithingRecipeManager
+Uses:  Smithing Table
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/manager/SmithingRecipeManager
+
+
+//  Adds a smithing recipe to upgrade an item
+//  'Template' is the upgrade template input
+//  'Base' is the main item being converted (e.g. a chestplate)
+//  'Addition' is the material applied to the base (e.g. a netherite ingot)
+<recipetype:minecraft:smithing>.addTransformRecipe(
+  "recipe_name",
+  <item_output_expression>,
+  <template_item_input_expression>,
+  <base_item_input_expression>,
+  <addition_item_input_expression>
+);
+
+
+//  Adds a smithing recipe to apply a trim pattern to an item
+//  'Template' is the trim template input
+//  'Base' is the main item being converted (e.g. a chestplate)
+//  'Addition' is the material applied for the trim color (e.g. an emerald)
+<recipetype:minecraft:smithing>.addTrimRecipe(
+  "recipe_name",
+  <template_item_input_expression>,
+  <base_item_input_expression>,
+  <addition_item_input_recipe>
+);
+
+
+===========
+  SMOKING
+===========
+
+Bracket Expression:  <recipetype:minecraft:smoking>
+Recipe Manager:  SmokerRecipeManager
+Uses:  Smoker
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/manager/SmokerRecipeManager
+
+
+//  Add a recipe to output an item
+//  'X' represents the amount of XP produced as a decimal (for example, '1.0')
+//  'Y' represents the cook time in seconds (must be at least 1)
+<recipetype:minecraft:smoking>.addRecipe(
+  "recipe_name",
+  <item_output_expression>,
+  <item_input_expression>,
+  X,
+  Y
+);
+
+
+================
+  STONECUTTING
+================
+
+Bracket Expression:  <recipetype:minecraft:stonecutting>
+Recipe Manager:  StoneCutterManager
+Uses:  Stonecutter
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/vanilla/api/recipe/manager/StoneCutterManager
+
+
+//  Add a recipe to output an item
+<recipetype:minecraft:stonecutting>.addRecipe(
+  "recipe_name",
+  <item_output_expression>,
+  <item_input_expression>
+);

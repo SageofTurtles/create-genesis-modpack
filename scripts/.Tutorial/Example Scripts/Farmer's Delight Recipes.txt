@@ -1,0 +1,60 @@
+==================
+  IMPORTANT NOTE
+==================
+
+These scripts require Farmer's Delight to be installed.  Unlike with the Create and JEI mods, no additional integration mod is necessary to use these scripts with Farmer's Delight and CraftTweaker installed.  See 'Unsupported Recipe Types' for directions if you're using JSON Farmer's Delight recipes instead.
+
+
+===============
+  COOKING POT
+===============
+
+Bracket Expression:  <recipetype:farmersdelight:cooking>
+Recipe Manager:  CookingPot
+Uses:  Cooking Pot
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/FarmersDelight/CookingPot
+
+
+//  Add a recipe to output an item
+//  'X' represents the cooking tab; possible values are: 'meals', 'drinks', 'misc'
+//  'Y' represents the amount of XP produced as a decimal (for example, '1.0')
+//  'Z' represents the cook time in ticks (20 ticks = 1 second)
+//  The 'container' is the item to extract the output (e.g. '<item:minecraft:bowl>')
+<recipetype:farmersdelight:cooking>.addRecipe(
+  "recipe_name",
+  <item_output_expression>,
+  [
+    <item_input_expression>,
+    <item_input_expression>
+  ],
+  <constant:farmersdelight:cooking_pot_recipe_book_tab:X>,
+  <container_item_input_expression>,
+  Y,
+  Z
+);
+
+
+===========
+  CUTTING
+===========
+
+Bracket Expression:  <recipetype:farmersdelight:cutting>
+Recipe Manager:  CuttingBoard
+Uses:  Cutting Board + Tool
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/FarmersDelight/CuttingBoard
+
+
+//  Add a recipe to output an item
+//  'Tool' is the item that must be held by the player when using the cutting board
+//  "sound_event_name" is the sound that plays when the recipe is used
+//  The sound event uses the format "modID:sound_name"
+//  Link for all vanilla sounds:  https://minecraft.wiki/w/Sounds.json#Sound_events
+<recipetype:farmersdelight:cutting>.addRecipe(
+  "recipe_name",
+  <input_item_expression>,
+  [<output_item_expression> % chance],
+  <tool_item_expression>,
+  "sound_event_name"
+);

@@ -1,0 +1,20 @@
+==================
+  PREPROCESSORS
+==================
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/zencode/Preprocessors/Preprocessors
+
+
+Preprocessors are optional lines you can place at the very beginning of a ZS file, which tell CraftTweaker how to handle that entire script file.  There are two preprocessors used in this modpack: '#modLoaded' and '#Loader tags'.
+
+Adding '#modLoaded' to the top of your script file, followed by one or more mod IDs, means that CraftTweaker will only load that script if ALL listed mod IDs are registered in the game.  If one or more of the mod IDs is not registered (meaning that the mod is not installed), that entire script file will be ignored by CraftTweaker and not implemented into the game.  For example, a script that begins with...
+
+  #modLoaded create jei genesis_additions
+
+...as the first line of code means that the entire script in that file will be ignored unless the Create, JEI, and Genesis: Additions mods are all installed.
+
+Adding '#Loader tags' to the beginning of your script file tells CraftTweaker that this file needs to be loaded earlier than the other files.  The reason for this is that tags can be used in custom crafting recipes or other scripts, so any changes made to the default tags need to be loaded first before they can be used.  So a script file that begins with...
+
+  #Loader tags
+
+...as the first line of code means that file will load before the non-tag scripts.  Be aware that ONLY scripts for tags can be used in a file with a tag loader preprocessor!  You can't have, for instance, a custom crafting recipe after '#Loader tags' in the same script file, because CraftTweaker can't register recipe changes until after the tag loading phase.

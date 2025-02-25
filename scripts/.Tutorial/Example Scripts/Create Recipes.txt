@@ -1,0 +1,419 @@
+==================
+  IMPORTANT NOTE
+==================
+
+These scripts require Create to be installed, and the scripts to add recipes using this format (instead of the standard JSON format) will also require CreateTweaker to be installed.  If adding a Create recipe without CreateTweaker installed, see 'Unsupported Recipe Types' for directions on using JSON Create recipes instead.
+
+Be aware that some recipe types may be automatically added as a second or third Create recipe type as well:
+ - Shaped crafting recipes may generate a mechanical crafting recipe
+ - Shapeless crafting recipes may generate a mixing recipe
+ - Blasting recipes can also be done by bulk blasting
+ - Smoking or campfire cooking recipes can also be done by bulk smoking
+ - Stonecutting recipes can also be done by cutting (with a mechanical saw)
+ - 2x2 ir 3x3 shaped crafting recipes may generate a compacting recipe
+ - Milling recipes may generate a crushing recipe
+
+
+==============
+  COMPACTING
+==============
+
+Bracket Expression:  <recipetype:create:compacting>
+Recipe Manager:  CompactingManager
+Uses:  Mechanical Press + Basin
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/CompactingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:compacting>.addRecipe(
+  "recipe_name",
+  <constant:create:heat_condition:X>,
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  [<item_input_expression> * count],
+  [<fluid_input_expression> * amount],
+  duration
+);
+
+
+//  Add a recipe to output a fluid
+<recipetype:create:compacting>.addRecipe(
+  "recipe_name",
+  <constant:create:heat_condition:X>,
+  [<fluid_output_expression> * amount],
+  [<item_input_expression> * count],
+  [<fluid_input_expression> * amount],
+  duration
+);
+
+
+============
+  CRUSHING
+============
+
+Bracket Expression:  <recipetype:create:crushing>
+Recipe Manager:  CrushingManager
+Uses:  Crushing Wheels
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/CrushingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:crushing>.addRecipe(
+  "recipe_name",
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  <item_input_expression> * count,
+  duration
+);
+
+
+===========
+  CUTTING
+===========
+
+Bracket Expression:  <recipetype:create:cutting>
+Recipe Manager:  CuttingManager
+Uses:  Mechanical Saw
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/CuttingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:cutting>.addRecipe(
+  "recipe_name",
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  <item_input_expression> * count,
+  duration
+);
+
+
+=============
+  DEPLOYING
+=============
+
+Bracket Expression:  <recipetype:create:deploying>
+Recipe Manager:  DeployerApplicationManager
+Uses:  Deployer
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/DeployerApplicationManager
+
+
+//  Add a recipe to output an item
+//  If 'X' is 'true', item in deployer hand is kept
+//  If 'X' is 'false', item in deployer hand is consumed
+<recipetype:create:deploying>.addRecipe(
+  "recipe_name",
+  <base_item_input_expression>,
+  <held_item_input_expression>,
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  X
+);
+
+
+============
+  EMPTYING
+============
+
+Bracket Expression:  <recipetype:create:emptying>
+Recipe Manager:  EmptyingManager
+Uses:  Item Drain
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/EmptyingManager
+
+
+//  Add a recipe to output a fluid
+<recipetype:create:emptying>.addRecipe(
+  "recipe_name",
+  <item_output_expression> % chance,
+  <fluid_output_expression> * amount,
+  <item_input_expression>,
+  duration
+);
+
+
+===========
+  FILLING
+===========
+
+Bracket Expression:  <recipetype:create:filling>
+Recipe Manager:  FillingManager
+Uses:  Spout
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/FillingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:filling>.addRecipe(
+  "recipe_name",
+  <item_output_expression> % chance,
+  <base_item_input_expression>,
+  <fluid_input_expression> * amount,
+  duration
+);
+
+
+============
+  HAUNTING
+============
+
+Bracket Expression:  <recipetype:create:haunting>
+Recipe Manager:  HauntingManager
+Uses:  Encased Fan + Soul Fire
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/HauntingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:haunting>.addRecipe(
+  "recipe_name",
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  <item_input_expression>,
+  duration
+);
+
+
+====================
+  ITEM APPLICATION
+====================
+
+Bracket Expression:  <recipetype:create:item_application>
+Recipe Manager:  ItemApplicationManager
+Uses:  Item in player's hand
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/ItemApplicationManager
+
+
+//  Add a recipe to output an item
+//  If 'X' is 'true', item in hand is kept
+//  If 'X' is 'false', item in hand is consumed
+<recipetype:create:item_application>.addRecipe(
+  "recipe_name",
+  [
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  <base_item_input_expression>,
+  <held_item_input_expression>,
+  X
+);
+
+
+=======================
+  MECHANICAL CRAFTING
+=======================
+
+Bracket Expression:  <recipetype:create:mechanical_crafting>
+Recipe Manager:  MechanicalCrafterManager
+Uses:  Mechanical Crafter(s)
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/MechanicalCrafterManager
+
+
+//  Add a recipe to output an item
+//  These recipes require items to be input in a specific pattern.
+//  Rows and/or columns of inputs can be added/removed for the desired pattern.
+//  For empty spaces in the pattern, use the input '<item:minecraft:air>'.
+//  Best practice is to remove any empty rows/columns from the script.
+<recipetype:create:mechanical_crafting>.addRecipe(
+  "recipe_name",
+  <item_output_expression> * count,
+  [
+    [<row1_column1_item_input_expression>, <row1_column2_item_input_expression>],
+    [<row2_column1_item_input_expression>, <row2_column2_item_input_expression>]
+  ]
+);
+
+
+===========
+  MILLING
+===========
+
+Bracket Expression:  <recipetype:create:milling>
+Recipe Manager:  MillingManager
+Uses:  Millstone
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/MillingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:milling>.addRecipe(
+  "recipe_name",
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  <item_input_expression>,
+  duration
+);
+
+
+==========
+  MIXING
+==========
+
+Bracket Expression:  <recipetype:create:mixing>
+Recipe Manager:  MixingManager
+Uses:  Mechanical Mixer + Basin
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/MixingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:mixing>.addRecipe(
+  "recipe_name",
+  <constant:create:heat_condition:X>,
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  [<item_input_expression> * count],
+  [<fluid_input_expression> * amount],
+  duration
+);
+
+
+//  Add a recipe to output a fluid
+<recipetype:create:mixing>.addRecipe(
+  "recipe_name",
+  <constant:create:heat_condition:X>,
+  [<fluid_output_expression> * amount],
+  [<item_input_expression> * count],
+  [<fluid_input_expression> * amount],
+  duration
+);
+
+
+============
+  PRESSING
+============
+
+Bracket Expression:  <recipetype:create:pressing>
+Recipe Manager:  PressingManager
+Uses:  Mechanical Press (without Basin)
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/PressingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:pressing>.addRecipe(
+  "recipe_name",
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  <item_input_expression>,
+  duration
+);
+
+
+=======================
+  SANDPAPER POLISHING
+=======================
+
+Bracket Expression:  <recipetype:create:sandpaper_polishing>
+Recipe Manager:  SandPaperPolishingManager
+Uses:  Sandpaper
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/SandPaperPolishingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:sandpaper_polishing>.addRecipe(
+  "recipe_name",
+  <item_output_expression> % chance,
+  <item_input_expression> * count,
+  duration
+);
+
+
+======================
+  SEQUENCED ASSEMBLY
+======================
+
+Bracket Expression:  <recipetype:create:sequenced_assembly>
+Recipe Manager:  SequencedAssemblyManager
+Uses:  Series of other recipe types
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/SequencedAssemblyManager
+
+
+//  Add a recipe using a series of steps to output an item
+//  'X' represents the number of times the item must go through the sequence
+//  'W' represents the "weight" (see "Notes" below)
+//  'D' represents the duration of the recipe (defualt is 100)
+<recipetype:create:sequenced_assembly>.addRecipe(
+  <recipetype:create:sequenced_assembly>.builder(
+    "recipe_name"
+  )
+  .transitionTo(<transitional_item_expression>)
+    .require(<item_input_expression>)
+    .loops(X)
+    .addOutput(<item_output_expression> * count, W)
+    .addOutput(<item_output_expression> * count, W)
+    .addStep<mods.createtweaker.DeployerApplicationRecipe>(
+      (rb) => rb.require(<item_input_expression_to_be_deployed>)
+    )
+    .addStep<mods.createtweaker.CuttingRecipe>(
+      (rb) => rb.duration(D)
+    )
+    .addStep<mods.createtweaker.FillingRecipe>(
+      (rb) => rb.require(<fluid_input_expression> * amount)
+    )
+    .addStep<mods.createtweaker.PressingRecipe>(
+      (rb1) => rb1.duration(D)
+    )
+);
+
+
+=== NOTES ===
+
+Only one output item expression is required, but more can be added optionally, each with their own weight values.  Any number of '.addStep' entries can be included in the sequence, but only of the recipe types included in these examples.  If you're using recipe types from other mods not listed in the above examples, you must use a JSON format recipe (see 'Unsupported Recipe Types' for more info). The steps of the sequence must be done in the order listed in the script.
+
+For weight values, the probability of that item being output is that item's own weight, divided by the sum of all possible outputs' weights.  So if there are 3 possible outputs with respective weights of 1, 3, and 6, then the first output will have a 1/10 (10%) chance of being produced, the second output will have a 3/10 (30%) chance of being produced, and the third output will have a 6/10 (60%) chance of being produced.  Only one output can be produced at a time by sequenced assembly, so you'll always get exactly one of the listed output options.
+
+
+=============
+  SPLASHING
+=============
+
+Bracket Expression:  <recipetype:create:splashing>
+Recipe Manager:  SplashingManager
+Uses:  Encased Fan + Water
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/mods/CreateTweaker/SplashingManager
+
+
+//  Add a recipe to output an item
+<recipetype:create:splashing>.addRecipe(
+  "recipe_name",
+  [
+    <item_output_expression> * count,
+    <item_output_expression> % chance,
+    (<item_output_expression> * count) % chance
+  ],
+  <item_input_expression>,
+  duration
+);

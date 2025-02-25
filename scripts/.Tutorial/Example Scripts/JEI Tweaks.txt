@@ -1,0 +1,43 @@
+==================
+  IMPORTANT NOTE
+==================
+
+These scripts require JEI and JEITweaker to both be installed.
+
+If using a script with the 'addIngredientInformation()' method, you will also need to include the following line at the beginning of your script (after any preprocessors) to import the necessary utility:
+
+import.crafttweaker.api.text.Component;
+
+
+===================
+  JEI INTEGRATION
+===================
+
+https://docs.blamejared.com/1.20.1/en/mods/JeiTweaker/API/Jei
+
+
+These scripts require the JEITweaker API to be imported.  Do this by adding the following line to the beginning of your script (after any preprocessors you might have):
+
+  import mods.jeitweaker.Jei;
+
+Below are some scripts that can be used to manipulate what items display in the JEI panel in-game:
+
+
+//  Add an item to the JEI panel
+Jei.addIngredient(<item_expression>);
+
+//  Hide an item from the JEI panel
+Jei.hideIngredient(<item_expression>);
+
+//  Hide all items from a specified mod from the JEI panel
+Jei.hideModIngredients("modID");
+
+//  Add an "Information" tab with text for an item in JEI
+//  This can be viewed by looking at the item's recipes or uses in JEI
+//  NOTE: this script requires the 'Component' API to be imported first!
+Jei.addIngredientInformation(
+  <item_expression>, 
+  Component.literal(
+    "Insert text here to be displayed on the Information panel screen."
+  )
+);

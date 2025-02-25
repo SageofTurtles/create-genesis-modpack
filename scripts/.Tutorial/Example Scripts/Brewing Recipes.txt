@@ -1,0 +1,56 @@
+===================
+  BREWING RECIPES
+===================
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/forge/api/recipe/brewing/Brewing
+
+
+Brewing recipes are handled differently by Minecraft, so they don't work quite the same as other recipe types when using CraftTweaker, and they can only be added or removed if using the Forge mod loader, not in vanilla Minecraft or Fabric.  The first thing to note is that you will have to import the API before any code changing brewing recipes.  This is done simply by putting the following line of code at the beginning of your file (but after any preprocessors, if you're using them):
+
+  import crafttweaker.api.recipe.Brewing;
+
+Next, note that potions all use the same item ID in Minecraft, that being (in ZS format) <item:minecraft:potion>.  Rather, it is the NBT data on the item that tells the game which kind of potion it is.  CraftTweaker also has an option for referencing specific potion types using a 'potion' bracket expression, such as <potion:minecraft:swiftness>.  The problem is that brewing recipes in CraftTweaker can only accept an 'item' bracket expression if adding a recipe, which means that these 'potion' expressions can't be used when adding new brewing recipes.  Instead, we have to specify the potion item by its NBT tag when adding these recipes.  That can be done using the following format:
+
+  <item:minecraft:potion>.withTag({Potion: "modID:effect"})
+
+The above is the format we use for an 'item' expression with a potion.  So, for using the switftness potion added by minecraft and the extended-duration blindness potion added by Genesis: Additions, we would use these for the item bracket expressions:
+
+  <item.minecraft:potion>.withTag({Potion: "minecraft:swiftness"})
+  <item.minecraft:potion>.withTag({Potion: "genesis_additions:long_blindness})
+
+To use the fluid form of potions added for Create mixing recipes in your own scripts, you have to make a slight change to the type and mod ID of the bracket expression:
+
+  <fluid:create:potion>.withTag({Potion: "minecraft:swiftness"})
+
+There is also an option to use the 'potion' expression instead when removing brewing recipes, but unfortunately not to add them.  As a 'potion', the two items about would be rewritten as:
+
+  <potion:minecraft:swiftness>
+  <potion:genesis_additions:long_blindness>
+
+Below are the scripts you can use for changing brewing recipes (remember to import the Brewing API first!).  Note that the "output" is the potion or item you receive from the recipe, the "input" is the potion or item that can go in the 3 slots at the bottom of the brewing stand GUI, and the "reagent" is the item that goes in the single top slot of the brewing stand GUI.
+
+// Adds a brewing recipe
+brewing.addRecipe(
+  <output_item_expression>,
+  <reagent_item_expression>,
+  <input_item_expression>
+);
+
+// Removes a brewing recipe
+brewing.removeRecipe(
+  <output_potion_or_item_expression>,
+  <reagent_item_expression>,
+  <input_potion_or_item_expression>
+);
+
+// Removes all brewing recipes with the specified input item
+brewing.removeRecipeByInput(<input_item_expression>);
+
+// Removes all brewing recipes with the specified input potion
+brewing.removeRecipeByInputPotion(<input_potion_expression>);
+
+// Removes all brewing recipes with the specified output
+brewing.removeRecipeByOutputPotion(<output_potion_expression>);
+
+// Removes all brewing recipes with the specified reagent
+brewing.removeRecipeByReagent(<reagent_item_expression>);

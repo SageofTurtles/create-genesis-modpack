@@ -1,0 +1,61 @@
+===================
+  COMMANDS & LOGS
+===================
+
+Documentation:  https://docs.blamejared.com/1.20.1/en/commands
+
+
+*NOTE:*  There are two things I would HIGHLY recommend to make writing and testing scripts easier!  First, make sure to install JEI, EMI, or a similar mod to allow you to search items quickly and easily check their registered recipes (especially when making sure your custom recipes are registering correctly).  Second, enable advanced tooltips in-game by pressing F3 + H.  This will show you the item IDs, data, and (if using JEI or EMI) the registered recipe names, which will be most helpful when trying to remove specific existing recipes with scripts.
+
+One of my favorite features of CraftTweaker is that it makes information easily accessible in-game by use of commands and the 'crafttweaker.log' file, which is located in the 'logs' folder of your '.minecraft' root directory.
+
+The log file is a useful troubleshooting tool, as it will document each script that loads, runs, and fails to process.  In-game commands can be used to print a variety of information to the log and the in-game chat.  Here are some common commands you may find helpful:
+
+  /reload
+
+This isn't a CraftTweaker command, but rather one added by vanilla Minecraft to reload the world.  This will also cause CraftTweaker to reload any installed scripts, so changes can be saved to the relevant ZS file and then tested by simply reloading the game, rather than needing to exit and re-enter the game each time.  Note that errors when running scripts should display in the log and in-game chat each time this command is used.
+
+  /ct hand
+
+This will print out the ID of the item in your hand to the in-game chat in the form of an item bracket expression.  If you need to reference an item in your script but don't know how to write its bracket expression, this is an easy way to find out.
+
+  /ct hand data
+
+This will show any NBT data an item has in JSON format, printed to the in-game chat and CraftTweaker log.  This is most helpful for viewing data such as enchantments, items inside of containers, potion effects, etc.
+
+  /ct hand tags
+
+This will print any tags associated with an item to the in-game chat and log in the form of bracket expressions (similar to the '/ct hand' command, but for tags instead of items).
+
+  /ct inventory
+
+Similar in function to '/ct hand', this command will print the item brack expression (including item counts and NBT data) to the CraftTweaker log for all items currently in your inventory.
+
+  /ct conflicts <recipe_type>
+
+This will output any conflicting recipes registered to the game of the specified type, which can be viewed in the log.  Useful feature for ensuring that all recipes are compatible with one another.  Note that this is helpful, but not foolproof.  Some recipe types, such as create:cutting using a mechanical saw, can have multiple valid recipes with the same input.
+
+  /ct dump <object>
+
+This will print all registered names of the selected object type to the CraftTweaker log.  The most useful objects to dump (in my experience) might be 'recipetypes', 'potions', and 'jeitweaker:jei_categories'.  The dump for 'recipetypes' in particular can help in identifying the name of recipe types added by other mods for the purpose of writing your own recipe scripts.
+
+  /ct log
+
+This will give you a link in the in-game chat to open the CraftTweaker log directly.
+
+  /ct mods
+
+This will print a list of all registered mods to the log, along with the mod version and the mod ID in parentheses.  The mod ID can be used in bracket expressions and other script elements to reference various objects added by that mod.
+
+  /ct discord
+  /ct docs
+  /ct wiki
+  /ct issues
+  /ct patreon
+  /ct wiki
+
+These commands can be used to obtain relevant links to the Discord, online documentation, bug tracker, and Patreon page for CraftTweaker.
+
+  /ct examples
+
+This will generate example scripts in the '.minecraft' > 'scripts' folder that can be used as a helpful reference, similar to these guides.

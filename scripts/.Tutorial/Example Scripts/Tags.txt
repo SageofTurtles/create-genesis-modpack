@@ -1,0 +1,26 @@
+================
+  TAGS MANAGER
+================
+
+https://docs.blamejared.com/1.20.1/en/vanilla/api/tag/manager/ITagManager
+
+
+The following lines of code can be used in a ZS file to make changes to various tags in your game.  Note that these are the ONLY scripts that can be used in a ZS file with the '#Loader tags' preprocessor!
+
+//  Applies the '#minecraft:wool' tag to diamond
+<tag:items:minecraft:wool>.addId(<resource:minecraft:diamond>);
+
+//  Applies the '#minecraft:wool' tag to all items that have the '#minecraft:glass' tag
+<tag:items:minecraft:wool>.add(<tag:items:minecraft:glass>);
+
+//  Removes all items from the '#minecraft:wool tag'
+<tagmanager:items>.clear(<tag:items:minecraft:wool>);
+
+//  Removes all items from the '#minecraft:wool' tag
+<tag:items:minecraft:wool>.clear();
+
+//  Removes the '#minecraft:wool' tag from diamond
+<tag:items:minecraft:wool>.removeId(<resource:minecraft:diamond>);
+
+//  Removes the '#minecraft:wool' tag from all items that have the '#minecraft:glass' tag
+<tag:items:minecraft:wool>.remove(<tag:items:minecraft:glass>);
