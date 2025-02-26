@@ -1,0 +1,9 @@
+<recipetype:minecraft:crafting>.addShaped(
+  "bee_nest_shaped_crafting",
+  <item:minecraft:bee_nest>,
+  [
+    [<item:minecraft:honeycomb>,<item:minecraft:honeycomb>,<item:minecraft:honeycomb>],
+    [<tag:items:forge:stripped_logs>,<tag:items:forge:stripped_logs>,<tag:items:forge:stripped_logs>],
+    [<item:minecraft:honeycomb>,<item:minecraft:honeycomb>,<item:minecraft:honeycomb>]
+  ]
+);
