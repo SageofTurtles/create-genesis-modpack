@@ -7,7 +7,7 @@
     <item:minecraft:netherite_scrap> * 2
   ],
   [
-    <fluid:minecraft:lava> * 250,
+    <fluid:minecraft:lava> * 500,
     <fluid:create_enchantment_industry:experience> * 10
   ],
   100

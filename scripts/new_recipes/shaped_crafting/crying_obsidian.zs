@@ -3,7 +3,7 @@
   <item:minecraft:crying_obsidian> * 8,
   [
     [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>],
-    [<item:minecraft:obsidian>, <item:minecraft:ghast_tear>, <item:minecraft:obsidian>],
+    [<item:minecraft:obsidian>, <item:minecraft:amethyst_block>, <item:minecraft:obsidian>],
     [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]
   ]
 );
