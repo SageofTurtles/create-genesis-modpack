@@ -1,4 +1,4 @@
-<recipetype:minecraft:stonecutting>.removeByName("copycats:stonecutting/copycat_shaft");
+<recipetype:minecraft:stonecutting>.removeByName("copycats:crafting/copycat_shaft");
 
 <recipetype:minecraft:crafting>.addShapeless(
   "copycat_shaft_shapeless_crafting",

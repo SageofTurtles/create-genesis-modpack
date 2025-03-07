@@ -1,4 +1,4 @@
-<recipetype:minecraft:stonecutting>.removeByName("copycats:stonecutting/copycat_ladder");
+<recipetype:minecraft:stonecutting>.removeByName("copycats:crafting/copycat_ladder");
 
 <recipetype:minecraft:stonecutting>.addRecipe(
   "copycat_ladder_stonecutting",
