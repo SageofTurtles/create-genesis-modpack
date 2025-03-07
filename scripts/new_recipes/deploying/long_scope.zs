@@ -1,9 +1,0 @@
-<recipetype:create:deploying>.addRecipe(
-  "long_scope_deploying",
-  <item:cgm:medium_scope>,
-  <item:minecraft:glass_pane>,
-  [
-    <item:cgm:long_scope>
-  ],
-  false
-);

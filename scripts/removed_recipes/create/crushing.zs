@@ -1,1 +1,0 @@
-<recipetype:create:crushing>.removeByName("create:crushing/tuff");

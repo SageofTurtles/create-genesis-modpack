@@ -1,9 +1,0 @@
-<recipetype:minecraft:crafting>.addShaped(
-  "echapement_shaped_crafting",
-  <item:create_kart:echapement>,
-  [
-    [<item:create:steam_whistle>],
-    [<item:create:fluid_pipe>],
-    [<item:create:fluid_pipe>]
-  ]
-);

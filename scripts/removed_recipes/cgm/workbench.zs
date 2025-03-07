@@ -1,1 +1,0 @@
-<recipetype:cgm:workbench>.removeAll();

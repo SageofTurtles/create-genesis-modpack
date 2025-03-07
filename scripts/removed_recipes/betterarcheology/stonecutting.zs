@@ -1,2 +1,0 @@
-<recipetype:minecraft:stonecutting>.removeByName("minecraft:cracked_mud_brick_slab_from_cracked_mud_bricks_stonecutting");
-<recipetype:minecraft:stonecutting>.removeByName("minecraft:cracked_mud_brick_stairs_from_cracked_mud_bricks_stonecutting");

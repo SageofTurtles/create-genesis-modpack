@@ -1,1 +1,0 @@
-<recipetype:create:mixing>.removeByModid("createmetalwork");

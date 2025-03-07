@@ -1,1 +1,0 @@
-<recipetype:minecraft:crafting>.removeByName("cgm:workbench");

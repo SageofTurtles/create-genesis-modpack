@@ -1,1 +1,0 @@
-<recipetype:create:pressing>.removeByName("createdeco:pressing/netherite_sheet");

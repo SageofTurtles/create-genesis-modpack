@@ -1,1 +1,0 @@
-<recipetype:minecraft:crafting>.remove(<item:createendertransmission:chunk_loader>);

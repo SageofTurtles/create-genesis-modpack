@@ -1,9 +1,0 @@
-<recipetype:create:item_application>.addRecipe(
-  "sticky_mechanical_piston_item_application",
-  [
-    <item:create:sticky_mechanical_piston>
-  ],
-  <item:create:mechanical_piston>,
-  <item:minecraft:slime_ball>,
-  true
-);

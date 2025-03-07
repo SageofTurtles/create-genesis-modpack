@@ -1,9 +1,0 @@
-<recipetype:create:deploying>.addRecipe(
-  "incomplete_kart_5_deploying",
-  <item:create_kart:incomplete_kart_stage_4>,
-  <item:create_kart:parchoque>,
-  [
-    <item:create_kart:incomplete_kart_stage_5>
-  ],
-  false
-);

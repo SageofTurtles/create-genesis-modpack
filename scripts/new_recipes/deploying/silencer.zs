@@ -1,9 +1,0 @@
-<recipetype:create:deploying>.addRecipe(
-  "silencer_deploying",
-  <item:create:iron_sheet>,
-  <item:minecraft:sponge>,
-  [
-    <item:cgm:silencer>
-  ],
-  false
-);
