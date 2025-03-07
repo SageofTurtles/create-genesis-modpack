@@ -26,7 +26,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create Enchantment Industry**   |   UPDATED   |
 | Create Immersive Aircrafts          | **?  ?  ?** |
 | Create: Interiors                   |   Waiting   |
-| **> Create Jetpack**                |   Waiting   |
+| **> Create Jetpack**                |   UPDATED   |
 | Create Kart                         |   UPDATED   |
 | **> Create: Liquid Fuel**           |   UPDATED   |
 | **> Create: Metalwork**             |   Waiting   |
@@ -36,7 +36,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Power Loader**          |   UPDATED   |
 | Create: Radars                      |   Waiting   |
 | Create Railways Navigator           |   Waiting   |
-| **> Create Slice & Dice**           |   Waiting   |
+| **> Create Slice & Dice**           |   UPDATED   |
 | **> Create: Steam ‘n’ Rails**       |   Waiting   |
 | Create Track Map                    |   UPDATED   |
 | Create: Trading floor               |   UPDATED   |
@@ -51,6 +51,9 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 ### Mods to Add
 - KubeJS (replacing CraftTweaker and CreateTweaker)
 - Terralith (new addition)
+- Tectonic (new addition)
+- Geophilic (new addition)
+- Terraphilic (Terralith + Geophilic compat)
 - Create Man of Many Planes (UPDATED - already included?)
 - Create: Molten Vents (UPDATED - replacing Deep Drilling)
 
