@@ -50,6 +50,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 
 ### Mods to Add
 - KubeJS (replacing CraftTweaker and CreateTweaker)
+- ProbeJS (KubeJS add-on)
 - Terralith (new addition)
 - Tectonic (new addition)
 - Geophilic (new addition)
