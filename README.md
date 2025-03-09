@@ -15,7 +15,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | Create: Bells & Whistles            |   Waiting   |
 | **> Create Big Cannons**            |   Waiting   |
 | Create Central Kitchen              |   Waiting   |
-| Create Cobblestone                  |   Waiting   |
+| Create Cobblestone                  |   UPDATED   |
 | Create: Connected                   |   Waiting   |
 | **> Create: Copycats+**             |   Waiting   |
 | **> Create Crafts & Additions**     |   UPDATED   |
@@ -44,7 +44,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Vintage Improvements**  |   Waiting   |
 | **> Iris & Oculus Flywheel Compat** |   Waiting   |
 | Petrol’s Parts                      | **?  ?  ?** |
-| **> Rechiseled: Create**            |   Waiting   |
+| Rechiseled: Create                  |   Waiting   |
 
 ---
 
