@@ -12,10 +12,10 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | MOD NAME                            |   STATUS    |
 | :---------------------------------- | :---------: |
 | **> Create**                        |   UPDATED   |
-| Create: Bells & Whistles            |   Waiting   |
+| Create: Bells & Whistles            |   UPDATED   |
 | **> Create Big Cannons**            |   Waiting   |
 | Create Central Kitchen              |   Waiting   |
-| Create Cobblestone                  |   Waiting   |
+| Create Cobblestone                  |   UPDATED   |
 | Create: Connected                   |   Waiting   |
 | **> Create: Copycats+**             |   Waiting   |
 | **> Create Crafts & Additions**     |   UPDATED   |
@@ -24,12 +24,13 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | Create: Design n’ Decor             |  ABANDONED  |
 | **> Create: Enchantable Machinery** |   Waiting   |
 | **> Create Enchantment Industry**   |   UPDATED   |
-| Create Immersive Aircrafts          | **?  ?  ?** |
+| Create Immersive Aircrafts          |   UPDATED   |
 | Create: Interiors                   |   Waiting   |
 | **> Create Jetpack**                |   UPDATED   |
 | Create Kart                         |   UPDATED   |
 | **> Create: Liquid Fuel**           |   UPDATED   |
 | **> Create: Metalwork**             |   Waiting   |
+| **> Create: Molten Vents**          |   UPDATED   |
 | **> Create: Numismatics**           |   UPDATED   |
 | Create: Pantographs & Wires         |   Waiting   |
 | **> Create: Pattern Schematics**    |   UPDATED   |
@@ -40,27 +41,8 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Steam ‘n’ Rails**       |   Waiting   |
 | Create Track Map                    |   UPDATED   |
 | Create: Trading floor               |   UPDATED   |
-| Create: Vibrant Vaults              | **?  ?  ?** |
+| Create: Vibrant Vaults              |   Waiting   |
 | **> Create: Vintage Improvements**  |   Waiting   |
 | **> Iris & Oculus Flywheel Compat** |   Waiting   |
-| Petrol’s Parts                      | **?  ?  ?** |
-| **> Rechiseled: Create**            |   Waiting   |
-
----
-
-### Mods to Add
-- KubeJS (replacing CraftTweaker and CreateTweaker)
-- Terralith (new addition)
-- Tectonic (new addition)
-- Geophilic (new addition)
-- Terraphilic (Terralith + Geophilic compat)
-- Create Man of Many Planes (UPDATED - already included?)
-- Create: Molten Vents (UPDATED - replacing Deep Drilling)
-
-### Mods to Remove
-- Create: Ender Transmission
-- Create Optical
-- Sophisticated Storage
-- First Join Message
-- Welcome Message
-- Starter Kit
+| Petrol’s Parts                      |   Waiting   |
+| Rechiseled: Create                  |   Waiting   |
