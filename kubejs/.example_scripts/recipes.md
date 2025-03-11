@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
 })
 
 
-## HELPER FUNCTIONS
+## REPETITIVE RECIPES
 
 Helper functions can be used to bulk-produce similar scripts by replacing specified variables with each repitition.
 
@@ -217,5 +217,28 @@ ServerEvents.recipes(event => {
   potting('kubejs:potted_snowball', 'minecraft:snowball')
   potting('kubejs:potted_lava', 'minecraft:lava_bucket')
   potting('minecraft:blast_furnace', 'minecraft:furnace')
+})
+
+
+### Variable List Examples
+
+Another script below shows how a list can be used to easily write repeating iterations for a list of items using a variable.  In this example, a shaped craftin recipe will be added for a candle holder of each color in the 'colors' variable array.
+
+ServerEvents.recipes(event => {
+  let colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black']
+  colors.forEach(colors => {
+  event.shaped(
+      `supplementaries:candle_holder_${colors}`,
+      [
+        ' A ',
+        ' B ',
+        '   '
+      ],
+      {
+        A: `minecraft:${colors}_candle`,
+        B: 'minecraft:iron_ingot',
+      }
+    )
+  })
 })
 
