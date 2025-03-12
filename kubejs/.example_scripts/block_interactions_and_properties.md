@@ -45,7 +45,7 @@ The properties of existing blocks can be edited using scripts, such as in the ex
 
 // Change mining speed of BLOCK and disable collision
 BlockEvents.modification(event => {
-  event.modify('MODID:STONE', block => {
+  event.modify('MODID:BLOCK', block => {
     block.destroySpeed = 0.1
     block.hasCollision = false
   })
