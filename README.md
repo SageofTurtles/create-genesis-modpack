@@ -25,12 +25,12 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Enchantable Machinery** |   Waiting   |
 | **> Create Enchantment Industry**   |   UPDATED   |
 | Create Immersive Aircrafts          |   UPDATED   |
-| Create: Interiors                   |   Waiting   |
+| Create: Interiors                   |   UPDATED   |
 | **> Create: Ironworks**             |   UPDATED   |
 | **> Create Jetpack**                |   UPDATED   |
 | Create Kart                         |   UPDATED   |
 | **> Create: Liquid Fuel**           |   UPDATED   |
-| **> Create: Metalwork**             |   Waiting   |
+| **> Create: Metalwork**             |   UPDATED   |
 | **> Create: Molten Vents**          |   UPDATED   |
 | **> Create: Numismatics**           |   UPDATED   |
 | Create: Pantographs & Wires         |   Waiting   |
@@ -42,7 +42,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Steam ‘n’ Rails**       |   Waiting   |
 | Create Track Map                    |   UPDATED   |
 | Create: Trading floor               |   UPDATED   |
-| Create: Vibrant Vaults              |   Waiting   |
+| Create: Vibrant Vaults              |   UPDATED   |
 | **> Create: Vintage Improvements**  |   Waiting   |
 | **> Iris & Oculus Flywheel Compat** |   Waiting   |
 | Petrol’s Parts                      |   Waiting   |
