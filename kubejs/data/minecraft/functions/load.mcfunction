@@ -1,0 +1,4 @@
+gamerule sendCommandFeedback false
+
+function minecraft:invglowitemframe
+function minecraft:invitemframe
