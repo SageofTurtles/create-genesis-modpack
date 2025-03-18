@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:name_tag"
+		},
+		"title": "Silence Mobs         ",
+		"description": ["",{"text":"Adds the ability to silence mobs using a name tag. ","color":"gold"},{"text":"Silence me","color":"yellow"},{"text":", ","color":"gold"},{"text":"silence me","color":"yellow"},{"text":", ","color":"gold"},{"text":"Silence Me","color":"yellow"},{"text":", and ","color":"gold"},{"text":"silence_me","color":"yellow"},{"text":" are all acceptable names.","color":"gold"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vanillatweaks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
