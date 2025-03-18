@@ -95,15 +95,6 @@ ServerEvents.tags('item', event => {
 })
 
 
-// Add '#chipped:obsidian' block tag to 'rechiseled:obsidian' blocks
-// (For 'custom_nether_portals' datapack compat)
-ServerEvents.tags('block', event => {
-  Ingredient.of(new RegExp(`rechiseled:obsidian.*`)).itemIds.forEach(itemInstance =>
-    event.add('chipped:obsidian', `${itemInstance}`)
-  )
-})
-
-
 // Remove all items from redundant tags
 ServerEvents.tags('item', event => {
   event.removeAll('chipped:special_lantern')
@@ -392,7 +383,6 @@ ServerEvents.recipes(event => {
     'yellow_terracotta',
     'yellow_wool'
   ]
-
 
   // Add 'create:cutting' recipe for all items in each 'chippedTag'
   chippedTag.forEach(chippedTag => {
