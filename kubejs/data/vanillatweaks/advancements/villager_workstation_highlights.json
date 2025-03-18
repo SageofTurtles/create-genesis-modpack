@@ -1,0 +1,17 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cartography_table"
+		},
+		"title": "Villager Workstation Highlights",
+		"description": ["",{"text":"Allows you to find the workstation of any villager.\n","color":"gold"},{"text":"Enter","color":"green"},{"text":" ","color":"gold"},{"text":"/trigger vwh_findStation","color":"yellow"},{"text":" to locate a villager's workstation.","color":"gold"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vanillatweaks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
