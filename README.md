@@ -21,7 +21,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create Crafts & Additions**     |   UPDATED   |
 | **> Create: Curios Jetpack**        |   UPDATED   |
 | Create Deco                         |   Waiting   |
-| Create: Design n’ Decor             |  ABANDONED  |
+| Create: Design n’ Decor             |   Waiting   |
 | **> Create: Enchantable Machinery** |   Waiting   |
 | **> Create Enchantment Industry**   |   UPDATED   |
 | Create Immersive Aircrafts          |   UPDATED   |
@@ -43,6 +43,4 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | Create Track Map                    |   UPDATED   |
 | Create: Trading floor               |   UPDATED   |
 | Create: Vibrant Vaults              |   UPDATED   |
-| **> Create: Vintage Improvements**  |   Waiting   |
-| **> Iris & Oculus Flywheel Compat** |   Waiting   |
 | Petrol’s Parts                      |   Waiting   |
