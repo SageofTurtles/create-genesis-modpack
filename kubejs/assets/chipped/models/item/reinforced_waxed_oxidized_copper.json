@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chipped:item/reinforced_waxed_oxidized_copper"
+  }
+}

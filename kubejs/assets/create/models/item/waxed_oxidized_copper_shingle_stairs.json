@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "create:item/oxidized_copper_roof",
+    "side": "create:item/oxidized_copper_shingles",
+    "top": "create:item/oxidized_copper_shingle_stairs_top"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/waxed_copper_shingles",
+  "textures": {
+    "end": "create:item/copper_roof",
+    "side": "create:item/copper_shingles"
+  }
+}

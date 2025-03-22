@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "copperandtuffbackport:item/exposed_copper_bulb"
+  }
+}

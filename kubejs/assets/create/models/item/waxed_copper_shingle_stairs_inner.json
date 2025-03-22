@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "create:item/copper_roof",
+    "side": "create:item/copper_shingles",
+    "top": "create:item/copper_shingle_stairs_top"
+  }
+}

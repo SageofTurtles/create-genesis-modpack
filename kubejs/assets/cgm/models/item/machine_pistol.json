@@ -1,0 +1,27 @@
+{
+    "parent": "builtin/entity",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [22.5, 0, 0],
+			"translation": [0, 10, -4],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_righthand": {
+			"translation": [-5.0, 8.5, -2.0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"ground": {
+			"translation": [0, 5, -4.5]
+		},
+		"gui": {
+			"rotation": [64, 47, -47],
+			"translation": [0.5, 8.5, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [5.5, 11.5, 0],
+			"scale": [2, 2, 2]
+		}
+	}
+}

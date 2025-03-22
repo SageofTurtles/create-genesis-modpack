@@ -1,0 +1,23 @@
+{
+	"credit": "End_Rage waz here",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"0": "cgm:item/2d_textures/grenade",
+		"particle": "cgm:item/2d_textures/grenade"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "cgm:item/grenade_3d"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "cgm:item/grenade_2d"
+		},
+		"ground": {
+			"parent": "cgm:item/grenade_2d"
+		},
+		"fixed": {
+			"parent": "cgm:item/grenade_2d"
+		}
+	}
+}

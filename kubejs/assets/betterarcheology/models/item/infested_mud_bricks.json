@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "betterarcheology:item/infested_mud_bricks"
+  }
+}

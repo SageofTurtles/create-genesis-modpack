@@ -1,0 +1,31 @@
+{
+	"credit": "End_Rage waz here",
+	"parent": "builtin/entity",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 0, 0],
+			"translation": [0, 9.75, 2.75],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"firstperson_righthand": {
+			"translation": [-4, 7, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"ground": {
+			"translation": [0, 5, 0.25]
+		},
+		"gui": {
+			"rotation": [64, 47, -47],
+			"translation": [3, 4, 0],
+			"scale": [0.9, 0.9, 0.9]
+		},
+		"head": {
+			"translation": [0, 2.5, 0]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [-1.5, 12, -1],
+			"scale": [2, 2, 2]
+		}
+	}
+}

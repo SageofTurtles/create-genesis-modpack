@@ -1,0 +1,32 @@
+{
+	"credit": "End_Rage waz here",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"0": "cgm:item/2d_textures/light_grip",
+		"particle": "cgm:item/2d_textures/light_grip"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "cgm:item/light_grip_3d"
+	},
+	"perspectives": {
+		"firstperson_righthand": {
+			"parent": "cgm:item/light_grip_2d"
+		},
+		"firstperson_lefthand": {
+			"parent": "cgm:item/light_grip_2d"
+		},
+		"thirdperson_righthand": {
+			"parent": "cgm:item/light_grip_2d"
+		},
+		"thirdperson_lefthand": {
+			"parent": "cgm:item/light_grip_2d"
+		},
+		"gui": {
+			"parent": "cgm:item/light_grip_2d"
+		},
+		"ground": {
+			"parent": "cgm:item/light_grip_2d"
+		}
+	}
+}

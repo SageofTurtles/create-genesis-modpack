@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "copperandtuffbackport:item/weathered_copper_grate"
+  }
+}

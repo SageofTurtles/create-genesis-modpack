@@ -1,0 +1,28 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "create:block/mechanical_press_head",
+		"particle": "create:block/mechanical_press_head"
+	},
+	"elements": [
+		{
+			"from": [3, 3, 3],
+			"to": [13, 13, 13],
+			"faces": {
+				"north": {"uv": [1, 5, 11, 15], "texture": "#0"},
+				"east": {"uv": [1, 5, 11, 15], "texture": "#0"},
+				"south": {"uv": [1, 5, 11, 15], "texture": "#0"},
+				"west": {"uv": [1, 5, 11, 15], "texture": "#0"},
+				"up": {"uv": [1, 5, 11, 15], "texture": "#0"},
+				"down": {"uv": [1, 5, 11, 15], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"credit": "End_Rage waz here",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"0": "cgm:item/2d_textures/missile",
+		"particle": "cgm:item/2d_textures/missile"
+	},
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "cgm:item/missile_3d"
+	},
+	"perspectives": {
+		"firstperson_righthand": {
+			"parent": "cgm:item/missile_2d"
+		},
+		"firstperson_lefthand": {
+			"parent": "cgm:item/missile_2d"
+		},
+		"thirdperson_righthand": {
+			"parent": "cgm:item/missile_2d"
+		},
+		"thirdperson_lefthand": {
+			"parent": "cgm:item/missile_2d"
+		},
+		"gui": {
+			"parent": "cgm:item/missile_2d"
+		},
+		"ground": {
+			"parent": "cgm:item/missile_2d"
+		},
+		"fixed": {
+			"parent": "cgm:item/missile_2d"
+		}
+	}
+}
