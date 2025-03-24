@@ -22,6 +22,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Curios Jetpack**        |   UPDATED   |
 | Create Deco                         |   Waiting   |
 | Create: Design n’ Decor             |   Waiting   |
+| Create: Dragons Plus                |   Waiting   |
 | **> Create: Enchantable Machinery** |   Waiting   |
 | **> Create Enchantment Industry**   |   UPDATED   |
 | Create Immersive Aircrafts          |   UPDATED   |
@@ -44,3 +45,4 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | Create: Trading floor               |   UPDATED   |
 | Create: Vibrant Vaults              |   UPDATED   |
 | Petrol’s Parts                      |   Waiting   |
+| Petrolpark's Library                |   UPDATED   |
