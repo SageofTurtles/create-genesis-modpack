@@ -44,5 +44,5 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | Create Track Map                    |   UPDATED   |
 | Create: Trading floor               |   UPDATED   |
 | Create: Vibrant Vaults              |   UPDATED   |
-| Petrol’s Parts                      |   Waiting   |
+| Petrol’s Parts                      |   UPDATED   |
 | Petrolpark's Library                |   UPDATED   |
