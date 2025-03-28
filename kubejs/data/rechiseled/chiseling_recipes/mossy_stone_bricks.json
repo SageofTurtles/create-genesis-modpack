@@ -1,7 +1,9 @@
 {
   "type": "rechiseled:chiseling",
   "entries": [
-
+    {
+      "item": "minecraft:mossy_stone_bricks"
+    }
   ],
   "overwrite": true
 }

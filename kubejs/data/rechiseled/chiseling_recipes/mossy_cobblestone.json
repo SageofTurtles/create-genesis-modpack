@@ -1,0 +1,41 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:mossy_cobblestone"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_beams_connecting",
+      "item": "rechiseled:mossy_cobblestone_beams"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_dented_connecting",
+      "item": "rechiseled:mossy_cobblestone_dented"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_inverted_dented_connecting",
+      "item": "rechiseled:mossy_cobblestone_inverted_dented"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_paving_connecting",
+      "item": "rechiseled:mossy_cobblestone_paving"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_small_tiles_connecting",
+      "item": "rechiseled:mossy_cobblestone_small_tiles"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_squares_connecting",
+      "item": "rechiseled:mossy_cobblestone_squares"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_stripes_connecting",
+      "item": "rechiseled:mossy_cobblestone_stripes"
+    },
+    {
+      "connecting_item": "rechiseled:mossy_cobblestone_worn_stripes_connecting",
+      "item": "rechiseled:mossy_cobblestone_worn_stripes"
+    }
+  ],
+  "overwrite": true
+}

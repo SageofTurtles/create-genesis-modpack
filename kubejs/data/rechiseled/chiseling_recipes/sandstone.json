@@ -1,7 +1,47 @@
 {
   "type": "rechiseled:chiseling",
   "entries": [
-
+    {
+      "item": "minecraft:sandstone"
+    },
+    {
+      "item": "minecraft:chiseled_sandstone"
+    },
+    {
+      "item": "minecraft:cut_sandstone"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_brick_pattern_connecting",
+      "item": "rechiseled:sandstone_brick_pattern"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_brick_paving_connecting",
+      "item": "rechiseled:sandstone_brick_paving"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_bricks_connecting",
+      "item": "rechiseled:sandstone_bricks"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_diagonal_bricks_connecting",
+      "item": "rechiseled:sandstone_diagonal_bricks"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_large_tiles_connecting",
+      "item": "rechiseled:sandstone_large_tiles"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_polished_connecting",
+      "item": "rechiseled:sandstone_polished"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_rotated_bricks_connecting",
+      "item": "rechiseled:sandstone_rotated_bricks"
+    },
+    {
+      "connecting_item": "rechiseled:sandstone_tiles_connecting",
+      "item": "rechiseled:sandstone_tiles"
+    }
   ],
   "overwrite": true
 }

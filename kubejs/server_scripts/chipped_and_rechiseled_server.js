@@ -406,11 +406,3 @@ ServerEvents.recipes(event => {
     )
   })
 })
-
-
-// Remove chisel crafting recipe
-ServerEvents.recipes(event => {
-  event.remove(
-    {output: 'rechiseled:chisel'}
-  )
-})
