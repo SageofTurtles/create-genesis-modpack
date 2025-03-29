@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "rechiseled:item/copper_block_pillar_end",
+    "down": "rechiseled:item/copper_block_pillar_end",
+    "north": "rechiseled:item/copper_block_pillar_side",
+    "east": "rechiseled:item/copper_block_pillar_side",
+    "south": "rechiseled:item/copper_block_pillar_side",
+    "west": "rechiseled:item/copper_block_pillar_side",
+    "particle": "rechiseled:item/copper_block_pillar_side"
+  }
+}
