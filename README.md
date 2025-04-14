@@ -22,7 +22,6 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Curios Jetpack**        |   UPDATED   |
 | Create Deco                         |   UPDATED   |
 | Create: Design n’ Decor             |   Waiting   |
-| Create: Dragons Plus                |   Waiting   |
 | **> Create: Enchantable Machinery** |   Waiting   |
 | **> Create Enchantment Industry**   |   UPDATED   |
 | Create Immersive Aircrafts          |   UPDATED   |
