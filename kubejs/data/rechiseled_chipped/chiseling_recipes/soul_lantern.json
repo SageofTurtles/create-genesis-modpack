@@ -1,0 +1,54 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:soul_lantern"
+    },
+    {
+      "item": "chipped:blue_paper_soul_lantern"
+    },
+    {
+      "item": "chipped:blue_tube_soul_lantern"
+    },
+    {
+      "item": "chipped:checkered_iron_soul_lantern"
+    },
+    {
+      "item": "chipped:golden_paper_soul_lantern"
+    },
+    {
+      "item": "chipped:gray_paper_soul_lantern"
+    },
+    {
+      "item": "chipped:iron_bowl_soul_lantern"
+    },
+    {
+      "item": "chipped:lime_paper_soul_lantern"
+    },
+    {
+      "item": "chipped:orange_paper_soul_lantern"
+    },
+    {
+      "item": "chipped:small_red_soul_lantern"
+    },
+    {
+      "item": "chipped:wooden_cage_soul_lantern"
+    },
+    {
+      "item": "chipped:yellow_paper_soul_lantern"
+    },
+    {
+      "item": "chipped:big_soul_lantern"
+    },
+    {
+      "item": "chipped:donut_soul_lantern"
+    },
+    {
+      "item": "chipped:tall_soul_lantern"
+    },
+    {
+      "item": "chipped:wide_soul_lantern"
+    }
+  ],
+  "overwrite": true
+}

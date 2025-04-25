@@ -1,0 +1,39 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone_bricks"
+    },
+    {
+      "item": "minecraft:chiseled_polished_blackstone"
+    },
+    {
+      "connecting_item": "rechiseled:blackstone_brick_pattern_connecting",
+      "item": "rechiseled:blackstone_brick_pattern"
+    },
+    {
+      "connecting_item": "rechiseled:blackstone_brick_paving_connecting",
+      "item": "rechiseled:blackstone_brick_paving"
+    },
+    {
+      "connecting_item": "rechiseled:blackstone_diagonal_bricks_connecting",
+      "item": "rechiseled:blackstone_diagonal_bricks"
+    },
+    {
+      "connecting_item": "rechiseled:blackstone_polished_connecting",
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "connecting_item": "rechiseled:blackstone_tiles_connecting",
+      "item": "rechiseled:blackstone_tiles"
+    },
+    {
+      "connecting_item": "rechiseled:blackstone_rotated_bricks_connecting",
+      "item": "rechiseled:blackstone_rotated_bricks"
+    }
+  ],
+  "overwrite": true
+}

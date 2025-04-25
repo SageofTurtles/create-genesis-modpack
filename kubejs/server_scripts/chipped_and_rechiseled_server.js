@@ -57,21 +57,89 @@ ServerEvents.tags('item', event => {
 
 // Rechiseled-Chipped tag compats that don't match the generic pattern:
 
-// stone & smooth_stone
+// borderless_bricks
 ServerEvents.tags('item', event => {
-  Ingredient.of(new RegExp(`rechiseled:stone_(?!smooth).*`)).itemIds.forEach(itemInstance =>
-    event.add('chipped:stone', `${itemInstance}`)
-  ),
-  Ingredient.of(new RegExp(`rechiseled:stone_smooth.*`)).itemIds.forEach(itemInstance =>
-    event.add('chipped:smooth_stone', `${itemInstance}`)
+  let borderlessBricks = [
+    'chipped:borderless_bricks_bricks',
+    'chipped:borderless_bricks_mini_tiles',
+    'chipped:borderless_bricks_pillar',
+    'chipped:borderless_bricks_pillar_top',
+    'chipped:borderless_bricks_scales',
+    'chipped:angry_borderless_bricks',
+    'chipped:blank_borderless_bricks_carving',
+    'chipped:carved_borderless_bricks',
+    'chipped:checkered_borderless_bricks_tiles',
+    'chipped:cobbled_borderless_bricks',
+    'chipped:cracked_borderless_bricks_bricks',
+    'chipped:cracked_disordered_borderless_bricks_bricks',
+    'chipped:cracked_flat_borderless_bricks_tiles',
+    'chipped:creeper_borderless_bricks_carving',
+    'chipped:crying_borderless_bricks',
+    'chipped:cut_blank_borderless_bricks',
+    'chipped:glad_borderless_bricks',
+    'chipped:duh_borderless_bricks',
+    'chipped:engraved_borderless_bricks',
+    'chipped:eroded_borderless_bricks',
+    'chipped:etched_borderless_bricks_bricks',
+    'chipped:flat_borderless_bricks_tiles',
+    'chipped:inlayed_borderless_bricks',
+    'chipped:inscribed_borderless_bricks',
+    'chipped:loded_borderless_bricks',
+    'chipped:offset_borderless_bricks_bricks',
+    'chipped:pillar_borderless_bricks_bricks',
+    'chipped:prismal_borderless_bricks_remnants',
+    'chipped:rough_borderless_bricks',
+    'chipped:rounded_borderless_bricks_bricks',
+    'chipped:runic_carved_borderless_bricks',
+    'chipped:sad_borderless_bricks',
+    'chipped:sanded_borderless_bricks',
+    'chipped:small_borderless_bricks_bricks',
+    'chipped:smooth_inlayed_borderless_bricks',
+    'chipped:smooth_ringed_borderless_bricks',
+    'chipped:smoothed_double_inlayed_borderless_bricks',
+    'chipped:spider_borderless_bricks_carving',
+    'chipped:spiraled_borderless_bricks',
+    'chipped:stacked_borderless_bricks_bricks',
+    'chipped:tiled_borderless_bricks',
+    'chipped:tiny_borderless_bricks_bricks',
+    'chipped:tiny_layered_borderless_bricks_bricks',
+    'chipped:tiny_layered_borderless_bricks_slabs',
+    'chipped:trodden_borderless_bricks',
+    'chipped:unamused_borderless_bricks',
+    'chipped:vertical_cut_borderless_bricks',
+    'chipped:vertical_disordered_borderless_bricks_bricks',
+    'chipped:weathered_borderless_bricks',
+    'chipped:bordered_borderless_bricks',
+    'chipped:brick_bordered_borderless_bricks',
+    'chipped:cut_borderless_bricks_column',
+    'chipped:edged_borderless_bricks_bricks',
+    'chipped:overlapping_borderless_bricks_tiles',
+    'chipped:polished_borderless_bricks',
+    'chipped:smooth_borderless_bricks_column',
+    'chipped:thick_inlayed_borderless_bricks',
+    'chipped:tiled_borderless_bricks_column',
+    'chipped:tiled_bordered_borderless_bricks',
+    'chipped:tiny_brick_bordered_borderless_bricks',
+    'chipped:curly_borderless_bricks_pillar',
+    'chipped:fine_borderless_bricks_pillar',
+    'chipped:ornate_borderless_bricks_pillar',
+    'chipped:simple_borderless_bricks_pillar',
+    'chipped:massive_borderless_bricks_bricks'
+  ]
+  borderlessBricks.forEach(itemInstance =>
+    event.add('chipped:bricks', `${itemInstance}`)
   )
 })
 
 // cobbled_deepslate
 ServerEvents.tags('item', event => {
-  event.add('chipped:deepslate', 'minecraft:cobbled_deepslate')
+  event.add('chipped:cobbled_deepslate', 'minecraft:cobbled_deepslate')
+  event.add('chipped:cobbled_deepslate', 'minecraft:chiseled_deepslate')
+  event.add('chipped:cobbled_deepslate', 'minecraft:deepslate_tiles')
+  event.add('chipped:cobbled_deepslate', 'minecraft:polished_deepslate')
+  event.add('chipped:cobbled_deepslate', 'minecraft:deepslate_bricks')
   Ingredient.of(new RegExp('rechiseled:cobbled_deepslate.*')).itemIds.forEach(itemInstance =>
-    event.add('chipped:deepslate', `${itemInstance}`)
+    event.add('chipped:cobbled_deepslate', `${itemInstance}`)
   )
 })
 
@@ -89,9 +157,42 @@ ServerEvents.tags('item', event => {
 
 // purpur
 ServerEvents.tags('item', event => {
+  event.add('chipped:purpur_block', 'minecraft:purpur_pillar')
   Ingredient.of(new RegExp('rechiseled:purpur.*')).itemIds.forEach(itemInstance =>
     event.add('chipped:purpur_block', `${itemInstance}`)
   )
+})
+
+// stone & smooth_stone
+ServerEvents.tags('item', event => {
+  event.add('chipped:stone', 'minecraft:stone_bricks')
+  event.add('chipped:stone', 'minecraft:chiseled_stone_bricks')
+  Ingredient.of(new RegExp(`rechiseled:stone_(?!smooth).*`)).itemIds.forEach(itemInstance =>
+    event.add('chipped:stone', `${itemInstance}`)
+  ),
+  Ingredient.of(new RegExp(`rechiseled:stone_smooth.*`)).itemIds.forEach(itemInstance =>
+    event.add('chipped:smooth_stone', `${itemInstance}`)
+  )
+})
+
+// Add remaining Rechiseled-compatible items to relevant Chipped tags
+ServerEvents.tags('item', event => {
+  event.add('chipped:andesite', 'minecraft:polished_andesite')
+  event.add('chipped:diorite', 'minecraft:polished_diorite')
+  event.add('chipped:granite', 'minecraft:polished_granite')
+  event.add('chipped:basalt', 'minecraft:polished_basalt')
+  event.add('chipped:blackstone', 'minecraft:polished_blackstone')
+  event.add('chipped:blackstone', 'minecraft:polished_blackstone_bricks')
+  event.add('chipped:blackstone', 'minecraft:chiseled_polished_blackstone')
+  event.add('chipped:end_stone', 'minecraft:end_stone_bricks')
+  event.add('chipped:nether_bricks', 'minecraft:chiseled_nether_bricks')
+  event.add('chipped:quartz_block', 'minecraft:quartz_pillar')
+  event.add('chipped:quartz_block', 'minecraft:quartz_bricks')
+  event.add('chipped:quartz_block', 'minecraft:chiseled_quartz_block')
+  event.add('chipped:red_sandstone', 'minecraft:chiseled_red_sandstone')
+  event.add('chipped:red_sandstone', 'minecraft:cut_red_sandstone')
+  event.add('chipped:sandstone', 'minecraft:chiseled_sandstone')
+  event.add('chipped:sandstone', 'minecraft:cut_sandstone')
 })
 
 
@@ -108,6 +209,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('item', event => {
   event.removeAll('chipped:special_lantern')
   event.removeAll('chipped:special_soul_lantern')
+  event.removeAll('chipped:borderless_bricks')
 })
 
 
@@ -151,7 +253,6 @@ ServerEvents.recipes(event => {
     'blue_wool',
     'bone_block',
     'bookshelf',
-    'borderless_bricks',
     'bricks',
     'brown_carpet',
     'brown_concrete',
@@ -170,6 +271,7 @@ ServerEvents.recipes(event => {
     'cherry_trapdoor',
     'clay',
     'coal_block',
+    'cobbled_deepslate',
     'cobblestone',
     'cobweb',
     'crimson_door',
