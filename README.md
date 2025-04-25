@@ -17,7 +17,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | Create Central Kitchen              |   UPDATED   |
 | Create Cobblestone                  |   UPDATED   |
 | Create: Connected                   |   UPDATED   |
-| **> Create: Copycats+**             |   Waiting   |
+| **> Create: Copycats+**             |   UPDATED   |
 | **> Create Crafts & Additions**     |   UPDATED   |
 | **> Create: Curios Jetpack**        |   UPDATED   |
 | Create Deco                         |   UPDATED   |
