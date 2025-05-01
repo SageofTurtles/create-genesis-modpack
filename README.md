@@ -5,9 +5,7 @@ Mods marked with a `>` are the "essentials" we are waiting on.  Unmarked mods ar
 
 The "Status" is where I will maintain an up-to-date list of where we're at with each add-on:
 - `UPDATED` means it is compatible with Create 0.6 in the current version.
-- `ABANDONED` means it will likely not be updated, at least in the near future.
 - `Waiting` means we are, well, waiting for it to be updated.
-- `? ? ?` means I need to test if the add-on is compatible in its current version.
 
 | MOD NAME                            |   STATUS    |
 | :---------------------------------- | :---------: |
@@ -43,5 +41,6 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | Create Track Map                    |   UPDATED   |
 | Create: Trading floor               |   UPDATED   |
 | Create: Vibrant Vaults              |   UPDATED   |
+| EMI: Create Schematics              |   Waiting   |
 | Petrol’s Parts                      |   UPDATED   |
 | Petrolpark's Library                |   UPDATED   |
