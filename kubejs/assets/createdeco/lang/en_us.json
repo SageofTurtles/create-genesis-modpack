@@ -1,0 +1,19 @@
+{
+  "block.createdeco.andesite_door": "Sturdy Andesite Door",
+  "block.createdeco.andesite_trapdoor": "Sturdy Andesite Trapdoor",
+  "block.createdeco.brass_door": "Sturdy Brass Door",
+  "block.createdeco.brass_trapdoor": "Sturdy Brass Trapdoor",
+  "block.createdeco.copper_door": "Sturdy Copper Door",
+  "block.createdeco.copper_trapdoor": "Sturdy Copper Trapdoor",
+  "block.createdeco.industrial_iron_door": "Sturdy Industrial Iron Door",
+  "block.createdeco.industrial_iron_trapdoor": "Sturdy Industrial Iron Trapdoor",
+  "block.createdeco.zinc_door": "Sturdy Zinc Door",
+  "block.createdeco.zinc_trapdoor": "Sturdy Zinc Trapdoor",
+  "block.createdeco.brass_coinstack": "Brass Coin Stack Block",
+  "block.createdeco.copper_coinstack": "Copper Coin Stack Block",
+  "block.createdeco.gold_coinstack": "Gold Coin Stack Block",
+  "block.createdeco.industrial_iron_coinstack": "Industrial Iron Coin Stack Block",
+  "block.createdeco.iron_coinstack": "Iron Coin Stack Block",
+  "block.createdeco.netherite_coinstack": "Netherite Coin Stack Block",
+  "block.createdeco.zinc_coinstack": "Zinc Coin Stack Block"
+}
