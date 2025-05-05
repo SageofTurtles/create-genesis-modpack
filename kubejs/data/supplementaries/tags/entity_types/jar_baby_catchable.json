@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:allay",
+    "minecraft:axolotl",
+    "minecraft:bat",
+    "minecraft:bee",
+    "minecraft:endermite",
+    "minecraft:frog",
+    "minecraft:parrot",
+    "minecraft:silverfish",
+    "minecraft:tadpole",
+    "minecraft:vex"
+  ]
+}
