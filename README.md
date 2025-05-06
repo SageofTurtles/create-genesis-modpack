@@ -35,12 +35,11 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create: Pattern Schematics**    |   UPDATED   |
 | **> Create: Power Loader**          |   UPDATED   |
 | Create: Radars                      |   Waiting   |
-| Create Railways Navigator           |   Waiting   |
+| Create Railways Navigator           |   UPDATED   |
 | **> Create Slice & Dice**           |   UPDATED   |
 | **> Create: Steam ‘n’ Rails**       |   Waiting   |
 | Create Track Map                    |   UPDATED   |
 | Create: Trading floor               |   UPDATED   |
 | Create: Vibrant Vaults              |   UPDATED   |
-| EMI: Create Schematics              |   Waiting   |
 | Petrol’s Parts                      |   UPDATED   |
 | Petrolpark's Library                |   UPDATED   |
