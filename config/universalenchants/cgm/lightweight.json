@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:cgm_gun"
+  ],
+  "incompatible": [
+    "cgm:over_capacity",
+    "cgm:trigger_finger"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+	// When enabled, uses the overworldBorderCoords to set the border.
+	"enableCustomOverworldBorder": true,
+	// When enabled, uses the netherBorderCoords to set the border.
+	"enableCustomNetherBorder": true,
+	// When enabled, uses the endBorderCoords to set the border.
+	"enableCustomEndBorder": true,
+	// When enabled, instead of teleporting the player inside near where they were, teleports them from the positive to the negative x/z coord and vice versa.
+	"shouldLoopToOppositeBorder": false,
+	// The amount of blocks the player is teleported inside after hitting the border.
+	// min: 0, max: 1000
+	"distanceTeleportedBack": 0,
+	// The message which will be sent to the player when they are within 'distanceTeleportedBack' to the world border.
+	"nearBorderMessage": "You are approaching the world border.",
+	// The message which will be sent to the player when they hit the world border.
+	"hitBorderMessage": "You've hit the world border.",
+	// The message sent to the player when they hit the border and 'shouldLoopToOppositeBorder' is enabled.
+	"loopBorderMessage": "You've hit the world border, and have looped around the world!",
+	// The overworld border located at the positive x coordinate.
+	// min: 0, max: 100000
+	"overworldBorderPositiveX": 7500,
+	// The overworld border located at the negative x coordinate.
+	// min: -100000, max: 0
+	"overworldBorderNegativeX": -7500,
+	// The overworld border located at the positive z coordinate.
+	// min: 0, max: 100000
+	"overworldBorderPositiveZ": 7500,
+	// The overworld border located at the negative z coordinate.
+	// min: -100000, max: 0
+	"overworldBorderNegativeZ": -7500,
+	// The nether border located at the positive x coordinate.
+	// min: 0, max: 100000
+	"netherBorderPositiveX": 7500,
+	// The nether border located at the negative x coordinate.
+	// min: -100000, max: 0
+	"netherBorderNegativeX": -7500,
+	// The nether border located at the positive z coordinate.
+	// min: 0, max: 100000
+	"netherBorderPositiveZ": 7500,
+	// The nether border located at the negative z coordinate.
+	// min: -100000, max: 0
+	"netherBorderNegativeZ": -7500,
+	// The end border located at the positive x coordinate.
+	// min: 0, max: 100000
+	"endBorderPositiveX": 7500,
+	// The end border located at the negative x coordinate.
+	// min: -100000, max: 0
+	"endBorderNegativeX": -7500,
+	// The end border located at the positive z coordinate.
+	// min: 0, max: 100000
+	"endBorderPositiveZ": 7500,
+	// The end border located at the negative z coordinate.
+	// min: -100000, max: 0
+	"endBorderNegativeZ": -7500
+}

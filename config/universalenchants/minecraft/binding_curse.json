@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:wearable",
+    "cgm:short_scope",
+    "cgm:medium_scope",
+    "cgm:long_scope",
+    "cgm:silencer",
+    "cgm:light_stock",
+    "cgm:tactical_stock",
+    "cgm:weighted_stock",
+    "cgm:light_grip",
+    "cgm:specialised_grip",
+    "$minecraft:universal_enchants_horse_armor"
+  ],
+  "incompatible": []
+}

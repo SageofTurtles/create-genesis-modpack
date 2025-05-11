@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:cgm_gun"
+  ],
+  "incompatible": [
+    "cgm:fire_starter",
+    "cgm:puncturing",
+    "cgm:accelerator"
+  ]
+}

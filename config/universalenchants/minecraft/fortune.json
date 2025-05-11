@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:digger",
+    "create:mechanical_drill",
+    "create:mechanical_saw",
+    "create:mechanical_harvester",
+    "create:mechanical_plough",
+    "create_ironworks:copper_paxel",
+    "create_ironworks:bronze_paxel",
+    "create_ironworks:brass_paxel",
+    "create_ironworks:steel_paxel",
+    "create_ironworks:iron_paxel",
+    "create_ironworks:gold_paxel",
+    "create_ironworks:diamond_paxel",
+    "create_ironworks:netherite_paxel"
+  ],
+  "incompatible": [
+    "minecraft:silk_touch"
+  ]
+}

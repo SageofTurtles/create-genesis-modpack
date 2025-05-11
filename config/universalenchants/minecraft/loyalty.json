@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:trident",
+    "supplementaries:slingshot"
+  ],
+  "incompatible": [
+    "minecraft:riptide"
+  ]
+}
