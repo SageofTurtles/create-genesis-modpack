@@ -1,0 +1,10 @@
+
+#Server settings
+[Server]
+	#Changing this value will change how a player will know they've been rewarded [Default: CHAT]
+	#Allowed Values: CHAT, STATUS
+	announceMethod = "CHAT"
+	#Changing this value will change the color of the message the player receives when being rewarded for playing [Default: YELLOW].
+	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+	messageColor = "GREEN"
+

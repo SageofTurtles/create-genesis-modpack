@@ -1,0 +1,16 @@
+
+[slicer]
+	consume_tool_durability = false
+	ignore_rotation = false
+	jei_show_converted_recipes = false
+
+[basin_cooking]
+	enabled = true
+	replace_fluid_containers = true
+
+[sprinkler]
+	#Range: 10 ~ 2048
+	fluid_capacity = 300
+	#Range: 0 ~ 2048
+	fluid_per_use = 100
+
