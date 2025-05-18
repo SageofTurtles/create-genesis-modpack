@@ -2,7 +2,7 @@
   "quality": {
     "weather_quality": "FAST",
     "leaves_quality": "DEFAULT",
-    "enable_vignette": true,
+    "enable_vignette": false,
     "use_quad_normals_for_shading": true
   },
   "advanced": {
