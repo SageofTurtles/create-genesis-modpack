@@ -7,19 +7,19 @@
 
 [speed]
 	#Range: 0.01 ~ 100.0
-	horizontal = 0.04
+	horizontal = 0.02
 	#Range: 0.01 ~ 100.0
-	vertical = 0.4
+	vertical = 0.25
 	#Range: 0.01 ~ 100.0
-	acceleration = 0.6
+	acceleration = 0.4
 	#Range: -100.0 ~ 0.0
 	hover_descend = 0.0
 	#Range: 0.0 ~ 100.0
-	swim_modifier = 1.8
+	swim_modifier = 1.5
 
 [features]
 	#Range: 1.0 ~ 100.0
-	elytra_boost = 1.75
+	elytra_boost = 1.5
 
 [enchantments]
 	list = []
