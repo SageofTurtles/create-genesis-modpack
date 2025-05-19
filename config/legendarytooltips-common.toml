@@ -52,7 +52,7 @@
 	#    Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&Enchantments", "minecraft:stick+~!common+&Damage=0"
 	[client.definitions]
 		level0_entries = []
-		level1_entries = ["$genesis:uncraftable_tooltip"]
+		level1_entries = ["$genesis:unobtainable_tooltip"]
 		level2_entries = ["$genesis:equipment_tooltip"]
 		level3_entries = ["$genesis:magical_tooltip+$genesis:food_tooltip"]
 		level4_entries = ["$genesis:food_tooltip+$genesis:plantable_tooltip"]
