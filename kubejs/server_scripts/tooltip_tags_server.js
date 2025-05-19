@@ -13,13 +13,21 @@ ITEMS:
 - oak boat
 */
 
-// UNCRAFTABLE
+    // PG. 12 / 89: chest
+    // -@chipped -@rechiseled
+
+
+// UNOBTAINABLE
 ServerEvents.tags('item', event => {
-  let uncraftable = [
-    'minecraft:bedrock'
+  let unobtainable = [
+    'minecraft:bedrock',
+    'minecraft:reinforced_deepslate',
+    'minecraft:chorus_plant',
+    'minecraft:suspicious_sand',
+    'minecraft:suspicious_gravel'
   ]
-  uncraftable.forEach(itemInstance => {
-    event.add('genesis:uncraftable_tooltip', `${itemInstance}`)
+  unobtainable.forEach(itemInstance => {
+    event.add('genesis:unobtainable_tooltip', `${itemInstance}`)
   })
 })
 
