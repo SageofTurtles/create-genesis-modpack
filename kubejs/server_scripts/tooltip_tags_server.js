@@ -13,7 +13,7 @@ ITEMS:
 - oak boat
 */
 
-    // PG. 12 / 89: chest
+    // PG. 42 / 88: andesite_bogie_steps
     // -@chipped -@rechiseled
 
 
@@ -24,7 +24,24 @@ ServerEvents.tags('item', event => {
     'minecraft:reinforced_deepslate',
     'minecraft:chorus_plant',
     'minecraft:suspicious_sand',
-    'minecraft:suspicious_gravel'
+    'minecraft:suspicious_gravel',
+    'minecraft:end_portal_frame',
+    'minecraft:command_block',
+    'minecraft:chain_command_block',
+    'minecraft:repeating_command_block',
+    'minecraft:command_block_minecart',
+    'minecraft:jigsaw',
+    'minecraft:structure_block',
+    'minecraft:structure_void',
+    'minecraft:barrier',
+    'minecraft:debug_stick',
+    'minecraft:light',
+    'create:handheld_worldshaper',
+    'create:creative_motor',
+    'create:creative_fluid_tank',
+    'create:creative_crate',
+    'create:creative_blaze_cake',
+    'createaddition:creative_energy'
   ]
   unobtainable.forEach(itemInstance => {
     event.add('genesis:unobtainable_tooltip', `${itemInstance}`)
