@@ -10,7 +10,7 @@ migrateCopycatsOnInitialize = true
 [features]
 	#.
 	fluid_vessel = true
-	item_silo = true
+	item_silo = false
 	inverted_clutch = true
 	empty_fan_catalyst = true
 	parallel_gearbox = true
