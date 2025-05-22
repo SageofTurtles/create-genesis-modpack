@@ -1,5 +1,5 @@
 /*
-ITEMS:
+SAMPLE ITEMS:
 - bedrock
 - iron sword
 - apple
@@ -12,10 +12,6 @@ ITEMS:
 - redstone
 - oak boat
 */
-
-    // PG. 42 / 88: andesite_bogie_steps
-    // -@chipped -@rechiseled
-
 
 // UNOBTAINABLE
 ServerEvents.tags('item', event => {
@@ -41,7 +37,37 @@ ServerEvents.tags('item', event => {
     'create:creative_fluid_tank',
     'create:creative_crate',
     'create:creative_blaze_cake',
-    'createaddition:creative_energy'
+    'createaddition:creative_energy',
+    'create_connected:creative_fluid_vessel',
+    'numismatics:creative_vendor',
+    'numismatics:spur',
+    'numismatics:bevel',
+    'numismatics:sprocket',
+    'numismatics:cog',
+    'numismatics:crown',
+    'numismatics:sun',
+    'create_power_loader:empty_andesite_chunk_loader',
+    'create_power_loader:andesite_chunk_loader',
+    'create_power_loader:empty_brass_chunk_loader',
+    'create_power_loader:brass_chunk_loader',
+    'furniture:bin',
+    'furniture:trash_bag',
+    'molten_vents:dormant_molten_asurine',
+    'molten_vents:active_molten_asurine',
+    'molten_vents:dormant_molten_veridium',
+    'molten_vents:active_molten_veridium',
+    'molten_vents:dormant_molten_crimsite',
+    'molten_vents:active_molten_crimsite',
+    'molten_vents:dormant_molten_ochrum',
+    'molten_vents:active_molten_ochrum',
+    'molten_vents:dormant_molten_scorchia',
+    'molten_vents:active_molten_scorchia',
+    'molten_vents:dormant_molten_scoria',
+    'molten_vents:active_molten_scoria',
+    'sophisticatedbackpacks:xp_pump_upgrade',
+    'sophisticatedbackpacks:stack_upgrade_omega_tier',
+    'sophisticatedbackpacks:infinity_upgrade',
+    'sophisticatedbackpacks:survival_infinity_upgrade'
   ]
   unobtainable.forEach(itemInstance => {
     event.add('genesis:unobtainable_tooltip', `${itemInstance}`)
