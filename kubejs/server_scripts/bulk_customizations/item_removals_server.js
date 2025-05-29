@@ -34,13 +34,21 @@ let deleteItems = [
   'createdeco:red_shipping_container',
   'createdeco:black_shipping_container',
   'brewinandchewin:kombucha',
-  'createaddition:straw'
+  'createaddition:straw',
+  'mcwlights:wall_lantern',
+  'mcwlights:striped_wall_lantern',
+  'mcwlights:covered_wall_lantern',
+  'mcwlights:chain_wall_lantern',
+  'mcwlights:tavern_wall_lantern',
+  'mcwlights:festive_wall_lantern',
+  'mcwlights:cross_wall_lantern',
+  'mcwlights:bell_wall_lantern'
 ]
 
 
 // Bulk recipe & tag removal
 ServerEvents.recipes(event => {
-  deleteItems.forEach(itemInstance =>
+  deleteItems.forEach(itemInstance => 
     event.remove([
       {input: itemInstance},
       {output: itemInstance}
@@ -48,17 +56,17 @@ ServerEvents.recipes(event => {
   )
 })
 ServerEvents.tags('item', event => {
-  deleteItems.forEach(itemInstance =>
+  deleteItems.forEach(itemInstance => 
     event.removeAllTagsFrom(itemInstance)
   )
 })
 ServerEvents.tags('block', event => {
-  deleteItems.forEach(itemInstance =>
+  deleteItems.forEach(itemInstance => {
     event.removeAllTagsFrom(itemInstance)
-  )
+  })
 })
 ServerEvents.compostableRecipes(event => {
-  deleteItems.forEach(itemInstance =>
+  deleteItems.forEach(itemInstance => 
     event.remove(itemInstance)
   )
 })
