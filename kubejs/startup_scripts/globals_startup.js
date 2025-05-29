@@ -1,5 +1,4 @@
-// Items to be bulk deleted
-let deleteItems = [
+global['deletedItems'] = [
   'create_enchantment_industry:experience_rotor',
   'bellsandwhistles:metro_casing',
   'bellsandwhistles:corrugated_metro_casing',
@@ -42,45 +41,21 @@ let deleteItems = [
   'mcwlights:tavern_wall_lantern',
   'mcwlights:festive_wall_lantern',
   'mcwlights:cross_wall_lantern',
-  'mcwlights:bell_wall_lantern'
+  'mcwlights:bell_wall_lantern',
+  'create:refined_radiance',
+  'create:shadow_steel'
 ]
 
-
-// Bulk recipe & tag removal
-ServerEvents.recipes(event => {
-  deleteItems.forEach(itemInstance => 
-    event.remove([
-      {input: itemInstance},
-      {output: itemInstance}
-    ])
-  )
-})
-ServerEvents.tags('item', event => {
-  deleteItems.forEach(itemInstance => 
-    event.removeAllTagsFrom(itemInstance)
-  )
-})
-ServerEvents.tags('block', event => {
-  deleteItems.forEach(itemInstance => {
-    event.removeAllTagsFrom(itemInstance)
-  })
-})
-ServerEvents.compostableRecipes(event => {
-  deleteItems.forEach(itemInstance => 
-    event.remove(itemInstance)
-  )
-})
-
-
-// Remove recipe for Apotheosis 'Chronicle of Shadows'
-ServerEvents.recipes(event => {
-  event.remove([
-    {output: Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}').weakNBT()}
-  ])
-})
-
-
-// Remove tags from Sophisticated Backpacks XP
-ServerEvents.tags('fluid', event => {
-  event.removeAllTagsFrom('sophisticatedcore:xp_still')
-})
+global['deletedRecipes'] = [
+  'minecraft:barrier',
+  'create_power_loader:empty_brass_chunk_loader',
+  'create_power_loader:empty_andesite_chunk_loader',
+  'create_power_loader:brass_chunk_loader',
+  'create_power_loader:andesite_chunk_loader',
+  'sophisticatedbackpacks:stack_upgrade_omega_tier',
+  'sophisticatedbackpacks:xp_pump_upgrade',
+  'sophisticatedbackpacks:infinity_upgrade',
+  'sophisticatedbackpacks:survival_infinity_upgrade',
+  'furniture:bin',
+  'numismatics:cog'
+]
