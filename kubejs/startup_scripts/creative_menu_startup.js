@@ -145,3 +145,7 @@ StartupEvents.modifyCreativeTab('sophisticatedbackpacks:main', event => {
 	  event.remove('sophisticatedbackpacks:infinity_upgrade');
 	  event.remove('sophisticatedbackpacks:survival_infinity_upgrade');
 })
+
+StartupEvents.modifyCreativeTab('supplementaries:supplementaries', event => {
+	  event.remove('supplementaries:rope');
+})
