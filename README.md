@@ -1,4 +1,4 @@
-# Update Status to Create 0.6
+# Update Status to Create 6.0+
 Below are the Create add-ons in our modpack, as well as a few other changes to our modpack I am planning on making below the table here.
 
 Mods marked with a `>` are the "essentials" we are waiting on.  Unmarked mods are considered non-essential, so we can update without those ones if necessary until they are made compatible with Create 0.6.
@@ -19,7 +19,6 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | **> Create Crafts & Additions**     |   UPDATED   |
 | **> Create: Curios Jetpack**        |   UPDATED   |
 | Create Deco                         |   UPDATED   |
-| Create: Design n’ Decor             |   Waiting   |
 | **> Create: Enchantable Machinery** |   UPDATED   |
 | **> Create Enchantment Industry**   |   UPDATED   |
 | Create Immersive Aircrafts          |   UPDATED   |
