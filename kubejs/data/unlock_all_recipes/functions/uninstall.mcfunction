@@ -1,1 +1,0 @@
-schedule clear unlock_all_recipes:unlock_recipes
