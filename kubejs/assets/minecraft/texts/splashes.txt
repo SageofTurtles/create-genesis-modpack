@@ -32,7 +32,7 @@ Conductors are sus. Don't trust them!
 Cogs crankin' and guns blazin'
 All hail the Mechanist!
 Deus ex machina
-Current drill count: [ERROR]
+Current drill count: [ ERROR ]
 Ever wondered what's beyond the barrier?
 Got any spare cogs?
 Turtles are cool
