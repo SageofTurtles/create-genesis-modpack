@@ -48,6 +48,7 @@ createdeco:props_tab
 createmetalwork:base
 createrailwaysnavigator:createrailwaysnavigatortab
 decorative_blocks:general
+domesticationinnovation:domesticationinnovation
 extra_gauges:main_tab
 farmersdelight:farmersdelight
 furniture:furniture
@@ -116,6 +117,11 @@ StartupEvents.modifyCreativeTab('createdeco:props_tab', event => {
 
 StartupEvents.modifyCreativeTab('create_enchantment_industry:base', event => {
 	  event.remove('create_enchantment_industry:experience_rotor');
+})
+
+StartupEvents.modifyCreativeTab('domesticationinnovation:domesticationinnovation', event => {
+	event.remove('domesticationinnovation:rotten_apple');
+	event.remove('domesticationinnovation:sinister_carrot');
 })
 
 StartupEvents.modifyCreativeTab('furniture:furniture', event => {
