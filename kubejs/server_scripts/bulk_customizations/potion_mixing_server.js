@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
     { input: 'long_night_vision', output: 'long_invisibility' }
   ]
 
-  // Regular => Long Effect
+  // Long Effects
   longAllowed.forEach(effect => {
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:long_${effect}`})],
@@ -92,9 +92,37 @@ ServerEvents.recipes(event => {
         'minecraft:redstone'
       ]
     ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:long_${effect}`}),
+        'minecraft:gunpowder'
+      ]
+    ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}`}),
+        'minecraft:redstone'
+      ]
+    ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:long_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}`}),
+        Fluid.of('create_central_kitchen:dragon_breath', 250)
+      ]
+    ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:long_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}`}),
+        'minecraft:redstone'
+      ]
+    ).heated()
   })
 
-  // Regular => Strong Effect
+  // Strong Effects
   strongAllowed.forEach(effect => {
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:strong_${effect}`})],
@@ -103,9 +131,37 @@ ServerEvents.recipes(event => {
         'minecraft:glowstone_dust'
       ]
     ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:strong_${effect}`}),
+        'minecraft:gunpowder'
+      ]
+    ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}`}),
+        'minecraft:glowstone_dust'
+      ]
+    ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:strong_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}`}),
+        Fluid.of('create_central_kitchen:dragon_breath', 250)
+      ]
+    ).heated()
+    event.recipes.create.mixing(
+      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:strong_${effect}`})],
+      [
+        Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}`}),
+        'minecraft:glowstone_dust'
+      ]
+    ).heated()
   })
 
-  // Regular => Splash
+  // Splash & Lingering Modifiers
   effectList.forEach(effect => {
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}`})],
@@ -114,54 +170,6 @@ ServerEvents.recipes(event => {
         'minecraft:gunpowder'
       ]
     ).heated()
-  })
-
-  // Regular Long => Splash Long
-  longAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:long_${effect}`}),
-        'minecraft:gunpowder'
-      ]
-    ).heated()
-  })
-
-  // Regular Strong => Splash Strong
-  strongAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:strong_${effect}`}),
-        'minecraft:gunpowder'
-      ]
-    ).heated()
-  })
-
-  // Splash => Splash Long
-  longAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}`}),
-        'minecraft:redstone'
-      ]
-    ).heated()
-  })
-
-  // Splash => Splash Strong
-  strongAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}`}),
-        'minecraft:glowstone_dust'
-      ]
-    ).heated()
-  })
-
-  // Splash => Lingering
-  effectList.forEach(effect => {
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}`})],
       [
@@ -171,51 +179,7 @@ ServerEvents.recipes(event => {
     ).heated()
   })
 
-  // Splash Long => Lingering Long
-  longAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:long_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}`}),
-        Fluid.of('create_central_kitchen:dragon_breath', 250)
-      ]
-    ).heated()
-  })
-
-  // Lingering => Lingering Long
-  longAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:long_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}`}),
-        'minecraft:redstone'
-      ]
-    ).heated()
-  })
-
-  // Splash Strong => Lingering Strong
-  strongAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:strong_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}`}),
-        Fluid.of('create_central_kitchen:dragon_breath', 250)
-      ]
-    ).heated()
-  })
-
-  // Lingering => Lingering Strong
-  strongAllowed.forEach(effect => {
-    event.recipes.create.mixing(
-      [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:strong_${effect}`})],
-      [
-        Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}`}),
-        'minecraft:glowstone_dust'
-      ]
-    ).heated()
-  })
-
-  // Non-Standard Base Effect Recipes
+  // Non-Standard Bases
   otherBases.forEach(effect => {
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, {Bottle: `${effect.type}`, Potion: `minecraft:${effect.output}`})],
