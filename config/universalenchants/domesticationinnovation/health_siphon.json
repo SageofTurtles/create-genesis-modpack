@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:pet"
+  ],
+  "incompatible": [
+    "domesticationinnovation:health_boost",
+    "domesticationinnovation:rejuvenation",
+    "domesticationinnovation:vampire",
+    "domesticationinnovation:healing_aura",
+    "domesticationinnovation:gluttonous"
+  ]
+}
