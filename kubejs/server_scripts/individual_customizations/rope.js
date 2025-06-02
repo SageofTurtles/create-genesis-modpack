@@ -17,8 +17,8 @@ ServerEvents.recipes(event => {
       }
     )
   }
-  ropeRecipe(2, 'minecraft:string')
-  ropeRecipe(3, 'supplementaries:flax')
+  ropeRecipe(1, 'minecraft:string')
+  ropeRecipe(2, 'supplementaries:flax')
   ropeRecipe(2, 'farmersdelight:straw')
 })
 ServerEvents.tags('item', event => {
