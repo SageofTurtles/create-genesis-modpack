@@ -175,6 +175,24 @@ ServerEvents.tags('item', event => {
   )
 })
 
+// Macaw's Windows mosaic glass
+ServerEvents.recipes(event => {
+  global.colors.forEach(color => {
+    event.remove([
+      { type: 'minecraft:crafting_shaped', input: `mcwwindows:${color}_mosaic_glass` },
+      { type: 'minecraft:crafting_shaped', output: `mcwwindows:${color}_mosaic_glass`},
+      { type: 'minecraft:crafting_shaped', input: `mcwwindows:${color}_mosaic_glass_pane` },
+      { type: 'minecraft:crafting_shaped', output: `mcwwindows:${color}_mosaic_glass_pane`}
+    ])
+  })
+})
+ServerEvents.tags('item', event => {
+  global.colors.forEach(color => {
+    event.add(`chipped:${color}_stained_glass`, `mcwwindows:${color}_mosaic_glass`)
+    event.add(`chipped:${color}_stained_glass_pane`, `mcwwindows:${color}_mosaic_glass_pane`)
+  })
+})
+
 // Add remaining Rechiseled-compatible items to relevant Chipped tags
 ServerEvents.tags('item', event => {
   event.add('chipped:andesite', 'minecraft:polished_andesite')
