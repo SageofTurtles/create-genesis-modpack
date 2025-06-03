@@ -1,0 +1,45 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:circular_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:large_diamond_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:square_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:vertical_stiped_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:woven_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:arched_cyan_stained_glass_pane_pillar"
+    },
+    {
+      "item": "chipped:fancy_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:ornate_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:raster_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:small_cyan_stained_glass_pane"
+    },
+    {
+      "item": "chipped:tiled_cyan_stained_glass_pane"
+    },
+    {
+      "item": "mcwwindows:cyan_mosaic_glass_pane"
+    }
+  ],
+  "overwrite": true
+}

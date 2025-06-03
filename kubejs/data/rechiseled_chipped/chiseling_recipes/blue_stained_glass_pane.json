@@ -1,0 +1,45 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:circular_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:large_diamond_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:square_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:vertical_stiped_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:woven_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:arched_blue_stained_glass_pane_pillar"
+    },
+    {
+      "item": "chipped:fancy_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:ornate_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:raster_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:small_blue_stained_glass_pane"
+    },
+    {
+      "item": "chipped:tiled_blue_stained_glass_pane"
+    },
+    {
+      "item": "mcwwindows:blue_mosaic_glass_pane"
+    }
+  ],
+  "overwrite": true
+}
