@@ -11,7 +11,7 @@ The "Status" is where I will maintain an up-to-date list of where we're at with 
 | :---------------------------------- | :---------: |
 | **> Create**                        |   UPDATED   |
 | Create: Bells & Whistles            |   UPDATED   |
-| **> Create Big Cannons**            |   Waiting   |
+| **> Create Big Cannons**            |   UPDATED   |
 | Create Central Kitchen              |   UPDATED   |
 | Create Cobblestone                  |   UPDATED   |
 | Create: Connected                   |   UPDATED   |
