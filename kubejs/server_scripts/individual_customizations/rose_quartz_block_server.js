@@ -10,11 +10,11 @@ ServerEvents.recipes(event => {
     {
       1: 'create:rose_quartz'
     }
-  )
+  ).id('genesis:rose_quartz_block_from_rose_quartz')
   event.shapeless(
     Item.of('create:rose_quartz', 9),
     [
       'create:rose_quartz_block'
     ]
-  )
+  ).id('genesis:rose_quartz_from_rose_quartz_block')
 })

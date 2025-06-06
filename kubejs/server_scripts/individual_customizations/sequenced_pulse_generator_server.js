@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-  event.remove({ output: 'create_connected:sequenced_pulse_generator' })
   event.shaped(
     Item.of('create_connected:sequenced_pulse_generator'),
     [
@@ -13,5 +12,5 @@ ServerEvents.recipes(event => {
       B: 'create:brass_sheet',
       S: '#bookshelf:stones'
     }
-  )
+  ).id('create_connected:crafting/kinetics/sequenced_pulse_generator')
 })

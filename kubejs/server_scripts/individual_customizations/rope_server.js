@@ -1,10 +1,5 @@
 ServerEvents.recipes(event => {
-  event.remove([
-    {input: 'supplementaries:rope'},
-    {output: 'supplementaries:rope'},
-    {id: 'farmersdelight:rope'}
-  ])
-  function ropeRecipe(count, input) {
+  function ropeRecipe(count, input, id) {
     event.shaped(
       Item.of('farmersdelight:rope', count),
       [
@@ -15,11 +10,11 @@ ServerEvents.recipes(event => {
       {
         1: input
       }
-    )
+    ).id(id)
   }
-  ropeRecipe(1, 'minecraft:string')
-  ropeRecipe(2, 'supplementaries:flax')
-  ropeRecipe(2, 'farmersdelight:straw')
+  ropeRecipe(1, 'minecraft:string', 'genesis:rope_from_string')
+  ropeRecipe(2, 'supplementaries:flax', 'supplementaries:rope')
+  ropeRecipe(2, 'farmersdelight:straw', 'farmersdelight:rope')
 })
 ServerEvents.tags('item', event => {
   event.removeAllTagsFrom('supplementaries:rope')

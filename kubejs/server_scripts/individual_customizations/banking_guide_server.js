@@ -6,5 +6,5 @@ ServerEvents.recipes(event => {
       'create:sturdy_sheet',
       'minecraft:paper'
     ]
-  )
+  ).id('genesis:banking_guide')
 })

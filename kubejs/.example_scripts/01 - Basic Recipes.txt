@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
 {mod: 'MODID'}
 
 // Remove recipes by recipe ID
-{id: 'RECIPEID'})
+{id: 'RECIPEID'}
 
 
 ### Combining Filter Conditions

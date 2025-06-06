@@ -85,6 +85,7 @@ StartupEvents.modifyCreativeTab('create:base', event => {
 
 StartupEvents.modifyCreativeTab('createaddition:main', event => {
 	  event.remove('createaddition:straw');
+		event.remove('createaddition:zinc_sheet');
 })
 
 StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {

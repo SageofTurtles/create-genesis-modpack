@@ -1,5 +1,4 @@
 ServerEvents.tags('item', event => {
-
   // List of item types from Rechiseled to be added to Chipped groups
   let rechiseledType = [
     'acacia_planks',
@@ -44,7 +43,6 @@ ServerEvents.tags('item', event => {
     'spruce_planks',
     'warped_planks'
   ]
-
   
   // Add Chipped tag for all items in each 'rechiseledType'
   rechiseledType.forEach(rechiseledType => {
@@ -53,7 +51,6 @@ ServerEvents.tags('item', event => {
     )
   })
 })
-
 
 // Rechiseled-Chipped tag compats that don't match the generic pattern:
 
@@ -213,7 +210,6 @@ ServerEvents.tags('item', event => {
   event.add('chipped:sandstone', 'minecraft:cut_sandstone')
 })
 
-
 // Add '#chipped:obsidian' block tag to 'rechiseled:obsidian' blocks
 // (For 'custom_nether_portals' datapack compat)
 ServerEvents.tags('block', event => {
@@ -222,7 +218,6 @@ ServerEvents.tags('block', event => {
   )
 })
 
-
 // Remove all items from redundant tags
 ServerEvents.tags('item', event => {
   event.removeAll('chipped:special_lantern')
@@ -230,9 +225,7 @@ ServerEvents.tags('item', event => {
   event.removeAll('chipped:borderless_bricks')
 })
 
-
 ServerEvents.recipes(event => {
-
   // List of tags from Chipped to have 'create:cutting' recipes added
   let chippedTag = [
     'acacia_door',
@@ -513,7 +506,6 @@ ServerEvents.recipes(event => {
     'yellow_wool'
   ]
 
-
   // Add 'create:cutting' recipe for all items in each 'chippedTag'
   chippedTag.forEach(chippedTag => {
     Ingredient.of(`#chipped:${chippedTag}`).itemIds.forEach(taggedItem =>
@@ -525,4 +517,28 @@ ServerEvents.recipes(event => {
       })
     )
   })
+})
+
+// Edit chisel crafting recipe to use Chipped tables
+ServerEvents.recipes(event => {
+  event.remove({ output: 'rechiseled:chisel' })
+  event.shaped(
+    Item.of('rechiseled:chisel', 1),
+    [
+      'BGC',
+      'LIM',
+      'SAT'
+    ],
+    {
+      B: 'chipped:botanist_workbench',
+      G: 'chipped:glassblower',
+      C: 'chipped:carpenters_table',
+      L: 'chipped:loom_table',
+      I: 'minecraft:iron_ingot',
+      M: 'chipped:mason_table',
+      S: 'minecraft:stick',
+      A: 'chipped:alchemy_bench',
+      T: 'chipped:tinkering_table'
+    }
+  ).id('rechiseled:chisel')
 })
