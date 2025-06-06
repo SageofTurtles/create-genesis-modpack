@@ -1,24 +1,24 @@
 // Bulk recipe & tag removal
 ServerEvents.recipes(event => {
-  global.deletedItems.forEach(itemInstance => 
+  global.deletedItems.forEach(itemInstance =>
     event.remove([
-      {input: itemInstance},
-      {output: itemInstance}
+      { input: itemInstance },
+      { output: itemInstance }
     ])
   )
 })
 ServerEvents.tags('item', event => {
-  global.deletedItems.forEach(itemInstance => 
+  global.deletedItems.forEach(itemInstance =>
     event.removeAllTagsFrom(itemInstance)
   )
 })
 ServerEvents.tags('block', event => {
-  global.deletedItems.forEach(itemInstance => 
+  global.deletedItems.forEach(itemInstance =>
     event.removeAllTagsFrom(itemInstance)
   )
 })
 ServerEvents.compostableRecipes(event => {
-  global.deletedItems.forEach(itemInstance => 
+  global.deletedItems.forEach(itemInstance =>
     event.remove(itemInstance)
   )
 })
@@ -27,7 +27,7 @@ ServerEvents.compostableRecipes(event => {
 // Remove recipe for Apotheosis 'Chronicle of Shadows'
 ServerEvents.recipes(event => {
   event.remove([
-    {output: Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}').weakNBT()}
+    { output: Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}').weakNBT() }
   ])
 })
 

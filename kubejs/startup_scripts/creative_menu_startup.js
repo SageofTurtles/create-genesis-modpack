@@ -34,7 +34,7 @@ copycats:main
 create:base
 create:palettes
 create_central_kitchen:base
-create_confectionary:create_confectionary_tab
+create_confectionery:create_confectionery_tab
 create_connected:main
 create_enchantment_industry:base
 create_ironworks:create_ironworks
@@ -42,6 +42,7 @@ create_mobile_packages:create_mobile_packages_tab
 create_power_loader:main
 create_vibrant_vaults:base
 createaddition:main
+createbigcannons:base
 createcobblestone:main
 createdeco:bricks_tab
 createdeco:props_tab
@@ -97,6 +98,11 @@ StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {
 	  event.remove('create_central_kitchen:sweet_berry_cake_slice');
 })
 
+StartupEvents.modifyCreativeTab('create_confectionery:create_confectionery_tab', event => {
+	  event.remove('create_confectionery:hot_chocolate_bottle');
+	  event.remove('create_confectionery:soothing_hot_chocolate');
+})
+
 StartupEvents.modifyCreativeTab('createdeco:props_tab', event => {
 	  event.remove('createdeco:white_shipping_container');
 	  event.remove('createdeco:orange_shipping_container');
@@ -144,6 +150,10 @@ StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
 	  event.remove('mcwlights:festive_wall_lantern');
 	  event.remove('mcwlights:cross_wall_lantern');
 	  event.remove('mcwlights:bell_wall_lantern');
+})
+
+StartupEvents.modifyCreativeTab('mcwroofs:mcwroofs', event => {
+	  event.remove('mcwroofs:rain_gutter');
 })
 
 StartupEvents.modifyCreativeTab('sophisticatedbackpacks:main', event => {

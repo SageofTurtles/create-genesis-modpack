@@ -10,3 +10,8 @@ ServerEvents.tags('item', event => {
     event.add('create:crushed_raw_materials', 'create_ironworks:crushed_raw_tin')
     event.add('forge:tin_dusts', 'create_ironworks:crushed_raw_tin')
 })
+
+// Remove duplicate Create: Ironworks pressing recipes
+ServerEvents.recipes(event => {
+    event.remove({ id: /create_ironworks:materials\/plates\/(bronze|steel|tin)_sheet2/ })
+})

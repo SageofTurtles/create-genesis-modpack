@@ -2,8 +2,8 @@
 ServerEvents.recipes(event => {
   global.deletedRecipes.forEach(itemInstance =>
     event.remove([
-      {input: itemInstance},
-      {output: itemInstance}
+      { input: itemInstance },
+      { output: itemInstance }
     ])
   )
 })
@@ -17,8 +17,8 @@ ServerEvents.compostableRecipes(event => {
 // Remove unused recipe types
 ServerEvents.recipes(event => {
   event.remove([
-    {type: 'createaddition:liquid_burning'},
-    {type: 'cgm:workbench'}
+    { type: 'createaddition:liquid_burning' },
+    { type: 'cgm:workbench' }
   ])
 })
 

@@ -43,7 +43,7 @@ ServerEvents.tags('item', event => {
     'spruce_planks',
     'warped_planks'
   ]
-  
+
   // Add Chipped tag for all items in each 'rechiseledType'
   rechiseledType.forEach(rechiseledType => {
     Ingredient.of(new RegExp(`rechiseled:${rechiseledType}.*`)).itemIds.forEach(itemInstance =>
@@ -167,9 +167,9 @@ ServerEvents.tags('item', event => {
   Ingredient.of(new RegExp(`rechiseled:stone_(?!smooth).*`)).itemIds.forEach(itemInstance =>
     event.add('chipped:stone', `${itemInstance}`)
   ),
-  Ingredient.of(new RegExp(`rechiseled:stone_smooth.*`)).itemIds.forEach(itemInstance =>
-    event.add('chipped:smooth_stone', `${itemInstance}`)
-  )
+    Ingredient.of(new RegExp(`rechiseled:stone_smooth.*`)).itemIds.forEach(itemInstance =>
+      event.add('chipped:smooth_stone', `${itemInstance}`)
+    )
 })
 
 // Macaw's Windows mosaic glass
@@ -177,9 +177,9 @@ ServerEvents.recipes(event => {
   global.colors.forEach(color => {
     event.remove([
       { type: 'minecraft:crafting_shaped', input: `mcwwindows:${color}_mosaic_glass` },
-      { type: 'minecraft:crafting_shaped', output: `mcwwindows:${color}_mosaic_glass`},
+      { type: 'minecraft:crafting_shaped', output: `mcwwindows:${color}_mosaic_glass` },
       { type: 'minecraft:crafting_shaped', input: `mcwwindows:${color}_mosaic_glass_pane` },
-      { type: 'minecraft:crafting_shaped', output: `mcwwindows:${color}_mosaic_glass_pane`}
+      { type: 'minecraft:crafting_shaped', output: `mcwwindows:${color}_mosaic_glass_pane` }
     ])
   })
 })
@@ -511,8 +511,8 @@ ServerEvents.recipes(event => {
     Ingredient.of(`#chipped:${chippedTag}`).itemIds.forEach(taggedItem =>
       event.custom({
         "type": "create:cutting",
-        "ingredients": [{"tag": `chipped:${chippedTag}`}],
-        "results": [{"item": `${taggedItem}`}],
+        "ingredients": [{ "tag": `chipped:${chippedTag}` }],
+        "results": [{ "item": `${taggedItem}` }],
         "processingTime": 200
       })
     )
