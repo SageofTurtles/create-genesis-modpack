@@ -126,19 +126,24 @@ StartupEvents.modifyCreativeTab('create_enchantment_industry:base', event => {
 	  event.remove('create_enchantment_industry:experience_rotor');
 })
 
+StartupEvents.modifyCreativeTab('createmetalwork:base', event => {
+	  event.remove('createmetalwork:crushed_andesite');
+	  event.remove('createmetalwork:crushed_netherite_scrap');
+})
+
 StartupEvents.modifyCreativeTab('domesticationinnovation:domesticationinnovation', event => {
 	event.remove('domesticationinnovation:rotten_apple');
 	event.remove('domesticationinnovation:sinister_carrot');
 })
 
+StartupEvents.modifyCreativeTab('farmersdelight:farmersdelight', event => {
+	  event.remove('farmersdelight:wheat_dough');
+})
+
 StartupEvents.modifyCreativeTab('furniture:furniture', event => {
 	  event.remove('furniture:bin');
 	  event.remove('furniture:trash_bag');
-})
-
-StartupEvents.modifyCreativeTab('createmetalwork:base', event => {
-	  event.remove('createmetalwork:crushed_andesite');
-	  event.remove('createmetalwork:crushed_netherite_scrap');
+		event.remove('furniture:canvas');
 })
 
 StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {

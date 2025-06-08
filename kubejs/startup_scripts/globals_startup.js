@@ -44,7 +44,9 @@ global['deletedItems'] = [
   'mcwlights:bell_wall_lantern',
   'create:refined_radiance',
   'create:shadow_steel',
-  'createaddition:zinc_sheet'
+  'createaddition:zinc_sheet',
+  'furniture:canvas',
+  'farmersdelight:wheat_dough'
 ]
 
 global['deletedRecipes'] = [
