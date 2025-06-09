@@ -3,5 +3,8 @@
   "block.create.brass_door": "Brass Sliding Door",
   "block.create.copper_door": "Copper Folding Door",
   "block.create.framed_glass_door": "Framed Glass Sliding Door",
-  "block.create.train_door": "Train Sliding Door"
+  "block.create.train_door": "Train Sliding Door",
+  "block.create.andesite_bars": "Parallel Andesite Bars",
+  "block.create.brass_bars": "Ornate Brass Bars",
+  "block.create.copper_bars": "Grate Copper Bars"
 }
