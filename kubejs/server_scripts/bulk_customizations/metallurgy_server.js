@@ -130,7 +130,31 @@ ServerEvents.recipes(event => {
     })
     event.recipes.create.compacting('create:andesite_alloy', Fluid.of('createmetalwork:molten_andesite_alloy', 90))
     event.recipes.create.mixing(Fluid.of('createbigcannons:molten_cast_iron', 90), Fluid.of('createmetalwork:molten_iron', 90)).superheated()
-    
+    event.custom({
+        "type": "createbigcannons:melting",
+        "heatRequirement": 'heated',
+        "ingredients": [{
+            "item": 'createbigcannons:bronze_scrap'
+        }],
+        "processingTime": 20,
+        "results": [{
+            "amount": 10,
+            "fluid": 'createbigcannons:molten_bronze'
+        }]
+    })
+    event.custom({
+        "type": "createbigcannons:melting",
+        "heatRequirement": 'superheated',
+        "ingredients": [{
+            "item": 'createbigcannons:steel_scrap'
+        }],
+        "processingTime": 20,
+        "results": [{
+            "amount": 10,
+            "fluid": 'createbigcannons:molten_steel'
+        }]
+    })
+
     // Add recipes for alloys
     heatedAlloys.forEach(instance => {
         event.recipes.create.mixing(instance.output, [instance.input1, instance.input2]).heated()
