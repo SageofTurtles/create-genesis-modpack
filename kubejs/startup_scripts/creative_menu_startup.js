@@ -89,6 +89,11 @@ StartupEvents.modifyCreativeTab('createaddition:main', event => {
 	event.remove('createaddition:zinc_sheet');
 })
 
+StartupEvents.modifyCreativeTab('createbigcannons:base', event => {
+	event.remove('createbigcannons:ram_head');
+	event.remove('createbigcannons:worm_head');
+})
+
 StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {
 	event.remove('create_central_kitchen:mulberry_pie_slice');
 	event.remove('create_central_kitchen:yucca_cake_slice');

@@ -47,7 +47,9 @@ global['deletedItems'] = [
   'createaddition:zinc_sheet',
   'furniture:canvas',
   'farmersdelight:wheat_dough',
-  'create_ironworks:charcoal_dust'
+  'create_ironworks:charcoal_dust',
+  'createbigcannons:ram_head',
+  'createbigcannons:worm_head'
 ]
 
 global['deletedRecipes'] = [
