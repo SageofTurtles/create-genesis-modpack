@@ -46,7 +46,7 @@
     "minecraft:the_nether": true
   },
   "gunpowderAmmunition": {
-    "cgm:advanced_bullet": 250
+    "createbigcannons:machine_gun_round": 256
   },
   "arrowAmmunition": {
     "minecraft:arrow": 100,
@@ -54,7 +54,7 @@
     "minecraft:spectral_arrow": 100
   },
   "bombBayAmmunition": {
-    "minecraft:tnt": 100
+    "createbigcannons:solid_shot": 32
   },
   "version": 1,
   "name": "immersive_aircraft"
