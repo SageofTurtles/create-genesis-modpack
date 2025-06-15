@@ -49,7 +49,9 @@ global['deletedItems'] = [
   'farmersdelight:wheat_dough',
   'create_ironworks:charcoal_dust',
   'createbigcannons:ram_head',
-  'createbigcannons:worm_head'
+  'createbigcannons:worm_head',
+  'createbigcannons:spring_wire',
+  'cgm:missile'
 ]
 
 global['deletedRecipes'] = [

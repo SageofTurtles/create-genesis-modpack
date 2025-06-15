@@ -78,6 +78,7 @@ StartupEvents.modifyCreativeTab('bellsandwhistles:bells_and_whistles_tab', event
 
 StartupEvents.modifyCreativeTab('cgm:creative_tab', event => {
 	event.remove('cgm:workbench');
+	event.remove('cgm:missile');
 })
 
 StartupEvents.modifyCreativeTab('create:base', event => {
@@ -92,6 +93,7 @@ StartupEvents.modifyCreativeTab('createaddition:main', event => {
 StartupEvents.modifyCreativeTab('createbigcannons:base', event => {
 	event.remove('createbigcannons:ram_head');
 	event.remove('createbigcannons:worm_head');
+	event.remove('createbigcannons:spring_wire');
 })
 
 StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {
