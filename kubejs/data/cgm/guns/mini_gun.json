@@ -26,7 +26,7 @@
   },
   "projectile": {
     "damage": 10.0,
-    "item": "cgm:advanced_bullet",
+    "item": "createbigcannons:machine_gun_round",
     "life": 30,
     "size": 0.5,
     "speed": 2.0,
