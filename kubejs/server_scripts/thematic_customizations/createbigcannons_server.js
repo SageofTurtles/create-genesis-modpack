@@ -39,28 +39,14 @@ ServerEvents.recipes(event => {
 
   // Machine Gun Round
   event.remove({ id: 'createbigcannons:machine_gun_round' })
+  let partial_round = 'createbigcannons:partially_assembled_machine_gun_round'
   event.recipes.create.sequenced_assembly(
     'createbigcannons:machine_gun_round',
     'createbigcannons:empty_machine_gun_round',
     [
-      event.recipes.createDeploying(
-        'createbigcannons:partially_assembled_machine_gun_round',
-        [
-          'createbigcannons:partially_assembled_machine_gun_round',
-          'createbigcannons:gunpowder_pinch'
-        ]
-      ),
-      event.recipes.createDeploying(
-        'createbigcannons:partially_assembled_machine_gun_round',
-        [
-          'createbigcannons:partially_assembled_machine_gun_round',
-          'createbigcannons:cast_iron_nugget'
-        ]
-      ),
-      event.recipes.create.pressing(
-        'createbigcannons:partially_assembled_machine_gun_round',
-        'createbigcannons:partially_assembled_machine_gun_round'
-      )
+      event.recipes.createDeploying(partial_round, [partial_round, 'createbigcannons:gunpowder_pinch']),
+      event.recipes.createDeploying(partial_round, [partial_round, 'createbigcannons:cast_iron_nugget']),
+      event.recipes.create.pressing(partial_round, partial_round)
     ]
   ).transitionalItem('createbigcannons:partially_assembled_machine_gun_round').loops(1)
     .id('createbigcannons:sequenced_assembly/assembling_machine_gun_round')
