@@ -39,29 +39,31 @@ ServerEvents.recipes(event => {
 
   // Machine Gun Round
   event.remove({ id: 'createbigcannons:machine_gun_round' })
-	event.recipes.create.sequenced_assembly(
-		'createbigcannons:machine_gun_round',
+  event.recipes.create.sequenced_assembly(
+    'createbigcannons:machine_gun_round',
     'createbigcannons:empty_machine_gun_round',
     [
-		  event.recipes.createDeploying(
+      event.recipes.createDeploying(
         'createbigcannons:partially_assembled_machine_gun_round',
-        ['createbigcannons:partially_assembled_machine_gun_round',
+        [
+          'createbigcannons:partially_assembled_machine_gun_round',
           'createbigcannons:gunpowder_pinch'
         ]
       ),
-		  event.recipes.createDeploying(
+      event.recipes.createDeploying(
         'createbigcannons:partially_assembled_machine_gun_round',
-        ['createbigcannons:partially_assembled_machine_gun_round',
-          'create:copper_nugget'
+        [
+          'createbigcannons:partially_assembled_machine_gun_round',
+          'createbigcannons:cast_iron_nugget'
         ]
       ),
       event.recipes.create.pressing(
         'createbigcannons:partially_assembled_machine_gun_round',
         'createbigcannons:partially_assembled_machine_gun_round'
       )
-	  ]
+    ]
   ).transitionalItem('createbigcannons:partially_assembled_machine_gun_round').loops(1)
-  .id('createbigcannons:sequenced_assembly/assembling_machine_gun_round')
+    .id('createbigcannons:sequenced_assembly/assembling_machine_gun_round')
 
   // Empty Powder Charge
   event.replaceInput(
@@ -95,14 +97,14 @@ ServerEvents.recipes(event => {
 
   // Recoil Spring
   event.custom({
-	  "type":"createaddition:rolling",
-	  "input": {
-        	"item": "createaddition:iron_wire"
-	  },
-	  "result": {
-	  	"item": "createbigcannons:recoil_spring",
-	  	"count": 1
-	  }
+    "type": "createaddition:rolling",
+    "input": {
+      "item": "createaddition:iron_wire"
+    },
+    "result": {
+      "item": "createbigcannons:recoil_spring",
+      "count": 1
+    }
   }).id('genesis:recoil_spring')
 
 })
