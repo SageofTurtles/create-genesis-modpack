@@ -79,6 +79,15 @@ StartupEvents.modifyCreativeTab('bellsandwhistles:bells_and_whistles_tab', event
 StartupEvents.modifyCreativeTab('cgm:creative_tab', event => {
 	event.remove('cgm:workbench');
 	event.remove('cgm:missile');
+	event.add('kubejs:firing_mechanism');
+	event.add('kubejs:gatling_gun_base');
+	event.add('kubejs:bolt_action');
+	event.add('kubejs:firing_pin');
+	event.addAfter('cgm:advanced_bullet', 'kubejs:incomplete_large_bullet');
+	event.addAfter('cgm:basic_bullet', 'kubejs:incomplete_small_bullet');
+	event.addAfter('cgm:shell', 'kubejs:incomplete_shotgun_shell');
+	event.add('kubejs:lever_action');
+	event.add('kubejs:trigger');
 })
 
 StartupEvents.modifyCreativeTab('create:base', event => {
@@ -155,6 +164,10 @@ StartupEvents.modifyCreativeTab('furniture:furniture', event => {
 	event.remove('furniture:bin');
 	event.remove('furniture:trash_bag');
 	event.remove('furniture:canvas');
+})
+
+StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
+	event.addAfter('minecraft:diamond', 'kubejs:rough_diamond');
 })
 
 StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
