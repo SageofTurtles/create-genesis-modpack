@@ -83,15 +83,16 @@ StartupEvents.modifyCreativeTab('cgm:creative_tab', event => {
 	event.add('kubejs:gatling_gun_base');
 	event.add('kubejs:bolt_action');
 	event.add('kubejs:firing_pin');
-	event.addAfter('cgm:advanced_bullet', 'kubejs:incomplete_large_bullet');
-	event.addAfter('cgm:basic_bullet', 'kubejs:incomplete_small_bullet');
-	event.addAfter('cgm:shell', 'kubejs:incomplete_shotgun_shell');
 	event.add('kubejs:lever_action');
 	event.add('kubejs:trigger');
 })
 
 StartupEvents.modifyCreativeTab('create:base', event => {
 	event.remove('create:crushed_raw_tin');
+})
+
+StartupEvents.modifyCreativeTab('create:palettes', event => {
+	event.addAfter('create:limestone', 'kubejs:limesand');
 })
 
 StartupEvents.modifyCreativeTab('createaddition:main', event => {
@@ -103,6 +104,14 @@ StartupEvents.modifyCreativeTab('createbigcannons:base', event => {
 	event.remove('createbigcannons:ram_head');
 	event.remove('createbigcannons:worm_head');
 	event.remove('createbigcannons:spring_wire');
+	event.remove('createbigcannons:partial_recoil_spring');
+	event.remove('createbigcannons:partial_cast_iron_autocannon_breech_extractor');
+	event.remove('createbigcannons:partial_bronze_autocannon_breech_extractor');
+	event.remove('createbigcannons:partial_steel_autocannon_breech_extractor');
+	event.remove('createbigcannons:partially_formed_autocannon_cartridge');
+	event.remove('createbigcannons:partially_filled_autocannon_cartridge');
+	event.remove('createbigcannons:partially_formed_big_cartridge');
+	event.remove('createbigcannons:partially_assembled_machine_gun_round');
 })
 
 StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {
