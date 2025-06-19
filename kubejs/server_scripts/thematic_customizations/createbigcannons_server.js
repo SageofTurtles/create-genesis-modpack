@@ -38,15 +38,19 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'createbigcannons:cannon_welder_mirrored' })
 
   // Machine Gun Round
+  event.recipes.create.cutting(
+    'createbigcannons:empty_machine_gun_round',
+    'createbigcannons:autocannon_cartridge_sheet'
+  ).id('createbigcannons:cutting/empty_machine_gun_round')
   event.remove({ id: 'createbigcannons:machine_gun_round' })
-  let partial_round = 'createbigcannons:partially_assembled_machine_gun_round'
+  let incomplete = 'kubejs:incomplete_machine_gun_round'
   event.recipes.create.sequenced_assembly(
-    'createbigcannons:machine_gun_round',
+    '3x createbigcannons:machine_gun_round',
     'createbigcannons:empty_machine_gun_round',
     [
-      event.recipes.createDeploying(partial_round, [partial_round, 'createbigcannons:gunpowder_pinch']),
-      event.recipes.createDeploying(partial_round, [partial_round, 'createbigcannons:cast_iron_nugget']),
-      event.recipes.create.pressing(partial_round, partial_round)
+      event.recipes.createDeploying(incomplete, [incomplete, 'minecraft:gunpowder']),
+      event.recipes.createDeploying(incomplete, [incomplete, 'createbigcannons:cast_iron_ingot']),
+      event.recipes.create.pressing(incomplete, incomplete)
     ]
   ).transitionalItem('createbigcannons:partially_assembled_machine_gun_round').loops(1)
     .id('createbigcannons:sequenced_assembly/assembling_machine_gun_round')
