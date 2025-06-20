@@ -51,7 +51,10 @@ global['deletedItems'] = [
   'createbigcannons:ram_head',
   'createbigcannons:worm_head',
   'createbigcannons:spring_wire',
-  'cgm:missile'
+  'cgm:missile',
+  'supplementaries:blackboard',
+  'supplementaries:sugar_cube',
+  'supplementaries:bamboo_spikes'
 ]
 
 global['deletedRecipes'] = [
