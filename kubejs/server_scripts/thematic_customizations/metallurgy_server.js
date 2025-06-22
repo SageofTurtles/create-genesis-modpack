@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: 'createbigcannons:melting' })
     event.remove({ mod: 'create_ironworks', type: 'create:mixing' })
     event.remove({ id: /create_ironworks:materials\/plates\/(bronze|steel|tin)_sheet2/ })
+    event.remove({ id: /create_ironworks:compat\/.*/ })
     event.remove({ id: /createbigcannons:compacting\/forge.*/ })
     event.remove({ id: /createbigcannons:compacting\/iron_to_cast_iron.*/ })
     event.remove({ id: /createbigcannons:mixing\/alloy_nethersteel.*/ })
