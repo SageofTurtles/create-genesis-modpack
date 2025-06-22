@@ -50,9 +50,10 @@ ServerEvents.recipes(event => {
     [
       event.recipes.createDeploying(incomplete, [incomplete, 'minecraft:gunpowder']),
       event.recipes.createDeploying(incomplete, [incomplete, 'createbigcannons:cast_iron_ingot']),
+      event.recipes.create.cutting(incomplete, incomplete),
       event.recipes.create.pressing(incomplete, incomplete)
     ]
-  ).transitionalItem('createbigcannons:partially_assembled_machine_gun_round').loops(1)
+  ).transitionalItem(incomplete).loops(1)
     .id('createbigcannons:sequenced_assembly/assembling_machine_gun_round')
 
   // Empty Powder Charge
