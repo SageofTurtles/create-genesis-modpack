@@ -294,4 +294,63 @@ ServerEvents.recipes(event => {
       'create:fluid_pipe', 'create:sturdy_sheet'
     ]
   ).id('immersive_aircraft:sturdy_pipes')
+
+  // Rotary Cannon
+  event.shaped(
+    Item.of('immersive_aircraft:rotary_cannon', 1),
+    [
+      'G',
+      'R',
+      'S'
+    ],
+    {
+      G: 'kubejs:gatling_gun_base',
+      R: 'createaddition:copper_rod',
+      S: 'create:copper_sheet'
+    }
+  ).id('immersive_aircraft:rotary_cannon')
+
+  // Heavy Crossbow
+  event.shaped(
+    Item.of('immersive_aircraft:heavy_crossbow', 1),
+    [
+      'LCL',
+      ' R ',
+      ' S '
+    ],
+    {
+      L: '#minecraft:logs',
+      C: 'minecraft:crossbow',
+      R: 'createaddition:iron_rod',
+      S: 'create:sturdy_sheet'
+    }
+  ).id('immersive_aircraft:heavy_crossbow')
+
+  // Aerial Telescope
+  event.shaped(
+    Item.of('immersive_aircraft:telescope', 1),
+    [
+      ' L ',
+      ' R ',
+      'R R'
+    ],
+    {
+      L: 'cgm:long_scope',
+      R: 'createaddition:copper_rod'
+    }
+  ).id('immersive_aircraft:telescope')
+
+  // Bomb Bay
+  event.shaped(
+    Item.of('immersive_aircraft:bomb_bay', 1),
+    [
+      'SSS',
+      'D D',
+      'SSS'
+    ],
+    {
+      S: 'create_ironworks:steel_block',
+      D: 'createdeco:industrial_iron_trapdoor'
+    }
+  ).id('immersive_aircraft:bomb_bay')
 })
