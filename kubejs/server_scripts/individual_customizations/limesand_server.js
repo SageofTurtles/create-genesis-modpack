@@ -3,13 +3,6 @@ ServerEvents.recipes(event => {
     'kubejs:limesand',
     'create:limestone'
   ).id('genesis:limesand_from_limestone')
-  event.recipes.create.compacting(
-    'create:limestone',
-    [
-      Fluid.lava(50),
-      'kubejs:limesand'
-    ]
-  ).id('genesis:limestone_from_limesand')
   event.recipes.create.splashing(
     [
       Item.of('create_ironworks:tin_nugget').withChance(0.12),
