@@ -1,0 +1,21 @@
+ServerEvents.recipes(event => {
+  event.recipes.create.sandpaper_polishing(
+    'minecraft:diamond',
+    'kubejs:rough_diamond'
+  ).id('genesis:diamond_from_rough_diamond')
+  event.recipes.create.compacting(
+    'kubejs:rough_diamond',
+    [
+      Fluid.lava(250),
+      'minecraft:coal_block',
+      'minecraft:coal_block',
+      'minecraft:coal_block',
+      'minecraft:coal_block',
+      'minecraft:coal_block',
+      'minecraft:coal_block',
+      'minecraft:coal_block',
+      'minecraft:coal_block',
+      'minecraft:coal_block'
+    ]
+  ).superheated().id('genesis:rough_diamond')
+})
