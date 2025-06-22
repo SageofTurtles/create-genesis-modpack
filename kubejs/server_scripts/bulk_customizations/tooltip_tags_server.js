@@ -67,7 +67,8 @@ ServerEvents.tags('item', event => {
     'sophisticatedbackpacks:xp_pump_upgrade',
     'sophisticatedbackpacks:stack_upgrade_omega_tier',
     'sophisticatedbackpacks:infinity_upgrade',
-    'sophisticatedbackpacks:survival_infinity_upgrade'
+    'sophisticatedbackpacks:survival_infinity_upgrade',
+    'kubejs:worldedit_wand'
   ]
   unobtainable.forEach(itemInstance => {
     event.add('genesis:unobtainable_tooltip', `${itemInstance}`)

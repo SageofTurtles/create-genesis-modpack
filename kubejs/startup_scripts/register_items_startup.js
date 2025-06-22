@@ -14,13 +14,16 @@ StartupEvents.registry('item', event => {
   event.create('lever_action').displayName('Lever Action')
   event.create('trigger').displayName('Trigger')
   event.create('rough_diamond').displayName('Rough Diamond')
+  event.create('worldedit_wand').displayName('WorldEdit Wand')
+    .rarity('epic')
+    .parentModel('minecraft:item/handheld')
 })
 
 // Register new Limesand block
 StartupEvents.registry('block', event => {
   event.create('limesand', 'falling')
   .displayName('Limesand')
-  .mapColor(2)
+  .mapColor(3)
   .sandSoundType()
   .hardness(0.5)
   .resistance(0.5)
