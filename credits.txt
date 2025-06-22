@@ -1,0 +1,31 @@
+=== CREDITS ===
+
+Panorama build by mrGnegich
+Create Guns [Unofficial 1.20.1 Port] by mrGnegich
+	https://github.com/gnegDev/create-guns-1.20.1-unofficial-port
+
+Vanilla Tweaks:
+	https://vanillatweaks.net/
+	Version: 1.20
+
+	Resource Packs:
+		BetterParticles
+		ClearBannerPatterns
+		ClearerWater
+		HDShieldBanners
+		NoCaveSounds
+		SmootherFont
+		UniqueDyes
+		VisualInfestedStoneItems (adapted to include modded items)
+		VisualWaxedCopperItems (adapted to include modded items)
+		
+	Datapacks:
+		Anti Enderman Grief
+		Bat Membranes
+		Custom Nether Portals (adapted to include modded blocks)
+		Double Shulker Shells
+		Dragon Drops
+		More Mob Heads
+		Player Head Drops
+		Silence Mobs
+		Workstation Highlights
