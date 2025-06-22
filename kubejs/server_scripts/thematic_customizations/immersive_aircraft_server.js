@@ -1,11 +1,13 @@
 ServerEvents.recipes(event => {
   // Airship
-  event.recipes.create.mechanical_crafting('immersive_aircraft:airship', [
-    'SSSSS',
-    ' R R ',
-    ' AEP ',
-    ' HHH '
-  ], {
+  event.recipes.create.mechanical_crafting(
+    'immersive_aircraft:airship',
+    [
+      'SSSSS',
+      ' R R ',
+      ' AEP ',
+      ' HHH '
+    ], {
     S: 'immersive_aircraft:sail',
     R: 'farmersdelight:rope',
     H: 'immersive_aircraft:hull',
@@ -15,12 +17,14 @@ ServerEvents.recipes(event => {
   }).id('immersive_aircraft:airship')
 
   // Cargo Airship
-  event.recipes.create.mechanical_crafting('immersive_aircraft:cargo_airship', [
-    'SSSSS',
-    ' R R ',
-    'CAEPC',
-    'CHHHC'
-  ], {
+  event.recipes.create.mechanical_crafting(
+    'immersive_aircraft:cargo_airship',
+    [
+      'SSSSS',
+      ' R R ',
+      'CAEPC',
+      'CHHHC'
+    ], {
     S: 'immersive_aircraft:sail',
     R: 'farmersdelight:rope',
     H: 'immersive_aircraft:hull',
@@ -31,12 +35,14 @@ ServerEvents.recipes(event => {
   }).id('immersive_aircraft:cargo_airship')
 
   // Warship
-  event.recipes.create.mechanical_crafting('immersive_aircraft:warship', [
-    'SSSSS',
-    ' R R ',
-    'PECEP',
-    ' HHH '
-  ], {
+  event.recipes.create.mechanical_crafting(
+    'immersive_aircraft:warship',
+    [
+      'SSSSS',
+      ' R R ',
+      'PECEP',
+      ' HHH '
+    ], {
     S: 'immersive_aircraft:sail',
     R: 'farmersdelight:rope',
     H: 'immersive_aircraft:hull_reinforcement',
@@ -46,13 +52,15 @@ ServerEvents.recipes(event => {
   }).id('immersive_aircraft:warship')
 
   // Biplane
-  event.recipes.create.mechanical_crafting('immersive_aircraft:biplane', [
-    '   S ',
-    'S  S ',
-    'HHAEP',
-    'S  S ',
-    '   S '
-  ], {
+  event.recipes.create.mechanical_crafting(
+    'immersive_aircraft:biplane',
+    [
+      '   S ',
+      'S  S ',
+      'HHAEP',
+      'S  S ',
+      '   S '
+    ], {
     S: 'immersive_aircraft:sail',
     H: 'immersive_aircraft:hull',
     A: '#create:seats',
@@ -61,13 +69,15 @@ ServerEvents.recipes(event => {
   }).id('immersive_aircraft:biplane')
 
   // Economy Plane
-  event.recipes.create.mechanical_crafting('man_of_many_planes:economy_plane', [
-    '   S ',
-    'S PS ',
-    'HHESA',
-    'S PS ',
-    '   S '
-  ], {
+  event.recipes.create.mechanical_crafting(
+    'man_of_many_planes:economy_plane',
+    [
+      '   S ',
+      'S PS ',
+      'HHESA',
+      'S PS ',
+      '   S '
+    ], {
     S: 'immersive_aircraft:sail',
     H: 'immersive_aircraft:hull',
     A: '#create:seats',
@@ -76,13 +86,15 @@ ServerEvents.recipes(event => {
   }).id('man_of_many_planes:economy_plane')
 
   // Scarlet Biplane
-  event.recipes.create.mechanical_crafting('man_of_many_planes:scarlet_biplane', [
-    '   D ',
-    'D RD ',
-    'HHAEP',
-    'D RD ',
-    '   D '
-  ], {
+  event.recipes.create.mechanical_crafting(
+    'man_of_many_planes:scarlet_biplane',
+    [
+      '   D ',
+      'D RD ',
+      'HHAEP',
+      'D RD ',
+      '   D '
+    ], {
     D: 'decorative_blocks:dark_oak_support',
     H: 'immersive_aircraft:hull',
     A: '#create:seats',
@@ -151,11 +163,13 @@ ServerEvents.recipes(event => {
   ).id('immersive_aircraft:enhanced_propeller')
 
   // Gyrodyne
-  event.recipes.create.mechanical_crafting('immersive_aircraft:gyrodyne', [
-    ' P ',
-    'SRS',
-    'HAH'
-  ], {
+  event.shaped(
+    Item.of('immersive_aircraft:gyrodyne', 1),
+    [
+      ' P ',
+      'SRS',
+      'HAH'
+    ], {
     S: 'immersive_aircraft:sail',
     H: 'immersive_aircraft:hull',
     A: '#create:seats',
@@ -189,9 +203,11 @@ ServerEvents.recipes(event => {
   ).id('immersive_aircraft:hull')
 
   // Reinforced Hull
-  event.recipes.create.deploying('immersive_aircraft:hull_reinforcement',
+  event.recipes.create.deploying(
+    'immersive_aircraft:hull_reinforcement',
     [
-      'immersive_aircraft:hull', 'create_ironworks:steel_sheet'
+      'immersive_aircraft:hull',
+      'create_ironworks:steel_sheet'
     ]
   ).id('immersive_aircraft:hull_reinforcement')
 
@@ -212,9 +228,11 @@ ServerEvents.recipes(event => {
   ).id('immersive_aircraft:improved_landing_gear')
 
   // Industrial Gears
-  event.recipes.create.deploying('immersive_aircraft:industrial_gears',
+  event.recipes.create.deploying(
+    'immersive_aircraft:industrial_gears',
     [
-      'petrolsparts:differential', 'createdeco:industrial_iron_ingot'
+      'petrolsparts:differential',
+      'createdeco:industrial_iron_ingot'
     ]
   ).id('immersive_aircraft:industrial_gears')
 
@@ -248,11 +266,13 @@ ServerEvents.recipes(event => {
   ).id('immersive_aircraft:propeller')
 
   // Quadrocopter
-  event.recipes.create.mechanical_crafting('immersive_aircraft:quadrocopter', [
-    'PAP',
-    'WSW',
-    'PBP'
-  ], {
+  event.shaped(
+    Item.of('immersive_aircraft:quadrocopter', 1),
+    [
+      'PAP',
+      'WSW',
+      'PBP'
+    ], {
     P: 'create:propeller',
     A: 'create:andesite_alloy',
     W: '#minecraft:wooden_slabs',
@@ -289,9 +309,11 @@ ServerEvents.recipes(event => {
   ).id('immersive_aircraft:steel_boiler')
 
   // Sturdy Piping
-  event.recipes.create.deploying('immersive_aircraft:sturdy_pipes',
+  event.recipes.create.deploying(
+    'immersive_aircraft:sturdy_pipes',
     [
-      'create:fluid_pipe', 'create:sturdy_sheet'
+      'create:fluid_pipe',
+      'create:sturdy_sheet'
     ]
   ).id('immersive_aircraft:sturdy_pipes')
 
