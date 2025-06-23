@@ -54,7 +54,9 @@ global['deletedItems'] = [
   'cgm:missile',
   'supplementaries:blackboard',
   'supplementaries:sugar_cube',
-  'supplementaries:bamboo_spikes'
+  'supplementaries:bamboo_spikes',
+  'supplementaries:pancake',
+  'supplementaries:music_disc_heave_ho'
 ]
 
 global['deletedRecipes'] = [
