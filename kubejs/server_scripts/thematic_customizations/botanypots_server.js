@@ -515,14 +515,6 @@ ServerEvents.recipes(event => {
       },
       "drops": [
         {
-          "chance": 0.15,
-          "output": {
-            "item": `farmersdelight:${color}_mushroom_colony`
-          },
-          "minRolls": 1,
-          "maxRolls": 2
-        },
-        {
           "chance": 0.80,
           "output": {
             "item": "minecraft:mushroom_stem"
