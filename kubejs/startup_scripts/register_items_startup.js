@@ -14,6 +14,7 @@ StartupEvents.registry('item', event => {
   event.create('lever_action').displayName('Lever Action')
   event.create('trigger').displayName('Trigger')
   event.create('rough_diamond').displayName('Rough Diamond')
+  event.create('empty_ink_sac').displayName('Empty Ink Sac')
   event.create('worldedit_wand').displayName('WorldEdit Wand')
     .rarity('epic')
     .parentModel('minecraft:item/handheld')

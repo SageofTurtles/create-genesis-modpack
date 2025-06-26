@@ -177,6 +177,7 @@ StartupEvents.modifyCreativeTab('furniture:furniture', event => {
 
 StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
 	event.addAfter('minecraft:diamond', 'kubejs:rough_diamond');
+	event.addAfter('minecraft:ink_sac', 'kubejs:empty_ink_sac');
 })
 
 StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
