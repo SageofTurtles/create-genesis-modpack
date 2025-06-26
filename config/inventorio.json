@@ -1,8 +1,8 @@
 {
   "SegmentedHotbar": "OFF",
   "ScrollWheelUtilityBelt": "OFF",
-  "CanThrowUnloyalTrident": false,
-  "DarkTheme": false,
+  "CanThrowUnloyalTrident": true,
+  "DarkTheme": true,
   "UseItemAppliesToOffhand": false,
   "SkipEmptyUtilitySlots": true,
   "SwappedHands": false,

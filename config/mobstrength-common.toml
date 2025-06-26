@@ -1,0 +1,30 @@
+#Maximum health of mobs from base health (%).
+#Range: > 0
+health_increase = 50
+#Minimum health of mobs from base health (-%).
+#Range: 0 ~ 100
+health_decrease = 0
+#Maximum damage of mobs from base damage (%).
+#Range: > 0
+damage_increase = 30
+#Minimum damage of mobs from base damage (-%).
+#Range: 0 ~ 100
+damage_decrease = 0
+#Maximum speed of mobs from base speed (%).
+#Range: > 0
+speed_increase = 20
+#Minimum speed of mobs from base speed (-%).
+#Range: 0 ~ 100
+speed_decrease = 0
+#Mobs blacklisted from having random and biome stat changes (e.g. "minecraft:zombie" or "#minecraft:raiders" with quotation).
+entities = []
+#Biome based total health modifier for mob spawns (e.g. "minecraft:plains=2" calculated as health x (1 + 2)).
+#Modifier Range: > -1
+biome_health_modifier = []
+#Biome based total damage modifier for mob spawns (e.g. "#minecraft:is_ocean=0.5" calculated as damage x (1 + 0.5)).
+#Modifier Range: > -1
+biome_damage_modifier = []
+#Biome based total speed modifier for mob spawns (e.g. "minecraft:desert=-0.5" calculated as speed x (1 - 0.5)).
+#Modifier Range: > -1
+biome_speed_modifier = []
+
