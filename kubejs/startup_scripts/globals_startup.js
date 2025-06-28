@@ -91,3 +91,14 @@ global['colors'] = [
   'magenta',
   'pink'
 ]
+
+global['woodTypes'] = [
+  'oak',
+  'spruce',
+  'birch',
+  'jungle',
+  'acacia',
+  'dark_oak',
+  'mangrove',
+  'cherry'
+]
