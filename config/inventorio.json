@@ -2,11 +2,11 @@
   "SegmentedHotbar": "OFF",
   "ScrollWheelUtilityBelt": "OFF",
   "CanThrowUnloyalTrident": true,
-  "DarkTheme": true,
+  "DarkTheme": false,
   "UseItemAppliesToOffhand": false,
   "SkipEmptyUtilitySlots": true,
   "SwappedHands": false,
-  "AggressiveButtonRemoval": false,
+  "AggressiveButtonRemoval": true,
   "ToggleButton": true,
   "CenteredScreen": false,
   "CuriosOpenByDefault": true

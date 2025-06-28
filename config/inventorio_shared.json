@@ -1,12 +1,12 @@
 {
-  "ExpandedEnderChest": true,
+  "ExpandedEnderChest": false,
   "InfinityBowNeedsNoArrow": true,
   "TotemFromUtilityBelt": true,
   "AllowSwappedHands": true,
   "2x2CraftingGrid": true,
   "CuriosIntegration": true,
   "ToolBeltMode": "ENABLED",
-  "UtilityBeltShortDefaultSize": false,
+  "UtilityBeltShortDefaultSize": true,
   "DeepPocketsBookCraft": false,
   "DeepPocketsInTrades": false,
   "DeepPocketsInRandomSelection": false
