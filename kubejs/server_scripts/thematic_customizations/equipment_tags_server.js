@@ -1,0 +1,10 @@
+ServerEvents.tags('item', event => {
+  event.add('minecraft:piglin_loved', 'create_ironworks:gold_paxel')
+  event.add('minecraft:piglin_loved', 'create_ironworks:gold_hammer')
+  event.add('forge:tools/pickaxes', /create_ironworks:.*_pickaxe/)
+  event.add('minecraft:cluster_max_harvestables', /create_ironworks:.*_pickaxe/)
+  event.add('sliceanddice:allowed_tools', /.*_pickaxe/)
+  event.add('forge:tools/axes', /create_ironworks:.*_axe/)
+  event.add('forge:tools/shovels', /create_ironworks:.*_shovel/)
+  event.add('sliceanddice:allowed_tools', /create_ironworks:.*_paxel/)
+})
