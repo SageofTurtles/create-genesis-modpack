@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting(
     'kubejs:rough_diamond',
     [
-      Fluid.lava(250),
+      Fluid.lava(500),
       'minecraft:coal_block',
       'minecraft:coal_block',
       'minecraft:coal_block',
