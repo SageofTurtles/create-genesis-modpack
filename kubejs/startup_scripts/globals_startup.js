@@ -56,7 +56,10 @@ global['deletedItems'] = [
   'supplementaries:sugar_cube',
   'supplementaries:bamboo_spikes',
   'supplementaries:pancake',
-  'supplementaries:music_disc_heave_ho'
+  'supplementaries:music_disc_heave_ho',
+  'create_connected:control_chip',
+  'supplementaries:wrench',
+  'brewinandchewin:cocoa_fudge'
 ]
 
 global['deletedRecipes'] = [

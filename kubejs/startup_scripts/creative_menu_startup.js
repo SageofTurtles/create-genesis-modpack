@@ -76,6 +76,10 @@ StartupEvents.modifyCreativeTab('bellsandwhistles:bells_and_whistles_tab', event
 	event.remove('bellsandwhistles:metro_window');
 })
 
+StartupEvents.modifyCreativeTab('brewinandchewin:brewinandchewin', event => {
+	event.remove('brewinandchewin:cocoa_fudge');
+})
+
 StartupEvents.modifyCreativeTab('cgm:creative_tab', event => {
 	event.remove('cgm:workbench');
 	event.remove('cgm:missile');
@@ -126,6 +130,10 @@ StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {
 StartupEvents.modifyCreativeTab('create_confectionery:create_confectionery_tab', event => {
 	event.remove('create_confectionery:hot_chocolate_bottle');
 	event.remove('create_confectionery:soothing_hot_chocolate');
+})
+
+StartupEvents.modifyCreativeTab('create_connected:main', event => {
+	event.remove('create_connected:control_chip');
 })
 
 StartupEvents.modifyCreativeTab('createdeco:props_tab', event => {
