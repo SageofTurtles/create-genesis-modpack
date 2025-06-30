@@ -10,7 +10,7 @@ Welcome to Create: Genesis — a modpack built from the ground up for players wh
 ### Built for Vanilla Fans
 Every mod and feature was carefully chosen to tranform the experience of Minecraft, without losing its heart.  Still the same game you love, just with more tools in your toolbox!
 ### Beginner-Friendly
-Create has its own in-game Ponder menu, but not all mods are so detailed.  Genesis includes customized tooltips and added JEI info to fill in the gaps, making it easy to understand new content!  (A full in-game guidebook is planned for future updates.)
+Create has its own in-game Ponder menu, but not all mods are so detailed.  Genesis includes customized tooltips and added JEI info to fill in the gaps, making it easy to understand new content!
 ### Create-Focused Automation
 With Create and many of its add-ons, the possibilities are endless!  Almost everything in the game can be automated, though you might find yourself paying a hefty price to produce high-value items.  With favorite add-ons like Create Crafts & Additions, Create: Steam 'n' Rails, Create: Enchantable Machinery, and Create: Enchantment Industry, the only limit is your imagination!
 ### Rich Build Palettes
