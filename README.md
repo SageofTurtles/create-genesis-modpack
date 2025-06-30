@@ -13,7 +13,7 @@ Every mod and feature was carefully chosen to tranform the experience of Minecra
 Create has its own in-game Ponder menu, but not all mods are so detailed.  Genesis includes customized tooltips and added JEI info to fill in the gaps, making it easy to understand new content!  (A full in-game guidebook is planned for future updates.)
 ### Create-Focused Automation
 With Create and many of its add-ons, the possibilities are endless!  Almost everything in the game can be automated, though you might find yourself paying a hefty price to produce high-value items.  With favorite add-ons like Create Crafts & Additions, Create: Steam 'n' Rails, Create: Enchantable Machinery, and Create: Enchantment Industry, the only limit is your imagination!
-### Builder's Paradise
+### Rich Build Palettes
 Chipped, Rechiseled, and Macaw's suite of mods (and more!) equip the builders out there to exercise their gifts — the right block for the job is always close at hand.  Also included is Create: Copycats+, allowing decorative incorporation of almost any block texture in both aesthetic and practical uses!
 ### Better Exploration
 Sail the seas with the Small Ships mod, or take to the skies with Immersive Aircraft!  If you'd prefer to keep your feet on solid ground, you can still enjoy the scenic views of Terralith's gorgeous terrain travelling by horse or train!  You can even haul everything but the kitchen sink (and probably that too) along with you using Sophisticated Backpacks.
