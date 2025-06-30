@@ -1,4 +1,4 @@
-# Create: Genesis Modpack
+# Create: Genesis — Modpack
 
 ![genesis_title_scene](https://github.com/user-attachments/assets/36b73088-8515-44c7-b891-515ca156670a)
 
