@@ -43,28 +43,28 @@ ServerEvents.recipes(event => {
         `${set.modid}:${set.stage1}`,
         'minecraft:honeycomb_block'
       ]
-    ).keepHeldItem()
+    ).keepHeldItem().id(`genesis:waxed_${set.stage1}_from_deploying`)
     event.recipes.create.deploying(
       `${set.modid}:waxed_${set.stage2}`,
       [
         `${set.modid}:${set.stage2}`,
         'minecraft:honeycomb_block'
       ]
-    ).keepHeldItem()
+    ).keepHeldItem().id(`genesis:waxed_${set.stage2}_from_deploying`)
     event.recipes.create.deploying(
       `${set.modid}:waxed_${set.stage3}`,
       [
         `${set.modid}:${set.stage3}`,
         'minecraft:honeycomb_block'
       ]
-    ).keepHeldItem()
+    ).keepHeldItem().id(`genesis:waxed_${set.stage3}_from_deploying`)
     event.recipes.create.deploying(
       `${set.modid}:waxed_${set.stage4}`,
       [
         `${set.modid}:${set.stage4}`,
         'minecraft:honeycomb_block'
       ]
-    ).keepHeldItem()
+    ).keepHeldItem().id(`genesis:waxed_${set.stage4}_from_deploying`)
 
     // Add scraping by Farmer's Delight cutting recipes
     event.custom({
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         "type": "farmersdelight:tool_action",
         "action": "axe_dig"
       }
-    })
+    }).id(`genesis:${set.stage1}_from_farmersdelight_scraping`)
     event.custom({
       "type": "farmersdelight:cutting",
       "ingredients": [{ "item": `${set.modid}:waxed_${set.stage2}` }],
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         "type": "farmersdelight:tool_action",
         "action": "axe_dig"
       }
-    })
+    }).id(`genesis:${set.stage2}_from_farmersdelight_scraping`)
     event.custom({
       "type": "farmersdelight:cutting",
       "ingredients": [{ "item": `${set.modid}:waxed_${set.stage3}` }],
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         "type": "farmersdelight:tool_action",
         "action": "axe_dig"
       }
-    })
+    }).id(`genesis:${set.stage3}_from_farmersdelight_scraping`)
     event.custom({
       "type": "farmersdelight:cutting",
       "ingredients": [{ "item": `${set.modid}:waxed_${set.stage4}` }],
@@ -102,21 +102,21 @@ ServerEvents.recipes(event => {
         "type": "farmersdelight:tool_action",
         "action": "axe_dig"
       }
-    })
+    }).id(`genesis:${set.stage4}_from_farmersdelight_scraping`)
 
     // Add oxidizing by washing recipes
     event.recipes.create.splashing(
       `${set.modid}:${set.stage4}`,
       `${set.modid}:${set.stage3}`
-    )
+    ).id(`genesis:${set.stage4}_from_splashing`)
     event.recipes.create.splashing(
       `${set.modid}:${set.stage3}`,
       `${set.modid}:${set.stage2}`
-    )
+    ).id(`genesis:${set.stage3}_from_splashing`)
     event.recipes.create.splashing(
       `${set.modid}:${set.stage2}`,
       `${set.modid}:${set.stage1}`
-    )
+    ).id(`genesis:${set.stage2}_from_splashing`)
 
     // Add deoxidizing by charging recipes
     event.custom({
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
       },
       "energy": 4000,
       "maxChargeRate": 200
-    })
+    }).id(`genesis:${set.stage3}_from_charging`)
     event.custom({
       "type": "createaddition:charging",
       "input": {
@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
       },
       "energy": 4000,
       "maxChargeRate": 200
-    })
+    }).id(`genesis:${set.stage2}_from_charging`)
     event.custom({
       "type": "createaddition:charging",
       "input": {
@@ -157,6 +157,6 @@ ServerEvents.recipes(event => {
       },
       "energy": 4000,
       "maxChargeRate": 200
-    })
+    }).id(`genesis:${set.stage1}_from_charging`)
   })
 })
