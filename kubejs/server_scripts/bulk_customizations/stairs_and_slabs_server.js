@@ -1,3 +1,20 @@
+ServerEvents.tags('item', event => {
+  event.remove('create:stone_types/andesite', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/asurine', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/calcite', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/crimsite', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/deepslate', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/diorite', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/dripstone', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/granite', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/limestone', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/ochrum', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/scorchia', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/scoria', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/tuff', /create:.*_(stairs|wall)/)
+  event.remove('create:stone_types/veridium', /create:.*_(stairs|wall)/)
+})
+
 ServerEvents.recipes(event => {
   let woodFullSet = [
     { modid: 'minecraft', block: 'oak_planks', stairs: 'oak_stairs', slab: 'oak_slab' },
@@ -133,7 +150,7 @@ ServerEvents.recipes(event => {
     { modid: 'create', block: 'cut_veridium_bricks', stairs: 'cut_veridium_brick_stairs', slab: 'cut_veridium_brick_slab' },
     { modid: 'create', block: 'small_veridium_bricks', stairs: 'small_veridium_brick_stairs', slab: 'small_veridium_brick_slab' },
     { modid: 'create_confectionery', block: 'gingerbread_block', stairs: 'gingerbread_stairs', slab: 'gingerbread_slab' },
-    { modid: 'create_confectionery', block: 'gingerbread_bricks', stairs: 'gingerbread_brick_stairs', slab: 'gingerbread_brick_slab' },
+    { modid: 'create_confectionery', block: 'gingerbreak_bricks', stairs: 'gingerbread_brick_stairs', slab: 'gingerbread_brick_slab' },
     { modid: 'create_confectionery', block: 'chocolate_bricks', stairs: 'chocolate_bricks_stairs', slab: 'chocolate_bricks_slab' },
     { modid: 'create_confectionery', block: 'black_chocolate_bricks', stairs: 'black_chocolate_bricks_stairs', slab: 'black_chocolate_bricks_slab' },
     { modid: 'create_confectionery', block: 'white_chocolate_bricks', stairs: 'white_chocolate_bricks_stairs', slab: 'white_chocolate_bricks_slab' },
@@ -194,8 +211,6 @@ ServerEvents.recipes(event => {
     { modid: 'createdeco', block: 'corner_pearl_bricks', stairs: 'corner_pearl_brick_stairs', slab: 'corner_pearl_brick_slab' },
     { modid: 'createdeco', block: 'cracked_pearl_bricks', stairs: 'cracked_pearl_brick_stairs', slab: 'cracked_pearl_brick_slab' },
     { modid: 'createdeco', block: 'mossy_pearl_bricks', stairs: 'mossy_pearl_brick_stairs', slab: 'mossy_pearl_brick_slab' },
-    { modid: 'supplementaries', block: 'stone_tile', stairs: 'stone_tile_stairs', slab: 'stone_tile_slab' },
-    { modid: 'supplementaries', block: 'blackstone_tile', stairs: 'blackstone_tile_stairs', slab: 'blackstone_tile_slab' },
     { modid: 'supplementaries', block: 'lapis_bricks', stairs: 'lapis_bricks_stairs', slab: 'lapis_bricks_slab' },
     { modid: 'mcwpaths', block: 'andesite_running_bond', stairs: 'andesite_running_bond_stairs', slab: 'andesite_running_bond_slab' },
     { modid: 'mcwpaths', block: 'diorite_running_bond', stairs: 'diorite_running_bond_stairs', slab: 'diorite_running_bond_slab' },
@@ -274,6 +289,8 @@ ServerEvents.recipes(event => {
     { modid: 'supplementaries', block: 'checker_block', slab: 'checker_slab' }
   ]
 
+  event.remove({ id: /create:.*_slab_recycling/ })
+
   woodFullSet.forEach(set => {
     event.remove([
       {
@@ -285,25 +302,60 @@ ServerEvents.recipes(event => {
         output: `${set.modid}:${set.slab}`
       },
       {
-        type: 'minecraft:stonecutting',
-        output: `${set.modid}:${set.stairs}`
-      },
-      {
-        type: 'minecraft:stonecutting',
-        output: `${set.modid}:${set.slab}`
-      },
-      {
         type: 'create:cutting',
         output: `${set.modid}:${set.stairs}`
       },
       {
         type: 'create:cutting',
         output: `${set.modid}:${set.slab}`
-      },
+      }
     ])
+    // Add shaped crafting recipes
+    event.shaped(
+      Item.of(`${set.modid}:${set.stairs}`, 4),
+      [
+        'B  ',
+        'BB ',
+        'BBB'
+      ],
+      { B: `${set.modid}:${set.block}` }
+    ).id(`genesis:${set.stairs}_crafting`)
+    event.shaped(
+      Item.of(`${set.modid}:${set.slab}`, 6),
+      [
+        'BBB'
+      ],
+      { B: `${set.modid}:${set.block}` }
+    ).id(`genesis:${set.slab}_crafting`)
+    // Add cutting recipes
+    event.recipes.create.cutting(
+      `${set.modid}:${set.stairs}`,
+      `${set.modid}:${set.block}`
+    ).id(`genesis:${set.stairs}_cutting`)
+    event.recipes.create.cutting(
+      `2x ${set.modid}:${set.slab}`,
+      `${set.modid}:${set.block}`
+    ).id(`genesis:${set.slab}_cutting`)
+    // Add recycling recipes
+    event.shaped(
+      Item.of(`${set.modid}:${set.block}`, 3),
+      [
+        'SS',
+        'SS'
+      ],
+      { S: `${set.modid}:${set.stairs}` }
+    ).id(`genesis:${set.block}_from_stairs`)
+    event.shaped(
+      Item.of(`${set.modid}:${set.block}`, 1),
+      [
+        'SS'
+      ],
+      { S: `${set.modid}:${set.slab}` }
+    ).id(`genesis:${set.block}_from_slab`)
   })
 
   stoneFullSet.forEach(set => {
+    // Remove existing recipes
     event.remove([
       {
         type: 'minecraft:crafting_shaped',
@@ -328,8 +380,50 @@ ServerEvents.recipes(event => {
       {
         type: 'create:cutting',
         output: `${set.modid}:${set.slab}`
-      },
+      }
     ])
+    // Add shaped crafting recipes
+    event.shaped(
+      Item.of(`${set.modid}:${set.stairs}`, 4),
+      [
+        'B  ',
+        'BB ',
+        'BBB'
+      ],
+      { B: `${set.modid}:${set.block}` }
+    ).id(`genesis:${set.stairs}_crafting`)
+    event.shaped(
+      Item.of(`${set.modid}:${set.slab}`, 6),
+      [
+        'BBB'
+      ],
+      { B: `${set.modid}:${set.block}` }
+    ).id(`genesis:${set.slab}_crafting`)
+    // Add stonecutting recipes
+    event.stonecutting(
+      `${set.modid}:${set.stairs}`,
+      `${set.modid}:${set.block}`
+    ).id(`genesis:${set.stairs}_stonecutting`)
+    event.stonecutting(
+      `2x ${set.modid}:${set.slab}`,
+      `${set.modid}:${set.block}`
+    ).id(`genesis:${set.slab}_stonecutting`)
+    // Add recycling recipes
+    event.shaped(
+      Item.of(`${set.modid}:${set.block}`, 3),
+      [
+        'SS',
+        'SS'
+      ],
+      { S: `${set.modid}:${set.stairs}` }
+    ).id(`genesis:${set.block}_from_stairs`)
+    event.shaped(
+      Item.of(`${set.modid}:${set.block}`, 1),
+      [
+        'SS'
+      ],
+      { S: `${set.modid}:${set.slab}` }
+    ).id(`genesis:${set.block}_from_slab`)
   })
 
   crossmodStoneFullSet.forEach(set => {
@@ -357,8 +451,50 @@ ServerEvents.recipes(event => {
       {
         type: 'create:cutting',
         output: set.slab
-      },
+      }
     ])
+    // Add shaped crafting recipes
+    event.shaped(
+      Item.of(set.stairs, 4),
+      [
+        'B  ',
+        'BB ',
+        'BBB'
+      ],
+      { B: set.block }
+    )
+    event.shaped(
+      Item.of(set.slab, 6),
+      [
+        'BBB'
+      ],
+      { B: set.block }
+    )
+    // Add stonecutting recipes
+    event.stonecutting(
+      set.stairs,
+      set.block
+    )
+    event.stonecutting(
+      `2x ${set.slab}`,
+      set.block
+    )
+    // Add recycling recipes
+    event.shaped(
+      Item.of(set.block, 3),
+      [
+        'SS',
+        'SS'
+      ],
+      { S: set.stairs }
+    )
+    event.shaped(
+      Item.of(set.block, 1),
+      [
+        'SS'
+      ],
+      { S: set.slab }
+    )
   })
 
   crossmodStoneSlab.forEach(set => {
@@ -374,8 +510,29 @@ ServerEvents.recipes(event => {
       {
         type: 'create:cutting',
         output: set.slab
-      },
+      }
     ])
+    // Add shaped crafting recipes
+    event.shaped(
+      Item.of(set.slab, 6),
+      [
+        'BBB'
+      ],
+      { B: set.block }
+    )
+    // Add stonecutting recipes
+    event.stonecutting(
+      `2x ${set.slab}`,
+      set.block
+    )
+    // Add recycling recipes
+    event.shaped(
+      Item.of(set.block, 1),
+      [
+        'SS'
+      ],
+      { S: set.slab }
+    )
   })
 
   stoneSlab.forEach(set => {
@@ -391,7 +548,28 @@ ServerEvents.recipes(event => {
       {
         type: 'create:cutting',
         output: `${set.modid}:${set.slab}`
-      },
+      }
     ])
+    // Add shaped crafting recipes
+    event.shaped(
+      Item.of(`${set.modid}:${set.slab}`, 6),
+      [
+        'BBB'
+      ],
+      { B: `${set.modid}:${set.block}` }
+    ).id(`genesis:${set.slab}_crafting`)
+    // Add stonecutting recipes
+    event.stonecutting(
+      `2x ${set.modid}:${set.slab}`,
+      `${set.modid}:${set.block}`
+    ).id(`genesis:${set.slab}_stonecutting`)
+    // Add recycling recipes
+    event.shaped(
+      Item.of(`${set.modid}:${set.block}`, 1),
+      [
+        'SS'
+      ],
+      { S: `${set.modid}:${set.slab}` }
+    ).id(`genesis:${set.block}_from_slab`)
   })
 })

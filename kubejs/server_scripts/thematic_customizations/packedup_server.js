@@ -18,4 +18,59 @@ ServerEvents.recipes(event => {
     { block: 'magenta_book_bundle', slab: 'magenta_book_bundle_slab', layer: 'magenta_book_pile' },
     { block: 'pink_book_bundle', slab: 'pink_book_bundle_slab', layer: 'pink_book_pile' }
   ]
+
+  bookBundleSet.forEach(set => {
+    event.remove({
+      type: 'minecraft:crafting_shaped',
+      output: `packedup:${set.slab}`
+    })
+    event.shaped(
+      Item.of(`packedup:${set.slab}`, 6),
+      [
+        'BBB'
+      ],
+      {
+        B: `packedup:${set.block}`
+      }
+    ).id(`genesis:${set.slab}_from_${set.block}_crafting`)
+    event.shaped(
+      Item.of(`packedup:${set.slab}`, 1),
+      [
+        'LL'
+      ],
+      {
+        L: `packedup:${set.layer}`
+      }
+    ).id(`genesis:${set.slab}_from_${set.layer}_crafting`)
+    event.shaped(
+      Item.of(`packedup:${set.layer}`, 6),
+      [
+        'SSS'
+      ],
+      {
+        S: `packedup:${set.slab}`
+      }
+    ).id(`genesis:${set.layer}_from_${set.slab}_crafting`)
+    event.shaped(
+      Item.of(`packedup:${set.block}`, 1),
+      [
+        'SS'
+      ],
+      {
+        S: `packedup:${set.slab}`
+      }
+    ).id(`genesis:${set.block}_from_${set.slab}_crafting`)
+    event.stonecutting(
+      `2x packedup:${set.slab}`,
+      `packedup:${set.block}`
+    ).id(`genesis:${set.slab}_from_${set.block}_stonecutting`)
+    event.stonecutting(
+      `4x packedup:${set.layer}`,
+      `packedup:${set.block}`
+    ).id(`genesis:${set.layer}_from_${set.block}_stonecutting`)
+    event.stonecutting(
+      `2x packedup:${set.layer}`,
+      `packedup:${set.slab}`
+    ).id(`genesis:${set.layer}_from_${set.slab}_stonecutting`)
+  })
 })
