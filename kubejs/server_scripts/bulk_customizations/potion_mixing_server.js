@@ -91,35 +91,35 @@ ServerEvents.recipes(event => {
         Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:${effect}` }),
         'minecraft:redstone'
       ]
-    ).heated()
+    ).heated().id(`genesis:long_${effect}_from_regular_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:long_${effect}` }),
         'minecraft:gunpowder'
       ]
-    ).heated()
+    ).heated().id(`genesis:long_splash_${effect}_from_long_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}` }),
         'minecraft:redstone'
       ]
-    ).heated()
+    ).heated().id(`genesis:long_splash_${effect}_from_splash_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:long_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:long_${effect}` }),
         Fluid.of('create_central_kitchen:dragon_breath', 250)
       ]
-    ).heated()
+    ).heated().id(`genesis:long_lingering_${effect}_from_long_splash_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:long_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}` }),
         'minecraft:redstone'
       ]
-    ).heated()
+    ).heated().id(`genesis:long_lingering_${effect}_from_lingering_potion_mixing`)
   })
 
   // Strong Effects
@@ -130,35 +130,35 @@ ServerEvents.recipes(event => {
         Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:${effect}` }),
         'minecraft:glowstone_dust'
       ]
-    ).heated()
+    ).heated().id(`genesis:strong_${effect}_from_regular_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:strong_${effect}` }),
         'minecraft:gunpowder'
       ]
-    ).heated()
+    ).heated().id(`genesis:strong_splash_${effect}_from_strong_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}` }),
         'minecraft:glowstone_dust'
       ]
-    ).heated()
+    ).heated().id(`genesis:strong_splash_${effect}_from_splash_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:strong_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:strong_${effect}` }),
         Fluid.of('create_central_kitchen:dragon_breath', 250)
       ]
-    ).heated()
+    ).heated().id(`genesis:strong_lingering_${effect}_from_strong_splash_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:strong_${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}` }),
         'minecraft:glowstone_dust'
       ]
-    ).heated()
+    ).heated().id(`genesis:strong_lingering_${effect}_from_lingering_potion_mixing`)
   })
 
   // Splash & Lingering Modifiers
@@ -169,14 +169,14 @@ ServerEvents.recipes(event => {
         Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:${effect}` }),
         'minecraft:gunpowder'
       ]
-    ).heated()
+    ).heated().id(`genesis:splash_${effect}_from_regular_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect}` }),
         Fluid.of('create_central_kitchen:dragon_breath', 250)
       ]
-    ).heated()
+    ).heated().id(`genesis:lingering_${effect}_from_splash_mixing`)
   })
 
   // Non-Standard Bases
@@ -195,21 +195,21 @@ ServerEvents.recipes(event => {
         Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: "minecraft:awkward" }),
         `minecraft:${effect.ingredient}`
       ]
-    ).heated()
+    ).heated().id(`genesis:${effect.output}_from_awkward_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect.output}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: "minecraft:awkward" }),
         `minecraft:${effect.ingredient}`
       ]
-    ).heated()
+    ).heated().id(`genesis:splash_${effect.output}_from_splash_awkward_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect.output}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: "minecraft:awkward" }),
         `minecraft:${effect.ingredient}`
       ]
-    ).heated()
+    ).heated().id(`genesis:lingering_${effect.output}_from_lingering_awkward_potion_mixing`)
   })
 
   // Inversion Recipes using Fermented Spider Eye
@@ -220,21 +220,21 @@ ServerEvents.recipes(event => {
         Fluid.of('create:potion', 1000, { Bottle: "REGULAR", Potion: `minecraft:${effect.input}` }),
         'minecraft:fermented_spider_eye'
       ]
-    ).heated()
+    ).heated().id(`genesis:${effect.output}_from_${effect.input}_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect.output}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: `minecraft:${effect.input}` }),
         'minecraft:fermented_spider_eye'
       ]
-    ).heated()
+    ).heated().id(`genesis:splash_${effect.output}_from_splash_${effect.input}_potion_mixing`)
     event.recipes.create.mixing(
       [Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect.output}` })],
       [
         Fluid.of('create:potion', 1000, { Bottle: "LINGERING", Potion: `minecraft:${effect.input}` }),
         'minecraft:fermented_spider_eye'
       ]
-    ).heated()
+    ).heated().id(`genesis:lingering_${effect.output}_from_lingering_${effect.input}_potion_mixing`)
   })
 
 })
