@@ -312,9 +312,9 @@
 	[building.notice_board]
 		enabled = true
 		#Allows notice boards to accept and display any item, not just maps and books
-		allow_any_item = true
+		allow_any_item = false
 		#Enables a GUI for the block. Not needed as the block just holds one item which you can place by clicking on it
-		gui = true
+		gui = false
 
 	[building.pedestal]
 		enabled = true
