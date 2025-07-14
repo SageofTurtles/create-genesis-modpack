@@ -57,6 +57,27 @@
     },
     {
       "item": "chipped:wide_lantern"
+    },
+    {
+      "item": "mcwlights:striped_lantern"
+    },
+    {
+      "item": "mcwlights:covered_lantern"
+    },
+    {
+      "item": "mcwlights:chain_lantern"
+    },
+    {
+      "item": "mcwlights:tavern_lantern"
+    },
+    {
+      "item": "mcwlights:festive_lantern"
+    },
+    {
+      "item": "mcwlights:cross_lantern"
+    },
+    {
+      "item": "mcwlights:bell_lantern"
     }
   ],
   "overwrite": true
