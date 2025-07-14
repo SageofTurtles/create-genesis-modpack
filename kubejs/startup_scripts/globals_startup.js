@@ -59,7 +59,14 @@ global['deletedItems'] = [
   'supplementaries:music_disc_heave_ho',
   'create_connected:control_chip',
   'supplementaries:wrench',
-  'brewinandchewin:cocoa_fudge'
+  'brewinandchewin:cocoa_fudge',
+  'create_connected:fan_withering_catalyst',
+  'create_connected:fan_seething_catalyst',
+  'create_connected:fan_sanding_catalyst',
+  'create_connected:fan_ending_catalyst_dragons_breath',
+  'create_connected:fan_ending_catalyst_dragon_head',
+  'create_connected:fan_freezing_catalyst',
+  'create_connected:fan_enriched_catalyst'
 ]
 
 global['deletedRecipes'] = [

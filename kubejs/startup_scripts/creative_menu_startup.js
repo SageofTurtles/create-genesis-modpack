@@ -203,6 +203,10 @@ StartupEvents.modifyCreativeTab('mcwroofs:mcwroofs', event => {
 	event.remove('mcwroofs:rain_gutter');
 })
 
+StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
+	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
+})
+
 StartupEvents.modifyCreativeTab('sophisticatedbackpacks:main', event => {
 	event.remove('sophisticatedbackpacks:stack_upgrade_omega_tier');
 	event.remove('sophisticatedbackpacks:xp_pump_upgrade');
