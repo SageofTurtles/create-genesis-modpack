@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     [
       'minecraft:bone_meal',
       'minecraft:bone_meal',
-      'minecraft:diorite',
+      'kubejs:limesand',
       Fluid.lava(100)
     ]
   ).id('genesis:calcite')
