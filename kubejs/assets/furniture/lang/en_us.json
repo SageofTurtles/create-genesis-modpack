@@ -52,5 +52,7 @@
   "block.furniture.dark_oak_shutter": "Large Dark Oak Shutter",
   "block.furniture.mangrove_shutter": "Large Mangrove Shutter",
   "block.furniture.jungle_shutter": "Large Jungle Shutter",
-  "block.furniture.cherry_shutter": "Large Cherry Shutter"
+  "block.furniture.cherry_shutter": "Large Cherry Shutter",
+  "block.furniture.explorers_box": "Explorer's Box",
+  "container.furniture.explorers_box": "Explorer's Box"
 }

@@ -1,0 +1,18 @@
+{
+  "item.create_confectionery.chocolate_candy": "Chocolate Coated Caramel",
+  "item.create_confectionery.chocolate_candy_1": "Chocolate Coated White Fudge",
+  "item.create_confectionery.chocolate_candy_2": "Chocolate Coated Dark Fudge",
+  "item.create_confectionery.chocolate_candy_3": "Chocolate Coated Ruby Fudge",
+  "item.create_confectionery.white_chocolate_candy": "White Coated Caramel",
+  "item.create_confectionery.white_chocolate_candy_1": "White Coated Fudge",
+  "item.create_confectionery.white_chocolate_candy_2": "White Coated Dark Fudge",
+  "item.create_confectionery.white_chocolate_candy_3": "White Coated Ruby Fudge",
+  "item.create_confectionery.black_chocolate_candy": "Dark Coated Caramel",
+  "item.create_confectionery.black_chocolate_candy_1": "Dark Coated Fudge",
+  "item.create_confectionery.black_chocolate_candy_2": "Dark Coated White Fudge",
+  "item.create_confectionery.black_chocolate_candy_3": "Dark Coated Ruby Fudge",
+  "item.create_confectionery.ruby_chocolate_candy": "Ruby Coated Caramel",
+  "item.create_confectionery.ruby_chocolate_candy_1": "Ruby Coated Fudge",
+  "item.create_confectionery.ruby_chocolate_candy_2": "Ruby Coated White Fudge",
+  "item.create_confectionery.ruby_chocolate_candy_3": "Ruby Coated Dark Fudge"
+}
