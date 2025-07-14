@@ -1,4 +1,19 @@
 ServerEvents.recipes(event => {
+  // Shutters
+  global.woodTypes.forEach(wood => {
+    event.shaped(
+      Item.of(`furniture:${wood}_shutter`, 4),
+      [
+        'SS',
+        'SS'
+      ],
+      {
+        S: `minecraft:${wood}_slab`
+      }
+    ).id(`furniture:${wood}_shutter_recipe`)
+  })
+
+  // Pouffes
   global.colors.forEach(color => {
     event.shaped(
       Item.of(`furniture:pouffe_${color}`, 2),
@@ -13,6 +28,7 @@ ServerEvents.recipes(event => {
     ).id(`furniture:pouffe_${color}`)
   })
 
+  // Copper Chimney
   event.shaped(
     Item.of('furniture:copper_chimney', 2),
     [
@@ -26,6 +42,7 @@ ServerEvents.recipes(event => {
     }
   ).id('furniture:copper_chimney')
 
+  // Steam Vent
   event.shaped(
     Item.of('furniture:steam_vent', 2),
     [
@@ -39,6 +56,7 @@ ServerEvents.recipes(event => {
     }
   ).id('furniture:steam_vent')
 
+  // Building Plans
   event.shapeless(
     Item.of('furniture:blueprints'),
     [
