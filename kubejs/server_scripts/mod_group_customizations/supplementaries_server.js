@@ -58,4 +58,25 @@ ServerEvents.recipes(event => {
     'supplementaries:altimeter',
     'minecraft:black_dye'
   )
+
+  // Sack
+  event.replaceInput(
+    { id: 'supplementaries:sack' },
+    '#forge:crops/flax',
+    'farmersdelight:canvas'
+  )
+
+  // Key
+  event.shaped(
+    'supplementaries:key',
+    [
+      'I',
+      'N',
+      'N'
+    ],
+    {
+      I: 'create_ironworks:bronze_ingot',
+      N: 'create_ironworks:bronze_nugget'
+    }
+  ).id('supplementaries:key')
 })
