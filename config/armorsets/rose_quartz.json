@@ -1,0 +1,32 @@
+{
+  "armorSetName": "rose_quartz",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "create_ironworks:rose_quartz_armor_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "create_ironworks:rose_quartz_armor_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "create_ironworks:rose_quartz_armor_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "create_ironworks:rose_quartz_armor_boots",
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:fire_resistance",
+      "value": 1,
+      "description": "+fire resistance",
+      "attributeOperation": 0,
+      "interactionType": "self",
+      "hideBonusDescription": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}
