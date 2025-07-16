@@ -1,0 +1,56 @@
+{
+  "armorSetName": "copper",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "create_ironworks:copper_armor_helmet",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "create_ironworks:copper_armor_chestplate",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "create_ironworks:copper_armor_leggings",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "create_ironworks:copper_armor_boots",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:saturation",
+      "value": 0,
+      "description": "+Saturation",
+      "attributeOperation": 0,
+      "interactionType": "self",
+      "hideBonusDescription": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

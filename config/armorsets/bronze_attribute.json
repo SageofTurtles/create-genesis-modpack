@@ -1,0 +1,57 @@
+{
+  "armorSetName": "bronze",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "create_ironworks:bronze_armor_helmet",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "create_ironworks:bronze_armor_chestplate",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "create_ironworks:bronze_armor_leggings",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "create_ironworks:bronze_armor_boots",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.attack_damage",
+      "value": 1.2,
+      "modifierUUID": "764d3185-356e-4865-a5f0-04d5528e2a0f",
+      "description": "+20% Attack Damage",
+      "attributeOperation": 1,
+      "interactionType": "self",
+      "hideBonusDescription": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

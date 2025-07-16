@@ -1,0 +1,57 @@
+{
+  "armorSetName": "brass",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "create_ironworks:brass_armor_helmet",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "create_ironworks:brass_armor_chestplate",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "create_ironworks:brass_armor_leggings",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "create_ironworks:brass_armor_boots",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 1.25,
+      "modifierUUID": "444b1b3f-6451-4fa6-b3a1-a0a6aa278cba",
+      "description": "+25% Health Boost",
+      "attributeOperation": 1,
+      "interactionType": "self",
+      "hideBonusDescription": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

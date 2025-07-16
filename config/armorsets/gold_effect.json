@@ -1,0 +1,56 @@
+{
+  "armorSetName": "gold",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "minecraft:golden_helmet",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "minecraft:golden_chestplate",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "minecraft:golden_leggings",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "minecraft:golden_boots",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:haste",
+      "value": 0,
+      "description": "+Haste I",
+      "attributeOperation": 0,
+      "interactionType": "self",
+      "hideBonusDescription": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

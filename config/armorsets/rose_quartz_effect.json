@@ -3,26 +3,50 @@
   "performanceMode": true,
   "head": {
     "itemKey": "create_ironworks:rose_quartz_armor_helmet",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
     "mustBeEmpty": false
   },
   "chest": {
     "itemKey": "create_ironworks:rose_quartz_armor_chestplate",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
     "mustBeEmpty": false
   },
   "legs": {
     "itemKey": "create_ironworks:rose_quartz_armor_leggings",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
     "mustBeEmpty": false
   },
   "boots": {
     "itemKey": "create_ironworks:rose_quartz_armor_boots",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
     "mustBeEmpty": false
   },
   "fullSetBonuses": [
     {
       "type": "effect",
       "name": "minecraft:fire_resistance",
-      "value": 1,
-      "description": "+fire resistance",
+      "value": 0,
+      "description": "+Fire Resistance",
       "attributeOperation": 0,
       "interactionType": "self",
       "hideBonusDescription": false
