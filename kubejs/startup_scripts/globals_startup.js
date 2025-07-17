@@ -67,7 +67,6 @@ global['deletedItems'] = [
   'create_connected:fan_ending_catalyst_dragon_head',
   'create_connected:fan_freezing_catalyst',
   'create_connected:fan_enriched_catalyst',
-  'minecraft:barrier',
   'create_power_loader:empty_brass_chunk_loader',
   'create_power_loader:empty_andesite_chunk_loader',
   'create_power_loader:brass_chunk_loader',
@@ -76,8 +75,7 @@ global['deletedItems'] = [
   'sophisticatedbackpacks:xp_pump_upgrade',
   'sophisticatedbackpacks:infinity_upgrade',
   'sophisticatedbackpacks:survival_infinity_upgrade',
-  'furniture:bin',
-  'numismatics:cog'
+  'furniture:bin'
 ]
 
 global['colors'] = [

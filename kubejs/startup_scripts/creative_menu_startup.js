@@ -188,6 +188,28 @@ StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
 	event.addAfter('minecraft:ink_sac', 'kubejs:empty_ink_sac');
 })
 
+StartupEvents.modifyCreativeTab('minecraft:search', event => {
+	event.remove(/createbigcannons:partial.*/);
+	event.remove(/railways:.*incomplete.*/);
+	event.remove(/create_connected:.*control_chip/);
+	event.remove(/create_central_kitchen:incomplete.*/);
+	event.remove('create_enchantment_industry:experience_rotor');
+	event.remove('createmetalwork:crushed_andesite');
+	event.remove('createmetalwork:crushed_netherite_scrap');
+	event.remove('create_central_kitchen:mulberry_pie_slice');
+	event.remove('create_central_kitchen:yucca_cake_slice');
+	event.remove('create_central_kitchen:aloe_cake_slice');
+	event.remove('create_central_kitchen:passion_fruit_cake_slice');
+	event.remove('create_central_kitchen:pumpkin_cake_slice');
+	event.remove('create_central_kitchen:sweet_berry_cake_slice');
+	event.remove('createaddition:straw');
+	event.remove('createaddition:zinc_sheet');
+	event.remove('createbigcannons:ram_head');
+	event.remove('createbigcannons:worm_head');
+	event.remove('createbigcannons:spring_wire');
+	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
+})
+
 StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
 	event.remove('mcwlights:wall_lantern');
 	event.remove('mcwlights:striped_wall_lantern');
