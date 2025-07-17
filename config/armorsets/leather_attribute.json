@@ -50,8 +50,8 @@
       "description": "+5% Speed",
       "attributeOperation": 1,
       "interactionType": "self",
-      "hideBonusDescription": false
+      "hideBonusDescription": true
     }
   ],
-  "hideGeneratedTooltip": false
+  "hideGeneratedTooltip": true
 }

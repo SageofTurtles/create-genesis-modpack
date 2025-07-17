@@ -50,8 +50,8 @@
       "description": "+25% Health Boost",
       "attributeOperation": 1,
       "interactionType": "self",
-      "hideBonusDescription": false
+      "hideBonusDescription": true
     }
   ],
-  "hideGeneratedTooltip": false
+  "hideGeneratedTooltip": true
 }

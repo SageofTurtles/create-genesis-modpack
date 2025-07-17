@@ -49,8 +49,8 @@
       "description": "+Jump Boost",
       "attributeOperation": 0,
       "interactionType": "self",
-      "hideBonusDescription": false
+      "hideBonusDescription": true
     }
   ],
-  "hideGeneratedTooltip": false
+  "hideGeneratedTooltip": true
 }
