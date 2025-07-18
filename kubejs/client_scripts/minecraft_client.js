@@ -8,8 +8,8 @@ ItemEvents.tooltip(event => {
 
   // Netherite Upgrade Smithing Template tooltip
   event.addAdvanced('minecraft:netherite_upgrade_smithing_template', (item, advanced, text) => {
-      text.add(1, [
-        Text.red('Only obtainable by trading with master Armorer, Toolsmith, or Weaponsmith villagers')
+      text.add(2, [
+        Text.red('Only obtainable by trading with a master Toolsmith villager')
       ])
     })
   })
