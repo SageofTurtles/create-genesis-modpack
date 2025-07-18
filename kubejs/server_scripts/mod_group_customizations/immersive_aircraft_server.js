@@ -21,9 +21,9 @@ ServerEvents.recipes(event => {
     'immersive_aircraft:cargo_airship',
     [
       'SSSSS',
-      ' R R ',
+      'CR RC',
       'CAEPC',
-      'CHHHC'
+      ' HHH '
     ], {
     S: 'immersive_aircraft:sail',
     R: 'farmersdelight:rope',
@@ -67,6 +67,24 @@ ServerEvents.recipes(event => {
     E: 'immersive_aircraft:engine',
     P: 'immersive_aircraft:propeller'
   }).id('immersive_aircraft:biplane')
+
+  // Bamboo Hopper
+  event.recipes.create.mechanical_crafting(
+    'immersive_aircraft:bamboo_hopper',
+    [
+      '   S ',
+      'SBAEP',
+      'HHHAB',
+      'SBAEP',
+      '   S '
+    ], {
+    S: 'immersive_aircraft:sail',
+    B: 'minecraft:bamboo_block',
+    H: 'immersive_aircraft:hull',
+    A: '#create:seats',
+    E: 'immersive_aircraft:engine',
+    P: 'immersive_aircraft:propeller'
+  }).id('immersive_aircraft:bamboo_hopper')
 
   // Economy Plane
   event.recipes.create.mechanical_crafting(

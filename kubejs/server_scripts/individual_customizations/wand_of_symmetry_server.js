@@ -4,4 +4,9 @@ ServerEvents.recipes(event => {
     '#forge:glass',
     '#luminousblocks:luminous_glass_blocks'
   )
+  event.replaceInput(
+    { id: 'create:mechanical_crafting/wand_of_symmetry' },
+    'minecraft:ender_pearl',
+    'minecraft:ender_eye'
+  )
 })
