@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
     ).id(`furniture:${wood}_shutter_recipe`)
   })
 
-  // Pouffes
   global.colors.forEach(color => {
+    // Pouffes
     event.shaped(
       Item.of(`furniture:pouffe_${color}`, 2),
       [
@@ -26,6 +26,21 @@ ServerEvents.recipes(event => {
         S: 'minecraft:stick'
       }
     ).id(`furniture:pouffe_${color}`)
+
+    // Covered Lamps
+    event.shaped(
+      `3x furniture:lamp_${color}`,
+      [
+        ' W ',
+        'WGW',
+        ' P '
+      ],
+      {
+        W: `minecraft:${color}_wool`,
+        G: 'minecraft:glowstone',
+        P: '#minecraft:planks'
+      }
+    ).id(`furniture:lamp_${color}`)
   })
 
   // Copper Chimney
