@@ -4,11 +4,26 @@ ItemEvents.tooltip(event => {
   const rightClick = keyMappings.find(km => km.name == 'key.use')
   const leftClick = keyMappings.find(km => km.name == 'key.attack')
   const quiverKey = keyMappings.find(km => km.name == 'supplementaries.keybind.quiver')
+  const sneakKey = keyMappings.find(km => km.name == 'key.sneak')
 
   // Illuminator tooltip
   event.addAdvanced('supplementaries:redstone_illuminator', (item, advanced, text) => {
     text.add(1, [
       Text.gray('Gives off a light output inversely proportional to a redstone signal it receives. This means it\'s on by default and off when receiving a redstone signal strength of 15.')
+    ])
+  })
+
+  // Slice Map tooltip
+  event.addAdvanced('supplementaries:slice_map', (item, advanced, text) => {
+    text.add(1, [
+      Text.gray('A map that shows the terrain from the y-level where it was first used.')
+    ])
+  })
+
+  // Gold Door & Trapdoor tooltip
+  event.addAdvanced(/supplementaries:gold_.*door/, (item, advanced, text) => {
+    text.add(1, [
+      Text.gray('Locks while powered with a redstone signal.')
     ])
   })
 
@@ -60,7 +75,7 @@ ItemEvents.tooltip(event => {
         Text.yellow('sack'),
         Text.gold('. Place an '),
         Text.yellow('end crystal'),
-        Text.gold(' to give enchanting power equal to 3 bookshelves. ['),
+        Text.gold(' on top for it to give enchanting power equal to 3 bookshelves. ['),
         Text.yellow(rightClick.translatedKeyMessage),
         Text.gold('] with an item to place it. ['),
         Text.yellow(rightClick.translatedKeyMessage),
@@ -106,7 +121,85 @@ ItemEvents.tooltip(event => {
         Text.yellow(rightClick.translatedKeyMessage),
         Text.gold('] again with an empty hand to take out the '),
         Text.yellow('key'),
+        Text.gold('. Caution: may attract cats!')
+      ])
+    }
+  })
+
+  // Timber Frames & Braces tooltip
+  event.addAdvanced(/supplementaries:timber_.*/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('A decorative frame that can be applied to blocks by using ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold(']. Remove the frame from a block by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with an '),
+        Text.yellow('axe'),
         Text.gold('.')
+      ])
+    }
+  })
+
+  // Flute tooltip
+  event.addAdvanced('supplementaries:flute', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Plays a random song when used. Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with the '),
+        Text.yellow('flute'),
+        Text.gold(' on a pet to bind it. '),
+        Text.yellow('Bound flutes'),
+        Text.gold(' will summon the bound pet to the player when used.')
+      ])
+    }
+  })
+
+  // Netherite Door tooltip
+  event.addAdvanced('supplementaries:netherite_door', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('Durable and blast-resistant. Can be locked by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with a named '),
+        Text.yellow('key'),
+        Text.gold(' to bind it. Once locked, only players with the '),
+        Text.yellow('bound key'),
+        Text.gold(' in their inventory can open the door.')
+      ])
+    }
+  })
+
+// Netherite Trapdoor tooltip
+  event.addAdvanced('supplementaries:netherite_trapdoor', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('Durable and blast-resistant. Can be locked by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with a named '),
+        Text.yellow('key'),
+        Text.gold(' to bind it. Once locked, only players with the '),
+        Text.yellow('bound key'),
+        Text.gold(' in their inventory can open the trapdoor.')
       ])
     }
   })
