@@ -455,7 +455,7 @@
 		enabled = true
 		#Radius in which an unbound flute will search pets
 		#Range: 0 ~ 500
-		unbound_radius = 256
+		unbound_radius = 0
 		#Max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 256
