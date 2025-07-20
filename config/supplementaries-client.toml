@@ -134,7 +134,7 @@
 	#Disables Optifine warn screen
 	no_optifine_warn_screen = false
 	#Disables Amendments suggestion screen
-	no_amendments_screen = false
+	no_amendments_screen = true
 	#Enable Quark style config button on main menu. Needs Configured installed to work
 	config_button = true
 	#Config button Y offset
@@ -167,7 +167,7 @@
 	#Renders an enchantment glint on placeable enchanted booksNote that turning this on will make book piles use tile renderer instead of baked models making them slower to render
 	placeable_books_glint = false
 	#Placeable books random colors
-	placeable_books_random_colors = ["brown", "orange", "yellow", "red", "green", "lime", "cyan", "blue", "purple", "white", "black", "gray"]
+	placeable_books_random_colors = ["brown", "orange", "yellow", "red", "green", "lime", "cyan", "blue", "purple", "black", "gray"]
 	#Enables banner pattern tooltip image preview
 	banner_pattern_tooltip = true
 	#Enables paintings tooltip image preview
