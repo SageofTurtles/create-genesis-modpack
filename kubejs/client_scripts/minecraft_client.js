@@ -1,15 +1,191 @@
 ItemEvents.tooltip(event => {
+  // Identify keybind
+  const keyMappings = Client.options.keyMappings
+  const rightClick = keyMappings.find(km => km.name == 'key.use')
+
   // Echo Shard tooltip
   event.addAdvanced('minecraft:echo_shard', (item, advanced, text) => {
-      text.add(1, [
-        Text.red('Only obtainable by killing a Warden')
-      ])
-    })
+    text.add(1, [
+      Text.red('Only obtainable by killing a Warden')
+    ])
+  })
 
   // Netherite Upgrade Smithing Template tooltip
   event.addAdvanced('minecraft:netherite_upgrade_smithing_template', (item, advanced, text) => {
-      text.add(2, [
-        Text.red('Only obtainable by trading with a master Toolsmith villager')
-      ])
-    })
+    text.add(2, [
+      Text.red('Only obtainable by trading with a master Toolsmith villager')
+    ])
   })
+
+  // Map tooltip
+  event.addAdvanced('minecraft:map', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with an '),
+        Text.yellow('empty map'),
+        Text.gold(' to begin mapping your surroundings on the page. You can also use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with a '),
+        Text.yellow('map'),
+        Text.gold(' on any supported block to add it as a marker on the '),
+        Text.yellow('map'),
+        Text.gold(', including renamed blocks for labeled markers:')
+      ])
+      text.add(2, Text.gray(' - Banner'))
+      text.add(3, Text.gray(' - Beacon'))
+      text.add(4, Text.gray(' - Bed'))
+      text.add(5, Text.gray(' - Bell'))
+      text.add(6, Text.gray(' - Campfire'))
+      text.add(7, Text.gray(' - Conduit'))
+      text.add(8, Text.gray(' - End Portal'))
+      text.add(9, Text.gray(' - Flag'))
+      text.add(10, Text.gray(' - Lodestone'))
+      text.add(11, Text.gray(' - Nether Portal'))
+      text.add(12, Text.gray(' - Respawn Anchor'))
+      text.add(13, Text.gray(' - Sign Post'))
+    }
+  })
+
+  // Mob Head tooltips
+  event.addAdvanced('minecraft:creeper_head', (item, advanced, text) => {
+    text.add(1, [
+      Text.gray('Gives player low-resolution green vision when worn.')
+    ])
+  })
+  event.addAdvanced('minecraft:dragon_head', (item, advanced, text) => {
+    text.add(1, [
+      Text.gray('Gives player ethereal vision when worn.')
+    ])
+  })
+  event.addAdvanced(/minecraft:(wither_)?skeleton_skull/, (item, advanced, text) => {
+    text.add(1, [
+      Text.gray('Gives player monochrome vision when worn.')
+    ])
+  })
+
+  // Gunpowder tooltip
+  event.addAdvanced('minecraft:gunpowder', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Can be placed like '),
+        Text.yellow('redstone dust'),
+        Text.gold(', acting like a fuse when ignited with a fire source. When lit, it will burn away and ignite flammable blocks or '),
+        Text.yellow('TNT'),
+        Text.gold(' in its path.')
+      ])
+    }
+  })
+
+  // Rotten Flesh tooltip
+  event.addAdvanced('minecraft:rotten_flesh', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Feed 64 of these to a '),
+        Text.yellow('skeleton horse'),
+        Text.gold(' to buff it up to a '),
+        Text.yellow('zombie horse'),
+        Text.gold('.')
+      ])
+    }
+  })
+
+  // Golden Carrot tooltip
+  event.addAdvanced('minecraft:golden_carrot', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Feed to a '),
+        Text.yellow('zombie horse'),
+        Text.gold(' convert it into a '),
+        Text.yellow('regular horse'),
+        Text.gold('.')
+      ])
+    }
+  })
+
+  // Stick tooltip
+  event.addAdvanced('minecraft:stick', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('Makes for an excellent '),
+        Text.yellow('flag'),
+        Text.gold(' pole.')
+      ])
+    }
+  })
+
+  // Placeable Books tooltip
+  event.addAdvanced(/minecraft:(writable_)?book/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('enchanting tables'),
+        Text.gold(' when placed as a block. A pile of 4 '),
+        Text.yellow('books'),
+        Text.gold(' has the same enchanting power as 1 '),
+        Text.yellow('bookshelf'),
+        Text.gold('.')
+      ])
+    }
+  })
+  event.addAdvanced('minecraft:written_book', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(3, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(3, [
+        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('enchanting tables'),
+        Text.gold(' when placed as a block. A pile of 4 '),
+        Text.yellow('books'),
+        Text.gold(' has the same enchanting power as 1 '),
+        Text.yellow('bookshelf'),
+        Text.gold('.')
+      ])
+    }
+  })
+  event.addAdvanced('minecraft:enchanted_book', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('enchanting tables'),
+        Text.gold(' when placed as a block. A pile of 4 '),
+        Text.yellow('enchanted books'),
+        Text.gold(' has 50% more enchanting power than 1 '),
+        Text.yellow('bookshelf'),
+        Text.gold('.')
+      ])
+    }
+  })
+
+})

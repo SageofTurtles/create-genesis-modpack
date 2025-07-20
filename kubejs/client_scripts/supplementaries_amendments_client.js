@@ -185,7 +185,7 @@ ItemEvents.tooltip(event => {
     }
   })
 
-// Netherite Trapdoor tooltip
+  // Netherite Trapdoor tooltip
   event.addAdvanced('supplementaries:netherite_trapdoor', (item, advanced, text) => {
     if (!event.shift) {
       text.add(2, [
@@ -200,6 +200,82 @@ ItemEvents.tooltip(event => {
         Text.gold(' to bind it. Once locked, only players with the '),
         Text.yellow('bound key'),
         Text.gold(' in their inventory can open the trapdoor.')
+      ])
+    }
+  })
+
+  // Lock Block tooltip
+  event.addAdvanced('supplementaries:lock_block', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('Can be locked by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with a named '),
+        Text.yellow('key'),
+        Text.gold(' to bind it. Once locked, only players with the '),
+        Text.yellow('bound key'),
+        Text.gold(' in their inventory can trigger the lock. Emits a redstone pulse when triggered by a player carrying the '),
+        Text.yellow('bound key'),
+        Text.gold('.')
+      ])
+    }
+  })
+
+  // Safe tooltip
+  event.addAdvanced('supplementaries:safe', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('Durable and blast-resistant, and can be carried like a '),
+        Text.yellow('shulker box'),
+        Text.gold('. Can be locked by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with a named '),
+        Text.yellow('key'),
+        Text.gold(' to bind it. Once locked, only players with the '),
+        Text.yellow('bound key'),
+        Text.gold(' in their inventory can open or break the safe.')
+      ])
+    }
+  })
+
+  // Key tooltip
+  event.addAdvanced('supplementaries:key', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('\nCan be bound to a '),
+        Text.yellow('safe'),
+        Text.gold(', '),
+        Text.yellow('netherite door'),
+        Text.gold(', '),
+        Text.yellow('netherite trapdoor'),
+        Text.gold(', or '),
+        Text.yellow('lock block'),
+        Text.gold(' by renaming it in an anvil and then using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on the block or door.')
+      ])
+      text.add(2, [
+        Text.gold('\nOnce bound, only players who have a '),
+        Text.yellow('key'),
+        Text.gold(' with the same name in their inventory will be able to open the lock. Use ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with the '),
+        Text.yellow('key'),
+        Text.gold(' on the bound lock to unbind it.')
       ])
     }
   })
