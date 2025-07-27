@@ -13,16 +13,18 @@ Vanilla Tweaks:
 		ClearBannerPatterns
 		ClearerWater
 		HDShieldBanners
+		LowerFire
+		LowerShield
 		NoCaveSounds
 		SmootherFont
 		UniqueDyes
+		UnobtrusiveParticles
 		VisualInfestedStoneItems (adapted to include modded items)
 		VisualWaxedCopperItems (adapted to include modded items)
 		
 	Datapacks:
 		Anti Enderman Grief
 		Bat Membranes
-		Custom Nether Portals (adapted to include modded blocks)
 		Double Shulker Shells
 		Dragon Drops
 		More Mob Heads
