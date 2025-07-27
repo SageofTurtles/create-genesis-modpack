@@ -3,9 +3,6 @@
 	"values": [
 		"villager_workstation_highlights:load",
 		"villager_workstation_highlights:tick",
-		"custom_nether_portals:load",
-		"custom_nether_portals:try_to_trigger",
-		"custom_nether_portals:enable_trigger",
     "silence_mobs:load",
 		"minecraft:load"
 	]
