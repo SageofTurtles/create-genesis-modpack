@@ -2,6 +2,7 @@ ItemEvents.tooltip(event => {
   // Identify keybind
   const keyMappings = Client.options.keyMappings
   const rightClick = keyMappings.find(km => km.name == 'key.use')
+  const sneakKey = keyMappings.find(km => km.name == 'key.sneak')
 
   // Echo Shard tooltip
   event.addAdvanced('minecraft:echo_shard', (item, advanced, text) => {
@@ -123,11 +124,11 @@ ItemEvents.tooltip(event => {
   // Stick tooltip
   event.addAdvanced('minecraft:stick', (item, advanced, text) => {
     if (!event.shift) {
-      text.add(2, [
+      text.add(1, [
         Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
       ])
     } else {
-      text.add(2, [
+      text.add(1, [
         Text.gold('Makes for an excellent '),
         Text.yellow('flag'),
         Text.gold(' pole.')
@@ -135,8 +136,76 @@ ItemEvents.tooltip(event => {
     }
   })
 
+  // Blaze Rod tooltip
+  event.addAdvanced('minecraft:blaze_rod', (item, advanced, text) => {
+    text.add(1, [
+      Text.gray('Burns players or mobs when standing on it. Causes water to boil when submerged.')
+    ])
+  })
+
+  // Hanging Signs tooltip
+  event.addAdvanced(/.*hanging(_canvas)?_sign/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with an item in your hand to display the item on the '),
+        Text.yellow('hanging sign'),
+        Text.gold('. ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with an empty hand to remove the displayed item.')
+      ])
+    }
+  })
+
+  // Tripwire Hook tooltip
+  event.addAdvanced('minecraft:tripwire_hook', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with a '),
+        Text.yellow('tool'),
+        Text.gold(' or '),
+        Text.yellow('weapon'),
+        Text.gold(' in your hand to hang it on the '),
+        Text.yellow('tripwire hook'),
+        Text.gold('. ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with an empty hand to remove the displayed item.')
+      ])
+    }
+  })
+
   // Placeable Books tooltip
-  event.addAdvanced(/minecraft:(writable_)?book/, (item, advanced, text) => {
+  event.addAdvanced('minecraft:book', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('enchanting tables'),
+        Text.gold(' when placed as a block. A pile of 4 '),
+        Text.yellow('books'),
+        Text.gold(' has the same enchanting power as 1 '),
+        Text.yellow('bookshelf'),
+        Text.gold('.')
+      ])
+    }
+  })
+  event.addAdvanced('minecraft:writable_book', (item, advanced, text) => {
     if (!event.shift) {
       text.add(1, [
         Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')

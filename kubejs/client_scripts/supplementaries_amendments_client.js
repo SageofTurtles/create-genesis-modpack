@@ -246,6 +246,73 @@ ItemEvents.tooltip(event => {
     }
   })
 
+  // Sconce Lever tooltip
+  event.addAdvanced('supplementaries:sconce_lever', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('A '),
+        Text.yellow('sconce'),
+        Text.gold(' which can be pulled like a '),
+        Text.yellow('lever'),
+        Text.gold(' by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] to produce a redstone signal. The signal is inverted when the '),
+        Text.yellow('sconce lever'),
+        Text.gold(' is unlit.')
+      ])
+    }
+  })
+
+  // Bell tooltip
+  event.addAdvanced('minecraft:bell', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Can have a '),
+        Text.yellow('rope'),
+        Text.gold(', '),
+        Text.yellow('chain'),
+        Text.gold(', '),
+        Text.yellow('golden chain'),
+        Text.gold(', or '),
+        Text.yellow('copper chain'),
+        Text.gold(' attached to the bottom. Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on the attached '),
+        Text.yellow('rope'),
+        Text.gold(' or '),
+        Text.yellow('chain'),
+        Text.gold(' to ring the bell.')
+      ])
+    }
+  })
+
+  // Create Bells tooltip
+  event.addAdvanced(/create:(peculiar|haunted)_bell/, (item, advanced, text) => {
+    if (event.shift) {
+      text.add(1, [
+        Text.gold('\nCan have a '),
+        Text.yellow('chain'),
+        Text.gold(', '),
+        Text.yellow('golden chain'),
+        Text.gold(', or '),
+        Text.yellow('copper chain'),
+        Text.gold(' attached to the bottom. Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on the attached '),
+        Text.yellow('chain'),
+        Text.gold(' to ring the bell.')
+      ])
+    }
+  })
+
   // Key tooltip
   event.addAdvanced('supplementaries:key', (item, advanced, text) => {
     if (!event.shift) {
@@ -276,6 +343,56 @@ ItemEvents.tooltip(event => {
         Text.gold('] with the '),
         Text.yellow('key'),
         Text.gold(' on the bound lock to unbind it.')
+      ])
+    }
+  })
+
+  // Sconces & Candle Holders tooltips
+  let lightBlocks = [
+    'supplementaries:sconce',
+    'supplementaries:sconce_soul'
+  ]
+  lightBlocks.forEach(block => {
+    event.addAdvanced(block, (item, advanced, text) => {
+      if (!event.shift) {
+        text.add(1, [
+          Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+        ])
+      } else {
+        text.add(1, [
+          Text.gold('A decorative alternative to '),
+          Text.yellow('torches'),
+          Text.gold('. Can be lit with '),
+          Text.yellow('flint and steel'),
+          Text.gold(', '),
+          Text.yellow('fire charges'),
+          Text.gold(', or '),
+          Text.yellow('flaming arrows'),
+          Text.gold('. Can be extinguished with a '),
+          Text.yellow('splash water bottle'),
+          Text.gold(' or by waterlogging it.')
+        ])
+      }
+    })
+  })
+  event.addAdvanced(/supplementaries:candle_holder/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('A decorative alternative to '),
+        Text.yellow('torches'),
+        Text.gold('. Can be lit with '),
+        Text.yellow('flint and steel'),
+        Text.gold(', '),
+        Text.yellow('fire charges'),
+        Text.gold(', or '),
+        Text.yellow('flaming arrows'),
+        Text.gold('. Can be extinguished with a '),
+        Text.yellow('splash water bottle'),
+        Text.gold(' or by waterlogging it.')
       ])
     }
   })
