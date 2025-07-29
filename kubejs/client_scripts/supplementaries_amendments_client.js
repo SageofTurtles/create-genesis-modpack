@@ -13,6 +13,13 @@ ItemEvents.tooltip(event => {
     ])
   })
 
+  // Relayer tooltip
+  event.addAdvanced('supplementaries:relayer', (item, advanced, text) => {
+    text.add(1, [
+      Text.gray('Observes a redstone signal and outputs the same signal strength.')
+    ])
+  })
+
   // Slice Map tooltip
   event.addAdvanced('supplementaries:slice_map', (item, advanced, text) => {
     text.add(1, [
@@ -393,6 +400,120 @@ ItemEvents.tooltip(event => {
         Text.gold('. Can be extinguished with a '),
         Text.yellow('splash water bottle'),
         Text.gold(' or by waterlogging it.')
+      ])
+    }
+  })
+
+  // Antique Ink Tooltip
+  event.addAdvanced('supplementaries:antique_ink', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on a sign to give its text the Antiquable font. Craft it together with a '),
+        Text.yellow('book'),
+        Text.gold(' to convert it to a '),
+        Text.yellow('tattered book'),
+        Text.gold(', which can\'t be copied and uses the Antiquable font.')
+      ])
+    }
+  })
+
+  // Rope Arrow tooltip
+  event.addAdvanced('supplementaries:rope_arrow', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(3, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(3, [
+        Text.gold('Deploys a coil of '),
+        Text.yellow('rope'),
+        Text.gold(' from wherever it strikes, which players can climb. Useful for traversing caves, cliffs, and chasms.')
+      ])
+    }
+  })
+
+  // Presents tooltips
+  event.addAdvanced(/supplementaries:present/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Give a gift to another player! Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on the '),
+        Text.yellow('present'),
+        Text.gold(' to put an item inside, write the name of the player it\'s for, and a leave a note. Once packed, only you or the recipient can open the '),
+        Text.yellow('present'),
+        Text.gold('.')
+      ])
+    }
+  })
+  event.addAdvanced(/supplementaries:trapped_present/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Give a gift to another player! Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on the '),
+        Text.yellow('trapped present'),
+        Text.gold(' to put an item inside, then prime it. Once primed, only you or the recipient can open the '),
+        Text.yellow('trapped present'),
+        Text.gold(', causing a harmless explosion.')
+      ])
+    }
+  })
+
+  // Cage tooltip
+  event.addAdvanced('supplementaries:cage', (item, advanced, text) => {
+    text.remove(1)
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on a mob with the '),
+        Text.yellow('cage'),
+        Text.gold(' to capture it. ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] to release it. Doesn\'t work on bosses!')
+      ])
+    }
+  })
+
+  // Jar tooltip
+  event.addAdvanced('supplementaries:jar', (item, advanced, text) => {
+    text.remove(1)
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Can be used to store cookies, drinks, and small mobs. ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on a small mob with the '),
+        Text.yellow('jar'),
+        Text.gold(' to capture it. ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] to release it.')
       ])
     }
   })

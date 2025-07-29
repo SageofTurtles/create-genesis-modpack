@@ -1,5 +1,7 @@
 {
+  "message.supplementaries.wind_vane": "Outputs a redstone signal strength of 1 when it's raining and 2 when it's thundering",
   "message.supplementaries.placeable": "Can be placed as a block",
+  "message.supplementaries.jar": "",
   "advancements.husbandry.wrench.description": "Use a Copper Wrench to rotate a block",
   "item.supplementaries.wrench": "Copper Wrench"
 }
