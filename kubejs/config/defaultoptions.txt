@@ -261,7 +261,7 @@ key_gui.xaero_pac_key_open_menu:key.keyboard.apostrophe
 key_key.createrailwaysnavigator.route_overlay_options:key.keyboard.r
 key_key.observable.profile:key.keyboard.f7
 soundCategory_master:1.0
-soundCategory_music:0.0
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
