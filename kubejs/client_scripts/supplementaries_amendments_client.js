@@ -487,11 +487,13 @@ ItemEvents.tooltip(event => {
         Text.yellow(rightClick.translatedKeyMessage),
         Text.gold('] on a mob with the '),
         Text.yellow('cage'),
-        Text.gold(' to capture it. ['),
+        Text.gold(' to capture it, and again to release it. (Doesn\'t work on bosses!) ['),
         Text.yellow(sneakKey.translatedKeyMessage),
         Text.gold(' + '),
         Text.yellow(rightClick.translatedKeyMessage),
-        Text.gold('] to release it. Doesn\'t work on bosses!')
+        Text.gold('] to place the '),
+        Text.yellow('cage'),
+        Text.gold(' as a block.')
       ])
     }
   })
@@ -509,13 +511,140 @@ ItemEvents.tooltip(event => {
         Text.yellow(rightClick.translatedKeyMessage),
         Text.gold('] on a small mob with the '),
         Text.yellow('jar'),
-        Text.gold(' to capture it. ['),
+        Text.gold(' to capture it, and again to release it. ['),
         Text.yellow(sneakKey.translatedKeyMessage),
         Text.gold(' + '),
         Text.yellow(rightClick.translatedKeyMessage),
-        Text.gold('] to release it.')
+        Text.gold('] to place the '),
+        Text.yellow('jar'),
+        Text.gold(' as a block.')
       ])
     }
   })
 
+  // Globe tooltips
+  event.addAdvanced(/supplementaries:globe/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] or a redstone signal to spin the '),
+        Text.yellow('globe'),
+        Text.gold(' to the next face. Outputs a '),
+        Text.yellow('comparator'),
+        Text.gold(' signal based on the face it\'s showing. Displays the '),
+        Text.yellow('globe'),
+        Text.gold('\'s coordinates when spun by a player.')
+      ])
+    }
+  })
+
+  // Goblet tooltip
+  event.addAdvanced('supplementaries:goblet', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on a '),
+        Text.yellow('goblet'),
+        Text.gold(' to fill it with a consumable fluid, and again to drink it.')
+      ])
+    }
+  })
+
+  // Sign Post tooltips
+  event.addAdvanced(/supplementaries:sign_post/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Can place up to 2 on a '),
+        Text.yellow('fence'),
+        Text.gold(', '),
+        Text.yellow('wall'),
+        Text.gold(', '),
+        Text.yellow('stick'),
+        Text.gold(', or block. Use ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on it to change the direction it points, or ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on it with a '),
+        Text.yellow('compass'),
+        Text.gold(' to make it point in the same direction.'),
+      ])
+    }
+  })
+
+  // Flint Block tooltip
+  event.addAdvanced('supplementaries:flint_block', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Creates a fire when scraped against an '),
+        Text.yellow('iron block'),
+        Text.gold(' using a '),
+        Text.yellow('piston'),
+        Text.gold('.')
+      ])
+    }
+  })
+
+  // Hat Stand tooltips
+  event.addAdvanced('supplementaries:hat_stand', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Equip a '),
+        Text.yellow('helmet'),
+        Text.gold(' or other head gear on the '),
+        Text.yellow('hat stand'),
+        Text.gold(' by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold(']. Using ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on it with an empty hand will cause the '),
+        Text.yellow('hat stand'),
+        Text.gold(' to wobble.')
+      ])
+    }
+  })
+
+  // Item Shelf tooltips
+  event.addAdvanced('supplementaries:item_shelf', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with any item on the '),
+        Text.yellow('item shelf'),
+        Text.gold(' to put in on display. ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] again with an empty hand to remove the item.')
+      ])
+    }
+  })
 })

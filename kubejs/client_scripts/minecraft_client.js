@@ -131,7 +131,9 @@ ItemEvents.tooltip(event => {
       text.add(1, [
         Text.gold('Makes for an excellent '),
         Text.yellow('flag'),
-        Text.gold(' pole.')
+        Text.gold(' pole or  '),
+        Text.yellow('sign post'),
+        Text.gold('.')
       ])
     }
   })
