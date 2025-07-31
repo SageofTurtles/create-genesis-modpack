@@ -197,7 +197,8 @@ ItemEvents.tooltip(event => {
       ])
     } else {
       text.add(1, [
-        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('Books'),
+        Text.gold(' give off enchanting power to boost the level of nearby '),
         Text.yellow('enchanting tables'),
         Text.gold(' when placed as a block. A pile of 4 '),
         Text.yellow('books'),
@@ -214,7 +215,8 @@ ItemEvents.tooltip(event => {
       ])
     } else {
       text.add(1, [
-        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('Books'),
+        Text.gold(' give off enchanting power to boost the level of nearby '),
         Text.yellow('enchanting tables'),
         Text.gold(' when placed as a block. A pile of 4 '),
         Text.yellow('books'),
@@ -231,7 +233,8 @@ ItemEvents.tooltip(event => {
       ])
     } else {
       text.add(3, [
-        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('Books'),
+        Text.gold(' give off enchanting power to boost the level of nearby '),
         Text.yellow('enchanting tables'),
         Text.gold(' when placed as a block. A pile of 4 '),
         Text.yellow('books'),
@@ -248,7 +251,8 @@ ItemEvents.tooltip(event => {
       ])
     } else {
       text.add(2, [
-        Text.gold('Gives off enchanting power to boost the level of nearby '),
+        Text.yellow('Enchanted books'),
+        Text.gold(' give off enchanting power to boost the level of nearby '),
         Text.yellow('enchanting tables'),
         Text.gold(' when placed as a block. A pile of 4 '),
         Text.yellow('enchanted books'),
