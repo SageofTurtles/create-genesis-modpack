@@ -1,0 +1,9 @@
+{
+  "enchantment.shieldmechanics.block_damage_enchant": "Strong Defense",
+  "enchantment.shieldmechanics.block_knock_back_enchant": "Shoving",
+  "enchantment.shieldmechanics.block_knock_back_enchant.desc": "Chance to knock back attackers on block",
+  "enchantment.shieldmechanics.block_slowness_enchant": "Stumbling",
+  "enchantment.shieldmechanics.block_blind_enchant": "Concussion",
+  "enchantment.shieldmechanics.block_last_resort_enchant": "Last Resort",
+  "enchantment.shieldmechanics.block_last_resort_enchant.desc": "Chance for absorbtion when blocking at low health"
+}
