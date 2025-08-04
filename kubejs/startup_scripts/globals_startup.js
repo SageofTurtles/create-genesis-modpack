@@ -75,7 +75,8 @@ global['deletedItems'] = [
   'sophisticatedbackpacks:xp_pump_upgrade',
   'sophisticatedbackpacks:infinity_upgrade',
   'sophisticatedbackpacks:survival_infinity_upgrade',
-  'furniture:bin'
+  'furniture:bin',
+  'pet_home:exp_bottle'
 ]
 
 global['colors'] = [
