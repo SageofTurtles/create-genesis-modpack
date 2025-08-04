@@ -120,7 +120,7 @@
     "mainRenderingToggle": {
       "enabled": false,
       "hotkey": {
-        "keys": "H"
+        "keys": ""
       }
     },
     "openConfigGui": {
