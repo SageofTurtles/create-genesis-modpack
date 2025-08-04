@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:pet"
+  ],
+  "incompatible": [
+    "pet_home:disc_jockey",
+    "pet_home:immunity_frame",
+    "pet_home:deflection",
+    "pet_home:frost_fang",
+    "pet_home:amphibious",
+    "pet_home:shadow_hands"
+  ]
+}

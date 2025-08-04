@@ -4,7 +4,6 @@
     "$minecraft:pet"
   ],
   "incompatible": [
-    "domesticationinnovation:warping_bite",
-    "domesticationinnovation:magnetic"
+    "pet_home:total_recall"
   ]
 }

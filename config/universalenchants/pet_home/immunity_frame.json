@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:pet"
+  ],
+  "incompatible": [
+    "pet_home:deflection",
+    "pet_home:blazing_protection"
+  ]
+}

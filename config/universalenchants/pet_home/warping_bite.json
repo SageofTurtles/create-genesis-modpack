@@ -4,6 +4,8 @@
     "$minecraft:pet"
   ],
   "incompatible": [
-    "domesticationinnovation:health_siphon"
+    "pet_home:bubbling",
+    "pet_home:intimidation",
+    "pet_home:frost_fang"
   ]
 }

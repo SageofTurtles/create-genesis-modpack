@@ -4,7 +4,7 @@
     "$minecraft:cgm_gun"
   ],
   "incompatible": [
-    "cgm:lightweight",
-    "cgm:trigger_finger"
+    "cgm:trigger_finger",
+    "cgm:lightweight"
   ]
 }

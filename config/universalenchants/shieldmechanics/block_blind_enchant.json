@@ -4,7 +4,7 @@
     "$minecraft:wearable"
   ],
   "incompatible": [
-    "shieldmechanics:block_slowness_enchant",
-    "shieldmechanics:block_knock_back_enchant"
+    "shieldmechanics:block_knock_back_enchant",
+    "shieldmechanics:block_slowness_enchant"
   ]
 }

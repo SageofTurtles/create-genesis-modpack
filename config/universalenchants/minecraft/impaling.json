@@ -6,7 +6,7 @@
     "$minecraft:universal_enchants_axe"
   ],
   "incompatible": [
-    "minecraft:smite",
-    "minecraft:bane_of_arthropods"
+    "minecraft:bane_of_arthropods",
+    "minecraft:smite"
   ]
 }

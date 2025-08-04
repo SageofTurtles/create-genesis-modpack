@@ -4,6 +4,6 @@
     "$minecraft:pet"
   ],
   "incompatible": [
-    "domesticationinnovation:fireproof"
+    "pet_home:herding"
   ]
 }

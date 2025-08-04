@@ -4,7 +4,6 @@
     "$minecraft:pet"
   ],
   "incompatible": [
-    "domesticationinnovation:health_siphon",
-    "domesticationinnovation:vampire"
+    "pet_home:fireproof"
   ]
 }

@@ -4,6 +4,7 @@
     "$minecraft:pet"
   ],
   "incompatible": [
-    "domesticationinnovation:disc_jockey"
+    "pet_home:health_siphon",
+    "pet_home:vampire"
   ]
 }

@@ -4,6 +4,6 @@
     "$minecraft:pet"
   ],
   "incompatible": [
-    "domesticationinnovation:total_recall"
+    "pet_home:health_siphon"
   ]
 }

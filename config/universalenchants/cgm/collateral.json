@@ -4,8 +4,8 @@
     "$minecraft:cgm_gun"
   ],
   "incompatible": [
-    "cgm:fire_starter",
     "cgm:puncturing",
-    "cgm:accelerator"
+    "cgm:accelerator",
+    "cgm:fire_starter"
   ]
 }

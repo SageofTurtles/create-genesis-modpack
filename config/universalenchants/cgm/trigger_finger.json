@@ -4,7 +4,7 @@
     "$minecraft:cgm_semi_auto_gun"
   ],
   "incompatible": [
-    "cgm:lightweight",
-    "cgm:over_capacity"
+    "cgm:over_capacity",
+    "cgm:lightweight"
   ]
 }

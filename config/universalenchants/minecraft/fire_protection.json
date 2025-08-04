@@ -5,7 +5,7 @@
     "$minecraft:universal_enchants_horse_armor"
   ],
   "incompatible": [
-    "minecraft:projectile_protection",
-    "minecraft:blast_protection"
+    "minecraft:blast_protection",
+    "minecraft:projectile_protection"
   ]
 }
