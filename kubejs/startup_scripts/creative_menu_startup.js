@@ -208,6 +208,8 @@ StartupEvents.modifyCreativeTab('minecraft:search', event => {
 	event.remove('createbigcannons:worm_head');
 	event.remove('createbigcannons:spring_wire');
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
+	event.remove('create_jetpack:jetpack_placeable');
+	event.remove('create_jetpack:netherite_jetpack_placeable');
 })
 
 StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
@@ -227,6 +229,12 @@ StartupEvents.modifyCreativeTab('mcwroofs:mcwroofs', event => {
 
 StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
+})
+
+StartupEvents.modifyCreativeTab('pet_home:pet_home', event => {
+	event.remove(Item.of('pet_home:exp_bottle'));
+	event.remove(Item.of('pet_home:rotten_apple'));
+	event.remove(Item.of('pet_home:sinister_carrot'));
 })
 
 StartupEvents.modifyCreativeTab('sophisticatedbackpacks:main', event => {
