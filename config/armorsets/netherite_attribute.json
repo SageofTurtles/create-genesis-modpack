@@ -1,0 +1,57 @@
+{
+  "armorSetName": "netherite",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "minecraft:netherite_helmet",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "minecraft:netherite_chestplate",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "minecraft:netherite_leggings",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "minecraft:netherite_boots",
+    "enchantments": [
+      {
+        "shouldHave": false,
+        "enchantmentKey": "minecraft:mending"
+      }
+    ],
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.armor_toughness",
+      "value": 1.25,
+      "modifierUUID": "1ce47923-37de-4674-82ed-76330a98d7c1",
+      "description": "+25% Armor Toughness",
+      "attributeOperation": 1,
+      "interactionType": "self",
+      "hideBonusDescription": true
+    }
+  ],
+  "hideGeneratedTooltip": true
+}

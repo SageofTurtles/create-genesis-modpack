@@ -67,6 +67,11 @@ ItemEvents.tooltip(event => {
       type: 'Golden',
       item: /minecraft:golden_(helmet|chestplate|leggings|boots)/,
       bonus: 'Haste I'
+    },
+    {
+      type: 'Netherite',
+      item: /minecraft:netherite_(helmet|chestplate|leggings|boots)/,
+      bonus: '+25% Armor Toughness'
     }
   ]
 
