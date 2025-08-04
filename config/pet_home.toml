@@ -54,6 +54,8 @@
 	blazing_protection_loot_chance = 0.00
 
 [enchantments]
+	#true if xp transfer enchant is enabled, false if disabled
+	xp_transfer_enabled = true
 	#true if health boost enchant is enabled, false if disabled
 	health_boost_enabled = true
 	#true if fireproof enchant is enabled, false if disabled
