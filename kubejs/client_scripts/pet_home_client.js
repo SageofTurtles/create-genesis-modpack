@@ -4,7 +4,7 @@ ItemEvents.tooltip(event => {
   const rightClick = keyMappings.find(km => km.name == 'key.use')
 
   // Deed of Ownerhsip tooltip
-  event.addAdvanced('domesticationinnovation:deed_of_ownership', (item, advanced, text) => {
+  event.addAdvanced('pet_home:deed_of_ownership', (item, advanced, text) => {
     if (!event.shift) {
       text.add(1, [
         Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
@@ -27,7 +27,7 @@ ItemEvents.tooltip(event => {
   })
 
   // Collar Tag tooltip
-  event.addAdvanced('domesticationinnovation:collar_tag', (item, advanced, text) => {
+  event.addAdvanced('pet_home:collar_tag', (item, advanced, text) => {
     if (!event.shift) {
       text.add(1, [
         Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')

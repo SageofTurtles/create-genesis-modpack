@@ -49,7 +49,6 @@ createdeco:props_tab
 createmetalwork:base
 createrailwaysnavigator:createrailwaysnavigatortab
 decorative_blocks:general
-domesticationinnovation:domesticationinnovation
 extra_gauges:main_tab
 farmersdelight:farmersdelight
 furniture:furniture
@@ -59,6 +58,7 @@ kubejs:tab
 luminousblocks:luminous_tab
 numismatics:main
 packedup:packedup
+pet_home:pet_home
 petrolsparts:base
 rechiseled:rechiseled
 smallships:smallships.creative_mode_tab
@@ -166,11 +166,6 @@ StartupEvents.modifyCreativeTab('create_ironworks:create_ironworks', event => {
 StartupEvents.modifyCreativeTab('createmetalwork:base', event => {
 	event.remove('createmetalwork:crushed_andesite');
 	event.remove('createmetalwork:crushed_netherite_scrap');
-})
-
-StartupEvents.modifyCreativeTab('domesticationinnovation:domesticationinnovation', event => {
-	event.remove('domesticationinnovation:rotten_apple');
-	event.remove('domesticationinnovation:sinister_carrot');
 })
 
 StartupEvents.modifyCreativeTab('farmersdelight:farmersdelight', event => {
