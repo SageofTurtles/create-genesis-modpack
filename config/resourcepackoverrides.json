@@ -1,0 +1,23 @@
+{
+  "schema_version": "2",
+  "default_packs": [
+    "vanilla",
+    "mod_resources",
+    "Moonlight Mods Dynamic Assets",
+    "railways:green_signals",
+    "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
+    "file/Create Immersive Aircraft Warship ResoucePack v1.0.zip"
+  ],
+  "pack_overrides": {
+    "1": [
+      "railways:green_signals",
+      "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
+      "file/Create Immersive Aircraft Warship ResoucePack v1.0.zip"
+    ],
+    "$$1": {
+      "force_compatible": true,
+      "required": true,
+      "default_position": "TOP"
+    }
+  }
+}
