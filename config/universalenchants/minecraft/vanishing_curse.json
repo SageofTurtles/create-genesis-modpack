@@ -1,9 +1,0 @@
-{
-  "schemaVersion": 2,
-  "items": [
-    "$minecraft:vanishable",
-    "supplementaries:key",
-    "$minecraft:universal_enchants_horse_armor"
-  ],
-  "incompatible": []
-}
