@@ -17,6 +17,21 @@ ServerEvents.recipes(event => {
     'iron'
   ]
 
+  // Square Wall Lamp
+  event.shaped(
+    '3x mcwlights:square_wall_lamp',
+    [
+      ' W ',
+      'WRW',
+      '  F'
+    ],
+    {
+      W: 'minecraft:white_wool',
+      R: 'minecraft:redstone_lamp',
+      F: '#minecraft:wooden_fences'
+    }
+  ).id('mcwlights:square_wall_lamp')
+
   // Ceiling Fan Lights
   woodTypes.forEach(wood => {
     event.shaped(
@@ -224,4 +239,19 @@ ServerEvents.recipes(event => {
       C: '#minecraft:candles'
     }
   ).id(`mcwlights:golden_wall_candle_holder`)
+
+  // White Paper Lamp
+  event.shapeless(
+    'mcwlights:white_paper_lamp',
+    [
+      '#mcwlights:paper_lamps',
+      'minecraft:white_dye'
+    ]
+  ).id('genesis:white_paper_lamp_from_dyeing')
+
+  event.replaceInput(
+    { input: 'mcwlights:white_paper_lamp' },
+    'mcwlights:white_paper_lamp',
+    '#mcwlights:paper_lamps'
+  )
 })

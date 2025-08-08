@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
   ).id('genesis:grilled_salmon_mixing')
 
   // Cabinets
-  const woodTypes= [
+  const woodTypes = [
     'oak',
     'spruce',
     'birch',
@@ -141,4 +141,11 @@ ServerEvents.recipes(event => {
       }
     ).id(`farmersdelight:${wood}_cabinet`)
   })
+
+  // Canvas
+  event.replaceInput(
+    { id: 'farmersdelight:canvas' },
+    'farmersdelight:straw',
+    '#supplementaries:straw'
+  )
 })

@@ -79,4 +79,24 @@ ServerEvents.recipes(event => {
       N: 'create_ironworks:bronze_nugget'
     }
   ).id('supplementaries:key')
+
+  // Safe
+  event.shaped(
+    'supplementaries:safe',
+    [
+      'III',
+      'ISI',
+      'III'
+    ],
+    {
+      I: 'create_ironworks:steel_ingot',
+      S: '#minecraft:shulker_boxes'
+    }
+  ).id('genesis:safe_crafting_from_steel_ingot')
+
+  // Flint Block crushing
+  event.recipes.create.crushing(
+    Item.of('minecraft:gravel').withChance(0.85),
+    'supplementaries:flint_block'
+  ).id('genesis:flint_block_crushing')
 })
