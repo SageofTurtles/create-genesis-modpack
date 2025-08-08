@@ -5,7 +5,8 @@ ServerEvents.recipes(event => {
     not: { id: 'createaddition:charging/channeling' }
   })
 
-  let oxidizationSets = [
+  // Copper Sets
+  const oxidizationSets = [
     { modid: 'minecraft', stage1: 'copper_block', stage2: 'exposed_copper', stage3: 'weathered_copper', stage4: 'oxidized_copper' },
     { modid: 'minecraft', stage1: 'cut_copper', stage2: 'exposed_cut_copper', stage3: 'weathered_cut_copper', stage4: 'oxidized_cut_copper' },
     { modid: 'minecraft', stage1: 'cut_copper_stairs', stage2: 'exposed_cut_copper_stairs', stage3: 'weathered_cut_copper_stairs', stage4: 'oxidized_cut_copper_stairs' },
@@ -21,6 +22,25 @@ ServerEvents.recipes(event => {
     { modid: 'create', stage1: 'copper_tiles', stage2: 'exposed_copper_tiles', stage3: 'weathered_copper_tiles', stage4: 'oxidized_copper_tiles' },
     { modid: 'create', stage1: 'copper_tile_slab', stage2: 'exposed_copper_tile_slab', stage3: 'weathered_copper_tile_slab', stage4: 'oxidized_copper_tile_slab' },
     { modid: 'create', stage1: 'copper_tile_stairs', stage2: 'exposed_copper_tile_stairs', stage3: 'weathered_copper_tile_stairs', stage4: 'oxidized_copper_tile_stairs' }
+  ]
+
+  const moddedSets = [
+    { vanilla: 'copper_block', modded: 'copper_shingles' },
+    { vanilla: 'cut_copper', modded: 'copper_shingles' },
+    { vanilla: 'exposed_copper', modded: 'exposed_copper_shingles' },
+    { vanilla: 'exposed_cut_copper', modded: 'exposed_copper_shingles' },
+    { vanilla: 'weathered_copper', modded: 'weathered_copper_shingles' },
+    { vanilla: 'weathered_cut_copper', modded: 'weathered_copper_shingles' },
+    { vanilla: 'oxidized_copper', modded: 'oxidized_copper_shingles' },
+    { vanilla: 'oxidized_cut_copper', modded: 'oxidized_copper_shingles' },
+    { vanilla: 'copper_block', modded: 'copper_tiles' },
+    { vanilla: 'cut_copper', modded: 'copper_tiles' },
+    { vanilla: 'exposed_copper', modded: 'exposed_copper_tiles' },
+    { vanilla: 'exposed_cut_copper', modded: 'exposed_copper_tiles' },
+    { vanilla: 'weathered_copper', modded: 'weathered_copper_tiles' },
+    { vanilla: 'weathered_cut_copper', modded: 'weathered_copper_tiles' },
+    { vanilla: 'oxidized_copper', modded: 'oxidized_copper_tiles' },
+    { vanilla: 'oxidized_cut_copper', modded: 'oxidized_copper_tiles' }
   ]
 
   oxidizationSets.forEach(set => {
@@ -158,5 +178,34 @@ ServerEvents.recipes(event => {
       "energy": 4000,
       "maxChargeRate": 200
     }).id(`genesis:${set.stage1}_from_charging`)
+  })
+
+  // Remove stonecutting recipes
+  event.remove([
+    { id: 'create:copper_shingles_from_ingots_copper_stonecutting' },
+    { id: 'create:copper_tiles_from_ingots_copper_stonecutting' }
+  ])
+
+  // Stonecutting modded <=> vanilla copper blocks
+  moddedSets.forEach(set => {
+    event.stonecutting(
+      `minecraft:${set.vanilla}`,
+      `create:${set.modded}`
+    ).id(`genesis:${set.vanilla}_from_${set.modded}_stonecutting`)
+
+    event.stonecutting(
+      `create:${set.modded}`,
+      `minecraft:${set.vanilla}`
+    ).id(`genesis:${set.modded}_from_${set.vanilla}_stonecutting`)
+
+    event.stonecutting(
+      `minecraft:waxed_${set.vanilla}`,
+      `create:waxed_${set.modded}`
+    ).id(`genesis:waxed_${set.vanilla}_from_waxed_${set.modded}_stonecutting`)
+
+    event.stonecutting(
+      `create:waxed_${set.modded}`,
+      `minecraft:waxed_${set.vanilla}`
+    ).id(`genesis:waxed_${set.modded}_from_waxed_${set.vanilla}_stonecutting`)
   })
 })
