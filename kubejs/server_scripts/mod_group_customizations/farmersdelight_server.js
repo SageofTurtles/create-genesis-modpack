@@ -111,4 +111,34 @@ ServerEvents.recipes(event => {
       'minecraft:bowl'
     ]
   ).id('genesis:grilled_salmon_mixing')
+
+  // Cabinets
+  const woodTypes= [
+    'oak',
+    'spruce',
+    'birch',
+    'jungle',
+    'acacia',
+    'dark_oak',
+    'mangrove',
+    'cherry',
+    'bamboo',
+    'crimson',
+    'warped'
+  ]
+
+  woodTypes.forEach(wood => {
+    event.shaped(
+      `4x farmersdelight:${wood}_cabinet`,
+      [
+        'PP',
+        'DD',
+        'PP'
+      ],
+      {
+        P: `minecraft:${wood}_planks`,
+        D: 'mcwfurnitures:cabinet_door'
+      }
+    ).id(`farmersdelight:${wood}_cabinet`)
+  })
 })

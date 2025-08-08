@@ -80,4 +80,33 @@ ServerEvents.recipes(event => {
       'minecraft:crafting_table'
     ]
   ).id('furniture:blueprints')
+
+  // Cabinets & Dressers
+  global.woodTypes.forEach(wood => {
+    event.shaped(
+      `4x furniture:${wood}_cabinet`,
+      [
+        'SSS',
+        'LDL',
+        'LDL'
+      ],
+      {
+        S: `minecraft:${wood}_slab`,
+        L: `minecraft:${wood}_log`,
+        D: 'mcwfurnitures:cabinet_drawer'
+      }
+    ).id(`furniture:${wood}_cabinet`)
+
+    event.shaped(
+      `furniture:${wood}_dresser`,
+      [
+        'D',
+        'C'
+      ],
+      {
+        D: `furniture:${wood}_desk`,
+        C: `furniture:${wood}_cabinet`
+      }
+    ).id(`furniture:${wood}_dresser`)
+  })
 })
