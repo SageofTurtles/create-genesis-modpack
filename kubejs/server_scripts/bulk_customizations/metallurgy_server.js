@@ -21,17 +21,16 @@ ServerEvents.tags('item', event => {
     event.add('forge:tin_dusts', 'create_ironworks:crushed_raw_tin')
 })
 
-// Remove duplicate Create: Ironworks recipes
-event.remove([
-    { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_raw_ore' },
-    { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_deepslate_ore' },
-    { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_ore' },
-    { id: 'create_ironworks:materials/tin/tin_ingot_from_crushing_raw_tin' }
-])
-
-
 // Add new recipes
 ServerEvents.recipes(event => {
+    // Remove duplicate Create: Ironworks recipes
+    event.remove([
+        { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_raw_ore' },
+        { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_deepslate_ore' },
+        { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_ore' },
+        { id: 'create_ironworks:materials/tin/tin_ingot_from_crushing_raw_tin' }
+    ])
+
     let melting = [
         { molten: 'createmetalwork:molten_copper', block: 'minecraft:copper_block', ingot: 'minecraft:copper_ingot', nugget: 'create:copper_nugget', heat: 'heated' },
         { molten: 'createmetalwork:molten_gold', block: 'minecraft:gold_block', ingot: 'minecraft:gold_ingot', nugget: 'minecraft:gold_nugget', heat: 'heated' },
