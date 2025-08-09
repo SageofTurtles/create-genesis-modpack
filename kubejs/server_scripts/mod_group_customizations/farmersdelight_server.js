@@ -148,4 +148,16 @@ ServerEvents.recipes(event => {
     'farmersdelight:straw',
     '#supplementaries:straw'
   )
+
+  // Honey Cookie
+  event.shaped(
+    '8x farmersdelight:honey_cookie',
+    [
+      'WHW'
+    ],
+    {
+      W: 'create:wheat_flour',
+      H: 'minecraft:honey_bottle'
+    }
+  ).id('farmersdelight:honey_cookie')
 })

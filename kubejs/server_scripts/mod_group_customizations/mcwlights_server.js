@@ -1,3 +1,11 @@
+ServerEvents.tags('item', event => {
+  global.colors.forEach(color => {
+    event.add('mcwlights:paper_lamps',
+      `mcwlights:${color}_paper_lamp`
+    )
+  })
+})
+
 ServerEvents.recipes(event => {
   let woodTypes = [
     'acacia',
@@ -254,4 +262,35 @@ ServerEvents.recipes(event => {
     'mcwlights:white_paper_lamp',
     '#mcwlights:paper_lamps'
   )
+
+  // Colored lights
+  global.colors.forEach(color => {
+    event.shaped(
+      `3x mcwlights:${color}_lamp`,
+      [
+        ' W ',
+        'WRW',
+        ' F '
+      ],
+      {
+        W: `minecraft:${color}_wool`,
+        R: 'minecraft:redstone_lamp',
+        F: '#minecraft:wooden_fences'
+      }
+    ).id(`mcwlights:${color}_lamp`)
+
+    event.shaped(
+      `3x mcwlights:${color}_ceiling_light`,
+      [
+        ' F ',
+        'WRW',
+        ' W '
+      ],
+      {
+        F: '#minecraft:wooden_fences',
+        W: `minecraft:${color}_wool`,
+        R: 'minecraft:redstone_lamp'
+      }
+    ).id(`mcwlights:${color}_ceiling_light`)
+  })
 })

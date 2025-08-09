@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+  // Wood blocks
   const woodTypes = [
     { log: 'acacia_log', type: 'acacia' },
     { log: 'bamboo_block', type: 'bamboo' },
@@ -48,4 +49,16 @@ ServerEvents.recipes(event => {
       }
     ).id(`decorative_blocks:${wood.type}_palisade`)
   })
+
+  // Bar Panel
+  event.shaped(
+    '2x decorative_blocks:bar_panel',
+    [
+      'BB',
+      'BB'
+    ],
+    {
+      B: 'minecraft:iron_bars'
+    }
+  ).id('decorative_blocks:bar_panel')
 })

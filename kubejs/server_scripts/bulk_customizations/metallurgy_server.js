@@ -21,6 +21,15 @@ ServerEvents.tags('item', event => {
     event.add('forge:tin_dusts', 'create_ironworks:crushed_raw_tin')
 })
 
+// Remove duplicate Create: Ironworks recipes
+event.remove([
+    { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_raw_ore' },
+    { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_deepslate_ore' },
+    { id: 'create_ironworks:materials/tin/crushed_raw_tin_from_crushing_ore' },
+    { id: 'create_ironworks:materials/tin/tin_ingot_from_crushing_raw_tin' }
+])
+
+
 // Add new recipes
 ServerEvents.recipes(event => {
     let melting = [

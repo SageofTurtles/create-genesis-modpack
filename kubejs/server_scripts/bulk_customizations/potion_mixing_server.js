@@ -237,4 +237,12 @@ ServerEvents.recipes(event => {
     ).heated().id(`genesis:lingering_${effect.output}_from_lingering_${effect.input}_potion_mixing`)
   })
 
+  // Splash Water Bottle
+  event.recipes.create.mixing(
+    [Fluid.of('create:potion', 1000, { Bottle: "SPLASH", Potion: 'minecraft:water' })],
+    [
+      Fluid.water(1000),
+      'minecraft:gunpowder'
+    ]
+  ).heated().id('genesis:splash_water_potion_mixing')
 })

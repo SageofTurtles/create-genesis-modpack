@@ -109,4 +109,20 @@ ServerEvents.recipes(event => {
       }
     ).id(`furniture:${wood}_dresser`)
   })
+
+  // Boat in a Jar
+  event.shaped(
+    `furniture:boat_in_a_jar`,
+    [
+      ' J ',
+      ' S ',
+      'LGL'
+    ],
+    {
+      J: 'supplementaries:jar',
+      S: 'smallships:spruce_cog',
+      L: 'minecraft:stripped_spruce_log',
+      G: 'create:golden_sheet'
+    }
+  ).id(`furniture:boat_in_a_jar`)
 })

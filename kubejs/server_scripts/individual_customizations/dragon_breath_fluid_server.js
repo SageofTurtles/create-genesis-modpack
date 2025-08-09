@@ -1,10 +1,16 @@
 ServerEvents.recipes(event => {
   event.recipes.create.mixing(
-    Fluid.of('create_central_kitchen:dragon_breath', 125),
+    'amendments:dragon_charge',
     [
-      Fluid.of('minecraft:lava', 250),
       'minecraft:popped_chorus_fruit',
-      'create:cinder_flour'
+      'minecraft:gunpowder',
+      'create:cinder_flour',
+      Fluid.of('minecraft:lava', 250)
     ]
-  ).superheated().id('genesis:dragon_breath_mixing')
+  ).superheated().id('amendments:dragon_charge')
+
+  event.recipes.create.compacting(
+    Fluid.of('create_central_kitchen:dragon_breath', 250),
+    '4x amendments:dragon_charge'
+  ).superheated().id('genesis:dragon_breath_compacting')
 })

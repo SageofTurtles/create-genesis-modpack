@@ -43,6 +43,13 @@ ServerEvents.recipes(event => {
     { vanilla: 'oxidized_cut_copper', modded: 'oxidized_copper_tiles' }
   ]
 
+  const vanillaSets = [
+    { base: 'copper_block', cut: 'cut_copper' },
+    { base: 'exposed_copper', cut: 'exposed_cut_copper' },
+    { base: 'weathered_copper', cut: 'weathered_cut_copper' },
+    { base: 'oxidized_copper', cut: 'oxidized_cut_copper' }
+  ]
+
   oxidizationSets.forEach(set => {
     // Remove waxing & scraping by deployer recipes (prevents duplicate recipes)
     event.remove([
@@ -207,5 +214,28 @@ ServerEvents.recipes(event => {
       `create:waxed_${set.modded}`,
       `minecraft:waxed_${set.vanilla}`
     ).id(`genesis:waxed_${set.modded}_from_waxed_${set.vanilla}_stonecutting`)
+  })
+
+  // Stonecutting vanilla copper blocks
+  vanillaSets.forEach(set => {
+    event.stonecutting(
+      `minecraft:${set.cut}`,
+      `minecraft:${set.base}`
+    ).id(`minecraft:${set.cut}_from_${set.base}_stonecutting`)
+
+    event.stonecutting(
+      `minecraft:${set.base}`,
+      `minecraft:${set.cut}`
+    ).id(`genesis:${set.base}_from_${set.cut}_stonecutting`)
+
+    event.stonecutting(
+      `minecraft:waxed_${set.cut}`,
+      `minecraft:waxed_${set.base}`
+    ).id(`minecraft:waxed_${set.cut}_from_waxed_${set.base}_stonecutting`)
+
+    event.stonecutting(
+      `minecraft:waxed_${set.base}`,
+      `minecraft:waxed_${set.cut}`
+    ).id(`genesis:waxed_${set.base}_from_waxed_${set.cut}_stonecutting`)
   })
 })
