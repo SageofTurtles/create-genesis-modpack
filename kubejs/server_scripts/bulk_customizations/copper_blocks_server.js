@@ -1,9 +1,14 @@
 ServerEvents.recipes(event => {
-  // Remove default Charging recipes
-  event.remove({
-    id: /createaddition:charging\/.*/,
-    not: { id: 'createaddition:charging/channeling' }
-  })
+  // Remove default recipes
+  event.remove([
+    {
+      id: /createaddition:charging\/.*/,
+      not: { id: 'createaddition:charging/channeling' }
+    },
+    { id: 'create:copper_shingles_from_ingots_copper_stonecutting' },
+    { id: 'create:copper_tiles_from_ingots_copper_stonecutting' },
+    { id: /create_aquatic_ambitions:channeling\/.*copper/ }
+  ])
 
   // Copper Sets
   const oxidizationSets = [
@@ -132,18 +137,23 @@ ServerEvents.recipes(event => {
     }).id(`genesis:${set.stage4}_from_farmersdelight_scraping`)
 
     // Add oxidizing by washing recipes
-    event.recipes.create.splashing(
-      `${set.modid}:${set.stage4}`,
-      `${set.modid}:${set.stage3}`
-    ).id(`genesis:${set.stage4}_from_splashing`)
-    event.recipes.create.splashing(
-      `${set.modid}:${set.stage3}`,
-      `${set.modid}:${set.stage2}`
-    ).id(`genesis:${set.stage3}_from_splashing`)
-    event.recipes.create.splashing(
-      `${set.modid}:${set.stage2}`,
-      `${set.modid}:${set.stage1}`
-    ).id(`genesis:${set.stage2}_from_splashing`)
+    event.custom({
+      type: "create_aquatic_ambitions:channeling",
+      ingredients: [{ item: `${set.modid}:${set.stage1}` }],
+      results: [{ item: `${set.modid}:${set.stage2}` }]
+    }).id(`genesis:${set.stage2}_from_channeling`)
+
+    event.custom({
+      type: "create_aquatic_ambitions:channeling",
+      ingredients: [{ item: `${set.modid}:${set.stage2}` }],
+      results: [{ item: `${set.modid}:${set.stage3}` }]
+    }).id(`genesis:${set.stage3}_from_channeling`)
+
+    event.custom({
+      type: "create_aquatic_ambitions:channeling",
+      ingredients: [{ item: `${set.modid}:${set.stage3}` }],
+      results: [{ item: `${set.modid}:${set.stage4}` }]
+    }).id(`genesis:${set.stage4}_from_channeling`)
 
     // Add deoxidizing by charging recipes
     event.custom({
@@ -186,12 +196,6 @@ ServerEvents.recipes(event => {
       "maxChargeRate": 200
     }).id(`genesis:${set.stage1}_from_charging`)
   })
-
-  // Remove stonecutting recipes
-  event.remove([
-    { id: 'create:copper_shingles_from_ingots_copper_stonecutting' },
-    { id: 'create:copper_tiles_from_ingots_copper_stonecutting' }
-  ])
 
   // Stonecutting modded <=> vanilla copper blocks
   moddedSets.forEach(set => {
