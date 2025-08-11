@@ -45,4 +45,10 @@ ServerEvents.recipes(event => {
       `railways:${color}_iron_wrapped_locometal`
     ).id(`genesis:${color}_iron_wrapped_locometal_boiler_from_stonecutting`)
   })
+
+  // Riveted Locometal
+  event.stonecutting(
+    'railways:riveted_locometal',
+    'minecraft:iron_block'
+  ).id('railways:stonecutting/riveted_locometal')
 })

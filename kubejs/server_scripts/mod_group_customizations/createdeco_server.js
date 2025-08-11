@@ -65,4 +65,7 @@ ServerEvents.recipes(event => {
       S: 'createdeco:zinc_sheet'
     }
   ).id('createdeco:zinc_sheet_metal')
+
+  // Remove shaped crafting Hull recipes
+  event.remove({ type: 'minecraft:crafting_shaped', id: /createdeco:.*_hull/ })
 })
