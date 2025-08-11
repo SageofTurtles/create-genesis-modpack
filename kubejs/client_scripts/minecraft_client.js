@@ -263,4 +263,24 @@ ItemEvents.tooltip(event => {
     }
   })
 
+  // Item Frames tooltip
+  event.addAdvanced(/minecraft:(glow_)?item_frame/, (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Use ['),
+        Text.yellow(sneakKey.translatedKeyMessage),
+        Text.gold(' + '),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on the '),
+        Text.yellow('frame'),
+        Text.gold(' to toggle its visibility. Can be crafted with any colored '),
+        Text.yellow('dye'),
+        Text.gold(' to change the background color.')
+      ])
+    }
+  })
 })

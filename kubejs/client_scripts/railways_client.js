@@ -46,7 +46,47 @@ ItemEvents.tooltip(event => {
         Text.yellow('Conductors'),
         Text.gold(' can move instantly through '),
         Text.yellow('vent blocks'),
-        Text.gold(' like doors or tunnels.')
+        Text.gold(' like doors or tunnels by using ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] when controlled by a player using a '),
+        Text.yellow('remote lens'),
+        Text.gold('.'),
+      ])
+      text.add(2, [
+        Text.gold('\nUse ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on any type of '),
+        Text.yellow('smokestack'),
+        Text.gold(' with a '),
+        Text.yellow('vent block'),
+        Text.gold(' in your hand to toggle the smoke particles on or off.'),
+      ])
+    }
+  })
+
+  // Fuel Tank tooltip
+  event.addAdvanced('railways:fuel_tank', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Can be placed on a train and filled with '),
+        Text.yellow('a liquid fuel'),
+        Text.gold(' to increase the train\'s speed when the fuel is consumed.')
+      ])
+      text.add(2, [
+        Text.yellow('\nAccepted fuels:')
+      ])
+      text.add(3, [
+        Text.aqua(' - Biofuel')
+      ])
+      text.add(4, [
+        Text.gold(' - Lava')
+      ])
+      text.add(5, [
+        Text.gold(' - Seed Oil')
       ])
     }
   })
