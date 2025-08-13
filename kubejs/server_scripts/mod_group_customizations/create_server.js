@@ -46,6 +46,18 @@ ServerEvents.recipes(event => {
   // Remove Weathered Iron Window recipe
   event.remove({ id: 'create:weathered_iron_window' })
 
+  // Remove Netherite Diving Helmet recipe
+  event.remove({ id: 'create:crafting/appliances/netherite_diving_helmet_from_netherite' })
+
+  // Remove Netherite Diving Boots recipe
+  event.remove({ id: 'create:crafting/appliances/netherite_diving_boots_from_netherite' })
+
+  // Remove Weathered Iron Block recipe
+  event.remove({ id: 'create:weathered_iron_block_from_ingots_iron_stonecutting' })
+
+  // Remove default Experience Block recipe
+  event.remove({ type: 'create:compacting', output: 'create:experience_block' })
+
   // Ornate Iron Window
   event.shaped(
     'create:ornate_iron_window',
@@ -78,4 +90,34 @@ ServerEvents.recipes(event => {
     type: 'create:mixing',
     output: 'create:andesite_alloy'
   })
+
+  // Block of Experience
+  event.recipes.create.compacting(
+    'create:experience_block',
+    Fluid.of('create_enchantment_industry:experience', 27)
+  ).id('genesis:experience_block_from_compacting')
+
+  // Rose Quartz Tiles recipes
+  event.remove({ id: 'create:crafting/materials/rose_quartz_tiles_from_conversion' })
+  event.remove({ id: 'create:crafting/materials/small_rose_quartz_tiles_from_conversion' })
+
+  event.stonecutting(
+    'create:rose_quartz_tiles',
+    'create_ironworks:rose_quartz_block'
+  ).id('create:rose_quartz_tiles_from_polished_rose_quartz_stonecutting')
+
+  event.stonecutting(
+    'create:small_rose_quartz_tiles',
+    'create_ironworks:rose_quartz_block'
+  ).id('create:small_rose_quartz_tiles_from_polished_rose_quartz_stonecutting')
+
+  event.stonecutting(
+    'create:small_rose_quartz_tiles',
+    'create:rose_quartz_tiles'
+  ).id('genesis:small_rose_quartz_tiles_from_rose_quartz_tiles_stonecutting')
+
+  event.stonecutting(
+    'create:rose_quartz_tiles',
+    'create:small_rose_quartz_tiles'
+  ).id('genesis:rose_quartz_tiles_from_small_rose_quartz_tiles_stonecutting')
 })
