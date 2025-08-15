@@ -38,3 +38,42 @@ JEIEvents.information(event => {
     ['Right-click on a Pot of Fiery Fondue with a Bowl to take a serving of Fiery Fondue.']
   )
 })
+
+// Heating & Cooling tooltips
+ItemEvents.tooltip(event => {
+  event.addAdvanced('brewinandchewin:heating_cask', (item, advanced, text) => {
+    text.add(1, [
+      Text.gold('Heats'), Text.gray(' kegs within a 2-block radius')
+    ])
+  })
+
+  event.addAdvanced('brewinandchewin:ice_crate', (item, advanced, text) => {
+    text.add(1, [
+      Text.aqua('Cools'), Text.gray(' kegs within a 2-block radius')
+    ])
+  })
+
+  event.addAdvanced('brewinandchewin:keg', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(1, [
+        Text.gold('Its '),
+        Text.yellow('temperature'),
+        Text.gold(' can be affected by the '),
+        Text.yellow('biome'),
+        Text.gold(', or any '),
+        Text.yellow('heating casks'),
+        Text.gold(' or '),
+        Text.yellow('ice crates'),
+        Text.gold(' within a 2-block radius. Each fermenting recipe requires the '),
+        Text.yellow('keg'),
+        Text.gold(' to be a certain '),
+        Text.yellow('temperature'),
+        Text.gold('.')
+      ])
+    }
+  })
+})
