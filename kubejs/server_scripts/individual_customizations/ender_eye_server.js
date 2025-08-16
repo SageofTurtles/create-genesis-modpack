@@ -3,12 +3,12 @@ ServerEvents.recipes(event => {
     '2x minecraft:ender_eye',
     [
       ' O ',
-      'NES',
+      'HES',
       ' B '
     ],
     {
       O: 'create:powdered_obsidian',
-      N: 'minecraft:nautilus_shell',
+      H: 'create_aquatic_ambitions:spiky_shell',
       E: 'minecraft:ender_pearl',
       S: 'minecraft:echo_shard',
       B: 'minecraft:blaze_rod'
