@@ -2,7 +2,7 @@
 [slicer]
 	consume_tool_durability = false
 	ignore_rotation = false
-	jei_show_converted_recipes = true
+	jei_show_converted_recipes = false
 
 [basin_cooking]
 	enabled = true
