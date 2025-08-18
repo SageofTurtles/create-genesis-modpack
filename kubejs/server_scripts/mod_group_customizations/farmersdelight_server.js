@@ -153,10 +153,10 @@ ServerEvents.recipes(event => {
   event.shaped(
     '8x farmersdelight:honey_cookie',
     [
-      'WHW'
+      'DHD'
     ],
     {
-      W: 'create:wheat_flour',
+      D: 'create:dough',
       H: 'minecraft:honey_bottle'
     }
   ).id('farmersdelight:honey_cookie')
