@@ -61,4 +61,18 @@ ServerEvents.recipes(event => {
       B: 'minecraft:iron_bars'
     }
   ).id('decorative_blocks:bar_panel')
+
+  // Rocky Dirt
+  event.remove({ id: 'decorative_blocks:dirt_from_rocky_dirt' })
+  event.shaped(
+    '4x decorative_blocks:rocky_dirt',
+    [
+      'DC',
+      'CD'
+    ],
+    {
+      D: 'minecraft:dirt',
+      C: 'minecraft:cobblestone'
+    }
+  ).id('decorative_blocks:rocky_dirt')
 })

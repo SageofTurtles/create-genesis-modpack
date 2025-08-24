@@ -175,6 +175,14 @@ ServerEvents.recipes(event => {
       count: 5,
       xp: 15,
       name: 'deepslate_tin_ore'
+    },
+    {
+      output: 'minecraft:gilded_blackstone',
+      base: 'blackstone',
+      drop: 'minecraft:gold_ingot',
+      count: 2,
+      xp: 3,
+      name: 'gilded_blackstone'
     }
   ]
 

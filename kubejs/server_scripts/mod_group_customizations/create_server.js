@@ -120,4 +120,14 @@ ServerEvents.recipes(event => {
     'create:rose_quartz_tiles',
     'create:small_rose_quartz_tiles'
   ).id('genesis:rose_quartz_tiles_from_small_rose_quartz_tiles_stonecutting')
+
+  // Andesite milling recipe
+  event.replaceOutput(
+    { id: 'create:milling/andesite' },
+    'minecraft:cobblestone',
+    'minecraft:gravel'
+  )
+
+  // Remove Blackstone haunting
+  event.remove({ id: 'create:haunting/blackstone' })
 })
