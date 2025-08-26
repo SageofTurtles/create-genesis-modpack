@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     ]
 
     let superheatedAlloys = [
-        { output: Fluid.of('createmetalwork:molten_netherite', 90), input1: Item.of('minecraft:netherite_scrap', 4), input2: Fluid.of('createmetalwork:molten_gold', 360) },
+        { output: Fluid.of('createmetalwork:molten_netherite', 90), input1: Item.of('minecraft:netherite_scrap', 1), input2: Fluid.of('createmetalwork:molten_gold', 270) },
         { output: Fluid.of('createbigcannons:molten_steel', 90), input1: Item.of('create_ironworks:coal_dust', 2), input2: Fluid.of('createbigcannons:molten_cast_iron', 270) },
         { output: Fluid.of('createbigcannons:molten_nethersteel', 180), input1: Fluid.of('createmetalwork:molten_netherite', 90), input2: Fluid.of('createbigcannons:molten_steel', 90) }
     ]
