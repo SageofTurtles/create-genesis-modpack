@@ -1,3 +1,16 @@
+ServerEvents.tags('item', event => {
+  event.add('genesis:tube_corals', /minecraft:tube_coral(?!_block)/)
+  event.add('genesis:dead_tube_corals', /minecraft:dead_tube_coral(?!_block)/)
+  event.add('genesis:brain_corals', /minecraft:brain_coral(?!_block)/)
+  event.add('genesis:dead_brain_corals', /minecraft:dead_brain_coral(?!_block)/)
+  event.add('genesis:bubble_corals', /minecraft:bubble_coral(?!_block)/)
+  event.add('genesis:dead_bubble_corals', /minecraft:dead_bubble_coral(?!_block)/)
+  event.add('genesis:fire_corals', /minecraft:fire_coral(?!_block)/)
+  event.add('genesis:dead_fire_corals', /minecraft:dead_fire_coral(?!_block)/)
+  event.add('genesis:horn_corals', /minecraft:horn_coral(?!_block)/)
+  event.add('genesis:dead_horn_corals', /minecraft:dead_horn_coral(?!_block)/)
+})
+
 ServerEvents.recipes(event => {
   // Wood to Log recycling
   const woods = [
@@ -117,4 +130,89 @@ ServerEvents.recipes(event => {
       T: 'minecraft:ghast_tear'
     }
   ).id('genesis:crying_obsidian')
+
+  // Netherite Scrap
+  let incomplete = 'kubejs:unfinished_netherite_scrap'
+  event.recipes.create.sequenced_assembly(
+    'minecraft:netherite_scrap',
+    'minecraft:echo_shard',
+    [
+      event.recipes.create.filling(incomplete, [
+        incomplete,
+        Fluid.of('createbigcannons:molten_steel', 180)
+      ]),
+      event.recipes.createDeploying(incomplete, [
+        incomplete,
+        'minecraft:nether_star'
+      ]),
+      event.recipes.create.filling(incomplete, [
+        incomplete,
+        Fluid.of('create:potion', 250, { Bottle: 'LINGERING', Potion: 'minecraft:strong_strength' })
+      ]),
+      event.recipes.create.filling(incomplete, [
+        incomplete,
+        Fluid.of('create:potion', 250, { Bottle: 'LINGERING', Potion: 'minecraft:long_fire_resistance' })
+      ]),
+      event.recipes.create.filling(incomplete, [
+        incomplete,
+        Fluid.of('create:potion', 250, { Bottle: 'LINGERING', Potion: 'minecraft:strong_regeneration' })
+      ]),
+      event.recipes.create.pressing(incomplete, incomplete)
+    ]
+  ).transitionalItem(incomplete).loops(3)
+    .id('genesis:netherite_scrap_sequenced_assembly')
+
+  // Crimson Nylium
+  event.shapeless(
+    'minecraft:crimson_nylium',
+    [
+      'minecraft:netherrack',
+      'minecraft:crimson_fungus'
+    ]
+  ).id('genesis:crimson_nylium')
+
+  // Warped Nylium
+  event.shapeless(
+    'minecraft:warped_nylium',
+    [
+      'minecraft:netherrack',
+      'minecraft:warped_fungus'
+    ]
+  ).id('genesis:warped_nylium')
+
+  // Remove Nether Wart Block crushing
+  event.remove({ id: 'create:crushing/nether_wart_block' })
+
+  // Coral Blocks
+  const corals = [
+    'tube',
+    'brain',
+    'bubble',
+    'fire',
+    'horn'
+  ]
+
+  corals.forEach(type => {
+    event.shaped(
+      `minecraft:${type}_coral_block`,
+      [
+        'CC',
+        'CC'
+      ],
+      {
+        C: `#genesis:${type}_corals`
+      }
+    ).id(`create:crafting/materials/${type}_coral_block`)
+
+    event.shaped(
+      `minecraft:dead_${type}_coral_block`,
+      [
+        'CC',
+        'CC'
+      ],
+      {
+        C: `#genesis:dead_${type}_corals`
+      }
+    ).id(`genesis:dead_${type}_coral_block`)
+  })
 })
