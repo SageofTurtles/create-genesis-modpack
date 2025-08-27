@@ -41,4 +41,16 @@ ServerEvents.recipes(event => {
       A: 'minecraft:bamboo'
     }
   ).id('mcwbridges:dry_bamboo_bridge_pier')
+
+  // Bridge Torch
+  event.shapeless(
+    'mcwbridges:bridge_torch',
+    'minecraft:torch'
+  ).id('mcwbridges:bridge_torch')
+
+  // Bridge Lantern
+  event.shapeless(
+    'mcwbridges:bridge_lantern',
+    'minecraft:lantern'
+  ).id('mcwbridges:bridge_lantern')
 })

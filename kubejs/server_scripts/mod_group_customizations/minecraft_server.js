@@ -9,6 +9,7 @@ ServerEvents.tags('item', event => {
   event.add('genesis:dead_fire_corals', /minecraft:dead_fire_coral(?!_block)/)
   event.add('genesis:horn_corals', /minecraft:horn_coral(?!_block)/)
   event.add('genesis:dead_horn_corals', /minecraft:dead_horn_coral(?!_block)/)
+  event.add('genesis:froglights', /minecraft:(ochre|verdant|pearlescent)_froglight/)
 })
 
 ServerEvents.recipes(event => {
@@ -183,6 +184,13 @@ ServerEvents.recipes(event => {
   // Remove Nether Wart Block crushing
   event.remove({ id: 'create:crushing/nether_wart_block' })
 
+  // Remove default recipes with Terralith alternatives
+  event.remove({ id: 'minecraft:lever' })
+  event.remove({ id: 'minecraft:piston' })
+  event.remove({ id: 'minecraft:dispenser' })
+  event.remove({ id: 'minecraft:dropper' })
+  event.remove({ id: 'minecraft:observer' })
+
   // Coral Blocks
   const corals = [
     'tube',
@@ -215,4 +223,113 @@ ServerEvents.recipes(event => {
       }
     ).id(`genesis:dead_${type}_coral_block`)
   })
+
+  // Carved Pumpkin
+  event.custom({
+    type: "farmersdelight:cutting",
+    ingredients: [
+      {
+        item: "minecraft:pumpkin"
+      }
+    ],
+    result: [
+      {
+        item: "minecraft:carved_pumpkin"
+      },
+      {
+        chance: 0.25,
+        item: "minecraft:pumpkin_seeds"
+      }
+    ],
+    tool: {
+      tag: "forge:tools/knives"
+    }
+  }).id('genesis:carved_pumpkin')
+
+  // Bee Nest
+  event.shaped(
+    'minecraft:bee_nest',
+    [
+      'HHH',
+      'LLL',
+      'HHH'
+    ],
+    {
+      H: 'minecraft:honeycomb',
+      L: '#minecraft:logs'
+    }
+  ).id('genesis:bee_nest')
+
+  // Froglights
+  const froglightColors = [
+    { type: 'ochre', color: 'yellow' },
+    { type: 'verdant', color: 'green' },
+    { type: 'pearlescent', color: 'purple' }
+  ]
+
+  froglightColors.forEach(item => {
+    event.shaped(
+      `8x minecraft:${item.type}_froglight`,
+      [
+        'FFF',
+        'FDF',
+        'FFF'
+      ],
+      {
+        F: '#genesis:froglights',
+        D: `minecraft:${item.color}_dye`
+      }
+    ).id(`genesis:${item.type}_froglight_dyeing`)
+
+    event.recipes.create.mixing(
+      `minecraft:${item.type}_froglight`,
+      [
+        'minecraft:shroomlight',
+        `minecraft:${item.color}_dye`,
+        Fluid.of('minecraft:water', 250)
+      ]
+    ).id(`genesis:${item.type}_froglight_mixing`)
+  })
+
+  // Cobweb
+  event.shaped(
+    '2x minecraft:cobweb',
+    [
+      ' S ',
+      'S S',
+      ' S '
+    ],
+    {
+      S: 'minecraft:string'
+    }
+  ).id('genesis:cobweb')
+
+  // Blaze Rod
+  event.custom({
+    type: "createaddition:charging",
+    input: {
+      item: "createaddition:electrum_rod",
+      count: 1
+    },
+    result: {
+      item: "minecraft:blaze_rod",
+      count: 1
+    },
+    energy: 4000,
+    maxChargeRate: 200
+  }).id('genesis:blaze_rod_from_charging')
+
+  // Lightning Rod
+  event.shaped(
+    'minecraft:lightning_rod',
+    [
+      'I',
+      'R',
+      'R'
+    ],
+    {
+      I: 'minecraft:copper_ingot',
+      R: 'createaddition:copper_rod'
+    }
+  ).id('minecraft:lightning_rod')
 })
