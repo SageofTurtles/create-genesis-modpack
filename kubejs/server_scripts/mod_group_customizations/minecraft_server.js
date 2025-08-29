@@ -184,6 +184,9 @@ ServerEvents.recipes(event => {
   // Remove Nether Wart Block crushing
   event.remove({ id: 'create:crushing/nether_wart_block' })
 
+  // Remove duplicate Shield recipe
+  event.remove({ id: 'shieldmechanics:shields' })
+
   // Remove default recipes with Terralith alternatives
   event.remove({ id: 'minecraft:lever' })
   event.remove({ id: 'minecraft:piston' })
@@ -332,4 +335,162 @@ ServerEvents.recipes(event => {
       R: 'createaddition:copper_rod'
     }
   ).id('minecraft:lightning_rod')
+
+  // Dispenser
+  event.shaped(
+    'minecraft:dispenser',
+    [
+      ' SR',
+      'SDR',
+      ' SR'
+    ],
+    {
+      S: 'minecraft:stick',
+      R: 'minecraft:string',
+      D: 'minecraft:dropper'
+    }
+  ).id('genesis:dispenser_stackable_recipe')
+
+  // Powder Snow Bucket
+  event.recipes.create.mixing(
+    'minecraft:powder_snow_bucket',
+    [
+      'minecraft:bucket',
+      'minecraft:snow_block'
+    ]
+  ).id('genesis:powder_snow_bucket')
+
+  // Saddle
+  event.shaped(
+    'minecraft:saddle',
+    [
+      '  L',
+      'LLL',
+      'RIR'
+    ],
+    {
+      L: 'minecraft:leather',
+      R: 'farmersdelight:rope',
+      I: 'minecraft:iron_ingot'
+    }
+  ).id('genesis:saddle')
+
+  // Spawner
+  event.recipes.create.mechanical_crafting(
+    'minecraft:spawner',
+    [
+      ' NNN ',
+      'N E N',
+      'NESEN',
+      'N E N',
+      ' NNN '
+    ],
+    {
+      N: 'createdeco:netherite_sheet',
+      E: 'minecraft:ender_eye',
+      S: 'minecraft:nether_star'
+    }
+  ).id('genesis:spawner')
+
+  // Chainmail Armor
+  event.shaped(
+    'minecraft:chainmail_helmet',
+    [
+      'III',
+      'ILI'
+    ],
+    {
+      I: 'minecraft:iron_nugget',
+      L: 'minecraft:leather_helmet'
+    }
+  ).id('genesis:chainmail_helmet')
+  event.shaped(
+    'minecraft:chainmail_chestplate',
+    [
+      'ILI',
+      'III',
+      'III'
+    ],
+    {
+      I: 'minecraft:iron_nugget',
+      L: 'minecraft:leather_chestplate'
+    }
+  ).id('genesis:chainmail_chestplate')
+  event.shaped(
+    'minecraft:chainmail_leggings',
+    [
+      'III',
+      'ILI',
+      'I I'
+    ],
+    {
+      I: 'minecraft:iron_nugget',
+      L: 'minecraft:leather_leggings'
+    }
+  ).id('genesis:chainmail_leggings')
+  event.shaped(
+    'minecraft:chainmail_boots',
+    [
+      'ILI',
+      'I I'
+    ],
+    {
+      I: 'minecraft:iron_nugget',
+      L: 'minecraft:leather_boots'
+    }
+  ).id('genesis:chainmail_boots')
+
+  // Leather Horse Armor
+  event.shaped(
+    'minecraft:leather_horse_armor',
+    [
+      ' WL',
+      'LLL',
+      'R R'
+    ],
+    {
+      W: '#minecraft:wool',
+      L: 'minecraft:leather',
+      R: 'farmersdelight:rope'
+    }
+  ).id('minecraft:leather_horse_armor')
+
+  // Iron Horse Armor
+  event.shaped(
+    'minecraft:iron_horse_armor',
+    [
+      'III',
+      'ILI'
+    ],
+    {
+      I: 'minecraft:iron_ingot',
+      L: 'minecraft:leather_horse_armor'
+    }
+  ).id('genesis:iron_horse_armor')
+
+  // Golden Horse Armor
+  event.shaped(
+    'minecraft:golden_horse_armor',
+    [
+      'GGG',
+      'GLG'
+    ],
+    {
+      G: 'minecraft:gold_ingot',
+      L: 'minecraft:leather_horse_armor'
+    }
+  ).id('genesis:golden_horse_armor')
+
+  // Diamond Horse Armor
+  event.shaped(
+    'minecraft:diamond_horse_armor',
+    [
+      'DDD',
+      'DLD'
+    ],
+    {
+      D: 'minecraft:diamond',
+      L: 'minecraft:leather_horse_armor'
+    }
+  ).id('genesis:diamond_horse_armor')
 })
