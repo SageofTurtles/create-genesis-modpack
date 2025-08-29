@@ -18,6 +18,13 @@ ItemEvents.tooltip(event => {
     ])
   })
 
+  // Dragon Egg tooltip
+  event.addAdvanced('minecraft:dragon_egg', (item, advanced, text) => {
+    text.add(1, [
+      Text.red('Only obtainable by killing the Ender Dragon')
+    ])
+  })
+
   // Map tooltip
   event.addAdvanced('minecraft:map', (item, advanced, text) => {
     if (!event.shift) {
@@ -83,6 +90,23 @@ ItemEvents.tooltip(event => {
         Text.gold(', acting like a fuse when ignited with a fire source. When lit, it will burn away and ignite flammable blocks or '),
         Text.yellow('TNT'),
         Text.gold(' in its path.')
+      ])
+    }
+  })
+
+  // Painting tooltip
+  event.addAdvanced('minecraft:painting', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(2, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.add(2, [
+        Text.gold('Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] with a '),
+        Text.yellow('painting'),
+        Text.gold(' in your hand to select its appearance.')
       ])
     }
   })
