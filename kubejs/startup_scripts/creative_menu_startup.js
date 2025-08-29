@@ -224,6 +224,7 @@ StartupEvents.modifyCreativeTab('mcwroofs:mcwroofs', event => {
 
 StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
+	event.remove(Item.of('minecraft:recovery_compass'));
 })
 
 StartupEvents.modifyCreativeTab('pet_home:pet_home', event => {
