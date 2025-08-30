@@ -12,6 +12,11 @@ ServerEvents.tags('item', event => {
   event.add('genesis:froglights', /minecraft:(ochre|verdant|pearlescent)_froglight/)
 })
 
+ServerEvents.compostableRecipes(event => {
+  event.add('minecraft:stick', 0.2)
+  event.add('minecraft:poisonous_potato', 0.8)
+})
+
 ServerEvents.recipes(event => {
   // Wood to Log recycling
   const woods = [
@@ -493,4 +498,253 @@ ServerEvents.recipes(event => {
       L: 'minecraft:leather_horse_armor'
     }
   ).id('genesis:diamond_horse_armor')
+
+  // Music Disc conversions
+  const discs = [
+    'minecraft:music_disc_13',
+    'minecraft:music_disc_cat',
+    'minecraft:music_disc_blocks',
+    'minecraft:music_disc_chirp',
+    'minecraft:music_disc_far',
+    'minecraft:music_disc_mall',
+    'minecraft:music_disc_mellohi',
+    'minecraft:music_disc_stal',
+    'minecraft:music_disc_strad',
+    'minecraft:music_disc_ward',
+    'minecraft:music_disc_11',
+    'minecraft:music_disc_wait',
+    'minecraft:music_disc_otherside',
+    'minecraft:music_disc_5',
+    'minecraft:music_disc_pigstep',
+    'minecraft:music_disc_relic',
+    'create_connected:music_disc_elevator',
+    'create_connected:music_disc_interlude',
+    'furniture:cphs_pride',
+    'furniture:letsdo_theme',
+    'create_confectionery:the_bright_side'
+  ]
+
+  discs.forEach(disc => {
+    event.recipes.create.deploying(
+      disc,
+      [
+        '#minecraft:music_discs',
+        disc
+      ]
+    ).keepHeldItem()
+  })
+
+  // Banner Pattern duplication
+  const patterns = [
+    'minecraft:flower_banner_pattern',
+    'minecraft:creeper_banner_pattern',
+    'minecraft:skull_banner_pattern',
+    'minecraft:mojang_banner_pattern',
+    'minecraft:globe_banner_pattern',
+    'minecraft:piglin_banner_pattern',
+    'supplementaries:dragon_banner_pattern'
+  ]
+
+  patterns.forEach(pattern => {
+    event.shapeless(
+      Item.of(pattern, 2),
+      [
+        pattern,
+        'minecraft:paper',
+        'supplementaries:antique_ink'
+      ]
+    )
+  })
+
+  // Pottery Sherd duplication
+  const sherds = [
+    'angler',
+    'archer',
+    'arms_up',
+    'blade',
+    'brewer',
+    'burn',
+    'danger',
+    'explorer',
+    'friend',
+    'heart',
+    'heartbreak',
+    'howl',
+    'miner',
+    'mourner',
+    'plenty',
+    'prize',
+    'sheaf',
+    'shelter',
+    'skull',
+    'snort'
+  ]
+
+  sherds.forEach(sherd => {
+    event.shaped(
+      `2x minecraft:${sherd}_pottery_sherd`,
+      [
+        'NCN',
+        'CSC',
+        'NCN'
+      ],
+      {
+        N: 'createaddition:electrum_nugget',
+        C: 'minecraft:clay_ball',
+        S: `minecraft:${sherd}_pottery_sherd`
+      }
+    ).id(`genesis:${sherd}_pottery_sherd_duplication`)
+  })
+
+  // Spectral Arrows
+  event.recipes.create.mixing(
+    '8x minecraft:spectral_arrow',
+    [
+      '8x minecraft:arrow',
+      Fluid.of('create:potion', 50, { Bottle: 'REGULAR', Potion: 'minecraft:night_vision' })
+    ]
+  ).id('genesis:spectral_arrow')
+
+  // Golden Apple
+  event.recipes.create.mixing(
+    'minecraft:golden_apple',
+    [
+      'minecraft:apple',
+      Fluid.of('createmetalwork:molten_gold', 540)
+    ]
+  ).heated().id('genesis:golden_apple_from_mixing')
+
+  // Enchanted Golden Apple
+  event.recipes.create.mixing(
+    'minecraft:enchanted_golden_apple',
+    [
+      'minecraft:golden_apple',
+      Fluid.of('create_enchantment_industry:experience', 100),
+      Fluid.of('create:potion', 125, { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }),
+      Fluid.of('create:potion', 125, { Bottle: 'REGULAR', Potion: 'minecraft:fire_resistance' })
+    ]
+  ).superheated().id('genesis:enchanted_golden_apple')
+
+  // Golden Carrot
+  event.recipes.create.mixing(
+    'minecraft:golden_carrot',
+    [
+      'minecraft:carrot',
+      Fluid.of('createmetalwork:molten_gold', 60)
+    ]
+  ).heated().id('genesis:golden_carrot_from_mixing')
+
+  // Glistering Melon Slice
+  event.recipes.create.mixing(
+    'minecraft:glistering_melon_slice',
+    [
+      'minecraft:melon_slice',
+      Fluid.of('createmetalwork:molten_gold', 60)
+    ]
+  ).heated().id('genesis:glistering_melon_slice_from_mixing')
+
+  // Globe Banner Pattern
+  event.shapeless(
+    'minecraft:globe_banner_pattern',
+    [
+      'minecraft:paper',
+      'supplementaries:globe_sepia'
+    ]
+  ).id('genesis:globe_banner_pattern')
+
+  // Piglin Banner Pattern
+  event.shapeless(
+    'minecraft:piglin_banner_pattern',
+    [
+      'minecraft:paper',
+      'minecraft:piglin_head'
+    ]
+  ).id('genesis:piglin_banner_pattern')
+
+  // Rotten Flesh
+  event.recipes.create.haunting(
+    'minecraft:rotten_flesh',
+    '#brewinandchewin:raw_meats'
+  ).id('genesis:rotten_flesh_from_raw_meats')
+
+  // Honeycomb
+  event.shapeless(
+    '4x minecraft:honeycomb',
+    'minecraft:honeycomb_block'
+  ).id('genesis:honeycomb_from_honeycomb_block')
+
+  // Scute
+  event.custom({
+    type: "create_aquatic_ambitions:channeling",
+    ingredients: [
+      { item: 'minecraft:leather' }
+    ],
+    results: [
+      { item: 'minecraft:scute' }
+    ]
+  }).id('genesis:scute_from_channeling')
+
+  // Brown Dye
+  event.shapeless(
+    '2x minecraft:brown_dye',
+    [
+      'minecraft:orange_dye',
+      'minecraft:black_dye'
+    ]
+  ).id('genesis:brown_dye_from_orange_dye')
+
+  event.shapeless(
+    '3x minecraft:brown_dye',
+    [
+      'minecraft:red_dye',
+      'minecraft:yellow_dye',
+      'minecraft:black_dye'
+    ]
+  ).id('genesis:brown_dye_from_primary_color_dyes')
+
+  // Paper
+  event.recipes.create.pressing(
+    'minecraft:paper',
+    'farmersdelight:tree_bark'
+  ).id('genesis:paper_from_pressing_tree_bark')
+
+  event.shaped(
+    '3x minecraft:paper',
+    [
+      'TTT'
+    ],
+    {
+      T: 'farmersdelight:tree_bark'
+    }
+  ).id('farmersdelight:paper_from_tree_bark')
+
+  // Torchflower milling
+  event.recipes.create.milling(
+    [
+      '2x minecraft:orange_dye',
+      Item.of('minecraft:green_dye').withChance(0.25),
+      Item.of('minecraft:purple_dye').withChance(0.1)
+    ],
+    'minecraft:torchflower'
+  ).id('genesis:torchflower_milling')
+
+  // Pitcher Plant milling
+  event.recipes.create.milling(
+    [
+      '2x minecraft:cyan_dye',
+      Item.of('minecraft:blue_dye').withChance(0.25),
+      Item.of('minecraft:magenta_dye').withChance(0.1)
+    ],
+    'minecraft:pitcher_plant'
+  ).id('genesis:pitcher_plant_milling')
+
+  // Pink Petals milling
+  event.recipes.create.milling(
+    [
+      'minecraft:pink_dye',
+      Item.of('minecraft:pink_dye').withChance(0.25),
+      Item.of('minecraft:green_dye').withChance(0.1)
+    ],
+    'minecraft:pink_petals'
+  ).id('genesis:pink_petals_milling')
 })

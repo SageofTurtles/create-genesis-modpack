@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
       }
     }).id(`genesis:${set.stage4}_from_farmersdelight_scraping`)
 
-    // Add oxidizing by washing recipes
+    // Add oxidizing by channeling recipes
     event.custom({
       type: "create_aquatic_ambitions:channeling",
       ingredients: [{ item: `${set.modid}:${set.stage1}` }],
