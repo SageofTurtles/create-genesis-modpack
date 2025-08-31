@@ -15,13 +15,13 @@ _version = 3
 	#
 	# Defines the distance allowed to be synchronized around the player. 
 	# Should be the same or larger than maxGenerationRequestDistance in most cases.
-	maxSyncOnLoadRequestDistance = 4096
+	maxSyncOnLoadRequestDistance = 2048
 	#
 	# If true, clients will receive updated LODs when joining or loading new LODs.
 	synchronizeOnLoad = true
 	#
 	# Defines the distance allowed to generate around the player.
-	maxGenerationRequestDistance = 4096
+	maxGenerationRequestDistance = 2048
 	#
 	# Defines the X-coordinate of the central point for generation boundaries, in blocks.
 	generationBoundsX = 0
@@ -207,7 +207,7 @@ _version = 3
 			#
 			# If enabled, a chat message will be displayed when a replay is started 
 			# giving some basic information about how DH will function.
-			showReplayWarningOnStartup = true
+			showReplayWarningOnStartup = false
 			#
 			# If enabled, a chat message will be displayed when a potentially problematic 
 			# mod is installed alongside DH.
@@ -219,7 +219,7 @@ _version = 3
 			#
 			# If enabled, a chat message will be displayed if DH detects 
 			# that any pooled objects have been garbage collected.
-			showPoolInsufficientMemoryWarning = true
+			showPoolInsufficientMemoryWarning = false
 
 	[common.worldGenerator]
 		#
@@ -252,14 +252,14 @@ _version = 3
 		# CHAT 
 		# LOG 
 		# DISABLED
-		showGenerationProgress = "OVERLAY"
+		showGenerationProgress = "CHAT"
 		#
 		# How often should the distant generator progress be displayed?
-		generationProgressDisplayIntervalInSeconds = 2
+		generationProgressDisplayIntervalInSeconds = 30
 		#
 		# For how many seconds should instructions for disabling the distant generator progress be displayed? 
 		# Setting this to 0 hides the instructional message so the world gen progress is shown immediately when it starts.
-		generationProgressDisableMessageDisplayTimeInSeconds = 20
+		generationProgressDisableMessageDisplayTimeInSeconds = 15
 		#
 		# Should Distant Horizons slowly generate LODs 
 		#  outside the vanilla render distance? 

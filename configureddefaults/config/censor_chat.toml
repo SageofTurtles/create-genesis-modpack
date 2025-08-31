@@ -1,0 +1,8 @@
+delete_message = false
+blacklist = ["anal", "arse", "ass", "asshole", "ballsack", "bastard", "biatch", "bitch", "blowjob", "bollock", "bollocks", "boner", "buttplug", "clit", "clitoris", "cock", "cum", "cunt", "dick", "dildo", "dumbass", "dyke", "erection", "fag", "faggot", "fck", "fellate", "fellatio", "fuck", "fucking", "fvck", "genital", "jizz", "labia", "masturbate", "nigga", "nigger", "penis", "piss", "pissed", "pube", "pubic", "pussy", "rape", "raped", "raping", "scrotum", "sex", "sexual", "sexy", "shit", "shyte", "slut", "smartass", "smegma", "spunk", "tit", "tits", "titties", "titty", "tosser", "trannies", "tranny", "twat", "vagina", "wank", "whore", "wiseass"]
+repeat_char_for_length_of_word = false
+custom_char = true
+replace_with = "*"
+#Range: 1 ~ 100
+repeat_char = 3
+
