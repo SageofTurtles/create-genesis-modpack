@@ -50,7 +50,7 @@ soundDevice:""
 chatVisibility:0
 chatOpacity:1.0
 chatLineSpacing:0.0
-textBackgroundOpacity:0.10798122065727707
+textBackgroundOpacity:0.2
 backgroundForChatOnly:true
 hideServerAddress:false
 advancedItemTooltips:false
