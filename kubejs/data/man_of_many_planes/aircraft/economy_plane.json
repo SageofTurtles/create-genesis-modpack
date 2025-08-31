@@ -4,7 +4,7 @@
     "durability": 1.0,
     "yawSpeed": 1.5,
     "pitchSpeed": 2.0,
-    "engineSpeed": 0.03,
+    "engineSpeed": 0.04,
     "pushSpeed": 0.015,
     "glideFactor": 0.075,
     "driftDrag": 0.01,
