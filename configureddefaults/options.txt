@@ -243,7 +243,6 @@ key_key.journeymap.fullscreen.south:key.keyboard.down
 key_key.journeymap.fullscreen.east:key.keyboard.right
 key_key.journeymap.fullscreen.west:key.keyboard.left
 key_key.journeymap.fullscreen.disable_buttons:key.keyboard.h
-key_key.configured.open_mod_list:key.keyboard.unknown
 key_key.toastcontrol.clear:key.keyboard.unknown
 key_key.findme.search:key.keyboard.y
 key_key.findme.pull_one:key.keyboard.keypad.1
