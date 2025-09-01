@@ -3,5 +3,7 @@
   "item.immersive_aircraft.sturdy_pipes": "Sturdy Piping",
   "item.immersive_aircraft.rotary_cannon.description": "A fast-firing mounted gun. Requires machine gun bullets for ammo.",
   "item.immersive_aircraft.bomb_bay.description": "Drops bombs to deal heavy damage. Requires solid shot for ammo.",
-  "item.immersive_aircraft.heavy_crossbow.description": "A heavy mounted crossbow. Requires arrows of any kind for ammo."
+  "item.immersive_aircraft.heavy_crossbow.description": "A heavy mounted crossbow. Requires arrows of any kind for ammo.",
+  "item.immersive_aircraft.bamboo_hopper": "Seaplane",
+  "entity.immersive_aircraft.bamboo_hopper": "Seaplane"
 }
