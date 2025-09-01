@@ -19,25 +19,25 @@ ServerEvents.recipes(event => {
 
   // Replace Eye of Ender in default recipes
   event.replaceInput(
-    {id: 'sophisticatedbackpacks:inception_upgrade'},
+    { id: 'sophisticatedbackpacks:inception_upgrade' },
     'minecraft:ender_eye',
     'minecraft:echo_shard'
   )
 
   event.replaceInput(
-    {id: 'railways:crafting/remote_lens'},
+    { id: 'railways:crafting/remote_lens' },
     'minecraft:ender_eye',
     'kubejs:inert_ender_eye'
   )
 
   event.replaceInput(
-    {id: 'minecraft:end_crystal'},
+    { id: 'minecraft:end_crystal' },
     'minecraft:ender_eye',
     'kubejs:inert_ender_eye'
   )
 
   event.replaceInput(
-    {id: 'minecraft:ender_chest'},
+    { id: 'minecraft:ender_chest' },
     'minecraft:ender_eye',
     'kubejs:inert_ender_eye'
   )
