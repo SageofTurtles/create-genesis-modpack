@@ -307,4 +307,27 @@ ItemEvents.tooltip(event => {
       ])
     }
   })
+
+  // Elytra dyeing tooltip
+  event.addAdvanced('minecraft:elytra', (item, advanced, text) => {
+    if (!event.shift) {
+      text.add(1, [
+        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
+      ])
+    } else {
+      text.remove(1)
+      text.remove(1)
+      text.add(1, [
+        Text.gold('\nCan be dyed by crafting it together with various '),
+        Text.yellow('colored dyes'),
+        Text.gold('. Use ['),
+        Text.yellow(rightClick.translatedKeyMessage),
+        Text.gold('] on a '),
+        Text.yellow('cauldron'),
+        Text.gold(' full of '),
+        Text.yellow('water'),
+        Text.gold(' to wash the dye off.\n')
+      ])
+    }
+  })
 })
