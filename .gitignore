@@ -1,4 +1,5 @@
-/mods
-kubejs/README.txt
-/resourcepacks
-/shaderpacks
+server-side/mods
+common/mods
+client-side/mods
+client-side/resourcepacks
+client-side/shaderpacks
