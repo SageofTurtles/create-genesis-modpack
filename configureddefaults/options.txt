@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","railways:green_signals","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip","file/Create Immersive Aircraft Warship ResoucePack v1.0.zip"]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","railways:green_signals","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip","file/Create Immersive Aircraft Warship ResoucePack v1.0.zip","file/Create Immersive Aircrafts Bamboo hopper Resource .zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us

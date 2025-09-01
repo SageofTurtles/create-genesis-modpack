@@ -73,9 +73,9 @@ ServerEvents.recipes(event => {
     'immersive_aircraft:bamboo_hopper',
     [
       '   S ',
-      'SBAEP',
-      'HHHAB',
-      'SBAEP',
+      'SHHEP',
+      'S AAA',
+      'SHHEP',
       '   S '
     ], {
     S: 'immersive_aircraft:sail',
