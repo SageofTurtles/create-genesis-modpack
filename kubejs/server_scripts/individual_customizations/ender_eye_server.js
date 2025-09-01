@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+  // Add custom recipes
   event.remove({ id: 'minecraft:ender_eye' })
   event.shaped(
     'kubejs:inert_ender_eye',
@@ -15,6 +16,31 @@ ServerEvents.recipes(event => {
       B: 'minecraft:blaze_powder'
     }
   ).id('genesis:inert_ender_eye')
+
+  // Replace Eye of Ender in default recipes
+  event.replaceInput(
+    {id: 'sophisticatedbackpacks:inception_upgrade'},
+    'minecraft:ender_eye',
+    'minecraft:echo_shard'
+  )
+
+  event.replaceInput(
+    {id: 'railways:crafting/remote_lens'},
+    'minecraft:ender_eye',
+    'kubejs:inert_ender_eye'
+  )
+
+  event.replaceInput(
+    {id: 'minecraft:end_crystal'},
+    'minecraft:ender_eye',
+    'kubejs:inert_ender_eye'
+  )
+
+  event.replaceInput(
+    {id: 'minecraft:ender_chest'},
+    'minecraft:ender_eye',
+    'kubejs:inert_ender_eye'
+  )
 })
 
 let inertEye = 'kubejs:inert_ender_eye'

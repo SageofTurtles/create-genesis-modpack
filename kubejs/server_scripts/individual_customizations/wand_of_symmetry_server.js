@@ -7,6 +7,6 @@ ServerEvents.recipes(event => {
   event.replaceInput(
     { id: 'create:mechanical_crafting/wand_of_symmetry' },
     'minecraft:ender_pearl',
-    'minecraft:ender_eye'
+    'minecraft:echo_shard'
   )
 })
