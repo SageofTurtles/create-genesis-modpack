@@ -255,11 +255,11 @@ _version = 3
 		showGenerationProgress = "CHAT"
 		#
 		# How often should the distant generator progress be displayed?
-		generationProgressDisplayIntervalInSeconds = 30
+		generationProgressDisplayIntervalInSeconds = 180
 		#
 		# For how many seconds should instructions for disabling the distant generator progress be displayed? 
 		# Setting this to 0 hides the instructional message so the world gen progress is shown immediately when it starts.
-		generationProgressDisableMessageDisplayTimeInSeconds = 15
+		generationProgressDisableMessageDisplayTimeInSeconds = 10
 		#
 		# Should Distant Horizons slowly generate LODs 
 		#  outside the vanilla render distance? 
