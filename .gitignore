@@ -1,4 +1,5 @@
 server-side/mods
+server-side/server.properties
 common/mods
 client-side/mods
 client-side/resourcepacks
