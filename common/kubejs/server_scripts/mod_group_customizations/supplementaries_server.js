@@ -99,4 +99,57 @@ ServerEvents.recipes(event => {
     Item.of('minecraft:gravel').withChance(0.85),
     'supplementaries:flint_block'
   ).id('genesis:flint_block_crushing')
+
+  // Flower Box
+  event.shaped(
+    '2x supplementaries:flower_box',
+    [
+      'WDW',
+      ' W '
+    ],
+    {
+      W: '#minecraft:planks',
+      D: 'minecraft:dirt'
+    }
+  ).id('supplementaries:flower_box')
+
+  // Timber Frame blocks
+  event.shaped(
+    '2x supplementaries:timber_frame',
+    [
+      ' S ',
+      'SWS',
+      ' S '
+    ],
+    {
+      S: 'minecraft:stick',
+      W: '#minecraft:planks'
+    }
+  ).id('supplementaries:timber_frame')
+
+  event.shaped(
+    '2x supplementaries:timber_brace',
+    [
+      'S  ',
+      'SWS',
+      '  S'
+    ],
+    {
+      S: 'minecraft:stick',
+      W: '#minecraft:planks'
+    }
+  ).id('supplementaries:timber_brace')
+
+  event.shaped(
+    '2x supplementaries:timber_cross_brace',
+    [
+      'S S',
+      ' W ',
+      'S S'
+    ],
+    {
+      S: 'minecraft:stick',
+      W: '#minecraft:planks'
+    }
+  ).id('supplementaries:timber_cross_brace')
 })

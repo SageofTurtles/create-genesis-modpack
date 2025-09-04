@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
       ' I '
     ],
     {
-      I: 'create:iron_sheet',
+      I: 'minecraft:iron_ingot',
       G: 'minecraft:gunpowder'
     }
   ).id('smallships:cannon_ball')

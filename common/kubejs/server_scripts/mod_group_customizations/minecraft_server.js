@@ -192,6 +192,9 @@ ServerEvents.recipes(event => {
   // Remove duplicate Shield recipe
   event.remove({ id: 'shieldmechanics:shields' })
 
+  // Remove duplicate Cake recipe conflict with Farmer's Delight
+  event.remove({ id: 'minecraft:cake' })
+
   // Remove default recipes with Terralith alternatives
   event.remove({ id: 'minecraft:lever' })
   event.remove({ id: 'minecraft:piston' })
