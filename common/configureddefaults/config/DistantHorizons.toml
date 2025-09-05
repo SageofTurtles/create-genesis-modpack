@@ -6,7 +6,7 @@ _version = 3
 	generationBoundsZ = 0
 	#
 	# Defines the distance the player will receive updates around.
-	realTimeUpdateDistanceRadiusInChunks = 256
+	realTimeUpdateDistanceRadiusInChunks = 96
 	#
 	# Prefix of the level keys sent to the clients.
 	# If the mod is running behind a proxy, each backend should use a unique value.
@@ -15,13 +15,13 @@ _version = 3
 	#
 	# Defines the distance allowed to be synchronized around the player. 
 	# Should be the same or larger than maxGenerationRequestDistance in most cases.
-	maxSyncOnLoadRequestDistance = 2048
+	maxSyncOnLoadRequestDistance = 1536
 	#
 	# If true, clients will receive updated LODs when joining or loading new LODs.
 	synchronizeOnLoad = true
 	#
 	# Defines the distance allowed to generate around the player.
-	maxGenerationRequestDistance = 2048
+	maxGenerationRequestDistance = 1536
 	#
 	# Defines the X-coordinate of the central point for generation boundaries, in blocks.
 	generationBoundsX = 0
@@ -48,6 +48,11 @@ _version = 3
 	#
 	# If true, clients will receive real-time LOD updates for chunks outside the client's render distance.
 	enableRealTimeUpdates = true
+	#
+	# Enables adaptive transfer speed based on client performance.
+	# If true, DH will automatically adjust transfer rate to minimize connection lag.
+	# If false, transfer speed will remain fixed.
+	enableAdaptiveTransferSpeed = false
 
 	[server.experimental]
 		#
@@ -106,20 +111,20 @@ _version = 3
 		# UNCOMPRESSED 
 		# Should only be used for testing, is worse in every way vs [LZ4].
 		# Expected Compression Ratio: 1.0
-		# Estimated average DTO read speed: 1.64 milliseconds
-		# Estimated average DTO write speed: 12.44 milliseconds
+		# Estimated average DTO read speed: 3.25 milliseconds
+		# Estimated average DTO write speed: 5.99 milliseconds
 		# 
 		# LZ4 
 		# A good option if you're CPU limited and have plenty of hard drive space.
-		# Expected Compression Ratio: 0.36
+		# Expected Compression Ratio: 0.26
 		# Estimated average DTO read speed: 1.85 ms
 		# Estimated average DTO write speed: 9.46 ms
 		# 
 		# LZMA2 
 		# Slow but very good compression.
-		# Expected Compression Ratio: 0.14
-		# Estimated average DTO read speed: 11.89 ms
-		# Estimated average DTO write speed: 192.01 ms
+		# Expected Compression Ratio: 0.2
+		# Estimated average DTO read speed: 13.29 ms
+		# Estimated average DTO write speed: 70.95 ms
 		dataCompression = "LZMA2"
 		#
 		# Enabling this will drastically increase chunk processing time
@@ -282,7 +287,7 @@ _version = 3
 			updateBranch = "AUTO"
 			#
 			# Automatically check for updates on game launch?
-			enableAutoUpdater = true
+			enableAutoUpdater = false
 			#
 			# Should Distant Horizons silently, automatically download and install new versions? 
 			# This setting is force disabled on dedicated servers for stability reasons.
@@ -456,7 +461,7 @@ _version = 3
 				#  overhangs or walls for floating objects. 
 				#  Tweaking the caveCullingHeight, can resolve some 
 				#  of those issues.
-				enableCaveCulling = false
+				enableCaveCulling = true
 				#
 				# Identical to the other frustum culling option
 				# only used when a shader mod is present using the DH API
@@ -672,7 +677,7 @@ _version = 3
 				# 
 				# 0.0: No fog. 
 				# 1.0: Fully opaque fog.
-				farFogMax = "1.8"
+				farFogMax = "1.0"
 				#
 				# Determines if fog is drawn on DH LODs.
 				enableDhFog = true
@@ -701,17 +706,17 @@ _version = 3
 				# LINEAR: Linear based on distance (will ignore 'density')
 				# EXPONENTIAL: 1/(e^(distance*density)) 
 				# EXPONENTIAL_SQUARED: 1/(e^((distance*density)^2)
-				farFogFalloff = "EXPONENTIAL_SQUARED"
+				farFogFalloff = "EXPONENTIAL"
 				#
 				# Used in conjunction with the Fog Falloff.
-				farFogDensity = "2.5"
+				farFogDensity = "1.5"
 				#
 				# Where should the far fog end? 
 				# 
 				# 0.0: Fog ends at player's position.
 				# 1.0: Fog ends at the closest edge of the vanilla render distance. 
 				# 1.414: Fog ends at the corner of the vanilla render distance.
-				farFogEnd = "0.75"
+				farFogEnd = "1.0"
 
 				[client.advanced.graphics.fog.heightFog]
 					#
