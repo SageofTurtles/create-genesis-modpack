@@ -33,25 +33,25 @@
 	pet_curse_enchantments_loot_only = true
 	#percent chance of woodland mansion loot table containing sinister carrot:
 	#Range: 0.0 ~ 1.0
-	sinister_carrot_loot_chance = 0.00
+	sinister_carrot_loot_chance = 0.0
 	#percent chance of burried treasure loot table containing Bubbling book:
 	#Range: 0.0 ~ 1.0
-	bubbling_loot_chance = 0.00
+	bubbling_loot_chance = 0.0
 	#percent chance of woodland mansion loot table containing Vampire book:
 	#Range: 0.0 ~ 1.0
-	vampirism_loot_chance = 0.00
+	vampirism_loot_chance = 0.0
 	#percent chance of end city loot table containing Void Cloud book:
 	#Range: 0.0 ~ 1.0
-	void_cloud_loot_chance = 0.00
+	void_cloud_loot_chance = 0.0
 	#percent chance of mineshaft loot table containing Ore Scenting book:
 	#Range: 0.0 ~ 1.0
-	ore_scenting_loot_chance = 0.00
+	ore_scenting_loot_chance = 0.0
 	#percent chance of ancient city loot table containing Muffled book:
 	#Range: 0.0 ~ 1.0
 	muffled_loot_chance = 0.19
 	#percent chance of nether fortress loot table containing Blazing Protection book:
 	#Range: 0.0 ~ 1.0
-	blazing_protection_loot_chance = 0.00
+	blazing_protection_loot_chance = 0.0
 
 [enchantments]
 	#true if xp transfer enchant is enabled, false if disabled
@@ -126,4 +126,30 @@
 	blight_curse_enabled = false
 	#true if immaturity curse enchant is enabled, false if disabled
 	immaturity_curse_enabled = true
+
+[friendly_fire]
+	#owner cannot hurt pet
+	protectPetsFromOwner = true
+	#pet cannot hurt pet
+	protectPetsFromPets = true
+	#protect children animal
+	protectChildren = true
+	#protect pet from ownder
+	reflectDamage = false
+	#owner cannot hurt pet
+	displayHitWarning = true
+	#PROTECT_TEAM_MEMBERS
+	protectTeamMembers = true
+	#RESPECT_TEAM_RULES
+	respectTeamRules = true
+	#can hurt pet item
+	can_hurt_pet_item = []
+	#can always hurt item
+	can_hurt_all = []
+	#can always hurt
+	no_protection_entity = []
+	#other entities that can be protected
+	other_should_protect_entity = []
+	#entities player cant hurt
+	player_cant_hurt_entity = []
 
