@@ -222,6 +222,7 @@ key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_create.keyinfo.rotate_menu:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.z
+key_key.pipeorgans.midi_config:key.keyboard.unknown
 key_petrolpark.key.tube.build:key.keyboard.enter
 key_petrolpark.key.tube.delete_control_point:key.keyboard.backspace
 key_petrolpark.key.tube.add_control_point_after:key.keyboard.right
