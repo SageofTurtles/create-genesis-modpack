@@ -1,3 +1,7 @@
+#Mob catcher only catches tamable animal
+mobcatcherOnlyTamableAnimal = true
+#entities that can't be caught
+mobcatcherBlacklist = ["minecraft:painting"]
 
 [general]
 	#true if wolves, cats, parrots, foxes, axolotls, etc can be set to wander, sit or follow

@@ -231,6 +231,8 @@ StartupEvents.modifyCreativeTab('pet_home:pet_home', event => {
 	event.remove(Item.of('pet_home:exp_bottle'));
 	event.remove(Item.of('pet_home:rotten_apple'));
 	event.remove(Item.of('pet_home:sinister_carrot'));
+	event.remove(Item.of('pet_home:net'));
+	event.remove(Item.of('pet_home:net_launcher'));
 })
 
 StartupEvents.modifyCreativeTab('sophisticatedbackpacks:main', event => {
