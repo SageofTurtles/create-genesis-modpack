@@ -4,11 +4,14 @@ PlayerEvents.loggedIn(event => {
   const day = today.getDate()
   const month = today.getMonth() + 1
   const year = today.getFullYear()
-  const date = `${day}-${month}-${year}`
+  const date = `${year}-${month}-${day}`
 
   // Save player login date as JSON file
-  JsonIO.write(`latest_logins/${event.player.username}`, {
-    player: event.player.username,
-    last_login_date: date
-  })
+  JsonIO.write(
+    `latest_logins/${event.player.username}.json`,
+    {
+      player: event.player.username,
+      last_login_date: date
+    }
+  )
 })
