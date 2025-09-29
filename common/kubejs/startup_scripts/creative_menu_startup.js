@@ -58,7 +58,6 @@ kubejs:tab
 luminousblocks:luminous_tab
 numismatics:main
 packedup:packedup
-pet_home:pet_home
 petrolsparts:base
 rechiseled:rechiseled
 smallships:smallships.creative_mode_tab
@@ -225,14 +224,6 @@ StartupEvents.modifyCreativeTab('mcwroofs:mcwroofs', event => {
 StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
 	event.remove(Item.of('minecraft:recovery_compass'));
-})
-
-StartupEvents.modifyCreativeTab('pet_home:pet_home', event => {
-	event.remove(Item.of('pet_home:exp_bottle'));
-	event.remove(Item.of('pet_home:rotten_apple'));
-	event.remove(Item.of('pet_home:sinister_carrot'));
-	event.remove(Item.of('pet_home:net'));
-	event.remove(Item.of('pet_home:net_launcher'));
 })
 
 StartupEvents.modifyCreativeTab('sophisticatedbackpacks:main', event => {
