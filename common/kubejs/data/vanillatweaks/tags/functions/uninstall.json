@@ -1,6 +1,8 @@
 {
 	"values": [
-		"villager_workstation_highlights:uninstall",
-		"silence_mobs:uninstall"
+		"bat_membranes:uninstall",
+		"silence_mobs:uninstall",
+		"villager_death:uninstall",
+		"villager_workstation_highlights:uninstall"
 	]
 }
