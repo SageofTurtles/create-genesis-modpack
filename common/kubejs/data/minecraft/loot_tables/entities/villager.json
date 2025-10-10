@@ -10,6 +10,16 @@
         }
       ]
     },
+    {  
+        "rolls":1,
+        "entries":[  
+            {  
+                "type": "loot_table",
+                "name": "minecraft:entities/reference/villager/villager_death",
+                "weight": 1
+            }
+        ]
+    },
     {
       "rolls": 1,
       "entries": [
