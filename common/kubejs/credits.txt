@@ -23,7 +23,7 @@ Vanilla Tweaks:
 		
 	Datapacks:
 		Anti Enderman Grief
-		Bat Membranes
+		Bat Membranes (loot tables only)
 		Double Shulker Shells
 		Dragon Drops
 		More Mob Heads
