@@ -29,4 +29,5 @@ Vanilla Tweaks:
 		More Mob Heads
 		Player Head Drops
 		Silence Mobs
+		Villager Death Messages
 		Workstation Highlights
