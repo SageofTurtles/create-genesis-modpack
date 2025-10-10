@@ -3,7 +3,7 @@
 		"icon": {
 			"item": "minecraft:phantom_membrane"
 		},
-		"title": "Bat Membranes",
+		"title": "Bat Membranes (modified)",
 		"description": ["",{"text":"Get phantom membranes from bats.","color":"gold"}],
 		"show_toast": false,
 		"announce_to_chat": false
