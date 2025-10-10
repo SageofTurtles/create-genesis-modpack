@@ -1,9 +1,9 @@
 {
-	"replace":false,
-	"values": [
-		"villager_workstation_highlights:load",
-		"villager_workstation_highlights:tick",
+  "values": [
     "silence_mobs:load",
-		"minecraft:load"
-	]
+    "villager_death:load",
+    "villager_death:tick",
+    "villager_workstation_highlights:load",
+    "villager_workstation_highlights:tick"
+  ]
 }
