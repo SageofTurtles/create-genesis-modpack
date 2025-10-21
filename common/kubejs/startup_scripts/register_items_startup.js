@@ -2,17 +2,6 @@ Platform.mods.kubejs.name = 'Create: Genesis'
 
 // Register new items
 StartupEvents.registry('item', event => {
-  event.create('firing_mechanism').displayName('Firing Mechanism')
-  event.create('incomplete_firing_mechanism', 'create:sequenced_assembly').displayName('Incomplete Firing Mechanism')
-  event.create('bolt_action').displayName('Bolt Action')
-  event.create('firing_pin').displayName('Firing Pin')
-  event.create('gatling_gun_base').displayName('Gatling Gun Base')
-  event.create('incomplete_machine_gun_round').displayName('Incomplete Machine Gun Round')
-  event.create('incomplete_large_bullet').displayName('Incomplete Large Bullet')
-  event.create('incomplete_small_bullet').displayName('Incomplete Small Bullet')
-  event.create('incomplete_shotgun_shell').displayName('Incomplete Shotgun Shell')
-  event.create('lever_action').displayName('Lever Action')
-  event.create('trigger').displayName('Trigger')
   event.create('rough_diamond').displayName('Rough Diamond')
   event.create('empty_ink_sac').displayName('Empty Ink Sac')
   event.create('inert_ender_eye').displayName('Inert Eye of Ender')
@@ -51,10 +40,5 @@ StartupEvents.registry('block', event => {
 StartupEvents.modifyCreativeTab('kubejs:tab', event => {
   event.displayName = 'Create: Genesis'
   event.icon = 'kubejs:inert_ender_eye'
-  event.remove('kubejs:incomplete_machine_gun_round')
-  event.remove('kubejs:incomplete_large_bullet')
-  event.remove('kubejs:incomplete_small_bullet')
-  event.remove('kubejs:incomplete_shotgun_shell')
-  event.remove('kubejs:incomplete_firing_mechanism')
   event.remove('kubejs:unfinished_netherite_scrap')
 })
