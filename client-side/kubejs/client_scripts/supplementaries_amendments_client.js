@@ -354,7 +354,7 @@ ItemEvents.tooltip(event => {
     }
   })
 
-  // Sconces & Candle Holders tooltips
+  // Sconces tooltips
   let lightBlocks = [
     'supplementaries:sconce',
     'supplementaries:sconce_soul'
@@ -381,27 +381,6 @@ ItemEvents.tooltip(event => {
         ])
       }
     })
-  })
-  event.addAdvanced(/supplementaries:candle_holder/, (item, advanced, text) => {
-    if (!event.shift) {
-      text.add(2, [
-        Text.darkGray('Hold ['), Text.gray('Shift'), Text.darkGray('] for details')
-      ])
-    } else {
-      text.add(2, [
-        Text.gold('A decorative alternative to '),
-        Text.yellow('torches'),
-        Text.gold('. Can be lit with '),
-        Text.yellow('flint and steel'),
-        Text.gold(', '),
-        Text.yellow('fire charges'),
-        Text.gold(', or '),
-        Text.yellow('flaming arrows'),
-        Text.gold('. Can be extinguished with a '),
-        Text.yellow('splash water bottle'),
-        Text.gold(' or by waterlogging it.')
-      ])
-    }
   })
 
   // Antique Ink Tooltip

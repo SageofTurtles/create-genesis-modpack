@@ -15,10 +15,10 @@ ItemEvents.tooltip(event => {
         Text.gray(' - Eggs')
       ])
       text.add(4, [
-        Text.gray(' - Lava (fluid by pipe)')
+        Text.gray(' - Lava')
       ])
       text.add(5, [
-        Text.gray(' - Seed Oil (fluid by pipe)')
+        Text.gray(' - Seed Oil')
       ])
       text.add(6, [
         Text.of('')
@@ -30,7 +30,7 @@ ItemEvents.tooltip(event => {
         Text.gray(' - Blaze Cake')
       ])
       text.add(9, [
-        Text.gray(' - Bioethanol (fluid by pipe)')
+        Text.gray(' - Bioethanol')
       ])
     }
   })
