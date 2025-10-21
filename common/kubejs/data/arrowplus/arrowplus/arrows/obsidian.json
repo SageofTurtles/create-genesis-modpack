@@ -1,0 +1,11 @@
+{
+  "baseDamage": 3.5,
+  "color": -13755833,
+  "effects": {
+    "minecraft:blindness": 60
+  },
+  "flame": false,
+  "gravity": 0.05,
+  "material": "minecraft:obsidian",
+  "translationKey": "item.arrowplus.obsidian_arrow"
+}

@@ -1,0 +1,9 @@
+{
+  "baseDamage": 2.5,
+  "color": -12627531,
+  "effects": {},
+  "flame": false,
+  "gravity": 0.05,
+  "material": "minecraft:lapis_lazuli",
+  "translationKey": "item.arrowplus.lapis_arrow"
+}

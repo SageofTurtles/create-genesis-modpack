@@ -1,0 +1,11 @@
+{
+  "baseDamage": 2.2,
+  "color": -1120086,
+  "effects": {
+    "minecraft:poison": 100
+  },
+  "flame": false,
+  "gravity": 0.05,
+  "material": "minecraft:bone",
+  "translationKey": "item.arrowplus.bone_arrow"
+}

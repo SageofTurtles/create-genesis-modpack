@@ -1,0 +1,9 @@
+{
+  "baseDamage": 2.2,
+  "color": -12703965,
+  "effects": {},
+  "flame": true,
+  "gravity": 0.05,
+  "material": "minecraft:charcoal",
+  "translationKey": "item.arrowplus.charcoal_arrow"
+}

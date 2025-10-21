@@ -1,0 +1,11 @@
+{
+  "baseDamage": 2.2,
+  "color": -2855612,
+  "effects": {
+    "createaddition:shocking": 40
+  },
+  "flame": false,
+  "gravity": 0.05,
+  "material": "minecraft:copper_ingot",
+  "translationKey": "item.arrowplus.copper_arrow"
+}

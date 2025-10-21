@@ -1,0 +1,11 @@
+{
+  "baseDamage": 4.5,
+  "color": -12698050,
+  "effects": {
+    "minecraft:slowness": 160
+  },
+  "flame": false,
+  "gravity": 0.02,
+  "material": "minecraft:netherite_ingot",
+  "translationKey": "item.arrowplus.netherite_arrow"
+}

@@ -1,0 +1,11 @@
+{
+  "baseDamage": 3.7,
+  "color": -12532481,
+  "effects": {
+    "attributes:bleeding": 100
+  },
+  "flame": false,
+  "gravity": 0.05,
+  "material": "minecraft:diamond",
+  "translationKey": "item.arrowplus.diamond_arrow"
+}

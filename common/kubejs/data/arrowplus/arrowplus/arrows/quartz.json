@@ -1,0 +1,9 @@
+{
+  "baseDamage": 3.0,
+  "color": -657931,
+  "effects": {},
+  "flame": false,
+  "gravity": 0.05,
+  "material": "minecraft:quartz",
+  "translationKey": "item.arrowplus.quartz_arrow"
+}

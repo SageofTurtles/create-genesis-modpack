@@ -1,0 +1,9 @@
+{
+  "baseDamage": 1.7,
+  "color": -7508381,
+  "effects": {},
+  "flame": false,
+  "gravity": 0.05,
+  "material": "#minecraft:planks",
+  "translationKey": "item.arrowplus.wood_arrow"
+}

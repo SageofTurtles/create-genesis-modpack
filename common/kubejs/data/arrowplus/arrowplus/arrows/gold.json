@@ -1,0 +1,9 @@
+{
+  "baseDamage": 3.2,
+  "color": -10752,
+  "effects": {},
+  "flame": false,
+  "gravity": 0.10,
+  "material": "minecraft:gold_ingot",
+  "translationKey": "item.arrowplus.gold_arrow"
+}

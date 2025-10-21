@@ -1,0 +1,11 @@
+{
+  "baseDamage": 2.7,
+  "color": -10565432,
+  "effects": {
+    "attributes:bleeding": 60
+  },
+  "flame": false,
+  "gravity": 0.05,
+  "material": "minecraft:prismarine_shard",
+  "translationKey": "item.arrowplus.prismarine_arrow"
+}
