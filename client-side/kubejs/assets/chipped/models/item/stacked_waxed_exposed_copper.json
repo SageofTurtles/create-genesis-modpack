@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chipped:item/stacked_waxed_exposed_copper"
-  }
-}
