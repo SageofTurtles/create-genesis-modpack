@@ -1,8 +1,0 @@
-{
-	"credit": "End_Rage waz here",
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"particle": "cgm:item/2d_textures/long_scope",
-		"layer0": "cgm:item/2d_textures/long_scope"
-	}
-}
