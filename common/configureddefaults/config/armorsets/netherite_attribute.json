@@ -45,9 +45,9 @@
     {
       "type": "attribute",
       "name": "minecraft:generic.armor_toughness",
-      "value": 1.25,
+      "value": 1.20,
       "modifierUUID": "1ce47923-37de-4674-82ed-76330a98d7c1",
-      "description": "+25% Armor Toughness",
+      "description": "+20% Armor Toughness",
       "attributeOperation": 1,
       "interactionType": "self",
       "hideBonusDescription": true

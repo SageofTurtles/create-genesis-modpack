@@ -71,7 +71,7 @@ ItemEvents.tooltip(event => {
     {
       type: 'Netherite',
       item: /minecraft:netherite_(helmet|chestplate|leggings|boots)/,
-      bonus: '+25% Armor Toughness'
+      bonus: '+20% Armor Toughness'
     }
   ]
 
