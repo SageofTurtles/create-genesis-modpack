@@ -19,22 +19,17 @@ minecraft:op_blocks
 
 mcwbridges:mcwbridges
 mcwfences:fenceitemgroup
-mcwfurnitures:furnitures
 mcwlights:mcwlights
 mcwroofs:mcwroofs
 mcwwindows:mcwwindows
 
 bellsandwhistles:bells_and_whistles_tab
-botanypots:creative_tab
 brewinandchewin:brewinandchewin
-cgm:creative_tab
-chipped:main
 copycats:functional
 copycats:main
 create:base
 create:palettes
 create_central_kitchen:base
-create_confectionery:create_confectionery_tab
 create_connected:main
 create_enchantment_industry:base
 create_ironworks:create_ironworks
@@ -42,7 +37,6 @@ create_mobile_packages:create_mobile_packages_tab
 create_power_loader:main
 create_vibrant_vaults:base
 createaddition:main
-createbigcannons:base
 createcobblestone:main
 createdeco:bricks_tab
 createdeco:props_tab
@@ -51,7 +45,6 @@ createrailwaysnavigator:createrailwaysnavigatortab
 decorative_blocks:general
 extra_gauges:main_tab
 farmersdelight:farmersdelight
-furniture:furniture
 immersive_aircraft:immersive_aircraft
 interiors:main
 kubejs:tab
@@ -79,17 +72,6 @@ StartupEvents.modifyCreativeTab('brewinandchewin:brewinandchewin', event => {
 	event.remove('brewinandchewin:cocoa_fudge');
 })
 
-StartupEvents.modifyCreativeTab('cgm:creative_tab', event => {
-	event.remove('cgm:workbench');
-	event.remove('cgm:missile');
-	event.add('kubejs:firing_mechanism');
-	event.add('kubejs:gatling_gun_base');
-	event.add('kubejs:bolt_action');
-	event.add('kubejs:firing_pin');
-	event.add('kubejs:lever_action');
-	event.add('kubejs:trigger');
-})
-
 StartupEvents.modifyCreativeTab('create:base', event => {
 	event.remove('create:crushed_raw_tin');
 })
@@ -103,20 +85,6 @@ StartupEvents.modifyCreativeTab('createaddition:main', event => {
 	event.remove('createaddition:zinc_sheet');
 })
 
-StartupEvents.modifyCreativeTab('createbigcannons:base', event => {
-	event.remove('createbigcannons:ram_head');
-	event.remove('createbigcannons:worm_head');
-	event.remove('createbigcannons:spring_wire');
-	event.remove('createbigcannons:partial_recoil_spring');
-	event.remove('createbigcannons:partial_cast_iron_autocannon_breech_extractor');
-	event.remove('createbigcannons:partial_bronze_autocannon_breech_extractor');
-	event.remove('createbigcannons:partial_steel_autocannon_breech_extractor');
-	event.remove('createbigcannons:partially_formed_autocannon_cartridge');
-	event.remove('createbigcannons:partially_filled_autocannon_cartridge');
-	event.remove('createbigcannons:partially_formed_big_cartridge');
-	event.remove('createbigcannons:partially_assembled_machine_gun_round');
-})
-
 StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {
 	event.remove('create_central_kitchen:mulberry_pie_slice');
 	event.remove('create_central_kitchen:yucca_cake_slice');
@@ -124,11 +92,6 @@ StartupEvents.modifyCreativeTab('create_central_kitchen:base', event => {
 	event.remove('create_central_kitchen:passion_fruit_cake_slice');
 	event.remove('create_central_kitchen:pumpkin_cake_slice');
 	event.remove('create_central_kitchen:sweet_berry_cake_slice');
-})
-
-StartupEvents.modifyCreativeTab('create_confectionery:create_confectionery_tab', event => {
-	event.remove('create_confectionery:hot_chocolate_bottle');
-	event.remove('create_confectionery:soothing_hot_chocolate');
 })
 
 StartupEvents.modifyCreativeTab('create_connected:main', event => {
@@ -171,19 +134,12 @@ StartupEvents.modifyCreativeTab('farmersdelight:farmersdelight', event => {
 	event.remove('farmersdelight:wheat_dough');
 })
 
-StartupEvents.modifyCreativeTab('furniture:furniture', event => {
-	event.remove('furniture:bin');
-	event.remove('furniture:trash_bag');
-	event.remove('furniture:canvas');
-})
-
 StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
 	event.addAfter('minecraft:diamond', 'kubejs:rough_diamond');
 	event.addAfter('minecraft:ink_sac', 'kubejs:empty_ink_sac');
 })
 
 StartupEvents.modifyCreativeTab('minecraft:search', event => {
-	event.remove(/createbigcannons:partial.*/);
 	event.remove(/railways:.*incomplete.*/);
 	event.remove(/create_connected:.*control_chip/);
 	event.remove(/create_central_kitchen:incomplete.*/);
@@ -198,9 +154,6 @@ StartupEvents.modifyCreativeTab('minecraft:search', event => {
 	event.remove('create_central_kitchen:sweet_berry_cake_slice');
 	event.remove('createaddition:straw');
 	event.remove('createaddition:zinc_sheet');
-	event.remove('createbigcannons:ram_head');
-	event.remove('createbigcannons:worm_head');
-	event.remove('createbigcannons:spring_wire');
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
 	event.remove('create_jetpack:jetpack_placeable');
 	event.remove('create_jetpack:netherite_jetpack_placeable');
@@ -215,6 +168,24 @@ StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
 	event.remove('mcwlights:festive_wall_lantern');
 	event.remove('mcwlights:cross_wall_lantern');
 	event.remove('mcwlights:bell_wall_lantern');
+	event.remove('mcwlights:wall_lamp');
+	event.remove('mcwlights:square_wall_lamp');
+	event.remove('mcwlights:white_lamp');
+	event.remove('mcwlights:light_gray_lamp');
+	event.remove('mcwlights:gray_lamp');
+	event.remove('mcwlights:black_lamp');
+	event.remove('mcwlights:brown_lamp');
+	event.remove('mcwlights:red_lamp');
+	event.remove('mcwlights:orange_lamp');
+	event.remove('mcwlights:yellow_lamp');
+	event.remove('mcwlights:lime_lamp');
+	event.remove('mcwlights:green_lamp');
+	event.remove('mcwlights:cyan_lamp');
+	event.remove('mcwlights:light_blue_lamp');
+	event.remove('mcwlights:blue_lamp');
+	event.remove('mcwlights:purple_lamp');
+	event.remove('mcwlights:magenta_lamp');
+	event.remove('mcwlights:pink_lamp');
 })
 
 StartupEvents.modifyCreativeTab('mcwroofs:mcwroofs', event => {
@@ -235,4 +206,21 @@ StartupEvents.modifyCreativeTab('sophisticatedbackpacks:main', event => {
 
 StartupEvents.modifyCreativeTab('supplementaries:supplementaries', event => {
 	event.remove('supplementaries:rope');
+	event.remove('supplementaries:candle_holder');
+	event.remove('supplementaries:candle_holder_white');
+	event.remove('supplementaries:candle_holder_light_gray');
+	event.remove('supplementaries:candle_holder_gray');
+	event.remove('supplementaries:candle_holder_black');
+	event.remove('supplementaries:candle_holder_brown');
+	event.remove('supplementaries:candle_holder_red');
+	event.remove('supplementaries:candle_holder_orange');
+	event.remove('supplementaries:candle_holder_yellow');
+	event.remove('supplementaries:candle_holder_lime');
+	event.remove('supplementaries:candle_holder_green');
+	event.remove('supplementaries:candle_holder_cyan');
+	event.remove('supplementaries:candle_holder_light_blue');
+	event.remove('supplementaries:candle_holder_blue');
+	event.remove('supplementaries:candle_holder_purple');
+	event.remove('supplementaries:candle_holder_magenta');
+	event.remove('supplementaries:candle_holder_pink');
 })

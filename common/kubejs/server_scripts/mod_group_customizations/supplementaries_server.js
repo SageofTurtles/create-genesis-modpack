@@ -152,33 +152,4 @@ ServerEvents.recipes(event => {
       W: '#minecraft:planks'
     }
   ).id('supplementaries:timber_cross_brace')
-
-  // Candle Holders
-  global.colors.forEach(color => {
-    event.shaped(
-      `supplementaries:candle_holder_${color}`,
-      [
-        'C ',
-        'IN'
-      ],
-      {
-        C: `minecraft:${color}_candle`,
-        I: 'minecraft:iron_ingot',
-        N: 'minecraft:iron_nugget'
-      }
-    ).id(`supplementaries:candle_holders/candle_holder_${color}`)
-  })
-
-  event.shaped(
-    'supplementaries:candle_holder',
-    [
-      'C ',
-      'IN'
-    ],
-    {
-      C: 'minecraft:candle',
-      I: 'minecraft:iron_ingot',
-      N: 'minecraft:iron_nugget'
-    }
-  ).id('supplementaries:candle_holders/candle_holder')
 })
