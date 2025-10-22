@@ -79,7 +79,6 @@ ServerEvents.recipes(event => {
       '   S '
     ], {
     S: 'immersive_aircraft:sail',
-    B: 'minecraft:bamboo_block',
     H: 'immersive_aircraft:hull',
     A: '#create:seats',
     E: 'immersive_aircraft:engine',
@@ -370,12 +369,12 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('immersive_aircraft:telescope', 1),
     [
-      ' L ',
+      ' S ',
       ' R ',
       'R R'
     ],
     {
-      L: 'cgm:long_scope',
+      S: 'minecraft:spyglass',
       R: 'createaddition:copper_rod'
     }
   ).id('immersive_aircraft:telescope')

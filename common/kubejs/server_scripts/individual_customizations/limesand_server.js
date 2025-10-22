@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.splashing(
     [
       Item.of('create_ironworks:tin_nugget').withChance(0.12),
-      Item.of('minecraft:lapis_lazuli').withChance(0.02),
+      Item.of('minecraft:clay_ball').withChance(0.2),
     ],
     'kubejs:limesand'
   ).id('genesis:limesand_washing')

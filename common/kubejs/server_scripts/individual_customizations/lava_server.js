@@ -1,15 +1,6 @@
 ServerEvents.recipes(event => {
-  event.remove({ id: 'create:mixing/lava_from_cobble' })
-  event.custom({
-    "type": "createbigcannons:melting",
-    "heatRequirement": "heated",
-    "ingredients": [{
-      "tag": "forge:cobblestone"
-    }],
-    "processingTime": 100,
-    "results": [{
-      "amount": 50,
-      "fluid": "minecraft:lava"
-    }]
-  }).id('genesis:lava_from_cobblestone')
+  event.recipes.create.mixing(
+    Fluid.of('minecraft:lava', 250),
+    '5x minecraft:cobblestone'
+  ).heated().id('create:mixing/lava_from_cobble')
 })

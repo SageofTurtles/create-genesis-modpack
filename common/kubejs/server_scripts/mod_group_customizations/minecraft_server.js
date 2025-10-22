@@ -145,11 +145,7 @@ ServerEvents.recipes(event => {
     [
       event.recipes.create.filling(incomplete, [
         incomplete,
-        Fluid.of('createbigcannons:molten_steel', 180)
-      ]),
-      event.recipes.createDeploying(incomplete, [
-        incomplete,
-        'minecraft:nether_star'
+        Fluid.of('createmetalwork:molten_steel', 270)
       ]),
       event.recipes.create.filling(incomplete, [
         incomplete,
@@ -159,13 +155,9 @@ ServerEvents.recipes(event => {
         incomplete,
         Fluid.of('create:potion', 250, { Bottle: 'LINGERING', Potion: 'minecraft:long_fire_resistance' })
       ]),
-      event.recipes.create.filling(incomplete, [
-        incomplete,
-        Fluid.of('create:potion', 250, { Bottle: 'LINGERING', Potion: 'minecraft:strong_regeneration' })
-      ]),
       event.recipes.create.pressing(incomplete, incomplete)
     ]
-  ).transitionalItem(incomplete).loops(3)
+  ).transitionalItem(incomplete).loops(1)
     .id('genesis:netherite_scrap_sequenced_assembly')
 
   // Crimson Nylium
@@ -521,10 +513,7 @@ ServerEvents.recipes(event => {
     'minecraft:music_disc_pigstep',
     'minecraft:music_disc_relic',
     'create_connected:music_disc_elevator',
-    'create_connected:music_disc_interlude',
-    'furniture:cphs_pride',
-    'furniture:letsdo_theme',
-    'create_confectionery:the_bright_side'
+    'create_connected:music_disc_interlude'
   ]
 
   discs.forEach(disc => {

@@ -1,8 +1,6 @@
 === CREDITS ===
 
 Panorama build by mrGnegich
-Create Guns [Unofficial 1.20.1 Port] by mrGnegich
-	https://github.com/gnegDev/create-guns-1.20.1-unofficial-port
 
 Vanilla Tweaks:
 	https://vanillatweaks.net/
