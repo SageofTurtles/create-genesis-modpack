@@ -1,3 +1,4 @@
+
 [serverConfig]
 	#The default language used for server-side localization for players that don't have the mod installed.
 	defaultLanguage = "en_us"
@@ -86,6 +87,8 @@
 		#ALL - all claims are synced. OWNED_ONLY - only the claims that the client player owns and server claims are synced. NOT_SYNCED - claims are not synced.
 		#Allowed Values: NOT_SYNCED, OWNED_ONLY, ALL
 		claimsSynchronization = "ALL"
+		#Whether to display "welcome" messages when a player enters a claim or wilderness. Not recommended to turn off unless you have another mod handling this.
+		claimWelcomeMessages = true
 
 		[serverConfig.claims.protection]
 			#The type of the list defined in "friendlyChunkProtectedEntityList". ONLY - include only the listed entities. ALL_BUT - include all but the listed entities.
