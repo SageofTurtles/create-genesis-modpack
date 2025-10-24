@@ -106,7 +106,7 @@ globalExecutorParallelism = "default"
 
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance
-	enabled = "false"
+	enabled = false
 	# (Default: 2) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
