@@ -1,64 +1,3 @@
-/*
-All creative tab IDs:
-
-minecraft:building_blocks
-minecraft:colored_blocks
-minecraft:natural_blocks
-minecraft:functional_blocks
-minecraft:redstone_blocks
-minecraft:tools_and_utilities
-minecraft:combat
-minecraft:food_and_drinks
-minecraft:ingredients
-minecraft:spawn_eggs
-
-minecraft:inventory
-minecraft:hotbar
-minecraft:search
-minecraft:op_blocks
-
-mcwbridges:mcwbridges
-mcwfences:fenceitemgroup
-mcwlights:mcwlights
-mcwroofs:mcwroofs
-mcwwindows:mcwwindows
-
-bellsandwhistles:bells_and_whistles_tab
-brewinandchewin:brewinandchewin
-copycats:functional
-copycats:main
-create:base
-create:palettes
-create_central_kitchen:base
-create_connected:main
-create_enchantment_industry:base
-create_ironworks:create_ironworks
-create_mobile_packages:create_mobile_packages_tab
-create_power_loader:main
-create_vibrant_vaults:base
-createaddition:main
-createcobblestone:main
-createdeco:bricks_tab
-createdeco:props_tab
-createmetalwork:base
-createrailwaysnavigator:createrailwaysnavigatortab
-decorative_blocks:general
-extra_gauges:main_tab
-farmersdelight:farmersdelight
-immersive_aircraft:immersive_aircraft
-interiors:main
-kubejs:tab
-luminousblocks:luminous_tab
-numismatics:main
-packedup:packedup
-petrolsparts:base
-rechiseled:rechiseled
-smallships:smallships.creative_mode_tab
-sophisticatedbackpacks:main
-supplementaries:jars
-supplementaries:supplementaries
-*/
-
 StartupEvents.modifyCreativeTab('bellsandwhistles:bells_and_whistles_tab', event => {
 	event.remove('bellsandwhistles:metro_casing');
 	event.remove('bellsandwhistles:corrugated_metro_casing');
@@ -119,6 +58,10 @@ StartupEvents.modifyCreativeTab('createdeco:props_tab', event => {
 
 StartupEvents.modifyCreativeTab('create_enchantment_industry:base', event => {
 	event.remove('create_enchantment_industry:experience_rotor');
+})
+
+StartupEvents.modifyCreativeTab('createfisheryindustry:fishery_tab', event => {
+	event.remove('createfisheryindustry:zinc_sheet');
 })
 
 StartupEvents.modifyCreativeTab('create_ironworks:create_ironworks', event => {
