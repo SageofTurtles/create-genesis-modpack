@@ -1,6 +1,6 @@
 # Create: Genesis — Modpack
 
-![genesis_title_scene](https://github.com/user-attachments/assets/36b73088-8515-44c7-b891-515ca156670a)
+<img width="2098" height="947" alt="genesis_title_transparent" src="https://github.com/user-attachments/assets/acaf202e-4697-4f4a-ab29-028d64ca9a10" />
 
 If you love the charm of vanilla Minecraft but crave even greater creativity and automation, this modpack is for you!  We don't want to replace Minecraft, but to **enhance** it.  Every mod is carefully chosen to expand what’s possible without losing that classic vanilla feel.
 
@@ -20,7 +20,7 @@ To top it all off, hundreds of custom recipes, finely-tuned balancing, and a hea
 
 ***
 
-## Links:
+# Links
 - **The Create: Genesis Website** — https://genesis.centralhosting.au/
 - **Full Mod List** — https://genesis.centralhosting.au/season-2-modpack/
 - **Join the Create: Genesis Official Server** — https://discord.gg/PckFfRcuK6
