@@ -32,7 +32,6 @@ global['deletedItems'] = [
   'createdeco:red_shipping_container',
   'createdeco:black_shipping_container',
   'brewinandchewin:kombucha',
-  'createaddition:straw',
   'mcwlights:wall_lantern',
   'mcwlights:striped_wall_lantern',
   'mcwlights:covered_wall_lantern',

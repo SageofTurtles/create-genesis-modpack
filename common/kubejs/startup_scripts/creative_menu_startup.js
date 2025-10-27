@@ -20,7 +20,6 @@ StartupEvents.modifyCreativeTab('create:palettes', event => {
 })
 
 StartupEvents.modifyCreativeTab('createaddition:main', event => {
-	event.remove('createaddition:straw');
 	event.remove('createaddition:zinc_sheet');
 })
 
@@ -95,7 +94,6 @@ StartupEvents.modifyCreativeTab('minecraft:search', event => {
 	event.remove('create_central_kitchen:passion_fruit_cake_slice');
 	event.remove('create_central_kitchen:pumpkin_cake_slice');
 	event.remove('create_central_kitchen:sweet_berry_cake_slice');
-	event.remove('createaddition:straw');
 	event.remove('createaddition:zinc_sheet');
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
 	event.remove('create_jetpack:jetpack_placeable');
