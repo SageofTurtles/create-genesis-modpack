@@ -24,5 +24,5 @@ To top it all off, hundreds of custom recipes, finely-tuned balancing, and a hea
 - **The Create: Genesis Website** — https://genesis.centralhosting.au/
 - **Full Mod List** — https://genesis.centralhosting.au/season-2-modpack/
 - **Join the Create: Genesis Official Server** — https://discord.gg/PckFfRcuK6
-- **Download the Modpack on CurseForge** — TBA
+- **Download the Modpack on CurseForge** — https://www.curseforge.com/minecraft/modpacks/create-genesis-smp
 - **Report an Issue** — https://github.com/SageofTurtles/create-genesis-modpack/issues
