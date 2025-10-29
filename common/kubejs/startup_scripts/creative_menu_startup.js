@@ -76,30 +76,6 @@ StartupEvents.modifyCreativeTab('farmersdelight:farmersdelight', event => {
 	event.remove('farmersdelight:wheat_dough');
 })
 
-StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
-	event.addAfter('minecraft:diamond', 'kubejs:rough_diamond');
-	event.addAfter('minecraft:ink_sac', 'kubejs:empty_ink_sac');
-})
-
-StartupEvents.modifyCreativeTab('minecraft:search', event => {
-	event.remove(/railways:.*incomplete.*/);
-	event.remove(/create_connected:.*control_chip/);
-	event.remove(/create_central_kitchen:incomplete.*/);
-	event.remove('create_enchantment_industry:experience_rotor');
-	event.remove('createmetalwork:crushed_andesite');
-	event.remove('createmetalwork:crushed_netherite_scrap');
-	event.remove('create_central_kitchen:mulberry_pie_slice');
-	event.remove('create_central_kitchen:yucca_cake_slice');
-	event.remove('create_central_kitchen:aloe_cake_slice');
-	event.remove('create_central_kitchen:passion_fruit_cake_slice');
-	event.remove('create_central_kitchen:pumpkin_cake_slice');
-	event.remove('create_central_kitchen:sweet_berry_cake_slice');
-	event.remove('createaddition:zinc_sheet');
-	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
-	event.remove('create_jetpack:jetpack_placeable');
-	event.remove('create_jetpack:netherite_jetpack_placeable');
-})
-
 StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
 	event.remove('mcwlights:wall_lantern');
 	event.remove('mcwlights:striped_wall_lantern');
@@ -131,6 +107,42 @@ StartupEvents.modifyCreativeTab('mcwlights:mcwlights', event => {
 
 StartupEvents.modifyCreativeTab('mcwroofs:mcwroofs', event => {
 	event.remove('mcwroofs:rain_gutter');
+})
+
+StartupEvents.modifyCreativeTab('minecraft:ingredients', event => {
+	event.addAfter('minecraft:diamond', 'kubejs:rough_diamond');
+	event.addAfter('minecraft:ink_sac', 'kubejs:empty_ink_sac');
+})
+
+StartupEvents.modifyCreativeTab('minecraft:op_blocks', event => {
+	event.remove(Item.of('structure_gel:red_gel'));
+	event.remove(Item.of('structure_gel:blue_gel'));
+	event.remove(Item.of('structure_gel:green_gel'));
+	event.remove(Item.of('structure_gel:cyan_gel'));
+	event.remove(Item.of('structure_gel:orange_gel'));
+	event.remove(Item.of('structure_gel:yellow_gel'));
+	event.remove(Item.of('structure_gel:data_handler'));
+	event.remove(Item.of('structure_gel:building_tool'));
+	event.remove(Item.of('structure_gel:dynamic_spawner'));
+})
+
+StartupEvents.modifyCreativeTab('minecraft:search', event => {
+	event.remove(/railways:.*incomplete.*/);
+	event.remove(/create_connected:.*control_chip/);
+	event.remove(/create_central_kitchen:incomplete.*/);
+	event.remove('create_enchantment_industry:experience_rotor');
+	event.remove('createmetalwork:crushed_andesite');
+	event.remove('createmetalwork:crushed_netherite_scrap');
+	event.remove('create_central_kitchen:mulberry_pie_slice');
+	event.remove('create_central_kitchen:yucca_cake_slice');
+	event.remove('create_central_kitchen:aloe_cake_slice');
+	event.remove('create_central_kitchen:passion_fruit_cake_slice');
+	event.remove('create_central_kitchen:pumpkin_cake_slice');
+	event.remove('create_central_kitchen:sweet_berry_cake_slice');
+	event.remove('createaddition:zinc_sheet');
+	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
+	event.remove('create_jetpack:jetpack_placeable');
+	event.remove('create_jetpack:netherite_jetpack_placeable');
 })
 
 StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
