@@ -6,4 +6,6 @@
 	player_respawn_state = "PRESERVE"
 	unflag_wait_time_ticks = 1200
 	pvp_zone_bounds_check_ticks = 20
+	pvp_damage_multiplier = 1.0
+	display_welcome_message = true
 
