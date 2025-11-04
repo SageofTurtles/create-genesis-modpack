@@ -6,7 +6,7 @@ ItemEvents.tooltip(event => {
     ])
     text.add(5, [
       Text.aqua('Gives '),
-      Text.green('+5% speed'),
+      Text.green('Speed I'),
       Text.aqua(' when wearing the full Leather armor set '),
       Text.red('without mending'),
       Text.aqua(':')
@@ -80,7 +80,7 @@ ItemEvents.tooltip(event => {
     {
       type: 'Copper',
       item: /create_ironworks:copper_armor_(helmet|chestplate|leggings|boots)/,
-      bonus: 'Saturation'
+      bonus: 'Water Breathing'
     },
     {
       type: 'Bronze',

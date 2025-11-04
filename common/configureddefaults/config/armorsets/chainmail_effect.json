@@ -46,7 +46,7 @@
       "type": "effect",
       "name": "minecraft:jump_boost",
       "value": 0,
-      "description": "+Jump Boost",
+      "description": "+Jump Boost I",
       "attributeOperation": 0,
       "interactionType": "self",
       "hideBonusDescription": true
