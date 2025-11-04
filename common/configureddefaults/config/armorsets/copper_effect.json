@@ -44,9 +44,9 @@
   "fullSetBonuses": [
     {
       "type": "effect",
-      "name": "minecraft:saturation",
+      "name": "minecraft:water_breathing",
       "value": 0,
-      "description": "+Saturation",
+      "description": "+Water Breathing",
       "attributeOperation": 0,
       "interactionType": "self",
       "hideBonusDescription": true
