@@ -164,7 +164,7 @@ _version = 3
 	[common.multiThreading]
 		#
 		# How many threads should be used by Distant Horizons?
-		numberOfThreads = 4
+		numberOfThreads = 3
 		#
 		# A value between 1.0 and 0.0 that represents the percentage 
 		# of time each thread can run before going idle. 
@@ -249,7 +249,7 @@ _version = 3
 		# but may cause server/simulation lag. 
 		# Note: unlike other modes this option DOES save generated chunks to 
 		# Minecraft's region files.
-		distantGeneratorMode = "INTERNAL_SERVER"
+		distantGeneratorMode = "FEATURES"
 		#
 		# How should distant generator progress be displayed? 
 		# 
@@ -461,7 +461,7 @@ _version = 3
 				#  overhangs or walls for floating objects. 
 				#  Tweaking the caveCullingHeight, can resolve some 
 				#  of those issues.
-				enableCaveCulling = false
+				enableCaveCulling = true
 				#
 				# Identical to the other frustum culling option
 				# only used when a shader mod is present using the DH API
@@ -472,7 +472,7 @@ _version = 3
 				#
 				# At what Y value should cave culling start? 
 				# Lower this value if you get walls for areas with 0 light.
-				caveCullingHeight = 60
+				caveCullingHeight = 30
 				#
 				# A comma separated list of block resource locations that shouldn't be rendered 
 				# if they are in a 0 sky light underground area. 
@@ -620,7 +620,7 @@ _version = 3
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: EXTREME
-				verticalQuality = "MEDIUM"
+				verticalQuality = "HIGH"
 				#
 				# What blocks shouldn't be rendered as LODs? 
 				# 
