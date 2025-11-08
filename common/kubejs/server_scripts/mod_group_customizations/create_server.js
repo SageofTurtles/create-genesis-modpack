@@ -130,4 +130,17 @@ ServerEvents.recipes(event => {
 
   // Remove Blackstone haunting
   event.remove({ id: 'create:haunting/blackstone' })
+
+  // Remove Ice compacting
+  event.remove({ id: 'create:compacting/ice' })
+
+  // Tuff crushing recipe
+  event.remove({ id: 'create:crushing/tuff' })
+  event.recipes.create.crushing(
+    [
+      Item.of('minecraft:flint').withChance(0.25),
+      Item.of('create:zinc_nugget').withChance(0.12)
+    ],
+    '#create:stone_types/tuff'
+  ).id('create:crushing/tuff_recycling')
 })
