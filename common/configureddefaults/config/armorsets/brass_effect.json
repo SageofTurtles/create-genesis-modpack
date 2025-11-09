@@ -43,12 +43,11 @@
   },
   "fullSetBonuses": [
     {
-      "type": "attribute",
-      "name": "minecraft:generic.max_health",
-      "value": 1.25,
-      "modifierUUID": "444b1b3f-6451-4fa6-b3a1-a0a6aa278cba",
-      "description": "+25% Health Boost",
-      "attributeOperation": 1,
+      "type": "effect",
+      "name": "minecraft:haste",
+      "value": 1,
+      "description": "+Haste II",
+      "attributeOperation": 0,
       "interactionType": "self",
       "hideBonusDescription": true
     }

@@ -32,7 +32,7 @@ ItemEvents.tooltip(event => {
     ])
     text.add(7, [
       Text.aqua('Gives '),
-      Text.green('+25% Health Boost'),
+      Text.green('Haste II'),
       Text.aqua(' when wearing the full Brass armor set '),
       Text.red('without mending'),
       Text.aqua(':')
@@ -80,7 +80,7 @@ ItemEvents.tooltip(event => {
     {
       type: 'Copper',
       item: /create_ironworks:copper_armor_(helmet|chestplate|leggings|boots)/,
-      bonus: 'Water Breathing'
+      bonus: 'Dolphin\'s Grace'
     },
     {
       type: 'Bronze',
@@ -90,7 +90,7 @@ ItemEvents.tooltip(event => {
     {
       type: 'Rose Quartz',
       item: /create_ironworks:rose_quartz_armor_(helmet|chestplate|leggings|boots)/,
-      bonus: 'Fire Resistance'
+      bonus: 'Luck II'
     }
   ]
 

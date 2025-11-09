@@ -44,9 +44,9 @@
   "fullSetBonuses": [
     {
       "type": "effect",
-      "name": "minecraft:water_breathing",
+      "name": "minecraft:dolphins_grace",
       "value": 0,
-      "description": "+Water Breathing",
+      "description": "+Dolphin's Grace",
       "attributeOperation": 0,
       "interactionType": "self",
       "hideBonusDescription": true
