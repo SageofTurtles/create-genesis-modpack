@@ -1,8 +1,8 @@
 {
-  "baseDamage": 2.7,
+  "baseDamage": 10.0,
   "color": -10565432,
   "effects": {
-    "attributes:bleeding": 60
+    "minecraft:mining_fatigue": 200
   },
   "flame": false,
   "gravity": 0.05,

@@ -1,8 +1,8 @@
 {
-  "baseDamage": 3.7,
+  "baseDamage": 15.0,
   "color": -12532481,
   "effects": {
-    "attributes:bleeding": 100
+    "minecraft:slowness": 100
   },
   "flame": false,
   "gravity": 0.05,

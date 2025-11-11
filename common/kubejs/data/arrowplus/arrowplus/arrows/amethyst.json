@@ -1,9 +1,7 @@
 {
-  "baseDamage": 2.5,
+  "baseDamage": 10.0,
   "color": -6543440,
-  "effects": {
-    "minecraft:glowing": 40
-  },
+  "effects": {},
   "flame": false,
   "gravity": 0.05,
   "material": "minecraft:amethyst_shard",

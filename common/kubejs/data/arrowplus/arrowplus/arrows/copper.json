@@ -1,8 +1,8 @@
 {
-  "baseDamage": 2.2,
+  "baseDamage": 4.0,
   "color": -2855612,
   "effects": {
-    "createaddition:shocking": 40
+    "createaddition:shocking": 60
   },
   "flame": false,
   "gravity": 0.05,

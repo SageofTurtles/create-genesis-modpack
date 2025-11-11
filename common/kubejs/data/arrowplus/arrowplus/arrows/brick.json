@@ -1,9 +1,0 @@
-{
-  "baseDamage": 2.4,
-  "color": -4822448,
-  "effects": {},
-  "flame": false,
-  "gravity": 0.10,
-  "material": "minecraft:brick",
-  "translationKey": "item.arrowplus.brick_arrow"
-}

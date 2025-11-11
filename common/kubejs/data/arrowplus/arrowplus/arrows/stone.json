@@ -1,9 +1,0 @@
-{
-  "baseDamage": 2.0,
-  "color": -11711671,
-  "effects": {},
-  "flame": false,
-  "gravity": 0.05,
-  "material": "#minecraft:stone_crafting_materials",
-  "translationKey": "item.arrowplus.stone_arrow"
-}

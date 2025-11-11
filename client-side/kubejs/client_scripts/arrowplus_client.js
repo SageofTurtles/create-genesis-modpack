@@ -1,20 +1,9 @@
 ItemEvents.tooltip(event => {
   event.addAdvanced('arrowplus:arrow_plus', (item, advanced, text) => {
-    switch (item.nbt.arrow_data.material) {
-
-      // Amethyst
-      case 'minecraft:amethyst_shard':
-        text.add(2, [
-          Text.darkAqua('Makes the target '),
-          Text.aqua('glow'),
-          Text.darkAqua(' for '),
-          Text.aqua('2 seconds'),
-          Text.darkAqua('.')
-        ])
-        break;
+    switch (item.nbt.arrow_data) {
 
       // Bone
-      case 'minecraft:bone':
+      case 'arrowplus:bone':
         text.add(2, [
           Text.aqua('Poisons'),
           Text.darkAqua(' the target for '),
@@ -23,77 +12,57 @@ ItemEvents.tooltip(event => {
         ])
         break;
 
-      // Brick
-      case 'minecraft:brick':
-        text.add(2, [
-          Text.red('Has a shorter range than a normal arrow.')
-        ])
-        break;
-
       // Charcoal
-      case 'minecraft:charcoal':
+      case 'arrowplus:charcoal':
         text.add(2, [
           Text.gold('Briefly sets the target on fire.')
         ])
         break;
 
       // Copper
-      case 'minecraft:copper_ingot':
+      case 'arrowplus:copper':
         text.add(2, [
           Text.aqua('Stuns'),
           Text.darkAqua(' the target for '),
-          Text.aqua('2 seconds'),
+          Text.aqua('3 seconds'),
           Text.darkAqua('.')
         ])
         break;
 
       // Diamond
-      case 'minecraft:diamond':
+      case 'arrowplus:diamond':
         text.add(2, [
-          Text.darkAqua('Causes the target to '),
-          Text.aqua('bleed'),
+          Text.aqua('Slows'),
+          Text.darkAqua(' the target for '),
+          Text.aqua('5 seconds'),
+          Text.darkAqua('.')
+        ])
+        break;
+
+      // Gold
+      case 'arrowplus:gold':
+        text.add(2, [
+          Text.darkAqua('Gives the target '),
+          Text.aqua('weakness'),
           Text.darkAqua(' for '),
           Text.aqua('5 seconds'),
           Text.darkAqua('.')
         ])
         break;
 
-      // Glowstone
-      case 'minecraft:glowstone_dust':
-        text.add(2, [
-          Text.darkAqua('Makes the target '),
-          Text.aqua('glow'),
-          Text.darkAqua(' for '),
-          Text.aqua('2 seconds'),
-          Text.darkAqua('.')
-        ])
-        text.add(3, [
-          Text.gold('Briefly sets the target on fire.')
-        ])
-        break;
-
-      // Gold
-      case 'minecraft:gold_ingot':
-        text.add(2, [
-          Text.red('Has a shorter range than a normal arrow.')
-        ])
-        break;
-
       // Netherite
-      case 'minecraft:netherite_ingot':
+      case 'arrowplus:netherite':
         text.add(2, [
-          Text.aqua('Slows'),
-          Text.darkAqua(' the target for '),
-          Text.aqua('8 seconds'),
+          Text.darkAqua('Causes the target to '),
+          Text.aqua('bleed'),
+          Text.darkAqua(' for '),
+          Text.aqua('10 seconds'),
           Text.darkAqua('.')
-        ])
-        text.add(3, [
-          Text.green('Has a longer range than a normal arrow.')
         ])
         break;
 
       // Obsidian
-      case 'minecraft:obsidian':
+      case 'arrowplus:obsidian':
         text.add(2, [
           Text.aqua('Blinds'),
           Text.darkAqua(' the target for '),
@@ -103,12 +72,12 @@ ItemEvents.tooltip(event => {
         break;
 
       // Prismarine
-      case 'minecraft:prismarine_shard':
+      case 'arrowplus:prismarine':
         text.add(2, [
-          Text.darkAqua('Causes the target to '),
-          Text.aqua('bleed'),
+          Text.darkAqua('Gives the target '),
+          Text.aqua('mining fatigue'),
           Text.darkAqua(' for '),
-          Text.aqua('3 seconds'),
+          Text.aqua('10 seconds'),
           Text.darkAqua('.')
         ])
         break;

@@ -1,0 +1,5 @@
+
+[Restrictions]
+	#A list of arrow to be disabled. Example: ['diamond', 'iron']
+	restrictions = ['brick', 'lapis', 'redstone', 'glowstone', 'stone']
+
