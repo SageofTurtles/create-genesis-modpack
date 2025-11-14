@@ -16,11 +16,10 @@ body:
       label: Steps to Reproduce
       description: Provide the steps to reproduce the issue you're reporting.
       value: |
-        ## Steps:
         1. Do this
         2. Then this
-        3. Then this...
-      render: markdown
+        3. Then this
+        4. ...
     validations:
       required: true
   - type: textarea

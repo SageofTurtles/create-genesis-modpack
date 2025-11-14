@@ -15,7 +15,7 @@ body:
       label: What problem would this change solve?
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: screenshots
     attributes:
       label: Screenshots, Recordings, or Logs
