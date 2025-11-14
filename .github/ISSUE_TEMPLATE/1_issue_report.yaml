@@ -3,11 +3,11 @@ description: Use this form to report a bug, imbalance, or other issue.
 assignees:
   - SageofTurtles
 body:
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Describe the Issue
-      placeholder: Explain in detail the problem you're encountering.
+      description: Explain in detail the problem you're encountering.
     validations:
       required: true
   - type: textarea
@@ -23,7 +23,7 @@ body:
       render: markdown
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: screenshots
     attributes:
       label: Screenshots, Recordings, or Logs
