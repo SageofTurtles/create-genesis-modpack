@@ -1,0 +1,66 @@
+name: Report an Issue
+description: Use this form to report a bug, imbalance, or other issue.
+assignees:
+  - SageofTurtles
+body:
+  - type: input
+    id: description
+    attributes:
+      label: Describe the Issue
+      placeholder: Explain in detail the problem you're encountering.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide the steps to reproduce the issue you're reporting.
+      value: |
+        ## Steps:
+        1. Do this
+        2. Then this
+        3. Then this...
+      render: markdown
+    validations:
+      required: true
+  - type: input
+    id: screenshots
+    attributes:
+      label: Screenshots, Recordings, or Logs
+      description: >-
+        If reporting a crash, you MUST include your crash report (if there is
+        one), or your log.  DO NOT PASTE THE ENTIRE LOG HERE!  Instead, upload
+        it to https://mclo.gs or https://pastebin.com, then provide the link to
+        the uploaded file.
+      placeholder: Attach any files here to help explain or troubleshoot the issue.
+  - type: textarea
+    id: version
+    attributes:
+      label: Version Info
+      description: Provide the following information.
+      value: |
+        - Client Launcher:  
+        - Minecraft version:  
+        - Forge version:  
+        - Modpack version:  
+      render: markdown
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Troubleshooting Checklist
+      description: >-
+        Please and confirm you've done the following before submitting your
+        report:
+      options:
+        - label: I have double-checked my modpack is up-to-date.
+          required: true
+        - label: >-
+            I have not made any changes, additions, or removals from the
+            original modpack.
+          required: true
+        - label: >-
+            I have confirmed there are no existing open or closed reports for
+            this issue.
+          required: true

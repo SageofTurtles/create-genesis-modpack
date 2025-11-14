@@ -1,0 +1,31 @@
+name: Request an Improvement
+description: Use this form to suggest a new feature or other improvement.
+assignees:
+  - SageofTurtles
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What change would you like to request?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What problem would this change solve?
+    validations:
+      required: true
+  - type: input
+    id: screenshots
+    attributes:
+      label: Screenshots, Recordings, or Logs
+      placeholder: Attach any relevant files here.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: >-
+            I have confirmed there are no existing open or closed requests for
+            this issue.
+          required: true
