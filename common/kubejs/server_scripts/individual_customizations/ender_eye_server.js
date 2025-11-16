@@ -4,13 +4,13 @@ ServerEvents.recipes(event => {
   event.shaped(
     'kubejs:inert_ender_eye',
     [
-      ' O ',
-      'CED',
+      ' C ',
+      'OED',
       ' B '
     ],
     {
       O: 'create:powdered_obsidian',
-      C: 'create_aquatic_ambitions:calcium_rich_powder',
+      C: 'create_aquatic_ambitions:spiky_shell',
       E: 'minecraft:ender_pearl',
       D: 'createaddition:diamond_grit',
       B: 'minecraft:blaze_powder'

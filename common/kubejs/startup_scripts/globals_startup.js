@@ -104,7 +104,8 @@ global['deletedItems'] = [
   'sophisticatedbackpacks:infinity_upgrade',
   'sophisticatedbackpacks:survival_infinity_upgrade',
   'minecraft:recovery_compass',
-  'createfisheryindustry:zinc_sheet'
+  'createfisheryindustry:zinc_sheet',
+  'create_aquatic_ambitions:calcium_rich_powder'
 ]
 
 global['colors'] = [

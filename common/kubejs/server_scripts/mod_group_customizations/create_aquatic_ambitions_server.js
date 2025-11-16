@@ -29,19 +29,25 @@ ServerEvents.recipes(event => {
     ]
   ).heated().id('genesis:prismarine_alloy')
 
-  // Bone Block crushing
-  event.recipes.create.crushing(
-    [
-      'create_aquatic_ambitions:calcium_rich_powder',
-      Item.of('create_aquatic_ambitions:calcium_rich_powder').withChance(0.5),
-      Item.of('create_aquatic_ambitions:suspicious_rock').withChance(0.05)
-    ],
-    'minecraft:bone_block'
-  ).id('genesis:bone_block_crushing')
+  // Coral Blocks crushing
+  let corals = [
+    'tube',
+    'brain',
+    'bubble',
+    'fire',
+    'horn'
+  ]
+  
+  corals.forEach(type => {
+    event.recipes.create.crushing(
+      Item.of('create_aquatic_ambitions:suspicious_rock').withChance(0.05),
+      `minecraft:${type}_coral_block`
+    ).id(`genesis:${type}_coral_block_crushing`)
+  })
 
   // Spiky Shell milling
   event.recipes.create.milling(
-    'create_aquatic_ambitions:calcium_rich_powder',
+    '3x minecraft:bone_meal',
     'create_aquatic_ambitions:spiky_shell'
   ).id('genesis:spiky_shell_milling')
 

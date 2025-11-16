@@ -4,8 +4,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting(
     'minecraft:calcite',
     [
-      'create_aquatic_ambitions:calcium_rich_powder',
-      'create_aquatic_ambitions:calcium_rich_powder',
+      'minecraft:bone_meal',
+      'minecraft:bone_meal',
       'kubejs:limesand',
       Fluid.lava(100)
     ]
