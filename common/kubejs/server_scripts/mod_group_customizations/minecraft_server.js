@@ -709,34 +709,4 @@ ServerEvents.recipes(event => {
       T: 'farmersdelight:tree_bark'
     }
   ).id('farmersdelight:paper_from_tree_bark')
-
-  // Torchflower milling
-  event.recipes.create.milling(
-    [
-      '2x minecraft:orange_dye',
-      Item.of('minecraft:green_dye').withChance(0.25),
-      Item.of('minecraft:purple_dye').withChance(0.1)
-    ],
-    'minecraft:torchflower'
-  ).id('genesis:torchflower_milling')
-
-  // Pitcher Plant milling
-  event.recipes.create.milling(
-    [
-      '2x minecraft:cyan_dye',
-      Item.of('minecraft:blue_dye').withChance(0.25),
-      Item.of('minecraft:magenta_dye').withChance(0.1)
-    ],
-    'minecraft:pitcher_plant'
-  ).id('genesis:pitcher_plant_milling')
-
-  // Pink Petals milling
-  event.recipes.create.milling(
-    [
-      'minecraft:pink_dye',
-      Item.of('minecraft:pink_dye').withChance(0.25),
-      Item.of('minecraft:green_dye').withChance(0.1)
-    ],
-    'minecraft:pink_petals'
-  ).id('genesis:pink_petals_milling')
 })
