@@ -1,5 +1,5 @@
 {
-  "baseDamage": 10.0,
+  "baseDamage": 5.0,
   "color": -10565432,
   "effects": {
     "minecraft:mining_fatigue": 200

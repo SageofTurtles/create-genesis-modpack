@@ -1,9 +1,0 @@
-{
-  "baseDamage": 12.0,
-  "color": -16725933,
-  "effects": {},
-  "flame": false,
-  "gravity": 0.05,
-  "material": "minecraft:emerald",
-  "translationKey": "item.arrowplus.emerald_arrow"
-}

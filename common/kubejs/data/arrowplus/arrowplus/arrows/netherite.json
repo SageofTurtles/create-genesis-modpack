@@ -1,5 +1,5 @@
 {
-  "baseDamage": 20.0,
+  "baseDamage": 10.0,
   "color": -12698050,
   "effects": {
     "attributes:bleeding": 200

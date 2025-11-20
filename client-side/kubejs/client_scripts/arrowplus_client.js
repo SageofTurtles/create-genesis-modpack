@@ -24,7 +24,7 @@ ItemEvents.tooltip(event => {
         text.add(2, [
           Text.aqua('Stuns'),
           Text.darkAqua(' the target for '),
-          Text.aqua('3 seconds'),
+          Text.aqua('1 second'),
           Text.darkAqua('.')
         ])
         break;
@@ -34,7 +34,7 @@ ItemEvents.tooltip(event => {
         text.add(2, [
           Text.aqua('Slows'),
           Text.darkAqua(' the target for '),
-          Text.aqua('5 seconds'),
+          Text.aqua('3 seconds'),
           Text.darkAqua('.')
         ])
         break;
