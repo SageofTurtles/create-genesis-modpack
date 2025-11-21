@@ -21,14 +21,10 @@ ItemEvents.rightClicked(conductorCap, event => {
   const { player, level, target: { block } } = event
   if (block.id == "create:copper_casing" || block.id == "create:brass_casing" || block.id == "create:railway_casing") {
     if (event.hand == "main_hand" && !event.player.isCreative()) {
-      if (!event.player.isCreative()) {
-        player.mainHandItem.count--
-      }
+      player.mainHandItem.count--
       player.swing('main_hand', true)
     } else if (event.hand == "off_hand" && !event.player.isCreative()) {
-      if (!event.player.isCreative()) {
-        player.offHandItem.count--
-      }
+      player.offHandItem.count--
       player.swing('off_hand', true)
     }
     event.cancel()
