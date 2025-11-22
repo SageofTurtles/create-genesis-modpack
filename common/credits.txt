@@ -2,6 +2,12 @@
 
 Panorama build by mrGnegich
 
+
+Some GUI textures taken from Create Style Hotbar resource pack
+	with permission from ogabasferr (author)
+	https://www.curseforge.com/minecraft/texture-packs/create-style-hotbar
+
+
 Vanilla Tweaks:
 	https://vanillatweaks.net/
 	Version: 1.20
