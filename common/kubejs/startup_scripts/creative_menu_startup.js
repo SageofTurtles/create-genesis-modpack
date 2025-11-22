@@ -21,6 +21,8 @@ StartupEvents.modifyCreativeTab('create:palettes', event => {
 
 StartupEvents.modifyCreativeTab('createaddition:main', event => {
 	event.remove('createaddition:zinc_sheet');
+	event.addAfter('createaddition:redstone_relay', 'createaddition:cake_base');
+	event.addAfter('createaddition:cake_base', 'createaddition:cake_base_baked');
 })
 
 StartupEvents.modifyCreativeTab('create_aquatic_ambitions:base', event => {
@@ -147,6 +149,8 @@ StartupEvents.modifyCreativeTab('minecraft:search', event => {
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
 	event.remove('create_jetpack:jetpack_placeable');
 	event.remove('create_jetpack:netherite_jetpack_placeable');
+	event.addAfter('createaddition:redstone_relay', 'createaddition:cake_base');
+	event.addAfter('createaddition:cake_base', 'createaddition:cake_base_baked');
 })
 
 StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
