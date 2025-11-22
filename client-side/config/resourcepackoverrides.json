@@ -4,18 +4,17 @@
     "vanilla",
     "mod_resources",
     "Moonlight Mods Dynamic Assets",
-    "file/Better-Goggles_v1.0.1.zip",
     "railways:green_signals",
     "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
     "file/Create Immersive Aircrafts Bamboo hopper Resource .zip",
-    "file/Create Immersive Aircraft Warship ResoucePack v1.2.zip"
+    "file/Better-Goggles_v1.0.1.zip"
   ],
   "pack_overrides": {
     "1": [
       "railways:green_signals",
       "file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
       "file/Create Immersive Aircrafts Bamboo hopper Resource .zip",
-      "file/Create Immersive Aircraft Warship ResoucePack v1.2.zip"
+      "file/Better-Goggles_v1.0.1.zip"
     ],
     "$$1": {
       "force_compatible": true,
