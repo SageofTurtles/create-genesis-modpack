@@ -136,21 +136,26 @@ StartupEvents.modifyCreativeTab('minecraft:search', event => {
 	event.remove(/railways:.*incomplete.*/);
 	event.remove(/create_connected:.*control_chip/);
 	event.remove(/create_central_kitchen:incomplete.*/);
-	event.remove('create_enchantment_industry:experience_rotor');
-	event.remove('createmetalwork:crushed_andesite');
-	event.remove('createmetalwork:crushed_netherite_scrap');
-	event.remove('create_central_kitchen:mulberry_pie_slice');
-	event.remove('create_central_kitchen:yucca_cake_slice');
-	event.remove('create_central_kitchen:aloe_cake_slice');
-	event.remove('create_central_kitchen:passion_fruit_cake_slice');
-	event.remove('create_central_kitchen:pumpkin_cake_slice');
-	event.remove('create_central_kitchen:sweet_berry_cake_slice');
-	event.remove('createaddition:zinc_sheet');
 	event.remove(Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}'));
 	event.remove('create_jetpack:jetpack_placeable');
 	event.remove('create_jetpack:netherite_jetpack_placeable');
 	event.addAfter('createaddition:redstone_relay', 'createaddition:cake_base');
 	event.addAfter('createaddition:cake_base', 'createaddition:cake_base_baked');
+	event.remove('create_aquatic_ambitions:calcium_rich_powder');
+	event.remove('createfisheryindustry:zinc_sheet');
+	event.remove('petrolpark:badge/beta_tester');
+	event.remove('petrolpark:badge/bestie');
+	event.remove('petrolpark:badge/competition_winner');
+	event.remove('petrolpark:badge/content_creator');
+	event.remove('petrolpark:badge/developer');
+	event.remove('petrolpark:badge/early_bird');
+	event.remove('petrolpark:badge/nitro');
+	event.remove('petrolpark:badge/suggestion');
+	event.remove('petrolpark:badge/translator');
+	event.remove('petrolpark:menu');
+	event.remove('petrolpark:badge/patreon_1');
+	event.remove('petrolpark:badge/patreon_2');
+	event.remove('petrolpark:badge/patreon_3');
 })
 
 StartupEvents.modifyCreativeTab('minecraft:tools_and_utilities', event => {
