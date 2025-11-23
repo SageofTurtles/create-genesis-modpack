@@ -392,4 +392,31 @@ ServerEvents.recipes(event => {
       D: 'createdeco:industrial_iron_trapdoor'
     }
   ).id('immersive_aircraft:bomb_bay')
+
+  // Electronic Gyroscope
+  event.shaped(
+    'immersive_aircraft:gyroscope_hud',
+    [
+      'D',
+      'G'
+    ],
+    {
+      D: 'createrailwaysnavigator:advanced_display_half_panel',
+      G: 'immersive_aircraft:gyroscope',
+    }
+  ).id('immersive_aircraft:gyroscope_hud')
+
+  // Advanced Gyroscope
+  event.shaped(
+    'immersive_aircraft:gyroscope_dials',
+    [
+      ' D ',
+      'CGC'
+    ],
+    {
+      D: 'createrailwaysnavigator:advanced_display_panel',
+      G: 'immersive_aircraft:gyroscope',
+      C: 'minecraft:clock'
+    }
+  ).id('immersive_aircraft:gyroscope_dials')
 })
