@@ -8,5 +8,5 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', ev
 global.livinghurt = event => {
   const { amount, source: { actual }, source } = event
   if (source.getType() != 'create.run_over') return
-  event.amount = amount*3
+  event.amount = amount * 3
 }

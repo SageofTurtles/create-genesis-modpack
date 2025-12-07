@@ -13,6 +13,13 @@ ServerEvents.recipes(event => {
     }
   ).id('supplementaries:cage')
 
+  // Relayer
+  event.replaceInput(
+    {id: 'supplementaries:relayer'},
+    'minecraft:cobblestone',
+    '#minecraft:stone_crafting_materials'
+  )
+
   // Antique Ink
   event.recipes.create.filling(
     'supplementaries:antique_ink',

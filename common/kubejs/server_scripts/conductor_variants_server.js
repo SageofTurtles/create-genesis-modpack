@@ -1,4 +1,4 @@
-const conductorCap = [
+let conductorCap = [
   'railways:white_conductor_cap',
   'railways:light_gray_conductor_cap',
   'railways:gray_conductor_cap',

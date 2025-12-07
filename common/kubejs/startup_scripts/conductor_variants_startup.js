@@ -13,7 +13,7 @@ EntityJSEvents.modifyEntity(event => {
 global.texture = context => {
   let { entity } = context
   if (entity.getSyncedData("Variant") == "copper_conductor") {
-      return "railways:textures/entity/copper_conductor.png"
+    return "railways:textures/entity/copper_conductor.png"
   }
   if (entity.getSyncedData("Variant") == "brass_conductor") {
     return "railways:textures/entity/brass_conductor.png"
