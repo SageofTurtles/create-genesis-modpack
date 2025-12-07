@@ -279,7 +279,6 @@ ServerEvents.recipes(event => {
     }
   })
 
-
   global.SAWING_BLOCKS.forEach(entry => {
     const { name, block, stairs, slab } = entry
     custom([
