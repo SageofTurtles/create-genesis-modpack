@@ -1,0 +1,5 @@
+
+[logbegone]
+	regex = []
+	phrases = ["Couldn't parse data file create_dd:", "Couldn't parse data file createmetalwork:", "Couldn't parse element loot_tables:createmetalwork:", "Parsing error loading recipe createmetalwork:", "Parsing error loading recipe create_dd:", "Parsing error loading recipe create_ironworks:compat/", "Parsing error loading recipe tconstruct:", "Could not decode GlobalLootModifier with json id apotheosis:", "Skipping loading recipe create_connected:", "Skipping loading recipe supplementaries:", "Invalid icon item stack: Unknown item ID: apotheosis:"]
+
