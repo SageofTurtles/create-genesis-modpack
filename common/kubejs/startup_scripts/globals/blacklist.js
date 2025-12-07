@@ -62,11 +62,3 @@ global['REMOVED_REGEX_ITEMS'] = [
   /mcwlights:.*wall_lantern$/,
   /supplementaries:candle_holder.*/
 ]
-
-global['REMOVED_NBT'] = [
-  Item.of('minecraft:lingering_potion', '{Potion:"minecraft:luck"}'),
-  Item.of('minecraft:potion', '{Potion:"minecraft:luck"}'),
-  Item.of('minecraft:splash_potion', '{Potion:"minecraft:luck"}'),
-  Item.of('minecraft:tipped_arrow', '{Potion:"minecraft:luck"}'),
-  Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}')
-]
