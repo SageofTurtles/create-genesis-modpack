@@ -1,0 +1,72 @@
+// priority: 200
+
+global['REMOVED_ITEMS'] = [
+  'bellsandwhistles:corrugated_metro_casing',
+  'bellsandwhistles:corrugated_metro_panel',
+  'bellsandwhistles:metro_casing',
+  'bellsandwhistles:metro_panel',
+  'bellsandwhistles:metro_trapdoor',
+  'bellsandwhistles:metro_window',
+  'brewinandchewin:cocoa_fudge',
+  'create_aquatic_ambitions:calcium_rich_powder',
+  'create_central_kitchen:aloe_cake_slice',
+  'create_central_kitchen:mulberry_pie_slice',
+  'create_central_kitchen:passion_fruit_cake_slice',
+  'create_central_kitchen:pumpkin_cake_slice',
+  'create_central_kitchen:sweet_berry_cake_slice',
+  'create_central_kitchen:yucca_cake_slice',
+  'create_connected:control_chip',
+  'create_connected:incomplete_control_chip',
+  'create_enchantment_industry:experience_rotor',
+  'create_ironworks:charcoal_dust',
+  'create:crushed_raw_tin',
+  'create:refined_radiance',
+  'create:shadow_steel',
+  'createaddition:digital_adapter',
+  'createmetalwork:crushed_andesite',
+  'createmetalwork:crushed_netherite_scrap',
+  'farmersdelight:wheat_dough',
+  'mcwlights:black_lamp',
+  'mcwlights:blue_lamp',
+  'mcwlights:brown_lamp',
+  'mcwlights:cyan_lamp',
+  'mcwlights:gray_lamp',
+  'mcwlights:green_lamp',
+  'mcwlights:light_blue_lamp',
+  'mcwlights:light_gray_lamp',
+  'mcwlights:lime_lamp',
+  'mcwlights:magenta_lamp',
+  'mcwlights:orange_lamp',
+  'mcwlights:pink_lamp',
+  'mcwlights:purple_lamp',
+  'mcwlights:red_lamp',
+  'mcwlights:white_lamp',
+  'mcwlights:yellow_lamp',
+  'mcwroofs:rain_gutter',
+  'minecraft:recovery_compass',
+  'sophisticatedbackpacks:infinity_upgrade',
+  'sophisticatedbackpacks:stack_upgrade_omega_tier',
+  'sophisticatedbackpacks:survival_infinity_upgrade',
+  'sophisticatedbackpacks:xp_pump_upgrade',
+  'supplementaries:rope'
+]
+
+global['REMOVED_REGEX_ITEMS'] = [
+  /(createaddition|createfisheryindustry):zinc_sheet/,
+  /^destroy:.*/,
+  /^petrolpark:.*/,
+  /^structure_gel:.*/,
+  /create_connected:fan_(withering|seething|sanding|ending|freezing|enriched)_catalyst.*/,
+  /createdeco:.*_shipping_container$/,
+  /mcwlights:.*wall_lamp$/,
+  /mcwlights:.*wall_lantern$/,
+  /supplementaries:candle_holder.*/
+]
+
+global['REMOVED_NBT'] = [
+  Item.of('minecraft:lingering_potion', '{Potion:"minecraft:luck"}'),
+  Item.of('minecraft:potion', '{Potion:"minecraft:luck"}'),
+  Item.of('minecraft:splash_potion', '{Potion:"minecraft:luck"}'),
+  Item.of('minecraft:tipped_arrow', '{Potion:"minecraft:luck"}'),
+  Item.of('patchouli:guide_book', '{"patchouli:book":"apotheosis:apoth_chronicle"}')
+]

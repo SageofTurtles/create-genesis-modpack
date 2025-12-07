@@ -1,0 +1,22 @@
+global['POTTERY_SHERDS'] = [
+  'angler',
+  'archer',
+  'arms_up',
+  'blade',
+  'brewer',
+  'burn',
+  'danger',
+  'explorer',
+  'friend',
+  'heart',
+  'heartbreak',
+  'howl',
+  'miner',
+  'mourner',
+  'plenty',
+  'prize',
+  'sheaf',
+  'shelter',
+  'skull',
+  'snort'
+]
