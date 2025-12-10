@@ -63,4 +63,8 @@ ServerEvents.tags('item', event => {
   add('sliceanddice:allowed_tools', 'minecraft:shears')
   add('forge:tools/axes', /create_ironworks:.*_axe$/)
   add('forge:tools/shovels', /create_ironworks:.*_shovel$/)
+  add('forge:dusts/tin', 'create_ironworks:crushed_raw_tin')
+  add('forge:crushed_raw_tin', 'create_ironworks:crushed_raw_tin')
+  add('create:crushed_raw_materials', 'create_ironworks:crushed_raw_tin')
+  add('forge:tin_dusts', 'create_ironworks:crushed_raw_tin')
 })
