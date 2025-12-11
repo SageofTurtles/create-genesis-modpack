@@ -1,10 +1,27 @@
 // priority: 150
 
+// FLUID TAGS
+ServerEvents.tags('fluid', event => {
+  // Define functions for editing tags
+  const add = (tag, fluid) => {
+    event.add(tag, fluid)
+  }
+  const removeAll = (fluid) => {
+    event.removeAllTagsFrom(fluid)
+  }
+
+  // Remove tags
+  removeAll('sophisticatedcore:xp_still')
+
+  // Add tags
+  add('forge:honey', 'brewinandchewin:honey')
+})
+
 // BLOCK TAGS
 ServerEvents.tags('block', event => {
   // Define functions for editing tags
-  const removeAll = (entry) => {
-    event.removeAllTagsFrom(entry)
+  const removeAll = (block) => {
+    event.removeAllTagsFrom(block)
   }
 
   // Remove tags for blacklisted blocks
@@ -19,14 +36,14 @@ ServerEvents.tags('block', event => {
 // ITEM TAGS
 ServerEvents.tags('item', event => {
   // Define functions for editing tags
-  const remove = (tag, entry) => {
-    event.remove(tag, entry)
+  const remove = (tag, item) => {
+    event.remove(tag, item)
   }
-  const removeAll = (entry) => {
-    event.removeAllTagsFrom(entry)
+  const removeAll = (item) => {
+    event.removeAllTagsFrom(item)
   }
-  const add = (tag, entry) => {
-    event.add(tag, entry)
+  const add = (tag, item) => {
+    event.add(tag, item)
   }
 
   // Remove tags for blacklisted items
@@ -52,6 +69,7 @@ ServerEvents.tags('item', event => {
   remove('create:stone_types/scoria', /create:.*_(stairs|wall)$/)
   remove('create:stone_types/tuff', /create:.*_(stairs|wall)$/)
   remove('create:stone_types/veridium', /create:.*_(stairs|wall)$/)
+  remove('createaddition:plants', 'minecraft:chorus_plant')
 
   // Add tags
   add('minecraft:placeable', /minecraft:(earth|wind|water|fire)$/)

@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
       Item.of(output, count),
       pattern,
       keys
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const oneXone = (input, output, count, recipeId) => {
     event.shaped(
@@ -91,7 +91,67 @@ ServerEvents.recipes(event => {
     'light_weighted_pressure_plate'
   )
 
+  // Add custom recipes
+  custom(
+    [
+      ' 1 ',
+      '232',
+      '2 2'
+    ],
+    {
+      1: 'create_ironworks:bronze_block',
+      2: 'minecraft:stick',
+      3: 'create_ironworks:bronze_ingot'
+    },
+    'minecraft:bell', 1,
+    'bell'
+  )
+
   // Add bulk recipes
+  let chainRecipes = [
+    {
+      name: 'chain_from_iron',
+      inputNugget: 'minecraft:iron_nugget',
+      inputIngot: 'minecraft:iron_ingot',
+      output: 'minecraft:chain'
+    },
+    {
+      name: 'chain_from_zinc',
+      inputNugget: 'create:zinc_nugget',
+      inputIngot: 'create:zinc_ingot',
+      output: 'minecraft:chain'
+    },
+    {
+      name: 'chain_from_copper',
+      inputNugget: 'create:copper_nugget',
+      inputIngot: 'minecraft:copper_ingot',
+      output: 'mcwlights:copper_chain'
+    },
+    {
+      name: 'chain_from_gold',
+      inputNugget: 'minecraft:gold_nugget',
+      inputIngot: 'minecraft:gold_ingot',
+      output: 'mcwlights:golden_chain'
+    }
+  ]
+
+  chainRecipes.forEach(entry => {
+    const { name, inputNugget, inputIngot, output } = entry
+    custom(
+      [
+        '1',
+        '2',
+        '1'
+      ],
+      {
+        1: inputNugget,
+        2: inputIngot
+      },
+      output, 3,
+      name
+    )
+  })
+
   global.PLANK_SETS.forEach(entry => {
     oneXone(
       `minecraft:${entry}_planks`,

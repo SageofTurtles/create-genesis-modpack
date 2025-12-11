@@ -1,39 +1,39 @@
 ServerEvents.recipes(event => {
   // Define functions to create recipes
-  const cool = (input, output, count, recipeId) => {
+  const cool = (inputs, output, count, recipeId) => {
     event.recipes.create.mixing(
       Item.of(output, count),
-      input
+      inputs
     ).id(`genesis:${recipeId}_mixing`)
   }
-  const heat = (input, output, count, recipeId) => {
+  const heat = (inputs, output, count, recipeId) => {
     event.recipes.create.mixing(
       Item.of(output, count),
-      input
+      inputs
     ).heated().id(`genesis:${recipeId}_mixing`)
   }
-  const superheat = (input, output, count, recipeId) => {
+  const superheat = (inputs, output, count, recipeId) => {
     event.recipes.create.mixing(
       Item.of(output, count),
-      input
+      inputs
     ).superheated().id(`genesis:${recipeId}_mixing`)
   }
-  const fluidCool = (input, output, amount, recipeId) => {
+  const fluidCool = (inputs, output, amount, recipeId) => {
     event.recipes.create.mixing(
       Fluid.of(output, amount),
-      input
+      inputs
     ).id(`genesis:${recipeId}_mixing`)
   }
-  const fluidHeat = (input, output, amount, recipeId) => {
+  const fluidHeat = (inputs, output, amount, recipeId) => {
     event.recipes.create.mixing(
       Fluid.of(output, amount),
-      input
+      inputs
     ).heated().id(`genesis:${recipeId}_mixing`)
   }
-  const fluidSuperheat = (input, output, amount, recipeId) => {
+  const fluidSuperheat = (inputs, output, amount, recipeId) => {
     event.recipes.create.mixing(
       Fluid.of(output, amount),
-      input
+      inputs
     ).superheated().id(`genesis:${recipeId}_mixing`)
   }
 

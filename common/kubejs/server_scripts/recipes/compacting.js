@@ -1,21 +1,21 @@
 ServerEvents.recipes(event => {
   // Define functions to create recipes
-  const cool = (input, output, count, recipeId) => {
+  const cool = (inputs, output, count, recipeId) => {
     event.recipes.create.compacting(
       Item.of(output, count),
-      input
+      inputs
     ).id(`genesis:${recipeId}_compacting`)
   }
-  const heat = (input, output, count, recipeId) => {
+  const heat = (inputs, output, count, recipeId) => {
     event.recipes.create.compacting(
       Item.of(output, count),
-      input
+      inputs
     ).heated().id(`genesis:${recipeId}_compacting`)
   }
-  const superheat = (input, output, count, recipeId) => {
+  const superheat = (inputs, output, count, recipeId) => {
     event.recipes.create.compacting(
       Item.of(output, count),
-      input
+      inputs
     ).superheated().id(`genesis:${recipeId}_compacting`)
   }
 
@@ -24,6 +24,41 @@ ServerEvents.recipes(event => {
     Fluid.of('createmetalwork:molten_andesite', 810),
     'minecraft:andesite', 1,
     'andesite_block_from_molten'
+  )
+  cool(
+    [
+      '2x minecraft:bone_meal',
+      'kubejs:limesand',
+      Fluid.lava(100)
+    ],
+    'minecraft:calcite', 1,
+    'calcite'
+  )
+
+  // Add heated scripts
+  heat(
+    [
+      Fluid.lava(50),
+      '4x minecraft:charcoal'
+    ],
+    'minecraft:coal', 1,
+    'coal'
+  )
+  heat(
+    '2x minecraft:stone',
+    'minecraft:deepslate', 1,
+    'deepslate'
+  )
+
+  // Add superheated recipes
+  superheat(
+    [
+      'minecraft:netherite_scrap',
+      'minecraft:obsidian',
+      Fluid.of('create_enchantment_industry:experience', 9)
+    ],
+    'minecraft:ancient_debris', 1,
+    'ancient_debris'
   )
 
   // Add bulk recipes
