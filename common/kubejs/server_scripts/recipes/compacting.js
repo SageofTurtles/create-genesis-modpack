@@ -18,6 +18,24 @@ ServerEvents.recipes(event => {
       inputs
     ).superheated().id(`genesis:${recipeId}_compacting`)
   }
+  const fluidCool = (inputs, output, amount, recipeId) => {
+    event.recipes.create.compacting(
+      Fluid.of(output, amount),
+      inputs
+    ).id(`genesis:${recipeId}_compacting`)
+  }
+  const fluidHeat = (inputs, output, amount, recipeId) => {
+    event.recipes.create.compacting(
+      Fluid.of(output, amount),
+      inputs
+    ).heated().id(`genesis:${recipeId}_compacting`)
+  }
+  const fluidSuperheat = (inputs, output, amount, recipeId) => {
+    event.recipes.create.compacting(
+      Fluid.of(output, amount),
+      inputs
+    ).superheated().id(`genesis:${recipeId}_compacting`)
+  }
 
   // Add non-heated recipes
   cool(
@@ -34,6 +52,15 @@ ServerEvents.recipes(event => {
     'minecraft:calcite', 1,
     'calcite'
   )
+  cool(
+    [
+      '2x minecraft:flint',
+      'kubejs:limesand',
+      Fluid.lava(100)
+    ],
+    'minecraft:diorite', 1,
+    'diorite'
+  )
 
   // Add heated scripts
   heat(
@@ -49,6 +76,14 @@ ServerEvents.recipes(event => {
     'minecraft:deepslate', 1,
     'deepslate'
   )
+  heat(
+    [
+      'minecraft:calcite',
+      'minecraft:deepslate'
+    ],
+    'minecraft:tuff', 2,
+    'tuff'
+  )
 
   // Add superheated recipes
   superheat(
@@ -59,6 +94,21 @@ ServerEvents.recipes(event => {
     ],
     'minecraft:ancient_debris', 1,
     'ancient_debris'
+  )
+  superheat(
+    [
+      Fluid.lava(500),
+      '9x minecraft:coal_block'
+    ],
+    'kubejs:rough_diamond', 1,
+    'rough_diamond'
+  )
+
+  // Add fluid superheated recipes
+  fluidSuperheat(
+    '4x amendments:dragon_charge',
+    'create_central_kitchen:dragon_breath', 250,
+    'dragon_breath'
   )
 
   // Add bulk recipes

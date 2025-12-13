@@ -1,0 +1,39 @@
+ServerEvents.recipes(event => {
+  // Hamburger
+  let hamburger = 'create_central_kitchen:incomplete_hamburger'
+  event.recipes.create.sequenced_assembly(
+    'farmersdelight:hamburger',
+    'minecraft:bread',
+    [
+      event.recipes.createDeploying(
+        hamburger,
+        [
+          hamburger,
+          'farmersdelight:beef_patty'
+        ]
+      ),
+      event.recipes.createDeploying(
+        hamburger,
+        [
+          hamburger,
+          '#forge:salad_ingredients/cabbage'
+        ]
+      ),
+      event.recipes.createDeploying(
+        hamburger,
+        [
+          hamburger,
+          'farmersdelight:tomato'
+        ]
+      ),
+      event.recipes.createDeploying(
+        hamburger,
+        [
+          hamburger,
+          'farmersdelight:onion'
+        ]
+      )
+    ]
+  ).transitionalItem(hamburger).loops(1)
+    .id('genesis:hamburger_assembly')
+})

@@ -17,6 +17,22 @@ ServerEvents.recipes(event => {
     'numismatics:banking_guide', 1,
     'banking_guide'
   )
+  add(
+    [
+      'farmersdelight:rope',
+      'farmersdelight:rope'
+    ],
+    'minecraft:lead', 2,
+    'lead'
+  )
+  add(
+    [
+      'farmersdelight:rope',
+      'minecraft:iron_ingot'
+    ],
+    'comforts:rope_and_nail', 1,
+    'rope_and_nail'
+  )
 
   // Add bulk recipes
   global.ADDITIVE_DOORS.forEach(entry => {

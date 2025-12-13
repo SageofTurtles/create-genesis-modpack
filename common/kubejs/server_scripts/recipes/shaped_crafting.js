@@ -14,6 +14,13 @@ ServerEvents.recipes(event => {
       { A: input }
     ).id(`genesis:${recipeId}`)
   }
+  const oneXthree = (input, output, count, recipeId) => {
+    event.shaped(
+      Item.of(output, count),
+      ['A', 'A', 'A'],
+      { A: input }
+    ).id(`genesis:${recipeId}`)
+  }
   const twoXone = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
@@ -49,6 +56,13 @@ ServerEvents.recipes(event => {
       { A: input }
     ).id(`genesis:${recipeId}`)
   }
+  const threeXthree = (input, output, count, recipeId) => {
+    event.shaped(
+      Item.of(output, count),
+      ['AAA', 'AAA', 'AAA'],
+      { A: input }
+    ).id(`genesis:${recipeId}`)
+  }
   const stairs = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
@@ -67,6 +81,33 @@ ServerEvents.recipes(event => {
     'minecraft:polished_blackstone',
     'minecraft:polished_blackstone_button', 8,
     'polished_blackstone_button'
+  )
+  oneXone(
+    'create:rose_quartz_block',
+    'create:rose_quartz', 9,
+    'rose_quartz'
+  )
+
+  // Add 1x3 recipes
+  oneXthree(
+    'create:iron_sheet',
+    'mcwroofs:gutter_middle', 3,
+    'downspout'
+  )
+  oneXthree(
+    'minecraft:string',
+    'farmersdelight:rope', 1,
+    'rope_from_string'
+  )
+  oneXthree(
+    'supplementaries:flax',
+    'farmersdelight:rope', 2,
+    'rope_from_flax'
+  )
+  oneXthree(
+    'famersdelight:straw',
+    'farmersdelight:rope', 2,
+    'rope_from_straw'
   )
 
   // Add 2x1 recipes
@@ -91,6 +132,20 @@ ServerEvents.recipes(event => {
     'light_weighted_pressure_plate'
   )
 
+  // Add 3x1 recipes
+  threeXone(
+    'create:iron_sheet',
+    'mcwroofs:gutter_base', 3,
+    'gutter'
+  )
+
+  // Add 3x3 recipes
+  threeXthree(
+    'create:rose_quartz',
+    'create:rose_quartz_block', 1,
+    'rose_quartz_block'
+  )
+
   // Add custom recipes
   custom(
     [
@@ -106,36 +161,40 @@ ServerEvents.recipes(event => {
     'minecraft:bell', 1,
     'bell'
   )
+  custom(
+    [
+      ' 1 ',
+      '234',
+      ' 5 '
+    ],
+    {
+      1: 'create_aquatic_ambitions:spiky_shell',
+      2: 'create:powdered_obsidian',
+      3: 'minecraft:ender_pearl',
+      4: 'createaddition:diamond_grit',
+      5: 'minecraft:blaze_powder'
+    },
+    'kubejs:inert_ender_eye', 1,
+    'inert_ender_eye'
+  )
+  custom(
+    [
+      ' 1 ',
+      '232',
+      '444'
+    ],
+    {
+      1: 'create:electron_tube',
+      2: 'minecraft:redstone_torch',
+      3: 'create:brass_sheet',
+      4: '#bookshelf:stones'
+    },
+    'create_connected:sequenced_pulse_generator', 1,
+    'sequenced_pulse_generator'
+  )
 
   // Add bulk recipes
-  let chainRecipes = [
-    {
-      name: 'chain_from_iron',
-      inputNugget: 'minecraft:iron_nugget',
-      inputIngot: 'minecraft:iron_ingot',
-      output: 'minecraft:chain'
-    },
-    {
-      name: 'chain_from_zinc',
-      inputNugget: 'create:zinc_nugget',
-      inputIngot: 'create:zinc_ingot',
-      output: 'minecraft:chain'
-    },
-    {
-      name: 'chain_from_copper',
-      inputNugget: 'create:copper_nugget',
-      inputIngot: 'minecraft:copper_ingot',
-      output: 'mcwlights:copper_chain'
-    },
-    {
-      name: 'chain_from_gold',
-      inputNugget: 'minecraft:gold_nugget',
-      inputIngot: 'minecraft:gold_ingot',
-      output: 'mcwlights:golden_chain'
-    }
-  ]
-
-  chainRecipes.forEach(entry => {
+  global.CHAINS.forEach(entry => {
     const { name, inputNugget, inputIngot, output } = entry
     custom(
       [

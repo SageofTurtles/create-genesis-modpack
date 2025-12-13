@@ -37,7 +37,19 @@ ServerEvents.recipes(event => {
     ).superheated().id(`genesis:${recipeId}_mixing`)
   }
 
-  // Add fluid mixing recipes
+  // Add item superheated recipes
+  superheat(
+    [
+      'minecraft:popped_chorus_fruit',
+      'minecraft:gunpowder',
+      'create:cinder_flour',
+      Fluid.lava(250)
+    ],
+    'amendments:dragon_charge', 1,
+    'dragon_charge'
+  )
+
+  // Add fluid heated recipes
   fluidHeat(
     'minecraft:andesite',
     'createmetalwork:molten_andesite', 810,
@@ -59,7 +71,11 @@ ServerEvents.recipes(event => {
     'createmetalwork:molten_andesite_alloy', 90,
     'alloying_molten_andesite_alloy_from_zinc'
   )
-
+  fluidHeat(
+    '5x minecraft:cobblestone',
+    'minecraft:lava', 250,
+    'lava'
+  )
 
   // Add bulk recipes
   global.BASE_METALS.forEach(entry => {

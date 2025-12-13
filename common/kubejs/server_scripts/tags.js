@@ -20,6 +20,9 @@ ServerEvents.tags('fluid', event => {
 // BLOCK TAGS
 ServerEvents.tags('block', event => {
   // Define functions for editing tags
+  const add = (tag, item) => {
+    event.add(tag, item)
+  }
   const removeAll = (block) => {
     event.removeAllTagsFrom(block)
   }
@@ -31,6 +34,10 @@ ServerEvents.tags('block', event => {
   global.REMOVED_REGEX_ITEMS.forEach(entry =>
     removeAll(Ingredient.of(entry).itemIds)
   )
+
+  // Add tags
+  add('forge:ropes', 'farmersdelight:rope')
+  add('supplementaries:fast_fall_climbable', 'farmersdelight:rope')
 })
 
 // ITEM TAGS
@@ -85,4 +92,15 @@ ServerEvents.tags('item', event => {
   add('forge:crushed_raw_tin', 'create_ironworks:crushed_raw_tin')
   add('create:crushed_raw_materials', 'create_ironworks:crushed_raw_tin')
   add('forge:tin_dusts', 'create_ironworks:crushed_raw_tin')
+  add('genesis:gutters', /mcwroofs:gutter_base.*/)
+  add('genesis:downspouts', /mcwroofs:gutter_middle.*/)
+  add('forge:ropes', 'farmersdelight:rope')
+  add('genesis:cheap_metal_ingots', 'minecraft:iron_ingot')
+  add('genesis:cheap_metal_ingots', 'create:zinc_ingot')
+  add('genesis:cheap_metal_ingots', 'create_ironworks:tin_ingot')
+  add('genesis:cheap_metal_nuggets', 'minecraft:iron_nugget')
+  add('genesis:cheap_metal_nuggets', 'create:zinc_nugget')
+  add('genesis:cheap_metal_nuggets', 'create_ironworks:tin_nugget')
+  add('forge:plates', 'createdeco:zinc_sheet')
+  add('forge:plates/zinc', 'createdeco:zinc_sheet')
 })

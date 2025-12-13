@@ -14,6 +14,12 @@ ServerEvents.recipes(event => {
     'minecraft:budding_amethyst',
     'budding_amethyst'
   )
+  add(
+    Fluid.of('create_enchantment_industry:ink', 250),
+    'kubejs:empty_ink_sac',
+    'minecraft:ink_sac', 1,
+    'ink_sac'
+  )
 
   // Add bulk recipes
   global.WILD_CROPS.forEach(entry => {
