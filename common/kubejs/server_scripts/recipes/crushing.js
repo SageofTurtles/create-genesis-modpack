@@ -7,6 +7,16 @@ ServerEvents.recipes(event => {
     ).id(`genesis:${recipeId}_crushing`)
   }
 
+  // Add individual recipes
+  add(
+    '#create:stone_types/tuff',
+    [
+      Item.of('minecraft:flint').withChance(0.25),
+      Item.of('create:zinc_nugget').withChance(0.12)
+    ],
+    'tuff'
+  )
+
   // Add bulk recipes
   global.CORALS.forEach(entry => {
     add(

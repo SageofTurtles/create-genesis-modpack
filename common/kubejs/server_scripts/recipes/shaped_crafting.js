@@ -158,6 +158,16 @@ ServerEvents.recipes(event => {
     'copycats:copycat_half_layer', 1,
     'copycat_half_layer_from_stacked'
   )
+  oneXone(
+    'createrailwaysnavigator:advanced_display_slab',
+    'createrailwaysnavigator:advanced_display', 1,
+    'advanced_display_from_slab'
+  )
+  oneXone(
+    'createrailwaysnavigator:advanced_display',
+    'createrailwaysnavigator:advanced_display_slab', 1,
+    'advanced_display_slab_from_advanced_display'
+  )
 
   // Add 1x2 recipes
   oneXtwo(
@@ -234,6 +244,26 @@ ServerEvents.recipes(event => {
     'copycats:copycat_stacked_half_layer', 2,
     'copycat_stacked_half_layer'
   )
+  twoXone(
+    'createrailwaysnavigator:advanced_display',
+    'createrailwaysnavigator:advanced_display_block', 1,
+    'advanced_display_block_from_advanced_display'
+  )
+  twoXone(
+    'createrailwaysnavigator:advanced_display_slab',
+    'createrailwaysnavigator:advanced_display_block', 1,
+    'advanced_display_block_from_slab'
+  )
+  twoXone(
+    'createrailwaysnavigator:advanced_display_sloped',
+    'createrailwaysnavigator:advanced_display_block', 1,
+    'advanced_display_block_from_sloped'
+  )
+  twoXone(
+    'createrailwaysnavigator:advanced_display_half_panel',
+    'createrailwaysnavigator:advanced_display_panel', 1,
+    'advanced_display_panel_from_half_panel'
+  )
 
   // Add 2x2 recipes
   twoXtwo(
@@ -296,12 +326,64 @@ ServerEvents.recipes(event => {
     'copycats:copycat_layer', 2,
     'copycat_layer_from_stacked_half_layer'
   )
+  twoXtwo(
+    'createdeco:andesite_sheet',
+    'createdeco:andesite_sheet_metal', 1,
+    'andesite_sheet_metal'
+  )
+  twoXtwo(
+    'createdeco:industrial_iron_sheet',
+    'createdeco:industrial_iron_sheet_metal', 1,
+    'industrial_iron_sheet_metal'
+  )
+  twoXtwo(
+    'create:brass_sheet',
+    'createdeco:brass_sheet_metal', 1,
+    'brass_sheet_metal'
+  )
+  twoXtwo(
+    'create:copper_sheet',
+    'createdeco:copper_sheet_metal', 1,
+    'copper_sheet_metal'
+  )
+  twoXtwo(
+    'create:iron_sheet',
+    'createdeco:iron_sheet_metal', 1,
+    'iron_sheet_metal'
+  )
+  twoXtwo(
+    'create:zinc_sheet',
+    'createdeco:zinc_sheet_metal', 1,
+    'zinc_sheet_metal'
+  )
+  twoXtwo(
+    'createrailwaysnavigator:advanced_display_small',
+    'createrailwaysnavigator:advanced_display_block', 1,
+    'advanced_display_block_from_small'
+  )
+  twoXtwo(
+    'createrailwaysnavigator:advanced_display_panel',
+    'createrailwaysnavigator:advanced_display_block', 1,
+    'advanced_display_block_from_panel'
+  )
+  twoXtwo(
+    'minecraft:iron_bars',
+    'decorative_blocks:bar_panel', 2,
+    'bar_panel'
+  )
 
   // Add 3x1 recipes
   threeXone(
     'create:iron_sheet',
     'mcwroofs:gutter_base', 3,
     'gutter'
+  )
+
+  // Add 3x2 recipes
+  threeXtwo(
+    'mincraft:stripped_bamboo_block',
+    'decorative_blocks:bamboo_palisade', 6,
+    'bamboo_palisade'
   )
 
   // Add 3x3 recipes
@@ -425,6 +507,20 @@ ServerEvents.recipes(event => {
   custom(
     [
       ' A ',
+      'BCB',
+      'B B'
+    ],
+    {
+      A: 'create:brass_block',
+      B: 'minecraft:stick',
+      C: 'create:brass_ingot'
+    },
+    'create:peculiar_bell', 1,
+    'peculiar_bell'
+  )
+  custom(
+    [
+      ' A ',
       'BCD',
       ' E '
     ],
@@ -480,6 +576,71 @@ ServerEvents.recipes(event => {
     'railways:copycat_headstock_link_and_pin', 1,
     'copycat_headstock_link_and_pin'
   )
+  custom(
+    [
+      'AAA',
+      'A A',
+      'BCB'
+    ],
+    {
+      A: 'createaddition:iron_rod',
+      B: 'create:iron_sheet',
+      C: 'minecraft:netherrack'
+    },
+    'create:empty_blaze_burner', 1,
+    'empty_blaze_burner'
+  )
+  custom(
+    [
+      'ABA',
+      'BCB'
+    ],
+    {
+      A: 'minecraft:iron_nugget',
+      B: 'createdeco:industrial_iron_ingot',
+      C: '#forge:glass_colorless'
+    },
+    'create:industrial_iron_window', 2,
+    'industrial_iron_window'
+  )
+  custom(
+    [
+      ' A ',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:iron_nugget',
+      B: '#forge:glass_colorless'
+    },
+    'create:ornate_iron_window', 1,
+    'ornate_iron_window'
+  )
+  custom(
+    [
+      'ABA',
+      'CCC',
+      'ABA'
+    ],
+    {
+      A: 'create:andesite_alloy',
+      B: 'create:sturdy_sheet',
+      C: 'create:display_board'
+    },
+    'createrailwaysnavigator:advanced_display_block', 4,
+    'advanced_display_block'
+  )
+  custom(
+    [
+      'AB',
+      'BA'
+    ],
+    {
+      A: 'minecraft:dir',
+      B: 'minecraft:cobblestone'
+    },
+    'decorative_blocks:rocky_dirt', 4,
+    'rocky_dirt'
+  )
 
   // Add bulk recipes
   global.CHAINS.forEach(entry => {
@@ -509,6 +670,45 @@ ServerEvents.recipes(event => {
       `minecraft:${entry}_planks`,
       `minecraft:${entry}_pressure_plate`, 8,
       `${entry}_pressure_plate`
+    )
+    custom(
+      [
+        'A',
+        'B'
+      ],
+      {
+        A: `minecraft:${entry}_slab`,
+        B: `minecraft:${entry}_fence`
+      },
+      `decorative_blocks:${entry}_seat`, 2,
+      `${entry}_seat`
+    )
+    custom(
+      [
+        'AA',
+        'A '
+      ],
+      {
+        A: `minecraft:${entry}_planks`
+      },
+      `decorative_blocks:${entry}_support`, 4,
+      `${entry}_support`
+    )
+  })
+
+  global.LOG_SETS.forEach(entry => {
+    threeXtwo(
+      `mincraft:stripped_${entry}_log`,
+      `decorative_blocks:${entry}_palisade`, 6,
+      `${entry}_palisade`
+    )
+  })
+
+  global.FUNGUS_SETS.forEach(entry => {
+    threeXtwo(
+      `mincraft:stripped_${entry}_stem`,
+      `decorative_blocks:${entry}_palisade`, 6,
+      `${entry}_palisade`
     )
   })
 

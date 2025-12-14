@@ -68,6 +68,16 @@ ServerEvents.recipes(event => {
     'minecraft:ender_pearl',
     'minecraft:echo_shard'
   )
+  id(
+    'create:mechanical_crafting/extendo_grip',
+    'minecraft:stick',
+    'createaddition:iron_rod'
+  )
+  id(
+    'create:crafting/schematics/schematicannon',
+    'minecraft:iron_block',
+    'create:industrial_iron_block'
+  )
 
   // Add recipe modifications by input
   input(

@@ -13,6 +13,61 @@ ServerEvents.recipes(event => {
     'copycats:copycat_block', 1,
     'copycat_block_from_zinc_ingot'
   )
+  add(
+    Fluid.of('create_enchantment_industry:experience', 27),
+    'create:experience_block', 1,
+    'experience_block'
+  )
+  add(
+    'create_ironworks:rose_quartz_block',
+    'create:rose_quartz_tiles', 1,
+    'rose_quartz_tiles_from_polished_rose_quartz'
+  )
+  add(
+    'create_ironworks:rose_quartz_block',
+    'create:small_rose_quartz_tiles', 1,
+    'small_rose_quartz_tiles_from_polished_rose_quartz'
+  )
+  add(
+    'create:rose_quartz_tiles',
+    'create:small_rose_quartz_tiles', 1,
+    'small_rose_quartz_tiles_from_rose_quartz_tiles'
+  )
+  add(
+    'create:small_rose_quartz_tiles',
+    'create:rose_quartz_tiles', 1,
+    'rose_quartz_tiles_from_small_rose_quartz_tiles'
+  )
+  add(
+    'createrailwaysnavigator:advanced_display_block',
+    'createrailwaysnavigator:advanced_display', 2,
+    'advanced_display'
+  )
+  add(
+    'createrailwaysnavigator:advanced_display_block',
+    'createrailwaysnavigator:advanced_display_slab', 2,
+    'advanced_display_slab'
+  )
+  add(
+    'createrailwaysnavigator:advanced_display_block',
+    'createrailwaysnavigator:advanced_display_panel', 4,
+    'advanced_display_panel'
+  )
+  add(
+    'createrailwaysnavigator:advanced_display_block',
+    'createrailwaysnavigator:advanced_display_half_panel', 8,
+    'advanced_display_half_panel'
+  )
+  add(
+    'createrailwaysnavigator:advanced_display_block',
+    'createrailwaysnavigator:advanced_display_small', 4,
+    'advanced_display_small'
+  )
+  add(
+    'createrailwaysnavigator:advanced_display_block',
+    'createrailwaysnavigator:advanced_display_sloped', 2,
+    'advanced_display_sloped'
+  )
 
   // Add bulk recipes
   global.STONECUTTING_BLOCKS.forEach(entry => {

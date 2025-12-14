@@ -47,4 +47,21 @@ ServerEvents.recipes(event => {
     'create_jetpack:netherite_jetpack', 1,
     'netherite_jetpack'
   )
+  custom(
+    [
+      'ABA',
+      'CDC',
+      'CEC',
+      'ACA'
+    ],
+    {
+      A: 'create:andesite_alloy',
+      B: 'create:transmitter',
+      C: 'create:iron_sheet',
+      D: '#forge:glass_panes/colorless',
+      E: 'create:precision_mechanism'
+    },
+    'createrailwaysnavigator:navigator', 1,
+    'navigator'
+  )
 })
