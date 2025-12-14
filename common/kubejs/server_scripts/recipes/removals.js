@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
   output('create:industrial_iron_window')
   output('create:ornate_iron_window')
   output('create:peculiar_bell')
-  output('create:prismarine_alloy_rod')
+  output('create_aquatic_ambitions:prismarine_alloy_rod')
   output('createrailwaysnavigator:navigator')
   output('decorative_blocks:bar_panel')
   output('decorative_blocks:rocky_dirt')

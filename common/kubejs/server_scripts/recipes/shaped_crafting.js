@@ -12,63 +12,84 @@ ServerEvents.recipes(event => {
       Item.of(output, count),
       ['A'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const oneXthree = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['A', 'A', 'A'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const twoXone = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['AA'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const twoXtwo = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['AA', 'AA'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const twoXthree = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['AA', 'AA', 'AA'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const threeXone = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['AAA'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const threeXtwo = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['AAA', 'AAA'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const threeXthree = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['AAA', 'AAA', 'AAA'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
+  }
+  const donut = (input, output, count, recipeId) => {
+    event.shaped(
+      Item.of(output, count),
+      ['AAA', 'A A', 'AAA'],
+      { A: input }
+    ).id(`genesis:${recipeId}_shaped`)
+  }
+  const eight_one = (inputOuter, inputCenter, output, count, recipeId) => {
+    event.shaped(
+      Item.of(output, count),
+      ['AAA', 'ABA', 'AAA'],
+      { A: inputOuter, B: inputCenter }
+    ).id(`genesis:${recipeId}_shaped`)
+  }
+  const cross_one = (inputOuter, inputCenter, output, count, recipeId) => {
+    event.shaped(
+      Item.of(output, count),
+      [' A ', 'ABA', 'A A'],
+      { A: inputOuter, B: inputCenter }
+    ).id(`genesis:${recipeId}_shaped`)
   }
   const stairs = (input, output, count, recipeId) => {
     event.shaped(
       Item.of(output, count),
       ['A', 'AA', 'AAA'],
       { A: input }
-    ).id(`genesis:${recipeId}`)
+    ).id(`genesis:${recipeId}_shaped`)
   }
 
   // Add 1x1 recipes
@@ -86,6 +107,63 @@ ServerEvents.recipes(event => {
     'create:rose_quartz_block',
     'create:rose_quartz', 9,
     'rose_quartz'
+  )
+  oneXone(
+    'copycats:copycat_vertical_stairs',
+    'copycats:copycat_stairs', 1,
+    'copycat_stairs_to_vertical'
+  )
+  oneXone(
+    'copycats:copycat_vertical_slice',
+    'copycats:copycat_slice', 1,
+    'copycat_slice_to_vertical'
+  )
+  oneXone(
+    'copycats:copycat_vertical_slope',
+    'copycats:copycat_slope', 1,
+    'copycat_slope_to_vertical'
+  )
+  oneXone(
+    'copycats:copycat_vertical_step',
+    'create:copycat_step', 1,
+    'copycat_step_to_vertical'
+  )
+  oneXone(
+    'copycats:copycat_stairs',
+    'copycats:copycat_vertical_stairs', 1,
+    'copycat_stairs_to_horizontal'
+  )
+  oneXone(
+    'copycats:copycat_slice',
+    'copycats:copycat_vertical_slice', 1,
+    'copycat_slice_to_horizontal'
+  )
+  oneXone(
+    'copycats:copycat_slope',
+    'copycats:copycat_vertical_slope', 1,
+    'copycat_slope_to_horizontal'
+  )
+  oneXone(
+    'create:copycat_step',
+    'copycats:copycat_vertical_step', 1,
+    'copycat_step_to_horizontal'
+  )
+  oneXone(
+    'copycats:copycat_vertical_half_layer',
+    'copycats:copycat_half_layer', 1,
+    'copycat_half_layer_from_vertical'
+  )
+  oneXone(
+    'copycats:copycat_stacked_half_layer',
+    'copycats:copycat_half_layer', 1,
+    'copycat_half_layer_from_stacked'
+  )
+
+  // Add 1x2 recipes
+  oneXtwo(
+    'copycats:copycat_half_layer',
+    'copycats:copycat_vertical_half_layer', 2,
+    'copycat_vertical_half_layer'
   )
 
   // Add 1x3 recipes
@@ -131,6 +209,93 @@ ServerEvents.recipes(event => {
     'minecraft:light_weighted_pressure_plate', 2,
     'light_weighted_pressure_plate'
   )
+  twoXone(
+    'copycats:copycat_slab',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_slab'
+  )
+  twoXone(
+    'copycats:copycat_half_panel',
+    'create:copycat_panel', 1,
+    'copycat_panel_from_half_panel'
+  )
+  twoXone(
+    'copycats:copycat_slope',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_slope'
+  )
+  twoXone(
+    'copycats:copycat_vertical_slope',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_vertical_slope'
+  )
+  twoXone(
+    'copycats:copycat_half_layer',
+    'copycats:copycat_stacked_half_layer', 2,
+    'copycat_stacked_half_layer'
+  )
+
+  // Add 2x2 recipes
+  twoXtwo(
+    'create:copycat_step',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_step'
+  )
+  twoXtwo(
+    'copycats:copycat_vertical_step',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_vertical_step'
+  )
+  twoXtwo(
+    'copycats:copycat_beam',
+    'copycats:copycat_block', 3,
+    'copycat_block_from_beam'
+  )
+  twoXtwo(
+    'create:copycat_panel',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_panel'
+  )
+  twoXtwo(
+    'copycats:copycat_stairs',
+    'copycats:copycat_block', 3,
+    'copycat_block_from_stairs'
+  )
+  twoXtwo(
+    'copycats:copycat_vertical_stairs',
+    'copycats:copycat_block', 3,
+    'copycat_block_from_vertical_stairs'
+  )
+  twoXtwo(
+    'copycats:copycat_pane',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_pane'
+  )
+  twoXtwo(
+    'copycats:copycat_flat_pane',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_flat_pane'
+  )
+  twoXtwo(
+    'copycats:copycat_byte_panel',
+    'create:copycat_panel', 1,
+    'copycat_panel_from_byte_panel'
+  )
+  twoXtwo(
+    'copycats:copycat_half_layer',
+    'copycats:copycat_layer', 2,
+    'copycat_layer_from_half_layer'
+  )
+  twoXtwo(
+    'copycats:copycat_vertical_half_layer',
+    'copycats:copycat_layer', 2,
+    'copycat_layer_from_vertical_half_layer'
+  )
+  twoXtwo(
+    'copycats:copycat_stacked_half_layer',
+    'copycats:copycat_layer', 2,
+    'copycat_layer_from_stacked_half_layer'
+  )
 
   // Add 3x1 recipes
   threeXone(
@@ -146,51 +311,174 @@ ServerEvents.recipes(event => {
     'rose_quartz_block'
   )
 
+  // Add donut recipes
+  donut(
+    'copycats:copycat_slice',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_slice'
+  )
+  donut(
+    'copycats:copycat_vertical_slice',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_vertical_slice'
+  )
+  donut(
+    'copycats:copycat_corner_slice',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_corner_slice'
+  )
+  donut(
+    'copycats:copycat_layer',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_layer'
+  )
+  donut(
+    'copycats:copycat_slope_layer',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_slope_layer'
+  )
+  donut(
+    'copycats:copycat_byte',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_byte'
+  )
+
+  // Add 8+1 recipes
+  eight_one(
+    '#minecraft:wooden_buttons',
+    'copycats:copycat_block',
+    'copycats:copycat_wooden_button', 8,
+    'copycat_wooden_button'
+  )
+  eight_one(
+    '#minecraft:stone_buttons',
+    'copycats:copycat_block',
+    'copycats:copycat_stone_button', 8,
+    'copycat_stone_button'
+  )
+  eight_one(
+    'create:fluid_pipe',
+    'copycats:copycat_block',
+    'copycats:copycat_fluid_pipe', 8,
+    'copycat_fluid_pipe'
+  )
+  eight_one(
+    'create:shaft',
+    'copycats:copycat_block',
+    'copycats:copycat_shaft', 8,
+    'copycat_shaft'
+  )
+
+  // Add cross+1 recipes
+  cross_one(
+    '#minecraft:wooden_pressure_plates',
+    'copycats:copycat_block',
+    'copycats:copycat_wooden_pressure_plate', 4,
+    'copycat_wooden_pressure_plate'
+  )
+  cross_one(
+    '#genesis:stone_pressure_plates',
+    'copycats:copycat_block',
+    'copycats:copycat_stone_pressure_plate', 4,
+    'copycat_stone_pressure_plate'
+  )
+  cross_one(
+    'minecraft:light_weighted_pressure_plate',
+    'copycats:copycat_block',
+    'copycats:copycat_light_weighted_pressure_plate', 4,
+    'copycat_light_weighted_pressure_plate'
+  )
+  cross_one(
+    'minecraft:heavy_weighted_pressure_plate',
+    'copycats:copycat_block',
+    'copycats:copycat_heavy_weighted_pressure_plate', 4,
+    'copycat_heavy_weighted_pressure_plate'
+  )
+  cross_one(
+    'create:cogwheel',
+    'copycats:copycat_block',
+    'copycats:copycat_cogwheel', 4,
+    'copycat_cogwheel'
+  )
+  cross_one(
+    'create:large_cogwheel',
+    'copycats:copycat_block',
+    'copycats:copycat_large_cogwheel', 4,
+    'copycat_large_cogwheel'
+  )
+
   // Add custom recipes
   custom(
     [
-      ' 1 ',
-      '232',
-      '2 2'
+      ' A ',
+      'BCB',
+      'B B'
     ],
     {
-      1: 'create_ironworks:bronze_block',
-      2: 'minecraft:stick',
-      3: 'create_ironworks:bronze_ingot'
+      A: 'create_ironworks:bronze_block',
+      B: 'minecraft:stick',
+      C: 'create_ironworks:bronze_ingot'
     },
     'minecraft:bell', 1,
     'bell'
   )
   custom(
     [
-      ' 1 ',
-      '234',
-      ' 5 '
+      ' A ',
+      'BCD',
+      ' E '
     ],
     {
-      1: 'create_aquatic_ambitions:spiky_shell',
-      2: 'create:powdered_obsidian',
-      3: 'minecraft:ender_pearl',
-      4: 'createaddition:diamond_grit',
-      5: 'minecraft:blaze_powder'
+      A: 'create_aquatic_ambitions:spiky_shell',
+      B: 'create:powdered_obsidian',
+      C: 'minecraft:ender_pearl',
+      D: 'createaddition:diamond_grit',
+      E: 'minecraft:blaze_powder'
     },
     'kubejs:inert_ender_eye', 1,
     'inert_ender_eye'
   )
   custom(
     [
-      ' 1 ',
-      '232',
-      '444'
+      ' A ',
+      'BCB',
+      'DDD'
     ],
     {
-      1: 'create:electron_tube',
-      2: 'minecraft:redstone_torch',
-      3: 'create:brass_sheet',
-      4: '#bookshelf:stones'
+      A: 'create:electron_tube',
+      B: 'minecraft:redstone_torch',
+      C: 'create:brass_sheet',
+      D: '#bookshelf:stones'
     },
     'create_connected:sequenced_pulse_generator', 1,
     'sequenced_pulse_generator'
+  )
+  custom(
+    [
+      ' A ',
+      'BCB',
+      ' D '
+    ],
+    {
+      A: 'create:electron_tube',
+      B: 'create:shaft',
+      C: 'createaddition:modular_accumulator',
+      D: 'create:stockpile_switch'
+    },
+    'create_connected:kinetic_battery', 2,
+    'kinetic_battery'
+  )
+  custom(
+    [
+      ' A ',
+      'BBB'
+    ],
+    {
+      A: '#railways:deco_couplers',
+      B: 'create:copycat_panel'
+    },
+    'railways:copycat_headstock_link_and_pin', 1,
+    'copycat_headstock_link_and_pin'
   )
 
   // Add bulk recipes
@@ -225,7 +513,7 @@ ServerEvents.recipes(event => {
   })
 
   global.SAWING_BLOCKS.forEach(entry => {
-    const { name, block, stairs, slab } = entry
+    const { name, block, stair, slab } = entry
     threeXone(
       block,
       slab, 6,
@@ -242,14 +530,14 @@ ServerEvents.recipes(event => {
       `${name}_stairs`
     )
     twoXtwo(
-      stairs,
+      stair,
       block, 3,
       `${name}_block_from_stairs`
     )
   })
 
   global.STONECUTTING_BLOCKS.forEach(entry => {
-    const { name, block, stairs, slab, wall } = entry
+    const { name, block, stair, slab, wall } = entry
     threeXone(
       block,
       slab, 6,
@@ -263,11 +551,11 @@ ServerEvents.recipes(event => {
     if (stairs != null) {
       stairs(
         block,
-        stairs, 8,
+        stair, 8,
         `${name}_stairs`
       )
       twoXtwo(
-        stairs,
+        stair,
         block, 3,
         `${name}_block_from_stairs`
       )

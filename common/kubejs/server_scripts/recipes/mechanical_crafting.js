@@ -11,38 +11,38 @@ ServerEvents.recipes(event => {
   // Add recipes
   custom(
     [
-      ' 121 ',
-      '13431',
-      '15651',
-      ' 7 7 '
+      ' ABA ',
+      'ACDCA',
+      'AEFEA',
+      ' G G '
     ],
     {
-      1: 'create:brass_sheet',
-      2: 'create:shaft',
-      3: 'create:precision_mechanism',
-      4: 'create:copper_backtank',
-      5: 'create:propeller',
-      6: 'create_ironworks:steel_armor_chestplate',
-      7: 'create:chute'
+      A: 'create:brass_sheet',
+      B: 'create:shaft',
+      C: 'create:precision_mechanism',
+      D: 'create:copper_backtank',
+      E: 'create:propeller',
+      F: 'create_ironworks:steel_armor_chestplate',
+      G: 'create:chute'
     },
     'create_jetpack:jetpack', 1,
     'jetpack'
   )
   custom(
     [
-      ' 121 ',
-      '13431',
-      '15651',
-      ' 7 7 '
+      ' ABA ',
+      'ACDCA',
+      'AEFEA',
+      ' G G '
     ],
     {
-      1: 'create:brass_sheet',
-      2: 'create:shaft',
-      3: 'create:precision_mechanism',
-      4: 'create:netherite_backtank',
-      5: 'create:propeller',
-      6: 'create_ironworks:steel_armor_chestplate',
-      7: 'create:chute'
+      A: 'create:brass_sheet',
+      B: 'create:shaft',
+      C: 'create:precision_mechanism',
+      D: 'create:netherite_backtank',
+      E: 'create:propeller',
+      F: 'create_ironworks:steel_armor_chestplate',
+      G: 'create:chute'
     },
     'create_jetpack:netherite_jetpack', 1,
     'netherite_jetpack'

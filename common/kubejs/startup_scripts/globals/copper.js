@@ -82,20 +82,23 @@ global['COPPER_CONVERSION'] = [
     oxidized: 'copper',
     cut: 'cut_copper',
     shingles: 'copper_shingles',
-    tiles: 'copper_tiles'
+    tiles: 'copper_tiles',
+    chiseled: 'chiseled_copper'
   },
   {
     base: 'copper_slab',
     oxidized: 'copper_slab',
     cut: 'cut_copper_slab',
     shingles: 'copper_shingle_slab',
-    tiles: 'copper_tile_slab'
+    tiles: 'copper_tile_slab',
+    chiseled: null
   },
   {
     base: 'copper_stairs',
     oxidized: 'copper_stairs',
     cut: 'cut_copper_stairs',
     shingles: 'copper_shingle_stairs',
-    tiles: 'copper_tile_stairs'
+    tiles: 'copper_tile_stairs',
+    chiseled: null
   }
 ]

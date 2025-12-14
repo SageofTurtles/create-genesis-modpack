@@ -33,6 +33,22 @@ ServerEvents.recipes(event => {
     'comforts:rope_and_nail', 1,
     'rope_and_nail'
   )
+  add(
+    [
+      'copycats:copycat_door',
+      'minecraft:redstone_torch'
+    ],
+    'copycats:copycat_iron_door', 1,
+    'copycat_iron_door'
+  )
+  add(
+    [
+      'copycats:copycat_trapdoor',
+      'minecraft:redstone_torch'
+    ],
+    'copycats:copycat_iron_trapdoor', 1,
+    'copycat_iron_trapdoor'
+  )
 
   // Add bulk recipes
   global.ADDITIVE_DOORS.forEach(entry => {

@@ -37,6 +37,16 @@ ServerEvents.recipes(event => {
     ).superheated().id(`genesis:${recipeId}_mixing`)
   }
 
+  // Add item heated recipes
+  heat(
+    [
+      Fluid.of('createmetalwork:molten_copper', 90),
+      '4x minecraft:prismarine_shard'
+    ],
+    'create_aquatic_ambitions:prismarine_alloy', 1,
+    'prismarine_alloy'
+  )
+
   // Add item superheated recipes
   superheat(
     [

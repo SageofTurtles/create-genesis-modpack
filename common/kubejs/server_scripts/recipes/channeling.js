@@ -1,27 +1,44 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const add = (input, output, recipeId) => {
+  const single = (input, output, recipeId) => {
     event.custom({
       type: 'create_aquatic_ambitions:channeling',
       ingredients: [{ item: input }],
       results: [{ item: output }]
     }).id(`genesis:${recipeId}_channeling`)
   }
+  const multi = (input, outputs, recipeId) => {
+    event.custom({
+      type: 'create_aquatic_ambitions:channeling',
+      ingredients: [{ item: input }],
+      results: outputs
+    }).id(`genesis:${recipeId}_channeling`)
+  }
+
+  // Add multiple-output recipes
+  multi(
+    'minecraft:sponge',
+    [
+      { item: 'minecraft:wet_sponge' },
+      { item: 'minecraft:wet_sponge', chance: 0.1 },
+    ],
+    'sponge'
+  )
 
   // Add bulk recipes
   global.OXIDIZATION_SETS.forEach(entry => {
     const { modid, block, pattern } = entry
-    add(
+    single(
       `${modid}:${block}`,
       `${modid}:exposed_${pattern}`,
       `exposed_${pattern}`
     )
-    add(
+    single(
       `${modid}:exposed_${pattern}`,
       `${modid}:weathered_${pattern}`,
       `weathered_${pattern}`
     )
-    add(
+    single(
       `${modid}:weathered_${pattern}`,
       `${modid}:oxidized_${pattern}`,
       `oxidized_${pattern}`

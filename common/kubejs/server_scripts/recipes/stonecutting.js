@@ -7,6 +7,13 @@ ServerEvents.recipes(event => {
     ).id(`genesis:${recipeId}_stonecutting`)
   }
 
+  // Add individual recipes
+  add(
+    'create:zinc_ingot',
+    'copycats:copycat_block', 1,
+    'copycat_block_from_zinc_ingot'
+  )
+
   // Add bulk recipes
   global.STONECUTTING_BLOCKS.forEach(entry => {
     const { name, block, stairs, slab, wall } = entry
@@ -32,7 +39,7 @@ ServerEvents.recipes(event => {
   })
 
   global.COPPER_CONVERSION.forEach(entry => {
-    const { base, oxidized, cut, shingles, tiles } = entry
+    const { base, oxidized, cut, shingles, tiles, chiseled } = entry
     add(
       `minecraft:${base}`,
       `minecraft:${cut}`, 1,
@@ -152,6 +159,62 @@ ServerEvents.recipes(event => {
       `minecraft:waxed_oxidized_${oxidized}`,
       `create:waxed_oxidized_${tiles}`, 1,
       `waxed_oxidized_${tiles}_from_waxed_oxidized_${oxidized}`
+    )
+    if (chiseled != null) {
+      add(
+        `minecraft:${base}`,
+        `copperandtuffbackport:${chiseled}`, 1,
+        `${chiseled}_from_${base}`
+      )
+      add(
+        `minecraft:exposed_${oxidized}`,
+        `copperandtuffbackport:exposed_${chiseled}`, 1,
+        `exposed_${chiseled}_from_exposed_${oxidized}`
+      )
+      add(
+        `minecraft:weathered_${oxidized}`,
+        `copperandtuffbackport:weathered_${chiseled}`, 1,
+        `weathered_${chiseled}_from_weathered_${oxidized}`
+      )
+      add(
+        `minecraft:oxidized_${oxidized}`,
+        `copperandtuffbackport:oxidized_${chiseled}`, 1,
+        `oxidized_${chiseled}_from_oxidized_${oxidized}`
+      )
+      add(
+        `minecraft:waxed_${base}`,
+        `copperandtuffbackport:waxed_${chiseled}`, 1,
+        `waxed_${chiseled}_from_waxed_${base}`
+      )
+      add(
+        `minecraft:waxed_exposed_${oxidized}`,
+        `copperandtuffbackport:waxed_exposed_${chiseled}`, 1,
+        `waxed_exposed_${chiseled}_from_waxed_exposed_${oxidized}`
+      )
+      add(
+        `minecraft:waxed_weathered_${oxidized}`,
+        `copperandtuffbackport:waxed_weathered_${chiseled}`, 1,
+        `waxed_weathered_${chiseled}_from_waxed_weathered_${oxidized}`
+      )
+      add(
+        `minecraft:waxed_oxidized_${oxidized}`,
+        `copperandtuffbackport:waxed_oxidized_${chiseled}`, 1,
+        `waxed_oxidized_${chiseled}_from_waxed_oxidized_${oxidized}`
+      )
+    }
+  })
+
+  global.COPYCATS.forEach(entry => {
+    const { modid, output, count } = entry
+    add(
+      'create:zinc_ingot',
+      `${modid}:${output}`, count,
+      `${output}_from_zinc_ingot`
+    )
+    add(
+      'copycats:copycat_block',
+      `${modid}:${output}`, count,
+      `${output}_from_block`
     )
   })
 })

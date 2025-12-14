@@ -103,4 +103,7 @@ ServerEvents.tags('item', event => {
   add('genesis:cheap_metal_nuggets', 'create_ironworks:tin_nugget')
   add('forge:plates', 'createdeco:zinc_sheet')
   add('forge:plates/zinc', 'createdeco:zinc_sheet')
+  add('genesis:stone_pressure_plates', 'minecraft:polished_blackstone_pressure_plate')
+  add('genesis:stone_pressure_plates', 'minecraft:stone_pressure_plate')
+  add('create_enchantment_industry:ink_ingredient', 'create_ironworks:coal_dust')
 })

@@ -13,4 +13,9 @@ ServerEvents.recipes(event => {
     'kubejs:limesand', 1,
     'limestone'
   )
+  add(
+    'create_aquatic_ambitions:spiky_shell',
+    'minecraft:bone_meal', 4,
+    'spiky_shell'
+  )
 })

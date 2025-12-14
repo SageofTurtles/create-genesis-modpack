@@ -19,4 +19,9 @@ ServerEvents.recipes(event => {
     'kubejs:empty_ink_sac', 2,
     'leather'
   )
+  add(
+    'create_aquatic_ambitions:prismarine_alloy',
+    'create_aquatic_ambitions:prismarine_alloy_rod', 2,
+    'prismarine_alloy'
+  )
 })
