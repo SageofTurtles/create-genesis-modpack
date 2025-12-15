@@ -18,3 +18,18 @@ global['CHAINS'] = [
     output: 'mcwlights:golden_chain'
   }
 ]
+
+global['CHAIN_METALS'] = [
+  {
+    ingot: 'iron',
+    name: 'iron'
+  },
+  {
+    ingot: 'copper',
+    name: 'copper'
+  },
+  {
+    ingot: 'gold',
+    name: 'golden'
+  }
+]

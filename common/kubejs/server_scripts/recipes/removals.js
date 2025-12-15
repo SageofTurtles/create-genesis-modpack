@@ -94,6 +94,10 @@ ServerEvents.recipes(event => {
   mod('immersive_aircraft')
   mod('man_of_many_planes')
 
+  // Remove recipes by input item ID
+  input('mcwbridges:bridge_lantern')
+  input('mcwbridges:bridge_torch')
+
   // Remove recipes by output item ID
   output('amendments:dragon_charge')
   output('comforts:rope_and_nail')

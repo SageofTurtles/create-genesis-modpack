@@ -13,6 +13,26 @@ ServerEvents.recipes(event => {
     ).keepHeldItem().id(`genesis:${recipeId}_deploying`)
   }
 
+  // Add single-use recipes
+  use(
+    'immersive_aircraft:hull',
+    'create_ironworks:steel_sheet',
+    'immersive_aircraft:hull_reinforcement',
+    'reinforced_hull'
+  )
+  use(
+    'petrolsparts:differential',
+    'createdeco:industrial_iron_ingot',
+    'immersive_aircraft:industrial_gears',
+    'industrial_gears'
+  )
+  use(
+    'create:fluid_pipe',
+    'create:sturdy_sheet',
+    'immersive_aircraft:sturdy_pipes',
+    'sturdy_piping'
+  )
+
   // Add bulk recipes
   global.OXIDIZATION_SETS.forEach(entry => {
     const { modid, block, pattern } = entry

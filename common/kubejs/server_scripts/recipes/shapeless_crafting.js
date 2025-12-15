@@ -49,6 +49,30 @@ ServerEvents.recipes(event => {
     'copycats:copycat_iron_trapdoor', 1,
     'copycat_iron_trapdoor'
   )
+  add(
+    [
+      'minecraft:glass',
+      'minecraft:glowstone_dust'
+    ],
+    'luminousblocks:luminous_glass', 1,
+    'luminous_glass_from_glowstone_dust'
+  )
+  add(
+    [
+      'minecraft:glass',
+      'minecraft:prismarine_crystals'
+    ],
+    'luminousblocks:luminous_glass', 1,
+    'luminous_glass_from_prismarine_crystals'
+  )
+  add(
+    [
+      '#genesis:paper_lamps',
+      'minecraft:white_dye'
+    ],
+    'mcwlights:white_paper_lamp', 1,
+    'white_paper_lamp'
+  )
 
   // Add bulk recipes
   global.ADDITIVE_DOORS.forEach(entry => {
@@ -57,6 +81,25 @@ ServerEvents.recipes(event => {
       [base, input],
       output,
       name
+    )
+  })
+
+  global.COLORS.forEach(entry => {
+    add(
+      [
+        `minecraft:${entry}_stained_glass`,
+        'minecraft:glowstone_dust'
+      ],
+      `luminousblocks:luminous_${entry}_stained_glass`, 1,
+      `luminous_${entry}_stained_glass_from_glowstone_dust`
+    )
+    add(
+      [
+        `minecraft:${entry}_stained_glass`,
+        'minecraft:prismarine_crystals'
+      ],
+      `luminousblocks:luminous_${entry}_stained_glass`, 1,
+      `luminous_${entry}_stained_glass_from_prismarine_crystals`
     )
   })
 })

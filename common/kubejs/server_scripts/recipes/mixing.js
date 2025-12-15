@@ -37,6 +37,105 @@ ServerEvents.recipes(event => {
     ).superheated().id(`genesis:${recipeId}_mixing`)
   }
 
+  // Add item non-heated recipes
+  cool(
+    [
+      'minecraft:apple',
+      '2x minecraft:melon_slice',
+      '2x #forge:berries',
+      'farmersdelight:pumpkin_slice',
+      'minecraft:bowl'
+    ],
+    'farmersdelight:fruit_salad', 1,
+    'fruit_salad'
+  )
+  cool(
+    [
+      '#forge:salad_ingredients',
+      '#forge:crops/tomato',
+      'minecraft:beetroot',
+      'minecraft:bowl'
+    ],
+    'farmersdelight:mixed_salad', 1,
+    'mixed_salad'
+  )
+  cool(
+    [
+      'minecraft:crimson_fungus',
+      'minecraft:warped_fungus',
+      'minecraft:bowl'
+    ],
+    'farmersdelight:nether_salad', 1,
+    'nether_salad'
+  )
+  cool(
+    [
+      'minecraft:baked_potato',
+      '#forge:cooked_beef',
+      '#forge:milk'
+    ],
+    'farmersdelight:stuffed_potato', 1,
+    'stuffed_potato'
+  )
+  cool(
+    [
+      '2x farmersdelight:salmon_slice',
+      'farmersdelight:cooked_rice'
+    ],
+    'farmersdelight:salmon_roll', 2,
+    'salmon_roll'
+  )
+  cool(
+    [
+      '2x farmersdelight:cod_slice',
+      'farmersdelight:cooked_rice'
+    ],
+    'farmersdelight:cod_roll', 2,
+    'cod_roll'
+  )
+  cool(
+    [
+      '2x farmersdelight:cooked_bacon',
+      '2x #forge:cooked_eggs',
+      'minecraft:bowl'
+    ],
+    'farmersdelight:bacon_and_eggs', 1,
+    'bacon_and_eggs'
+  )
+  cool(
+    [
+      'farmersdelight:cooked_mutton_chops',
+      'minecraft:beetroot',
+      'farmersdelight:cooked_rice',
+      '#forge:crops/tomato',
+      'minecraft:bowl'
+    ],
+    'farmersdelight:roasted_mutton_chops', 1,
+    'roasted_mutton_chops'
+  )
+  cool(
+    [
+      'minecraft:baked_potato',
+      '#forge:cooked_beef',
+      '#forge:crops/onion',
+      'farmersdelight:cooked_rice',
+      'minecraft:bowl'
+    ],
+    'farmersdelight:steak_and_potatoes', 1,
+    'steak_and_potatoes'
+  )
+  cool(
+    [
+      '#forge:cooked_fished/salmon',
+      'minecraft:sweet_berries',
+      '#forge:crops/cabbage',
+      '#forge:crops/onion',
+      'minecraft:bowl'
+    ],
+    'farmersdelight:grilled_salmon', 1,
+    'grilled_salmon'
+  )
+
   // Add item heated recipes
   heat(
     [

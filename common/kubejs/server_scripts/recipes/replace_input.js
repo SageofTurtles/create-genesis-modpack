@@ -14,6 +14,13 @@ ServerEvents.recipes(event => {
       newInput
     )
   }
+  const mod = (filter, originalInput, newInput) => {
+    event.replaceInput(
+      { mod: filter },
+      originalInput,
+      newInput
+    )
+  }
   const custom = (filter, originalInput, newInput) => {
     event.replaceInput(
       filter,
@@ -78,6 +85,51 @@ ServerEvents.recipes(event => {
     'minecraft:iron_block',
     'create:industrial_iron_block'
   )
+  id(
+    'farmersdelight:canvas',
+    'farmersdelight:straw',
+    '#supplementaries:straw'
+  )
+  id(
+    /mcwbridges:rope_.*_bridge$/,
+    'minecraft:string',
+    'farmersdelight:rope'
+  )
+  id(
+    /mcwdoors:bamboo_(beach|classic|cottage|four_panel|mystic|nether|paper|swamp|tropical|waffle|whispering)_door/,
+    'minecraft:bamboo',
+    'minecraft:bamboo_planks'
+  )
+  id(
+    'mcwdoors:metal_reinforced_door',
+    'minecraft:iron_nugget',
+    'createdeco:industrial_iron_nugget'
+  )
+  id(
+    'mcwdoors:iron_portcullis',
+    'minecraft:iron_bars',
+    'createdeco:industrial_iron_ingot'
+  )
+  id(
+    'mcwdoors:mangrove_bamboo_door',
+    'minecraft:bamboo',
+    'minecraft:mangrove_planks'
+  )
+  id(
+    /mcwfences:.*_wired_fence/,
+    'minecraft:iron_bars',
+    'createaddition:barbed_wire'
+  )
+  id(
+    /mcwfences:.*_grass_topped_wall/,
+    'minecraft:dirt',
+    'minecraft:grass_block'
+  )
+  id(
+    'mcwfences:iron_cheval_de_frise',
+    'minecraft:iron_nugget',
+    'createaddition:iron_rod'
+  )
 
   // Add recipe modifications by input
   input(
@@ -89,6 +141,18 @@ ServerEvents.recipes(event => {
     'mcwroofs:gutter_middle',
     'mcwroofs:gutter_middle',
     '#genesis:downspouts'
+  )
+  input(
+    'mcwlights:white_paper_lamp',
+    'mcwlights:white_paper_lamp',
+    '#genesis:paper_lamps'
+  )
+
+  // Add recipe modifications by input
+  mod(
+    'interiors',
+    'minecraft:dried_kelp',
+    'create:belt_connector'
   )
 
   // Add recipe modifications by custom filters

@@ -16,4 +16,14 @@ ServerEvents.recipes(event => {
     ],
     'limesand'
   )
+  add(
+    '#genesis:luminous_glass_blocks',
+    'luminousblocks:luminous_glass',
+    'luminous_glass'
+  )
+  add(
+    '#genesis:luminous_glass_panes',
+    'luminousblocks:luminous_glass_pane',
+    'luminous_glass_pane'
+  )
 })

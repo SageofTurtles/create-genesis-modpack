@@ -106,4 +106,13 @@ ServerEvents.tags('item', event => {
   add('genesis:stone_pressure_plates', 'minecraft:polished_blackstone_pressure_plate')
   add('genesis:stone_pressure_plates', 'minecraft:stone_pressure_plate')
   add('create_enchantment_industry:ink_ingredient', 'create_ironworks:coal_dust')
+  add('genesis:luminous_glass_blocks', `luminousblocks:luminous_glass`)
+  add('genesis:luminous_glass_panes', `luminousblocks:luminous_glass_pane`)
+
+  // Bulk tag changes
+  global.COLORS.forEach(entry => {
+    add('genesis:luminous_glass_blocks', `luminousblocks:luminous_${entry}_stained_glass`)
+    add('genesis:luminous_glass_panes', `luminousblocks:luminous_${entry}_stained_glass_pane`)
+    add('genesis:paper_lamps', `mcwlights:${entry}_paper_lamp`)
+  })
 })

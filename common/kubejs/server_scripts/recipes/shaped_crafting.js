@@ -168,6 +168,26 @@ ServerEvents.recipes(event => {
     'createrailwaysnavigator:advanced_display_slab', 1,
     'advanced_display_slab_from_advanced_display'
   )
+  oneXone(
+    'minecraft:torch',
+    'mcwbridges:bridge_torch', 1,
+    'bridge_torch'
+  )
+  oneXone(
+    'minecraft:lantern',
+    'mcwbridges:bridge_lantern', 1,
+    'bridge_lantern'
+  )
+  oneXone(
+    'mcwbridges:bridge_torch',
+    'minecraft:torch', 1,
+    'torch'
+  )
+  oneXone(
+    'mcwbridges:bridge_lantern',
+    'minecraft:lantern', 1,
+    'lantern'
+  )
 
   // Add 1x2 recipes
   oneXtwo(
@@ -371,6 +391,11 @@ ServerEvents.recipes(event => {
     'decorative_blocks:bar_panel', 2,
     'bar_panel'
   )
+  twoXtwo(
+    'create:white_sail',
+    'immersive_aircraft:sail', 1,
+    'large_sail'
+  )
 
   // Add 3x1 recipes
   threeXone(
@@ -487,6 +512,18 @@ ServerEvents.recipes(event => {
     'copycats:copycat_block',
     'copycats:copycat_large_cogwheel', 4,
     'copycat_large_cogwheel'
+  )
+  cross_one(
+    'create:brass_sheet',
+    'create:propeller',
+    'immersive_aircraft:enhanced_propeller', 1,
+    'brass_propeller'
+  )
+  cross_one(
+    'create:iron_sheet',
+    'create:propeller',
+    'immersive_aircraft:propeller', 1,
+    'large_propeller'
   )
 
   // Add custom recipes
@@ -641,22 +678,548 @@ ServerEvents.recipes(event => {
     'decorative_blocks:rocky_dirt', 4,
     'rocky_dirt'
   )
+  custom(
+    [
+      'ABA'
+    ],
+    {
+      A: 'create:dough',
+      B: 'minecraft:honey_bottle'
+    },
+    'farmersdelight:honey_cookie', 8,
+    'honey_cookie'
+  )
+  custom(
+    [
+      'AAA',
+      'B B',
+      'AAA'
+    ],
+    {
+      A: 'create_ironworks:steel_block',
+      B: 'createdeco:industrial_iron_trapdoor'
+    },
+    'immersive_aircraft:bomb_bay', 1,
+    'bomb_bay'
+  )
+  custom(
+    [
+      ' A ',
+      ' B ',
+      'B B'
+    ],
+    {
+      A: 'minecraft:spyglass',
+      B: 'createaddition:copper_rod'
+    },
+    'immersive_aircraft:telescope', 1,
+    'aerial_telescope'
+  )
+  custom(
+    [
+      'A',
+      'B',
+      'C'
+    ],
+    {
+      A: 'kubejs:gatling_gun_base',
+      B: 'createaddition:copper_rod',
+      C: 'create:copper_sheet'
+    },
+    'immersive_aircraft:rotary_cannon', 1,
+    'rotary_cannon'
+  )
+  custom(
+    [
+      'ABA',
+      ' C ',
+      ' D '
+    ],
+    {
+      A: '#minecraft:logs',
+      B: 'minecraft:crossbow',
+      C: 'createaddition:iron_rod',
+      D: 'create:sturdy_sheet'
+    },
+    'immersive_aircraft:heavy_crossbow', 1,
+    'heavy_crossbow'
+  )
+  custom(
+    [
+      'A',
+      'B',
+      'C'
+    ],
+    {
+      A: 'create:steam_engine',
+      B: 'create:fluid_tank',
+      C: 'create:blaze_burner'
+    },
+    'immersive_aircraft:boiler', 1,
+    'basic_engine'
+  )
+  custom(
+    [
+      'ABA',
+      'ACA',
+      'ADA'
+    ],
+    {
+      A: 'create_ironworks:steel_sheet',
+      B: 'create:steam_engine',
+      C: 'create:fluid_tank',
+      D: 'create:blaze_burner'
+    },
+    'immersive_aircraft:steel_boiler', 1,
+    'steel_boiler'
+  )
+  custom(
+    [
+      'ABA',
+      'CDC'
+    ],
+    {
+      A: 'create:iron_sheet',
+      B: 'minecraft:water_bucket',
+      C: 'create:copper_sheet',
+      D: 'immersive_aircraft:boiler'
+    },
+    'immersive_aircraft:eco_engine', 1,
+    'water_engine'
+  )
+  custom(
+    [
+      'ABA',
+      'CDC'
+    ],
+    {
+      A: 'create:brass_sheet',
+      B: 'create:precision_mechanism',
+      C: 'create:sturdy_sheet',
+      D: 'immersive_aircraft:boiler'
+    },
+    'immersive_aircraft:engine', 1,
+    'engine'
+  )
+  custom(
+    [
+      'ABA',
+      'CDC'
+    ],
+    {
+      A: 'createdeco:netherite_sheet',
+      B: 'minecraft:lava_bucket',
+      C: 'create_ironworks:steel_sheet',
+      D: 'immersive_aircraft:boiler'
+    },
+    'immersive_aircraft:nether_engine', 1,
+    'lava_engine'
+  )
+  custom(
+    [
+      ' A ',
+      'BCB',
+      'DED'
+    ],
+    {
+      A: 'immersive_aircraft:propeller',
+      B: 'immersive_aircraft:sail',
+      C: 'create:precision_mechanism',
+      D: 'immersive_aircraft:hull',
+      E: '#create:seats'
+    },
+    'immersive_aircraft:gyrodyne', 1,
+    'gyrodyne'
+  )
+  custom(
+    [
+      'ABA',
+      'CDC',
+      'AEA'
+    ],
+    {
+      A: 'create:propeller',
+      B: 'create:andesite_alloy',
+      C: '#minecraft:wooden_slabs',
+      D: 'minecraft:scaffolding',
+      E: 'immersive_aircraft:boiler'
+    },
+    'immersive_aircraft:quadrocopter', 1,
+    'quadrocopter'
+  )
+  custom(
+    [
+      'ABA'
+    ],
+    {
+      A: 'create:electron_tube',
+      B: 'minecraft:compass'
+    },
+    'immersive_aircraft:gyroscope', 1,
+    'gyroscope'
+  )
+  custom(
+    [
+      'A',
+      'B'
+    ],
+    {
+      A: 'createrailwaysnavigator:advanced_display_half_panel',
+      B: 'immersive_aircraft:gyroscope'
+    },
+    'immersive_aircraft:gyroscope_hud', 1,
+    'electronic_gyroscope'
+  )
+  custom(
+    [
+      ' A ',
+      'BCB'
+    ],
+    {
+      A: 'createrailwaysnavigator:advanced_display_panel',
+      B: 'immersive_aircraft:gyroscope',
+      C: 'minecraft:clock'
+    },
+    'immersive_aircraft:gyroscope_dials', 1,
+    'advanced_gyroscope'
+  )
+  custom(
+    [
+      'ABA',
+      'ABA'
+    ],
+    {
+      A: 'createdeco:andesite_sheet',
+      B: '#minecraft:logs'
+    },
+    'immersive_aircraft:hull', 1,
+    'hull'
+  )
+  custom(
+    [
+      ' AB',
+      'CDA',
+      'CC '
+    ],
+    {
+      A: 'createaddition:iron_rod',
+      B: 'create:iron_sheet',
+      C: 'create:belt_connector',
+      D: 'create:shaft'
+    },
+    'immersive_aircraft:improved_landing_gear', 1,
+    'improved_landing_gear'
+  )
+  custom(
+    [
+      'ABA'
+    ],
+    {
+      A: 'minecraft:iron_ingot',
+      B: 'minecraft:iron_bars'
+    },
+    'mcwbridges:iron_bridge_pier', 3,
+    'iron_bridge_pier'
+  )
+  custom(
+    [
+      'ABA'
+    ],
+    {
+      A: 'minecraft:bamboo_block',
+      B: 'minecraft:bamboo'
+    },
+    'mcwbridges:bamboo_bridge_pier', 3,
+    'bamboo_bridge_pier'
+  )
+  custom(
+    [
+      'ABA'
+    ],
+    {
+      A: 'minecraft:stripped_bamboo_block',
+      B: 'minecraft:bamboo'
+    },
+    'mcwbridges:dry_bamboo_bridge_pier', 3,
+    'dry_bamboo_bridge_pier'
+  )
+  custom(
+    [
+      'AA',
+      'AA',
+      'BB'
+    ],
+    {
+      A: 'minecraft:paper',
+      B: 'minecraft:bamboo_planks'
+    },
+    'mcwdoors:bamboo_japanese_door', 3,
+    'bamboo_shoji_door'
+  )
+  custom(
+    [
+      'AA',
+      'AA',
+      'BB'
+    ],
+    {
+      A: 'minecraft:paper',
+      B: 'minecraft:bamboo_slab'
+    },
+    'mcwdoors:bamboo_japanese2_door', 3,
+    'bamboo_shoji_whole_door'
+  )
+  custom(
+    [
+      'AA',
+      'BB',
+      'BB'
+    ],
+    {
+      A: 'minecraft:stick',
+      B: 'minecraft:bamboo_planks'
+    },
+    'mcwdoors:bamboo_barn_door', 2,
+    'bamboo_barn_door'
+  )
+  custom(
+    [
+      'AA',
+      'BB',
+      'BB'
+    ],
+    {
+      A: 'minecraft:glass_pane',
+      B: 'minecraft:bamboo_planks'
+    },
+    'mcwdoors:bamboo_barn_glass_door', 3,
+    'bamboo_barn_glassed_door'
+  )
+  custom(
+    [
+      'AB',
+      'BB',
+      'AB'
+    ],
+    {
+      A: 'minecraft:glass_pane',
+      B: 'minecraft:bamboo_planks'
+    },
+    'mcwdoors:bamboo_modern_door', 3,
+    'bamboo_modern_door'
+  )
+  custom(
+    [
+      'AB',
+      'BB',
+      'AB'
+    ],
+    {
+      A: 'minecraft:bamboo_planks',
+      B: 'minecraft:glass_pane'
+    },
+    'mcwdoors:bamboo_glass_door', 3,
+    'bamboo_glass_door'
+  )
+  custom(
+    [
+      'AA',
+      'BB',
+      'BB'
+    ],
+    {
+      A: 'minecraft:iron_bars',
+      B: 'minecraft:bamboo_planks'
+    },
+    'mcwdoors:bamboo_stable_door', 3,
+    'bamboo_stable_door'
+  )
+  custom(
+    [
+      '  A',
+      'ABA',
+      'AAA'
+    ],
+    {
+      A: 'minecraft:bamboo_planks',
+      B: 'minecraft:bamboo_slab'
+    },
+    'mcwdoors:bamboo_western_door', 3,
+    'bamboo_western_door'
+  )
+  custom(
+    [
+      'AB',
+      'BB',
+      'AB'
+    ],
+    {
+      A: 'minecraft:bamboo_block',
+      B: 'minecraft:glass_pane'
+    },
+    'mcwdoors:bamboo_bark_glass_door', 3,
+    'bamboo_bark_glass_door'
+  )
+  custom(
+    [
+      'ABC'
+    ],
+    {
+      A: 'minecraft:yellow_dye',
+      B: 'mcwdoors:metal_windowed_door',
+      C: 'minecraft:black_dye'
+    },
+    'mcwdoors:metal_warning_door', 1,
+    'metal_warning_door'
+  )
+  custom(
+    [
+      'ABA',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:bamboo_block',
+      B: 'minecraft:bamboo'
+    },
+    'mcwfences:bamboo_fence', 3,
+    'green_bamboo_fence'
+  )
 
   // Add bulk recipes
   global.CHAINS.forEach(entry => {
     const { name, inputNugget, inputIngot, output } = entry
     custom(
       [
-        '1',
-        '2',
-        '1'
+        'A',
+        'B',
+        'A'
       ],
       {
-        1: inputNugget,
-        2: inputIngot
+        A: inputNugget,
+        B: inputIngot
       },
       output, 3,
       name
+    )
+  })
+
+  global.CHAIN_METALS.forEach(entry => {
+    const { ingot, name } = entry
+    custom(
+      [
+        'A',
+        'B',
+        'B'
+      ],
+      {
+        A: '#minecraft:candles',
+        B: `minecraft:${ingot}_ingot`
+      },
+      `mcwlights:${name}_candle_holder`, 1,
+      `${metal}_candle_holder`
+    )
+    custom(
+      [
+        'ABA',
+        ' B '
+      ],
+      {
+        A: '#minecraft:candles',
+        B: `minecraft:${ingot}_ingot`
+      },
+      `mcwlights:${name}_double_candle_holder`, 1,
+      `${metal}_double_candle_holder`
+    )
+    custom(
+      [
+        ' A ',
+        'ABA',
+        ' B '
+      ],
+      {
+        A: '#minecraft:candles',
+        B: `minecraft:${ingot}_ingot`
+      },
+      `mcwlights:${name}_triple_candle_holder`, 1,
+      `${metal}_triple_candle_holder`
+    )
+    custom(
+      [
+        'A',
+        'B'
+      ],
+      {
+        A: '#minecraft:candles',
+        B: `minecraft:${ingot}_ingot`
+      },
+      `mcwlights:${name}_low_candle_holder`, 1,
+      `${metal}_low_candle_holder`
+    )
+    custom(
+      [
+        'A ',
+        'BB'
+      ],
+      {
+        A: '#minecraft:candles',
+        B: `minecraft:${ingot}_ingot`
+      },
+      `mcwlights:${name}_wall_candle_holder`, 1,
+      `${metal}_wall_candle_holder`
+    )
+    custom(
+      [
+        'ABA',
+        'ABA',
+        'B B'
+      ],
+      {
+        A: '#minecraft:candles',
+        B: `minecraft:${ingot}_ingot`
+      },
+      `mcwlights:${name}_chandelier`, 1,
+      `${metal}_chandelier`
+    )
+    custom(
+      [
+        'ABA',
+        'ABA'
+      ],
+      {
+        A: '#minecraft:candles',
+        B: `minecraft:${ingot}_ingot`
+      },
+      `mcwlights:${name}_small_chandelier`, 1,
+      `${metal}_small_chandelier`
+    )
+  })
+
+  global.COLORS.forEach(entry => {
+    eight_one(
+      '#genesis:luminous_glass_blocks',
+      `minecraft:${entry}_dye`,
+      `luminousblocks:luminous_${entry}_stained_glass`, 8,
+      `luminous_${entry}_stained_glass`
+    )
+    eight_one(
+      '#genesis:luminous_glass_panes',
+      `minecraft:${entry}_dye`,
+      `luminousblocks:luminous_${entry}_stained_glass_pane`, 8,
+      `luminous_${entry}_stained_glass_pane`
+    )
+    custom(
+      [
+        ' A ',
+        'BCB',
+        ' B '
+      ],
+      {
+        A: '#minecraft:wooden_fences',
+        B: `minecraft:${color}_wool`,
+        C: 'minecraft:redstone_lamp'
+      },
+      `mcwlights:${color}_ceiling_light`, 3,
+      `${color}_ceiling_light`
     )
   })
 
@@ -702,6 +1265,21 @@ ServerEvents.recipes(event => {
       `decorative_blocks:${entry}_palisade`, 6,
       `${entry}_palisade`
     )
+    custom(
+      [
+        ' A ',
+        'BCB',
+        ' D '
+      ],
+      {
+        A: 'minecraft:iron_ingot',
+        B: `minecraft:${entry}_slab`,
+        C: 'create:propeller',
+        D: 'minecraft:redstone_lamp'
+      },
+      `mcwlights:${entry}_ceiling_fan_light`, 2,
+      `${entry}_ceiling_fan_light`
+    )
   })
 
   global.FUNGUS_SETS.forEach(entry => {
@@ -709,6 +1287,21 @@ ServerEvents.recipes(event => {
       `mincraft:stripped_${entry}_stem`,
       `decorative_blocks:${entry}_palisade`, 6,
       `${entry}_palisade`
+    )
+    custom(
+      [
+        ' A ',
+        'BCB',
+        ' D '
+      ],
+      {
+        A: 'minecraft:iron_ingot',
+        B: `minecraft:${entry}_slab`,
+        C: 'create:propeller',
+        D: 'minecraft:redstone_lamp'
+      },
+      `mcwlights:${entry}_ceiling_fan_light`, 2,
+      `${entry}_ceiling_fan_light`
     )
   })
 
