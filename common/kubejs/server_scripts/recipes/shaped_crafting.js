@@ -217,6 +217,11 @@ ServerEvents.recipes(event => {
     'farmersdelight:rope', 2,
     'rope_from_straw'
   )
+  oneXthree(
+    'minecraft:bamboo_trapdoor',
+    'mcwwindows:bamboo_shutter', 3,
+    'bamboo_shutter'
+  )
 
   // Add 2x1 recipes
   twoXone(
@@ -524,6 +529,24 @@ ServerEvents.recipes(event => {
     'create:propeller',
     'immersive_aircraft:propeller', 1,
     'large_propeller'
+  )
+  cross_one(
+    'minecraft:paper',
+    'minecraft:bamboo_trapdoor',
+    'mcwtrpdoors:print_bamboo', 4,
+    'mesh_trapdoor_print'
+  )
+  cross_one(
+    'minecraft:bamboo_planks',
+    'mcwtrpdoors:print_whispering',
+    'mcwtrpdoors:bamboo_whispering_trapdoor', 4,
+    'bamboo_whispering_trapdoor'
+  )
+  cross_one(
+    'minecraft:iron_ingot',
+    'minecraft:gunpowder',
+    'smallships:cannon_ball', 1,
+    'cannon_ball'
   )
 
   // Add custom recipes
@@ -1084,6 +1107,70 @@ ServerEvents.recipes(event => {
     'mcwfences:bamboo_fence', 3,
     'green_bamboo_fence'
   )
+  custom(
+    [
+      'A',
+      'B'
+    ],
+    {
+      A: 'minecraft:bamboo_planks',
+      B: 'mcwtrpdoors:bamboo_glass_trapdoor'
+    },
+    'mcwtrpdoors:bamboo_barn_trapdoor', 1,
+    'bamboo_barn_trapdoor'
+  )
+  custom(
+    [
+      'ABA',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:bamboo_block',
+      B: 'minecraft:stick'
+    },
+    'mcwtrpdoors:bamboo_trapdoor', 4,
+    'green_bamboo_trapdoor'
+  )
+  custom(
+    [
+      'ABA',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:iron_ingot',
+      B: 'minecraft:glass_pane'
+    },
+    'mcwtrpdoors:metal_trapdoor', 4,
+    'metal_glass_trapdoor'
+  )
+  custom(
+    [
+      'A',
+      'B',
+      'C'
+    ],
+    {
+      A: 'minecraft:yellow_dye',
+      B: 'mcwtrpdoors:metal_trapdoor',
+      C: 'minecraft:black_dye'
+    },
+    'mcwtrpdoors:metal_warning_trapdoor', 1,
+    'warning_trapdoor'
+  )
+  custom(
+    [
+      'A',
+      'B',
+      'C'
+    ],
+    {
+      A: 'create:electron_tube',
+      B: 'minecraft:compass',
+      C: 'create:brass_sheet'
+    },
+    'naturescompass:naturescompass', 1,
+    'smart_compass'
+  )
 
   // Add bulk recipes
   global.CHAINS.forEach(entry => {
@@ -1358,6 +1445,64 @@ ServerEvents.recipes(event => {
         block,
         wall, 6,
         `${name}_wall`
+      )
+    }
+  })
+
+  global.TRAPDOOR_PRINTS.forEach(entry => {
+    custom(
+      [
+        'A',
+        'B',
+        'A'
+      ],
+      {
+        A: 'minecraft:bamboo_planks',
+        B: `mcwtrpdoors:print_${entry}`
+      },
+      `mcwtrpdoors:bamboo_${entry}_trapdoor`, 1,
+      `bamboo_${entry}_trapdoor`
+    )
+  })
+
+  global.MCW_WOODS.forEach(entry => {
+    const { input, name } = entry
+    custom(
+      [
+        'ABA',
+        'ABA'
+      ],
+      {
+        A: `minecraft:${name}_planks`,
+        B: 'minecraft:glass_pane'
+      },
+      `mcwtrpdoors:${name}_glass_trapdoor`, 4,
+      `${name}_glass_trapdoor`
+    )
+    custom(
+      [
+        'ABA',
+        'ABA'
+      ],
+      {
+        A: input,
+        B: 'minecraft:glass_pane'
+      },
+      `mcwtrpdoors:${name}_bark_trapdoor`, 4,
+      `${name}_bark_trapdoor`
+    )
+    if (name != 'bamboo') {
+      custom(
+        [
+          'ABA',
+          'ABA'
+        ],
+        {
+          A: input,
+          B: 'minecraft:stick'
+        },
+        `mcwtrpdoors:${name}_ranch_trapdoor`, 4,
+        `${name}_ranch_trapdoor`
       )
     }
   })

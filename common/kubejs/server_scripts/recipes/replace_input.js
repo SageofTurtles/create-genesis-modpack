@@ -130,6 +130,16 @@ ServerEvents.recipes(event => {
     'minecraft:iron_nugget',
     'createaddition:iron_rod'
   )
+  id(
+    'mcwtrpdoors:bamboo_barrel_trapdoor',
+    'minecraft:bamboo',
+    'minecraft:bamboo_planks'
+  )
+  id(
+    'smallships:bamboo_galley',
+    'smallships:bamboo_cog',
+    'smallships:bamboo_galley'
+  )
 
   // Add recipe modifications by input
   input(
@@ -174,5 +184,21 @@ ServerEvents.recipes(event => {
     ],
     'minecraft:ender_eye',
     'kubejs:inert_ender_eye'
+  )
+  custom(
+    [
+      { type: 'minecraft:crafting_shaped' },
+      { id: /^smallships:.*/ }
+    ],
+    'minecraft:lead',
+    'comforts:rope_and_nail'
+  )
+  custom(
+    [
+      { type: 'minecraft:crafting_shaped' },
+      { id: /^smallships:.*/ }
+    ],
+    'minecraft:string',
+    'farmersdelight:rope'
   )
 })

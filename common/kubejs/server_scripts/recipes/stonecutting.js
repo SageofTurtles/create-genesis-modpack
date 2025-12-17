@@ -70,6 +70,122 @@ ServerEvents.recipes(event => {
   )
 
   // Add bulk recipes
+  global.MCW_WOODS.forEach(entry => {
+    const { input, name } = entry
+    add(
+      input,
+      `mcwroofs:${name}_roof`, 1,
+      `${name}_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_attic_roof`, 1,
+      `${name}_attic_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_top_roof`, 1,
+      `${name}_top_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_lower_roof`, 1,
+      `${name}_lower_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_steep_roof`, 1,
+      `${name}_steep_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_upper_lower_roof`, 1,
+      `${name}_upper_lower_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_upper_steep_roof`, 1,
+      `${name}_upper_steep_roof`
+    )
+  })
+
+  global.MCW_ROOFS.forEach(entry => {
+    const { input, name } = entry
+    add(
+      input,
+      `mcwroofs:${name}_roof`, 1,
+      `${name}_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_attic_roof`, 1,
+      `${name}_attic_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_top_roof`, 1,
+      `${name}_top_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_lower_roof`, 1,
+      `${name}_lower_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_steep_roof`, 1,
+      `${name}_steep_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_upper_lower_roof`, 1,
+      `${name}_upper_lower_roof`
+    )
+    add(
+      input,
+      `mcwroofs:${name}_upper_steep_roof`, 1,
+      `${name}_upper_steep_roof`
+    )
+  })
+
+  global.PLANK_SETS.forEach(entry => {
+    add(
+      `minecraft:${entry}_planks`,
+      `mcwroofs:${entry}_planks_roof`, 1,
+      `${entry}_planks_roof`
+    )
+    add(
+      `minecraft:${entry}_planks`,
+      `mcwroofs:${entry}_planks_attic_roof`, 1,
+      `${entry}_planks_attic_roof`
+    )
+    add(
+      `minecraft:${entry}_planks`,
+      `mcwroofs:${entry}_planks_top_roof`, 1,
+      `${entry}_planks_top_roof`
+    )
+    add(
+      `minecraft:${entry}_planks`,
+      `mcwroofs:${entry}_planks_lower_roof`, 1,
+      `${entry}_planks_lower_roof`
+    )
+    add(
+      `minecraft:${entry}_planks`,
+      `mcwroofs:${entry}_planks_steep_roof`, 1,
+      `${entry}_planks_steep_roof`
+    )
+    add(
+      `minecraft:${entry}_planks`,
+      `mcwroofs:${entry}_planks_upper_lower_roof`, 1,
+      `${entry}_planks_upper_lower_roof`
+    )
+    add(
+      `minecraft:${entry}_planks`,
+      `mcwroofs:${entry}_planks_upper_steep_roof`, 1,
+      `${entry}_planks_upper_steep_roof`
+    )
+  })
+
   global.STONECUTTING_BLOCKS.forEach(entry => {
     const { name, block, stairs, slab, wall } = entry
     add(
