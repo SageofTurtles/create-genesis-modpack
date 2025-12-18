@@ -21,4 +21,30 @@ ServerEvents.recipes(event => {
       `${name}_stairs`
     )
   })
+
+  global.LOG_SETS.forEach(entry => {
+    add(
+      `minecraft:${entry}_wood`,
+      `minecraft:${entry}_log`, 1,
+      `${entry}_log`
+    )
+    add(
+      `minecraft:stripped_${entry}_wood`,
+      `minecraft:stripped_${entry}_log`, 1,
+      `stripped_${entry}_log`
+    )
+  })
+
+  global.FUNGUS_SETS.forEach(entry => {
+    add(
+      `minecraft:${entry}_hyphae`,
+      `minecraft:${entry}_stem`, 1,
+      `${entry}_stem`
+    )
+    add(
+      `minecraft:stripped_${entry}_hyphae`,
+      `minecraft:stripped_${entry}_stem`, 1,
+      `stripped_${entry}_stem`
+    )
+  })
 })

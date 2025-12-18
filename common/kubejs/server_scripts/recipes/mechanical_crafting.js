@@ -192,4 +192,20 @@ ServerEvents.recipes(event => {
     'man_of_many_planes:scarlet_biplane', 1,
     'scarlet_biplane'
   )
+  custom(
+    [
+      ' AAA ',
+      'A B A',
+      'ABCBA',
+      'A B A',
+      ' AAA '
+    ],
+    {
+      A: 'createdeco:netherite_sheet',
+      B: 'minecraft:ender_eye',
+      C: 'minecraft:nether_star'
+    },
+    'minecraft:spawner', 1,
+    'spawner'
+  )
 })

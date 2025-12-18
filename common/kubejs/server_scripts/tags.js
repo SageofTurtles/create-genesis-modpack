@@ -108,6 +108,17 @@ ServerEvents.tags('item', event => {
   add('create_enchantment_industry:ink_ingredient', 'create_ironworks:coal_dust')
   add('genesis:luminous_glass_blocks', `luminousblocks:luminous_glass`)
   add('genesis:luminous_glass_panes', `luminousblocks:luminous_glass_pane`)
+  add('genesis:tube_corals', /minecraft:tube_coral(?!_block)/)
+  add('genesis:dead_tube_corals', /minecraft:dead_tube_coral(?!_block)/)
+  add('genesis:brain_corals', /minecraft:brain_coral(?!_block)/)
+  add('genesis:dead_brain_corals', /minecraft:dead_brain_coral(?!_block)/)
+  add('genesis:bubble_corals', /minecraft:bubble_coral(?!_block)/)
+  add('genesis:dead_bubble_corals', /minecraft:dead_bubble_coral(?!_block)/)
+  add('genesis:fire_corals', /minecraft:fire_coral(?!_block)/)
+  add('genesis:dead_fire_corals', /minecraft:dead_fire_coral(?!_block)/)
+  add('genesis:horn_corals', /minecraft:horn_coral(?!_block)/)
+  add('genesis:dead_horn_corals', /minecraft:dead_horn_coral(?!_block)/)
+  add('genesis:froglights', /minecraft:(ochre|verdant|pearlescent)_froglight/)
 
   // Bulk tag changes
   global.COLORS.forEach(entry => {

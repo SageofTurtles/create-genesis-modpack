@@ -61,6 +61,20 @@ ServerEvents.recipes(event => {
     'minecraft:diorite', 1,
     'diorite'
   )
+  cool(
+    [
+      '2x minecraft:chorus_fruit',
+      'minecraft:sandstone',
+      Fluid.lava(100)
+    ],
+    'minecraft:end_stone', 1,
+    'end_stone'
+  )
+  cool(
+    Fluid.lava(1000),
+    'minecraft:magma_block', 1,
+    'magma_block'
+  )
 
   // Add heated scripts
   heat(

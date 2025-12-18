@@ -11,6 +11,29 @@ ServerEvents.recipes(event => {
       }
     }).id(`genesis:${recipeId}_cutting`)
   }
+  const knife = (input, outputArray, recipeId) => {
+    event.custom({
+      type: 'farmersdelight:cutting',
+      ingredients: [{ item: input }],
+      results: outputArray,
+      tool: {
+        tag: 'forge:tools/knives'
+      }
+    }).id(`genesis:${recipeId}_cutting`)
+  }
+
+  // Add recipes
+  knife(
+    'minecraft:pumpkin',
+    [
+      { item: 'minecraft:carved_pumpkin' },
+      {
+        item: 'minecraft:pumpkin_seeds',
+        chance: 0.25
+      }
+    ],
+    'pumpkin'
+  )
 
   // Add bulk recipes
   global.OXIDIZATION_SETS.forEach(entry => {
@@ -18,22 +41,22 @@ ServerEvents.recipes(event => {
     axe(
       `${modid}:waxed_oxidized_${pattern}`,
       `${modid}:oxidized_${pattern}`,
-      `unwaxing_oxidized_${pattern}`
+      `oxidized_${pattern}`
     )
     axe(
       `${modid}:waxed_weathered_${pattern}`,
       `${modid}:weathered_${pattern}`,
-      `unwaxing_weathered_${pattern}`
+      `weathered_${pattern}`
     )
     axe(
       `${modid}:waxed_exposed_${pattern}`,
       `${modid}:exposed_${pattern}`,
-      `unwaxing_exposed_${pattern}`
+      `exposed_${pattern}`
     )
     axe(
       `${modid}:waxed_${block}`,
       `${modid}:${block}`,
-      `unwaxing_${block}`
+      `${block}`
     )
   })
 })

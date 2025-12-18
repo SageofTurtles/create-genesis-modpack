@@ -20,6 +20,18 @@ ServerEvents.recipes(event => {
     'minecraft:ink_sac', 1,
     'ink_sac'
   )
+  add(
+    Fluid.of('sliceanddice:fertilizer', 25),
+    'minecraft:grass_block',
+    'minecraft:podzol',
+    'podzol'
+  )
+  add(
+    Fluid.water(250),
+    'minecraft:clay',
+    'minecraft:pointed_dripstone',
+    'pointed_dripstone'
+  )
 
   // Add bulk recipes
   global.WILD_CROPS.forEach(entry => {

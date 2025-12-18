@@ -61,4 +61,14 @@ ServerEvents.recipes(event => {
       `waxed_oxidized_${pattern}`
     )
   })
+
+  global.MUSIC_DISCS.forEach(entry => {
+    const { modid, disc } = entry
+    keep(
+      '#minecraft:music_discs',
+      `${modid}:${disc}`,
+      `${modid}:${disc}`,
+      disc
+    )
+  })
 })

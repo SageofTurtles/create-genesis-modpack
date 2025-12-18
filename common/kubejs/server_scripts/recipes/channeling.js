@@ -15,6 +15,13 @@ ServerEvents.recipes(event => {
     }).id(`genesis:${recipeId}_channeling`)
   }
 
+  // Add single-output recipes
+  single(
+    'minecraft:leather',
+    'minecraft:scute',
+    'scute'
+  )
+
   // Add multiple-output recipes
   multi(
     'minecraft:sponge',

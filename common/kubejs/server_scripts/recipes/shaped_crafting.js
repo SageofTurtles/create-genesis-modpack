@@ -188,6 +188,16 @@ ServerEvents.recipes(event => {
     'minecraft:lantern', 1,
     'lantern'
   )
+  oneXone(
+    'minecraft:snow_block',
+    'minecraft:snow', 8,
+    'snow'
+  )
+  oneXone(
+    'minecraft:honeycomb_block',
+    'minecraft:honeycomb', 4,
+    'honeycomb'
+  )
 
   // Add 1x2 recipes
   oneXtwo(
@@ -408,6 +418,11 @@ ServerEvents.recipes(event => {
     'mcwroofs:gutter_base', 3,
     'gutter'
   )
+  threeXone(
+    'farmersdelight:tree_bark',
+    'minecraft:paper', 3,
+    'paper'
+  )
 
   // Add 3x2 recipes
   threeXtwo(
@@ -479,6 +494,12 @@ ServerEvents.recipes(event => {
     'copycats:copycat_block',
     'copycats:copycat_shaft', 8,
     'copycat_shaft'
+  )
+  eight_one(
+    'minecraft:obsidian',
+    'minecraft:ghast_tear',
+    'minecraft:crying_obsidian', 8,
+    'crying_obsidian'
   )
 
   // Add cross+1 recipes
@@ -1171,6 +1192,170 @@ ServerEvents.recipes(event => {
     'naturescompass:naturescompass', 1,
     'smart_compass'
   )
+  custom(
+    [
+      'AAA',
+      'BBB',
+      'AAA'
+    ],
+    {
+      A: 'minecraft:honeycomb',
+      B: '#minecraft:logs'
+    },
+    'minecraft:bee_nest', 1,
+    'bee_nest'
+  )
+  custom(
+    [
+      ' A ',
+      'A A',
+      ' A '
+    ],
+    { A: 'minecraft:string' },
+    'minecraft:cobweb', 2,
+    'cobweb'
+  )
+  custom(
+    [
+      'A',
+      'B',
+      'B'
+    ],
+    {
+      A: 'minecraft:copper_ingot',
+      B: 'createaddition:copper_rod'
+    },
+    'minecraft:lightning_rod', 1,
+    'lightning_rod'
+  )
+  custom(
+    [
+      ' AB',
+      'ACB',
+      ' AB'
+    ],
+    {
+      A: 'minecraft:stick',
+      B: 'minecraft:string',
+      C: 'minecraft:dropper'
+    },
+    'minecraft:dispenser', 1,
+    'dispenser'
+  )
+  custom(
+    [
+      '  A',
+      'AAA',
+      'BCB'
+    ],
+    {
+      A: 'minecraft:leather',
+      B: 'farmersdelight:rope',
+      C: 'minecraft:iron_ingot'
+    },
+    'minecraft:saddle', 1,
+    'saddle'
+  )
+  custom(
+    [
+      'AAA',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:iron_nugget',
+      B: 'minecraft:leather_helmet'
+    },
+    'minecraft:chainmail_helmet', 1,
+    'chainmail_helmet'
+  )
+  custom(
+    [
+      'ABA',
+      'AAA',
+      'AAA'
+    ],
+    {
+      A: 'minecraft:iron_nugget',
+      B: 'minecraft:leather_chestplate'
+    },
+    'minecraft:chainmail_chestplate', 1,
+    'chainmail_chestplate'
+  )
+  custom(
+    [
+      'AAA',
+      'ABA',
+      'A A'
+    ],
+    {
+      A: 'minecraft:iron_nugget',
+      B: 'minecraft:leather_leggings'
+    },
+    'minecraft:chainmail_leggings', 1,
+    'chainmail_leggings'
+  )
+  custom(
+    [
+      'ABA',
+      'A A'
+    ],
+    {
+      A: 'minecraft:iron_nugget',
+      B: 'minecraft:leather_boots'
+    },
+    'minecraft:chainmail_boots', 1,
+    'chainmail_boots'
+  )
+  custom(
+    [
+      ' AB',
+      'BBB',
+      'C C'
+    ],
+    {
+      A: '#minecraft:wool',
+      B: 'minecraft:leather',
+      C: 'farmersdelight:rope'
+    },
+    'minecraft:leather_horse_armor', 1,
+    'leather_horse_armor'
+  )
+  custom(
+    [
+      'AAA',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:iron_ingot',
+      B: 'minecraft:leather_horse_armor'
+    },
+    'minecraft:iron_horse_armor', 1,
+    'iron_horse_armor'
+  )
+  custom(
+    [
+      'AAA',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:gold_ingot',
+      B: 'minecraft:leather_horse_armor'
+    },
+    'minecraft:golden_horse_armor', 1,
+    'golden_horse_armor'
+  )
+  custom(
+    [
+      'AAA',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:diamond',
+      B: 'minecraft:leather_horse_armor'
+    },
+    'minecraft:diamond_horse_armor', 1,
+    'diamond_horse_armor'
+  )
 
   // Add bulk recipes
   global.CHAINS.forEach(entry => {
@@ -1532,6 +1717,46 @@ ServerEvents.recipes(event => {
       input,
       trapdoor, 1,
       `${name}_trapdoor`
+    )
+  })
+
+  global.CORALS.forEach(entry => {
+    twoXtwo(
+      `#genesis:${entry}_corals`,
+      `minecraft:${entry}_coral_block`, 1,
+      `${entry}_coral_block`
+    )
+    twoXtwo(
+      `#genesis:dead_${entry}_corals`,
+      `minecraft:dead_${entry}_coral_block`, 1,
+      `dead_${entry}_coral_block`
+    )
+  })
+
+  global.FROGLIGHTS.forEach(entry => {
+    const { name, froglight, dye } = entry
+    eight_one(
+      '#genesis:froglights',
+      dye,
+      froglight, 8,
+      name
+    )
+  })
+
+  global.POTTERY_SHERDS.forEach(entry => {
+    custom(
+      [
+        'ABA',
+        'BCB',
+        'ABA'
+      ],
+      {
+        A: 'createaddition:electrum_ingot',
+        B: 'minecraft:clay_ball',
+        C: `minecraft:${entry}_pottery_sherd`
+      },
+      `minecraft:${entry}_pottery_sherd`, 2,
+      `${entry}_pottery_sherd`
     )
   })
 })

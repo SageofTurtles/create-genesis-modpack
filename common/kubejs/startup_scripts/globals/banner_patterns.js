@@ -1,9 +1,30 @@
 global['BANNER_PATTERNS'] = [
-  'minecraft:flower_banner_pattern',
-  'minecraft:creeper_banner_pattern',
-  'minecraft:skull_banner_pattern',
-  'minecraft:mojang_banner_pattern',
-  'minecraft:globe_banner_pattern',
-  'minecraft:piglin_banner_pattern',
-  'supplementaries:dragon_banner_pattern'
+  {
+    modid: 'minecraft',
+    pattern: 'flower_banner_pattern'
+  },
+  {
+    modid: 'minecraft',
+    pattern: 'creeper_banner_pattern'
+  },
+  {
+    modid: 'minecraft',
+    pattern: 'skull_banner_pattern'
+  },
+  {
+    modid: 'minecraft',
+    pattern: 'mojang_banner_pattern'
+  },
+  {
+    modid: 'minecraft',
+    pattern: 'globe_banner_pattern'
+  },
+  {
+    modid: 'minecraft',
+    pattern: 'piglin_banner_pattern'
+  },
+  {
+    modid: 'supplementaries',
+    pattern: 'dragon_banner_pattern'
+  }
 ]

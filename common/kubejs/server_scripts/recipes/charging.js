@@ -10,6 +10,13 @@ ServerEvents.recipes(event => {
     }).id(`genesis:${recipeId}_charging`)
   }
 
+  // Add individual recipes
+  add(
+    'createaddition:electrum_rod',
+    'minecraft:blaze_rod',
+    'blaze_rod'
+  )
+
   // Add bulk recipes
   global.OXIDIZATION_SETS.forEach(entry => {
     const { modid, block, pattern } = entry

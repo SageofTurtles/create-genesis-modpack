@@ -26,4 +26,9 @@ ServerEvents.recipes(event => {
     'luminousblocks:luminous_glass_pane',
     'luminous_glass_pane'
   )
+  add(
+    '#minecraft:wool_carpets',
+    'minecraft:white_carpet',
+    'wool_carpets'
+  )
 })

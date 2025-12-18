@@ -135,6 +135,30 @@ ServerEvents.recipes(event => {
     'farmersdelight:grilled_salmon', 1,
     'grilled_salmon'
   )
+  cool(
+    [
+      'minecraft:cobblestone',
+      'minecraft:quartz'
+    ],
+    'minecraft:diorite', 1,
+    'diorite'
+  )
+  cool(
+    [
+      'minecraft:bucket',
+      'minecraft:snow_block'
+    ],
+    'minecraft:powder_snow_bucket', 1,
+    'powder_snow_bucket'
+  )
+  cool(
+    [
+      '8x minecraft:arrow',
+      Fluid.of('create:potion', 125, { Bottle: 'REGULAR', Potion: 'minecraft:night_vision' })
+    ],
+    'minecraft:spectral_arrow', 8,
+    'spectral_arrow'
+  )
 
   // Add item heated recipes
   heat(
@@ -144,6 +168,30 @@ ServerEvents.recipes(event => {
     ],
     'create_aquatic_ambitions:prismarine_alloy', 1,
     'prismarine_alloy'
+  )
+  heat(
+    [
+      'minecraft:apple',
+      Fluid.of('createmetalwork:molten_gold', 540)
+    ],
+    'minecraft:golden_apple', 1,
+    'golden_apple'
+  )
+  heat(
+    [
+      'minecraft:carrot',
+      Fluid.of('createmetalwork:molten_gold', 60)
+    ],
+    'minecraft:golden_carrot', 1,
+    'golden_carrot'
+  )
+  heat(
+    [
+      'minecraft:melon_slice',
+      Fluid.of('createmetalwork:molten_gold', 60)
+    ],
+    'minecraft:glistering_melon_slice', 1,
+    'glistering_melon_slice'
   )
 
   // Add item superheated recipes
@@ -156,6 +204,16 @@ ServerEvents.recipes(event => {
     ],
     'amendments:dragon_charge', 1,
     'dragon_charge'
+  )
+  superheat(
+    [
+      'minecraft:golden_apple',
+      Fluid.of('create_enchantment_industry:experience', 100),
+      Fluid.of('create:potion', 125, { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' }),
+      Fluid.of('create:potion', 125, { Bottle: 'REGULAR', Potion: 'minecraft:fire_resistance' })
+    ],
+    'minecraft:enchanted_golden_apple', 1,
+    'enchanted_golden_apple'
   )
 
   // Add fluid heated recipes
@@ -253,5 +311,18 @@ ServerEvents.recipes(event => {
         `alloying_molten_${name}`
       )
     }
+  })
+
+  global.FROGLIGHTS.forEach(entry => {
+    const { name, froglight, dye } = entry
+    cool(
+      [
+        'minecraft:shroomlight',
+        dye,
+        Fluid.water(250)
+      ],
+      froglight, 1,
+      name
+    )
   })
 })
