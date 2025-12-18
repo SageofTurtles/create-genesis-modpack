@@ -140,6 +140,41 @@ ServerEvents.recipes(event => {
     'smallships:bamboo_cog',
     'smallships:bamboo_galley'
   )
+  id(
+    'sophisticatedbackpacks:pickup_upgrade',
+    'minecraft:sticky_piston',
+    'create:chute'
+  )
+  id(
+    'sophisticatedbackpacks:restock_upgrade',
+    'minecraft:sticky_piston',
+    'create:smart_chute'
+  )
+  id(
+    'sophisticatedbackpacks:deposit_upgrade',
+    'minecraft:chest',
+    'create:smart_chute'
+  )
+  id(
+    'sophisticatedbackpacks:deposit_upgrade',
+    'minecraft:piston',
+    'create:chute'
+  )
+  id(
+    'supplementaries:relayer',
+    'minecraft:cobblestone',
+    '#minecraft:stone_crafting_materials'
+  )
+  id(
+    'supplementaries:slice_map',
+    'supplementaries:altimeter',
+    'minecraft:black_dye'
+  )
+  id(
+    'supplementaries:sack',
+    '#forge:crops/flax',
+    'farmersdelight:canvas'
+  )
 
   // Add recipe modifications by input
   input(

@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const add = (input, output, recipeId) => {
+  const add = (recipeId, input, output) => {
     event.custom({
       type: 'createaddition:charging',
       ingredients: [{ item: input }],
@@ -12,28 +12,28 @@ ServerEvents.recipes(event => {
 
   // Add individual recipes
   add(
+    'blaze_rod',
     'createaddition:electrum_rod',
-    'minecraft:blaze_rod',
-    'blaze_rod'
+    'minecraft:blaze_rod'
   )
 
   // Add bulk recipes
   global.OXIDIZATION_SETS.forEach(entry => {
     const { modid, block, pattern } = entry
     add(
+      `weathered_${pattern}`,
       `${modid}:oxidized_${pattern}`,
-      `${modid}:weathered_${pattern}`,
-      `weathered_${pattern}`
+      `${modid}:weathered_${pattern}`
     )
     add(
+      `exposed_${pattern}`,
       `${modid}:weathered_${pattern}`,
-      `${modid}:exposed_${pattern}`,
-      `exposed_${pattern}`
+      `${modid}:exposed_${pattern}`
     )
     add(
+      `${block}`,
       `${modid}:exposed_${pattern}`,
-      `${modid}:${block}`,
-      `${block}`
+      `${modid}:${block}`
     )
   })
 })

@@ -14,11 +14,6 @@ ServerEvents.recipes(event => {
     'copycat_block_from_zinc_ingot'
   )
   add(
-    Fluid.of('create_enchantment_industry:experience', 27),
-    'create:experience_block', 1,
-    'experience_block'
-  )
-  add(
     'create_ironworks:rose_quartz_block',
     'create:rose_quartz_tiles', 1,
     'rose_quartz_tiles_from_polished_rose_quartz'
@@ -67,6 +62,11 @@ ServerEvents.recipes(event => {
     'createrailwaysnavigator:advanced_display_block',
     'createrailwaysnavigator:advanced_display_sloped', 2,
     'advanced_display_sloped'
+  )
+  add(
+    'minecraft:iron_block',
+    'railways:riveted_locometal', 1,
+    'riveted_locometal'
   )
 
   // Add bulk recipes
@@ -386,6 +386,44 @@ ServerEvents.recipes(event => {
       'copycats:copycat_block',
       `${modid}:${output}`, count,
       `${output}_from_block`
+    )
+  })
+
+  global.COLORS_PFX.forEach(entry => {
+    add(
+      `packedup:${entry}book_bundle`,
+      `packedup:${entry}book_bundle_slab`, 2,
+      `${entry}book_bundle_slab_from_block`
+    )
+    add(
+      `packedup:${entry}book_bundle`,
+      `packedup:${entry}book_pile`, 4,
+      `${entry}book_bundle_pile_from_block`
+    )
+    add(
+      `packedup:${entry}book_bundle_slab`,
+      `packedup:${entry}book_pile`, 2,
+      `${entry}book_bundle_pile_from_slab`
+    )
+    add(
+      `railways:${entry}slashed_locometal`,
+      `railways:${entry}locometal_boiler`, 1,
+      `${entry}locometal_boiler`
+    )
+    add(
+      `railways:${entry}brass_wrapped_locometal`,
+      `railways:${entry}brass_wrapped_locometal_boiler`, 1,
+      `${entry}brass_wrapped_locometal_boiler`
+    )
+    add(
+      `railways:${entry}copper_wrapped_locometal`,
+      `railways:${entry}copper_wrapped_locometal_boiler`, 1,
+      `${entry}copper_wrapped_locometal_boiler`
+    )
+    add(
+      `railways:${entry}iron_wrapped_locometal`,
+      `railways:${entry}iron_wrapped_locometal_boiler`, 1,
+      `${entry}iron_wrapped_locometal_boiler`
     )
   })
 })

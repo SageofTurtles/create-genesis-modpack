@@ -501,6 +501,12 @@ ServerEvents.recipes(event => {
     'minecraft:crying_obsidian', 8,
     'crying_obsidian'
   )
+  eight_one(
+    'create_ironworks:steel_ingot',
+    '#minecraft:shulker_boxes',
+    'supplementaries:safe', 1,
+    'safe'
+  )
 
   // Add cross+1 recipes
   cross_one(
@@ -568,6 +574,12 @@ ServerEvents.recipes(event => {
     'minecraft:gunpowder',
     'smallships:cannon_ball', 1,
     'cannon_ball'
+  )
+  cross_one(
+    'minecraft:stick',
+    '#minecraft:planks',
+    'supplementaries:timber_frame', 2,
+    'timber_frame'
   )
 
   // Add custom recipes
@@ -1356,6 +1368,172 @@ ServerEvents.recipes(event => {
     'minecraft:diamond_horse_armor', 1,
     'diamond_horse_armor'
   )
+  custom(
+    [
+      ' A ',
+      'BCB',
+      'DDD'
+    ],
+    {
+      A: 'create:filter',
+      B: 'minecraft:string',
+      C: 'sophisticatedbackpacks:upgrade_base',
+      D: 'minecraft:redstone'
+    },
+    'sophisticatedbackpacks:filter_upgrade', 1,
+    'filter_upgrade'
+  )
+  custom(
+    [
+      ' A ',
+      'BCB',
+      'DDD'
+    ],
+    {
+      A: 'minecraft:diamond',
+      B: 'minecraft:gold_ingot',
+      C: 'sophisticatedbackpacks:filter_upgrade',
+      D: 'minecraft:redstone'
+    },
+    'sophisticatedbackpacks:advanced_filter_upgrade', 1,
+    'advanced_filter_upgrade'
+  )
+  custom(
+    [
+      ' A ',
+      'BCB',
+      ' A '
+    ],
+    {
+      A: 'create:fluid_tank',
+      B: '#forge:glass',
+      C: 'sophisticatedbackpacks:upgrade_base'
+    },
+    'sophisticatedbackpacks:tank_upgrade', 1,
+    'tank_upgrade'
+  )
+  custom(
+    [
+      ' A ',
+      'BCB',
+      'DDD'
+    ],
+    {
+      A: 'create:mechanical_pump',
+      B: 'minecraft:string',
+      C: 'sophisticatedbackpacks:upgrade_base',
+      D: 'minecraft:redstone'
+    },
+    'sophisticatedbackpacks:pump_upgrade', 1,
+    'pump_upgrade'
+  )
+  custom(
+    [
+      'ABA',
+      'CDC',
+      'ABA'
+    ],
+    {
+      A: 'minecraft:redstone',
+      B: 'createaddition:modular_accumulator',
+      C: 'createaddition:connector',
+      D: 'sophisticatedbackpacks:upgrade_base'
+    },
+    'sophisticatedbackpacks:battery_upgrade', 1,
+    'battery_upgrade'
+  )
+  custom(
+    [
+      'AAA',
+      'B B',
+      'AAA'
+    ],
+    {
+      A: 'create:iron_sheet',
+      B: 'createaddition:iron_rod'
+    },
+    'supplementaries:cage', 1,
+    'cage'
+  )
+  custom(
+    [
+      'A A',
+      'A A',
+      ' A '
+    ],
+    {
+      A: 'minecraft:leather'
+    },
+    'supplementaries:quiver', 1,
+    'quiver'
+  )
+  custom(
+    [
+      ' A ',
+      'BCD',
+      ' E '
+    ],
+    {
+      A: 'createaddition:gold_rod',
+      B: 'minecraft:green_dye',
+      C: '#minecraft:planks',
+      D: 'minecraft:blue_dye',
+      E: 'create:golden_sheets'
+    },
+    'supplementaries:globe', 1,
+    'globe'
+  )
+  custom(
+    [
+      'A',
+      'B',
+      'B'
+    ],
+    {
+      A: 'create_ironworks:bronze_ingot',
+      B: 'create_ironworks:bronze_nugget'
+    },
+    'supplementaries:key', 1,
+    'key'
+  )
+  custom(
+    [
+      'ABA',
+      ' A '
+    ],
+    {
+      A: '#minecraft:planks',
+      B: 'minecraft:dirt'
+    },
+    'supplementaries:flower_box', 2,
+    'flower_box'
+  )
+  custom(
+    [
+      'A  ',
+      'ABA',
+      '  A'
+    ],
+    {
+      A: 'minecraft:stick',
+      B: '#minecraft:planks'
+    },
+    'supplementaries:timber_brace', 2,
+    'timber_brace'
+  )
+  custom(
+    [
+      'A A',
+      ' B ',
+      'A A'
+    ],
+    {
+      A: 'minecraft:stick',
+      B: '#minecraft:planks'
+    },
+    'supplementaries:timber_cross_brace', 2,
+    'timber_cross_brace'
+  )
 
   // Add bulk recipes
   global.CHAINS.forEach(entry => {
@@ -1492,6 +1670,29 @@ ServerEvents.recipes(event => {
       },
       `mcwlights:${color}_ceiling_light`, 3,
       `${color}_ceiling_light`
+    )
+  })
+
+  global.COLORS_PFX.forEach(entry => {
+    threeXone(
+      `packedup:${entry}book_bundle`,
+      `packedup:${entry}book_bundle_slab`, 6,
+      `${entry}book_bundle_slab_from_block`
+    )
+    threeXone(
+      `packedup:${entry}book_bundle_slab`,
+      `packedup:${entry}book_pile`, 6,
+      `${entry}book_bundle_pile_from_slab`
+    )
+    twoXone(
+      `packedup:${entry}book_bundle_slab`,
+      `packedup:${entry}book_bundle`, 1,
+      `${entry}book_bundle_block_from_slab`
+    )
+    twoXone(
+      `packedup:${entry}book_pile`,
+      `packedup:${entry}book_bundle_slab`, 1,
+      `${entry}book_bundle_slab_from_pile`
     )
   })
 

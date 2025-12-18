@@ -32,6 +32,12 @@ ServerEvents.recipes(event => {
     'minecraft:pointed_dripstone',
     'pointed_dripstone'
   )
+  add(
+    Fluid.of('create_enchantment_industry:ink', 250),
+    'minecraft:glass_bottle',
+    'supplementaries:antique_ink',
+    'antique_ink'
+  )
 
   // Add bulk recipes
   global.WILD_CROPS.forEach(entry => {
