@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const add = (input, output, recipeId) => {
+  const add = (recipeId, input, output) => {
     event.recipes.create.pressing(
       output,
       input
@@ -8,9 +8,5 @@ ServerEvents.recipes(event => {
   }
 
   // Add recipes
-  add(
-    'farmersdelight:tree_bark',
-    'minecraft:paper',
-    'paper'
-  )
+  add('tree_bark', 'farmersdelight:tree_bark', 'minecraft:paper')
 })

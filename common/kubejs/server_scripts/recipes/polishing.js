@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const add = (input, output, recipeId) => {
+  const add = (recipeId, input, output) => {
     event.recipes.create.sandpaper_polishing(
       output,
       input
@@ -8,9 +8,5 @@ ServerEvents.recipes(event => {
   }
 
   // Add recipes
-  add(
-    'kubejs:rough_diamond',
-    'minecraft:diamond',
-    'rough_diamond'
-  )
+  add('diamrough_diamondond', 'kubejs:rough_diamond', 'minecraft:diamond')
 })

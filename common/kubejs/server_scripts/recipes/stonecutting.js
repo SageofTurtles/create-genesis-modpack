@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const add = (input, output, count, recipeId) => {
+  const add = (recipeId, input, output, count) => {
     event.stonecutting(
       Item.of(output, count),
       input
@@ -8,422 +8,85 @@ ServerEvents.recipes(event => {
   }
 
   // Add individual recipes
-  add(
-    'create:zinc_ingot',
-    'copycats:copycat_block', 1,
-    'copycat_block_from_zinc_ingot'
-  )
-  add(
-    'create_ironworks:rose_quartz_block',
-    'create:rose_quartz_tiles', 1,
-    'rose_quartz_tiles_from_polished_rose_quartz'
-  )
-  add(
-    'create_ironworks:rose_quartz_block',
-    'create:small_rose_quartz_tiles', 1,
-    'small_rose_quartz_tiles_from_polished_rose_quartz'
-  )
-  add(
-    'create:rose_quartz_tiles',
-    'create:small_rose_quartz_tiles', 1,
-    'small_rose_quartz_tiles_from_rose_quartz_tiles'
-  )
-  add(
-    'create:small_rose_quartz_tiles',
-    'create:rose_quartz_tiles', 1,
-    'rose_quartz_tiles_from_small_rose_quartz_tiles'
-  )
-  add(
-    'createrailwaysnavigator:advanced_display_block',
-    'createrailwaysnavigator:advanced_display', 2,
-    'advanced_display'
-  )
-  add(
-    'createrailwaysnavigator:advanced_display_block',
-    'createrailwaysnavigator:advanced_display_slab', 2,
-    'advanced_display_slab'
-  )
-  add(
-    'createrailwaysnavigator:advanced_display_block',
-    'createrailwaysnavigator:advanced_display_panel', 4,
-    'advanced_display_panel'
-  )
-  add(
-    'createrailwaysnavigator:advanced_display_block',
-    'createrailwaysnavigator:advanced_display_half_panel', 8,
-    'advanced_display_half_panel'
-  )
-  add(
-    'createrailwaysnavigator:advanced_display_block',
-    'createrailwaysnavigator:advanced_display_small', 4,
-    'advanced_display_small'
-  )
-  add(
-    'createrailwaysnavigator:advanced_display_block',
-    'createrailwaysnavigator:advanced_display_sloped', 2,
-    'advanced_display_sloped'
-  )
-  add(
-    'minecraft:iron_block',
-    'railways:riveted_locometal', 1,
-    'riveted_locometal'
-  )
+  add('advanced_display_half_panel', 'createrailwaysnavigator:advanced_display_block', 'createrailwaysnavigator:advanced_display_half_panel', 8)
+  add('advanced_display_panel', 'createrailwaysnavigator:advanced_display_block', 'createrailwaysnavigator:advanced_display_panel', 4)
+  add('advanced_display_slab', 'createrailwaysnavigator:advanced_display_block', 'createrailwaysnavigator:advanced_display_slab', 2)
+  add('advanced_display_sloped', 'createrailwaysnavigator:advanced_display_block', 'createrailwaysnavigator:advanced_display_sloped', 2)
+  add('advanced_display_small', 'createrailwaysnavigator:advanced_display_block', 'createrailwaysnavigator:advanced_display_small', 4)
+  add('advanced_display', 'createrailwaysnavigator:advanced_display_block', 'createrailwaysnavigator:advanced_display', 2)
+  add('copycat_block_from_zinc_ingot', 'create:zinc_ingot', 'copycats:copycat_block', 1)
+  add('riveted_locometal', 'minecraft:iron_block', 'railways:riveted_locometal', 1)
+  add('rose_quartz_tiles_from_polished_rose_quartz', 'create_ironworks:rose_quartz_block', 'create:rose_quartz_tiles', 1)
+  add('rose_quartz_tiles_from_small_rose_quartz_tiles', 'create:small_rose_quartz_tiles', 'create:rose_quartz_tiles', 1)
+  add('small_rose_quartz_tiles_from_polished_rose_quartz', 'create_ironworks:rose_quartz_block', 'create:small_rose_quartz_tiles', 1)
+  add('small_rose_quartz_tiles_from_rose_quartz_tiles', 'create:rose_quartz_tiles', 'create:small_rose_quartz_tiles', 1)
 
   // Add bulk recipes
-  global.MCW_WOODS.forEach(entry => {
-    const { input, name } = entry
-    add(
-      input,
-      `mcwroofs:${name}_roof`, 1,
-      `${name}_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_attic_roof`, 1,
-      `${name}_attic_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_top_roof`, 1,
-      `${name}_top_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_lower_roof`, 1,
-      `${name}_lower_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_steep_roof`, 1,
-      `${name}_steep_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_upper_lower_roof`, 1,
-      `${name}_upper_lower_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_upper_steep_roof`, 1,
-      `${name}_upper_steep_roof`
-    )
-  })
-
   global.MCW_ROOFS.forEach(entry => {
     const { input, name } = entry
-    add(
-      input,
-      `mcwroofs:${name}_roof`, 1,
-      `${name}_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_attic_roof`, 1,
-      `${name}_attic_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_top_roof`, 1,
-      `${name}_top_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_lower_roof`, 1,
-      `${name}_lower_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_steep_roof`, 1,
-      `${name}_steep_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_upper_lower_roof`, 1,
-      `${name}_upper_lower_roof`
-    )
-    add(
-      input,
-      `mcwroofs:${name}_upper_steep_roof`, 1,
-      `${name}_upper_steep_roof`
-    )
+    add(`${name}_attic_roof`, input, `mcwroofs:${name}_attic_roof`, 1)
+    add(`${name}_lower_roof`, input, `mcwroofs:${name}_lower_roof`, 1)
+    add(`${name}_roof`, input, `mcwroofs:${name}_roof`, 1)
+    add(`${name}_steep_roof`, input, `mcwroofs:${name}_steep_roof`, 1)
+    add(`${name}_top_roof`, input, `mcwroofs:${name}_top_roof`, 1)
+    add(`${name}_upper_lower_roof`, input, `mcwroofs:${name}_upper_lower_roof`, 1)
+    add(`${name}_upper_steep_roof`, input, `mcwroofs:${name}_upper_steep_roof`, 1)
   })
 
-  global.PLANK_SETS.forEach(entry => {
-    add(
-      `minecraft:${entry}_planks`,
-      `mcwroofs:${entry}_planks_roof`, 1,
-      `${entry}_planks_roof`
-    )
-    add(
-      `minecraft:${entry}_planks`,
-      `mcwroofs:${entry}_planks_attic_roof`, 1,
-      `${entry}_planks_attic_roof`
-    )
-    add(
-      `minecraft:${entry}_planks`,
-      `mcwroofs:${entry}_planks_top_roof`, 1,
-      `${entry}_planks_top_roof`
-    )
-    add(
-      `minecraft:${entry}_planks`,
-      `mcwroofs:${entry}_planks_lower_roof`, 1,
-      `${entry}_planks_lower_roof`
-    )
-    add(
-      `minecraft:${entry}_planks`,
-      `mcwroofs:${entry}_planks_steep_roof`, 1,
-      `${entry}_planks_steep_roof`
-    )
-    add(
-      `minecraft:${entry}_planks`,
-      `mcwroofs:${entry}_planks_upper_lower_roof`, 1,
-      `${entry}_planks_upper_lower_roof`
-    )
-    add(
-      `minecraft:${entry}_planks`,
-      `mcwroofs:${entry}_planks_upper_steep_roof`, 1,
-      `${entry}_planks_upper_steep_roof`
-    )
+  global.WOOD_TYPES.forEach(entry => {
+    const { type, name, log, bark, stripped, stripped_bark, planks } = entry
+    add(`${name}_attic_roof`, planks, `mcwroofs:${name}_attic_roof`, 1)
+    add(`${name}_lower_roof`, planks, `mcwroofs:${name}_lower_roof`, 1)
+    add(`${name}_planks_attic_roof`, planks, `mcwroofs:${name}_planks_attic_roof`, 1)
+    add(`${name}_planks_lower_roof`, planks, `mcwroofs:${name}_planks_lower_roof`, 1)
+    add(`${name}_planks_roof`, planks, `mcwroofs:${name}_planks_roof`, 1)
+    add(`${name}_planks_steep_roof`, planks, `mcwroofs:${name}_planks_steep_roof`, 1)
+    add(`${name}_planks_top_roof`, planks, `mcwroofs:${name}_planks_top_roof`, 1)
+    add(`${name}_planks_upper_lower_roof`, planks, `mcwroofs:${name}_planks_upper_lower_roof`, 1)
+    add(`${name}_planks_upper_steep_roof`, planks, `mcwroofs:${name}_planks_upper_steep_roof`, 1)
+    add(`${name}_roof`, planks, `mcwroofs:${name}_roof`, 1)
+    add(`${name}_steep_roof`, planks, `mcwroofs:${name}_steep_roof`, 1)
+    add(`${name}_top_roof`, planks, `mcwroofs:${name}_top_roof`, 1)
+    add(`${name}_upper_lower_roof`, planks, `mcwroofs:${name}_upper_lower_roof`, 1)
+    add(`${name}_upper_steep_roof`, planks, `mcwroofs:${name}_upper_steep_roof`, 1)
   })
 
   global.STONECUTTING_BLOCKS.forEach(entry => {
     const { name, block, stairs, slab, wall } = entry
-    add(
-      block,
-      slab, 2,
-      `${name}_slab`
-    )
+    add(`${name}_slab`, block, slab, 2)
     if (stairs != null) {
-      add(
-        block,
-        stairs, 1,
-        `${name}_stairs`
-      )
+      add(`${name}_stairs`, block, stairs, 1)
     }
     if (wall != null) {
-      add(
-        block,
-        wall, 1,
-        `${name}_wall`
-      )
+      add(`${name}_wall`, block, wall, 1)
     }
   })
 
   global.COPPER_CONVERSION.forEach(entry => {
-    const { base, oxidized, cut, shingles, tiles, chiseled } = entry
-    add(
-      `minecraft:${base}`,
-      `minecraft:${cut}`, 1,
-      `${cut}_from_${base}`
-    )
-    add(
-      `minecraft:exposed_${oxidized}`,
-      `minecraft:exposed_${cut}`, 1,
-      `exposed_${cut}_from_exposed_${oxidized}`
-    )
-    add(
-      `minecraft:weathered_${oxidized}`,
-      `minecraft:weathered_${cut}`, 1,
-      `weathered_${cut}_from_weathered_${oxidized}`
-    )
-    add(
-      `minecraft:oxidized_${oxidized}`,
-      `minecraft:oxidized_${cut}`, 1,
-      `oxidized_${cut}_from_oxidized_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_${base}`,
-      `minecraft:waxed_${cut}`, 1,
-      `waxed_${cut}_from_waxed_${base}`
-    )
-    add(
-      `minecraft:waxed_exposed_${oxidized}`,
-      `minecraft:waxed_exposed_${cut}`, 1,
-      `waxed_exposed_${cut}_from_waxed_exposed_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_weathered_${oxidized}`,
-      `minecraft:waxed_weathered_${cut}`, 1,
-      `waxed_weathered_${cut}_from_waxed_weathered_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_oxidized_${oxidized}`,
-      `minecraft:waxed_oxidized_${cut}`, 1,
-      `waxed_oxidized_${cut}_from_waxed_oxidized_${oxidized}`
-    )
-    add(
-      `minecraft:${base}`,
-      `create:${shingles}`, 1,
-      `${shingles}_from_${base}`
-    )
-    add(
-      `minecraft:exposed_${oxidized}`,
-      `create:exposed_${shingles}`, 1,
-      `exposed_${shingles}_from_exposed_${oxidized}`
-    )
-    add(
-      `minecraft:weathered_${oxidized}`,
-      `create:weathered_${shingles}`, 1,
-      `weathered_${shingles}_from_weathered_${oxidized}`
-    )
-    add(
-      `minecraft:oxidized_${oxidized}`,
-      `create:oxidized_${shingles}`, 1,
-      `oxidized_${shingles}_from_oxidized_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_${base}`,
-      `create:waxed_${shingles}`, 1,
-      `waxed_${shingles}_from_waxed_${base}`
-    )
-    add(
-      `minecraft:waxed_exposed_${oxidized}`,
-      `create:waxed_exposed_${shingles}`, 1,
-      `waxed_exposed_${shingles}_from_waxed_exposed_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_weathered_${oxidized}`,
-      `create:waxed_weathered_${shingles}`, 1,
-      `waxed_weathered_${shingles}_from_waxed_weathered_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_oxidized_${oxidized}`,
-      `create:waxed_oxidized_${shingles}`, 1,
-      `waxed_oxidized_${shingles}_from_waxed_oxidized_${oxidized}`
-    )
-    add(
-      `minecraft:${base}`,
-      `create:${tiles}`, 1,
-      `${tiles}_from_${base}`
-    )
-    add(
-      `minecraft:exposed_${oxidized}`,
-      `create:exposed_${tiles}`, 1,
-      `exposed_${tiles}_from_exposed_${oxidized}`
-    )
-    add(
-      `minecraft:weathered_${oxidized}`,
-      `create:weathered_${tiles}`, 1,
-      `weathered_${tiles}_from_weathered_${oxidized}`
-    )
-    add(
-      `minecraft:oxidized_${oxidized}`,
-      `create:oxidized_${tiles}`, 1,
-      `oxidized_${tiles}_from_oxidized_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_${base}`,
-      `create:waxed_${tiles}`, 1,
-      `waxed_${tiles}_from_waxed_${base}`
-    )
-    add(
-      `minecraft:waxed_exposed_${oxidized}`,
-      `create:waxed_exposed_${tiles}`, 1,
-      `waxed_exposed_${tiles}_from_waxed_exposed_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_weathered_${oxidized}`,
-      `create:waxed_weathered_${tiles}`, 1,
-      `waxed_weathered_${tiles}_from_waxed_weathered_${oxidized}`
-    )
-    add(
-      `minecraft:waxed_oxidized_${oxidized}`,
-      `create:waxed_oxidized_${tiles}`, 1,
-      `waxed_oxidized_${tiles}_from_waxed_oxidized_${oxidized}`
-    )
-    if (chiseled != null) {
-      add(
-        `minecraft:${base}`,
-        `copperandtuffbackport:${chiseled}`, 1,
-        `${chiseled}_from_${base}`
-      )
-      add(
-        `minecraft:exposed_${oxidized}`,
-        `copperandtuffbackport:exposed_${chiseled}`, 1,
-        `exposed_${chiseled}_from_exposed_${oxidized}`
-      )
-      add(
-        `minecraft:weathered_${oxidized}`,
-        `copperandtuffbackport:weathered_${chiseled}`, 1,
-        `weathered_${chiseled}_from_weathered_${oxidized}`
-      )
-      add(
-        `minecraft:oxidized_${oxidized}`,
-        `copperandtuffbackport:oxidized_${chiseled}`, 1,
-        `oxidized_${chiseled}_from_oxidized_${oxidized}`
-      )
-      add(
-        `minecraft:waxed_${base}`,
-        `copperandtuffbackport:waxed_${chiseled}`, 1,
-        `waxed_${chiseled}_from_waxed_${base}`
-      )
-      add(
-        `minecraft:waxed_exposed_${oxidized}`,
-        `copperandtuffbackport:waxed_exposed_${chiseled}`, 1,
-        `waxed_exposed_${chiseled}_from_waxed_exposed_${oxidized}`
-      )
-      add(
-        `minecraft:waxed_weathered_${oxidized}`,
-        `copperandtuffbackport:waxed_weathered_${chiseled}`, 1,
-        `waxed_weathered_${chiseled}_from_waxed_weathered_${oxidized}`
-      )
-      add(
-        `minecraft:waxed_oxidized_${oxidized}`,
-        `copperandtuffbackport:waxed_oxidized_${chiseled}`, 1,
-        `waxed_oxidized_${chiseled}_from_waxed_oxidized_${oxidized}`
-      )
-    }
+    const { modid, block } = entry
+    add(`${block}_from_copper_block`, 'minecraft:copper_block', `${modid}:${block}`, 1)
+    add(`exposed_${block}_from_exposed_copper`, 'minecraft:exposed_copper', `${modid}:exposed_${block}`, 1)
+    add(`oxidized_${block}_from_oxidized_copper`, 'minecraft:oxidized_copper', `${modid}:oxidized_${block}`, 1)
+    add(`waxed_${block}_from_waxed_copper_block`, 'minecraft:waxed_copper_block', `${modid}:waxed_${block}`, 1)
+    add(`waxed_exposed_${block}_from_waxed_exposed_copper`, 'minecraft:waxed_exposed_copper', `${modid}:waxed_exposed_${block}`, 1)
+    add(`waxed_oxidized_${block}_from_waxed_oxidized_copper`, 'minecraft:waxed_oxidized_copper', `${modid}:waxed_oxidized_${block}`, 1)
+    add(`waxed_weathered_${block}_from_waxed_weathered_copper`, 'minecraft:waxed_weathered_copper', `${modid}:waxed_weathered_${block}`, 1)
+    add(`weathered_${block}_from_weathered_copper`, 'minecraft:weathered_copper', `${modid}:weathered_${block}`, 1)
   })
 
   global.COPYCATS.forEach(entry => {
     const { modid, output, count } = entry
-    add(
-      'create:zinc_ingot',
-      `${modid}:${output}`, count,
-      `${output}_from_zinc_ingot`
-    )
-    add(
-      'copycats:copycat_block',
-      `${modid}:${output}`, count,
-      `${output}_from_block`
-    )
+    add(`${output}_from_block`, 'copycats:copycat_block', `${modid}:${output}`, count)
+    add(`${output}_from_zinc_ingot`, 'create:zinc_ingot', `${modid}:${output}`, count)
   })
 
   global.COLORS_PFX.forEach(entry => {
-    add(
-      `packedup:${entry}book_bundle`,
-      `packedup:${entry}book_bundle_slab`, 2,
-      `${entry}book_bundle_slab_from_block`
-    )
-    add(
-      `packedup:${entry}book_bundle`,
-      `packedup:${entry}book_pile`, 4,
-      `${entry}book_bundle_pile_from_block`
-    )
-    add(
-      `packedup:${entry}book_bundle_slab`,
-      `packedup:${entry}book_pile`, 2,
-      `${entry}book_bundle_pile_from_slab`
-    )
-    add(
-      `railways:${entry}slashed_locometal`,
-      `railways:${entry}locometal_boiler`, 1,
-      `${entry}locometal_boiler`
-    )
-    add(
-      `railways:${entry}brass_wrapped_locometal`,
-      `railways:${entry}brass_wrapped_locometal_boiler`, 1,
-      `${entry}brass_wrapped_locometal_boiler`
-    )
-    add(
-      `railways:${entry}copper_wrapped_locometal`,
-      `railways:${entry}copper_wrapped_locometal_boiler`, 1,
-      `${entry}copper_wrapped_locometal_boiler`
-    )
-    add(
-      `railways:${entry}iron_wrapped_locometal`,
-      `railways:${entry}iron_wrapped_locometal_boiler`, 1,
-      `${entry}iron_wrapped_locometal_boiler`
-    )
+    add(`${entry}book_bundle_pile_from_block`, `packedup:${entry}book_bundle`, `packedup:${entry}book_pile`, 4)
+    add(`${entry}book_bundle_pile_from_slab`, `packedup:${entry}book_bundle_slab`, `packedup:${entry}book_pile`, 2)
+    add(`${entry}book_bundle_slab_from_block`, `packedup:${entry}book_bundle`, `packedup:${entry}book_bundle_slab`, 2)
+    add(`${entry}brass_wrapped_locometal_boiler`, `railways:${entry}brass_wrapped_locometal`, `railways:${entry}brass_wrapped_locometal_boiler`, 1)
+    add(`${entry}copper_wrapped_locometal_boiler`, `railways:${entry}copper_wrapped_locometal`, `railways:${entry}copper_wrapped_locometal_boiler`, 1)
+    add(`${entry}iron_wrapped_locometal_boiler`, `railways:${entry}iron_wrapped_locometal`, `railways:${entry}iron_wrapped_locometal_boiler`, 1)
+    add(`${entry}locometal_boiler`, `railways:${entry}slashed_locometal`, `railways:${entry}locometal_boiler`, 1)
   })
 })

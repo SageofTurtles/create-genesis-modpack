@@ -1,62 +1,36 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const axe = (input, output, recipeId) => {
+  const axe = (recipeId, input, output) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [{ item: input }],
-      results: [{ item: output }],
+      result: [{ item: output }],
       tool: {
         type: 'farmersdelight:tool_action',
         action: 'axe_dig'
       }
     }).id(`genesis:${recipeId}_cutting`)
   }
-  const knife = (input, outputArray, recipeId) => {
+  const knife = (recipeId, input, outputs) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [{ item: input }],
-      results: outputArray,
+      result: outputs,
       tool: {
         tag: 'forge:tools/knives'
       }
     }).id(`genesis:${recipeId}_cutting`)
   }
 
-  // Add recipes
-  knife(
-    'minecraft:pumpkin',
-    [
-      { item: 'minecraft:carved_pumpkin' },
-      {
-        item: 'minecraft:pumpkin_seeds',
-        chance: 0.25
-      }
-    ],
-    'pumpkin'
-  )
+  // Add individual recipes
+  knife('pumpkin', 'minecraft:pumpkin', [{ item: 'minecraft:carved_pumpkin' }, { item: 'minecraft:pumpkin_seeds', chance: 0.25 }])
 
   // Add bulk recipes
-  global.OXIDIZATION_SETS.forEach(entry => {
-    const { modid, block, pattern } = entry
-    axe(
-      `${modid}:waxed_oxidized_${pattern}`,
-      `${modid}:oxidized_${pattern}`,
-      `oxidized_${pattern}`
-    )
-    axe(
-      `${modid}:waxed_weathered_${pattern}`,
-      `${modid}:weathered_${pattern}`,
-      `weathered_${pattern}`
-    )
-    axe(
-      `${modid}:waxed_exposed_${pattern}`,
-      `${modid}:exposed_${pattern}`,
-      `exposed_${pattern}`
-    )
-    axe(
-      `${modid}:waxed_${block}`,
-      `${modid}:${block}`,
-      `${block}`
-    )
+  global.COPPER_OXIDIZATION.forEach(entry => {
+    const { modid, base, exposed, weathered, oxidized } = entry
+    axe(`waxed_${base}`, `${modid}:waxed_${base}`, `${modid}:${base}`)
+    axe(`waxed_${exposed}`, `${modid}:waxed_${exposed}`, `${modid}:${exposed}`)
+    axe(`waxed_${weathered}`, `${modid}:waxed_${weathered}`, `${modid}:${weathered}`)
+    axe(`waxed_${oxidized}`, `${modid}:waxed_${oxidized}`, `${modid}:${oxidized}`)
   })
 })

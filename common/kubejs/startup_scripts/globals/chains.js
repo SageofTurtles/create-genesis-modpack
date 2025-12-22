@@ -21,15 +21,15 @@ global['CHAINS'] = [
 
 global['CHAIN_METALS'] = [
   {
-    ingot: 'iron',
+    ingot: 'minecraft:iron_ingot',
     name: 'iron'
   },
   {
-    ingot: 'copper',
+    ingot: 'minecraft:copper_ingot',
     name: 'copper'
   },
   {
-    ingot: 'gold',
+    ingot: 'minecraft:gold_ingot',
     name: 'golden'
   }
 ]

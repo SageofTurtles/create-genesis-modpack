@@ -1,172 +1,172 @@
 global['COPYCATS'] = [
   {
     modid: 'create',
-    item: 'copycat_step',
+    output: 'copycat_step',
     count: 4
   },
   {
     modid: 'create',
-    item: 'copycat_panel',
+    output: 'copycat_panel',
     count: 4
   },
   {
     modid: 'copycats',
-    item: 'copycat_slab',
+    output: 'copycat_slab',
     count: 2
   },
   {
     modid: 'copycats',
-    item: 'copycat_stairs',
+    output: 'copycat_stairs',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_vertical_stairs',
+    output: 'copycat_vertical_stairs',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_fence',
+    output: 'copycat_fence',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_wall',
+    output: 'copycat_wall',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_vertical_step',
+    output: 'copycat_vertical_step',
     count: 4
   },
   {
     modid: 'copycats',
-    item: 'copycat_beam',
+    output: 'copycat_beam',
     count: 4
   },
   {
     modid: 'copycats',
-    item: 'copycat_slice',
+    output: 'copycat_slice',
     count: 8
   },
   {
     modid: 'copycats',
-    item: 'copycat_vertical_slice',
+    output: 'copycat_vertical_slice',
     count: 8
   },
   {
     modid: 'copycats',
-    item: 'copycat_corner_slice',
+    output: 'copycat_corner_slice',
     count: 8
   },
   {
     modid: 'copycats',
-    item: 'copycat_ghost_block',
+    output: 'copycat_ghost_block',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_layer',
+    output: 'copycat_layer',
     count: 8
   },
   {
     modid: 'copycats',
-    item: 'copycat_half_panel',
+    output: 'copycat_half_panel',
     count: 8
   },
   {
     modid: 'copycats',
-    item: 'copycat_pane',
+    output: 'copycat_pane',
     count: 4
   },
   {
     modid: 'copycats',
-    item: 'copycat_flat_pane',
+    output: 'copycat_flat_pane',
     count: 4
   },
   {
     modid: 'copycats',
-    item: 'copycat_byte',
+    output: 'copycat_byte',
     count: 8
   },
   {
     modid: 'copycats',
-    item: 'copycat_byte_panel',
+    output: 'copycat_byte_panel',
     count: 16
   },
   {
     modid: 'copycats',
-    item: 'copycat_board',
+    output: 'copycat_board',
     count: 6
   },
   {
     modid: 'copycats',
-    item: 'copycat_catwalk',
+    output: 'copycat_catwalk',
     count: 2
   },
   {
     modid: 'copycats',
-    item: 'copycat_box',
+    output: 'copycat_box',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_half_layer',
+    output: 'copycat_half_layer',
     count: 16
   },
   {
     modid: 'copycats',
-    item: 'copycat_stacked_half_layer',
+    output: 'copycat_stacked_half_layer',
     count: 16
   },
   {
     modid: 'copycats',
-    item: 'copycat_vertical_half_layer',
+    output: 'copycat_vertical_half_layer',
     count: 16
   },
   {
     modid: 'copycats',
-    item: 'copycat_slope',
+    output: 'copycat_slope',
     count: 2
   },
   {
     modid: 'copycats',
-    item: 'copycat_vertical_slope',
+    output: 'copycat_vertical_slope',
     count: 2
   },
   {
     modid: 'copycats',
-    item: 'copycat_slope_layer',
+    output: 'copycat_slope_layer',
     count: 8
   },
   {
     modid: 'copycats',
-    item: 'copycat_door',
+    output: 'copycat_door',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_sliding_door',
+    output: 'copycat_sliding_door',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_folding_door',
+    output: 'copycat_folding_door',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_trapdoor',
+    output: 'copycat_trapdoor',
     count: 2
   },
   {
     modid: 'copycats',
-    item: 'copycat_fence_gate',
+    output: 'copycat_fence_gate',
     count: 1
   },
   {
     modid: 'copycats',
-    item: 'copycat_ladder',
+    output: 'copycat_ladder',
     count: 2
   }
 ]

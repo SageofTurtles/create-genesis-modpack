@@ -164,121 +164,46 @@ ServerEvents.recipes(event => {
   output(/supplementaries:timber_(frame|brace|cross_brace)$/)
 
   // Remove recipes by custom parameters
-  custom({
-    id: /createaddition:charging\/.*/,
-    not: { id: /.*channeling$/ }
-  })
+  custom({ id: /createaddition:charging\/.*/, not: { id: /.*channeling$/ } })
+  custom({ mod: 'create_ironworks', type: 'create:mixing' })
+  custom({ output: /.*_door$/, not: { mod: 'mcwdoors' } })
+  custom({ output: /.*_trapdoor$/, not: { mod: 'mcwtrpdoors' } })
+  custom({ type: 'create:compacting', output: 'create:experience_block' })
+  custom({ type: 'create:mixing', output: 'create:andesite_alloy' })
+  custom({ type: 'minecraft:stonecutting', output: /mcwfences:.*railing.*/ })
 
-  custom({
-    type: 'minecraft:stonecutting',
-    output: /mcwfences:.*railing.*/
-  })
-
-  custom({
-    mod: 'create_ironworks',
-    type: 'create:mixing'
-  })
-
-  custom({
-    type: 'create:compacting',
-    output: 'create:experience_block'
-  })
-
-  custom({
-    type: 'create:mixing',
-    output: 'create:andesite_alloy'
-  })
-
-  custom({
-    output: /.*_door$/,
-    not: { mod: 'mcwdoors' }
-  })
-
-  custom({
-    output: /.*_trapdoor$/,
-    not: { mod: 'mcwtrpdoors' }
-  })
-
-  global.OXIDIZATION_SETS.forEach(entry => {
-    const { modid, block, pattern } = entry
+  global.COPPER_OXIDIZATION.forEach(entry => {
+    const { modid, base, exposed, weathered, oxidized } = entry
     custom([
-      {
-        type: 'create:deploying',
-        output: `${modid}:${block}`
-      },
-      {
-        type: 'create:deploying',
-        output: `${modid}:exposed_${pattern}`
-      },
-      {
-        type: 'create:deploying',
-        output: `${modid}:weathered_${pattern}`
-      },
-      {
-        type: 'create:deploying',
-        output: `${modid}:oxidized_${pattern}`
-      },
-      {
-        type: 'create:deploying',
-        output: `${modid}:waxed_${block}`
-      },
-      {
-        type: 'create:deploying',
-        output: `${modid}:waxed_exposed_${pattern}`
-      },
-      {
-        type: 'create:deploying',
-        output: `${modid}:waxed_weathered_${pattern}`
-      },
-      {
-        type: 'create:deploying',
-        output: `${modid}:waxed_oxidized_${pattern}`
-      }
+      { type: 'create:deploying', output: `${modid}:${base}` },
+      { type: 'create:deploying', output: `${modid}:${exposed}` },
+      { type: 'create:deploying', output: `${modid}:${weathered}` },
+      { type: 'create:deploying', output: `${modid}:${oxidized}` },
+      { type: 'create:deploying', output: `${modid}:waxed_${base}` },
+      { type: 'create:deploying', output: `${modid}:waxed_${exposed}` },
+      { type: 'create:deploying', output: `${modid}:waxed_${weathered}` },
+      { type: 'create:deploying', output: `${modid}:waxed_${oxidized}` }
     ])
   })
 
   global.STONECUTTING_BLOCKS.forEach(entry => {
     const { name, block, stairs, slab, wall } = entry
     custom([
-      {
-        type: 'minecraft:crafting_shaped',
-        output: slab
-      },
-      {
-        type: 'minecraft:stonecutting',
-        output: slab
-      },
-      {
-        type: 'create:cutting',
-        output: slab
-      },
+      { type: 'create:cutting', output: slab },
+      { type: 'minecraft:crafting_shaped', output: slab },
+      { type: 'minecraft:stonecutting', output: slab }
     ])
     if (stairs != null) {
       custom([
-        {
-          type: 'minecraft:crafting_shaped',
-          output: stairs
-        },
-        {
-          type: 'minecraft:stonecutting',
-          output: stairs
-        },
-        {
-          type: 'create:cutting',
-          output: stairs
-        },
+        { type: 'create:cutting', output: stairs },
+        { type: 'minecraft:crafting_shaped', output: stairs },
+        { type: 'minecraft:stonecutting', output: stairs }
       ])
     }
     if (wall != null) {
       custom([
-        {
-          type: 'minecraft:crafting_shaped',
-          output: wall
-        },
-        {
-          type: 'minecraft:stonecutting',
-          output: wall
-        }
+        { type: 'minecraft:crafting_shaped', output: wall },
+        { type: 'minecraft:stonecutting', output: wall }
       ])
     }
   })
@@ -286,32 +211,14 @@ ServerEvents.recipes(event => {
   global.SAWING_BLOCKS.forEach(entry => {
     const { name, block, stairs, slab } = entry
     custom([
-      {
-        type: 'minecraft:crafting_shaped',
-        output: slab
-      },
-      {
-        type: 'minecraft:stonecutting',
-        output: slab
-      },
-      {
-        type: 'create:cutting',
-        output: slab
-      },
+      { type: 'create:cutting', output: slab },
+      { type: 'minecraft:crafting_shaped', output: slab },
+      { type: 'minecraft:stonecutting', output: slab }
     ])
     custom([
-      {
-        type: 'minecraft:crafting_shaped',
-        output: stairs
-      },
-      {
-        type: 'minecraft:stonecutting',
-        output: stairs
-      },
-      {
-        type: 'create:cutting',
-        output: stairs
-      },
+      { type: 'create:cutting', output: stairs },
+      { type: 'minecraft:crafting_shaped', output: stairs },
+      { type: 'minecraft:stonecutting', output: stairs }
     ])
   })
 })

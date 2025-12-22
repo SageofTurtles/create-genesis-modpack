@@ -15,40 +15,15 @@ ServerEvents.recipes(event => {
     }).id(`genesis:${recipeId}_channeling`)
   }
 
-  // Add single-output recipes
-  single(
-    'leather',
-    'minecraft:leather',
-    'minecraft:scute'
-  )
-
-  // Add multiple-output recipes
-  multi(
-    'sponge',
-    'minecraft:sponge',
-    [
-      { item: 'minecraft:wet_sponge' },
-      { item: 'minecraft:wet_sponge', chance: 0.1 }
-    ]
-  )
+  // Add individual recipes
+  multi('sponge', 'minecraft:sponge', [{ item: 'minecraft:wet_sponge' }, { item: 'minecraft:wet_sponge', chance: 0.1 }])
+  single('leather', 'minecraft:leather', 'minecraft:scute')
 
   // Add bulk recipes
-  global.OXIDIZATION_SETS.forEach(entry => {
-    const { modid, block, pattern } = entry
-    single(
-      `${block}`,
-      `${modid}:${block}`,
-      `${modid}:exposed_${pattern}`
-    )
-    single(
-      `exposed_${pattern}`,
-      `${modid}:exposed_${pattern}`,
-      `${modid}:weathered_${pattern}`
-    )
-    single(
-      `weathered_${pattern}`,
-      `${modid}:weathered_${pattern}`,
-      `${modid}:oxidized_${pattern}`
-    )
+  global.COPPER_OXIDIZATION.forEach(entry => {
+    const { modid, base, exposed, weathered, oxidized } = entry
+    single(`${base}`, `${modid}:${base}`, `${modid}:${exposed}`)
+    single(`${exposed}`, `${modid}:${exposed}`, `${modid}:${weathered}`)
+    single(`${weathered}`, `${modid}:${weathered}`, `${modid}:${oxidized}`)
   })
 })

@@ -1,17 +1,13 @@
 ServerEvents.recipes(event => {
   // Define function to modify recipes
-  const id = (filter, originalInput, newInput) => {
+  const id = (filter, originalOutput, newOutput) => {
     event.replaceOutput(
       { id: filter },
-      originalInput,
-      newInput
+      originalOutput,
+      newOutput
     )
   }
 
   // Add recipe modifications by ID
-  id(
-    'create:milling/andesite',
-    'minecraft:cobblestone',
-    'minecraft:gravel'
-  )
+  id('create:milling/andesite', 'minecraft:cobblestone', 'minecraft:gravel')
 })

@@ -1,27 +1,19 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const add = (input, output, outputCount, recipeId) => {
+  const add = (recipeId, inputItem, outputItem, outputCount) => {
     event.custom({
       type: 'createaddition:rolling',
       input: {
-        item: input
+        item: inputItem
       },
       result: {
-        item: output,
+        item: outputItem,
         count: outputCount
       }
     }).id(`genesis:${recipeId}_rolling`)
   }
 
   // Add recipes
-  add(
-    'minecraft:leather',
-    'kubejs:empty_ink_sac', 2,
-    'leather'
-  )
-  add(
-    'create_aquatic_ambitions:prismarine_alloy',
-    'create_aquatic_ambitions:prismarine_alloy_rod', 2,
-    'prismarine_alloy'
-  )
+  add('leather', 'minecraft:leather', 'kubejs:empty_ink_sac', 2)
+  add('prismarine_alloy', 'create_aquatic_ambitions:prismarine_alloy', 'create_aquatic_ambitions:prismarine_alloy_rod', 2)
 })

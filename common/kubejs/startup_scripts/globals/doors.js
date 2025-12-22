@@ -213,7 +213,7 @@ global['ADDITIVE_DOORS'] = [
     name: 'ornate_iron_trapdoor',
     base: '#minecraft:wooden_trapdoors',
     input: 'create:ornate_iron_window',
-    output: 'create:ornate_iron_trapdoor'
+    output: 'bellsandwhistles:ornate_iron_trapdoor'
   },
   {
     name: 'locked_andesite_door',

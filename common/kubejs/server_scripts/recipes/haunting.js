@@ -1,21 +1,13 @@
 ServerEvents.recipes(event => {
   // Define function to create recipes
-  const add = (input, output, recipeId) => {
+  const add = (recipeId, input, outputs) => {
     event.recipes.create.haunting(
-      output,
+      outputs,
       input
     ).id(`genesis:${recipeId}_haunting`)
   }
 
   // Add recipes
-  add(
-    'minecraft:cobblestone',
-    'minecraft:infested_cobblestone',
-    'cobblestone'
-  )
-  add(
-    '#brewinandchewin:raw_meats',
-    'minecraft:rotten_flesh',
-    'rotten_flesh'
-  )
+  add('cobblestone', 'minecraft:cobblestone', 'minecraft:infested_cobblestone')
+  add('raw_meat', '#brewinandchewin:raw_meats', 'minecraft:rotten_flesh')
 })

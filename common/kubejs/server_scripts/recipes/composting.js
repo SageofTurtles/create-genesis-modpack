@@ -8,6 +8,6 @@ ServerEvents.compostableRecipes(event => {
   )
 
   // Add recipes
-  event.add('minecraft:stick', 0.2)
   event.add('minecraft:poisonous_potato', 0.8)
+  event.add('minecraft:stick', 0.2)
 })

@@ -1015,22 +1015,22 @@ global['STONECUTTING_BLOCKS'] = [
     wall: null
   },
   {
-    name: 'purpur_block',
+    name: 'purpur',
     block: 'minecraft:purpur_block',
     stairs: 'minecraft:purpur_stairs',
     slab: 'minecraft:purpur_slab',
     wall: null
   },
   {
-    name: 'quartz_block',
+    name: 'quartz',
     block: 'minecraft:quartz_block',
     stairs: 'minecraft:quartz_stairs',
     slab: 'minecraft:quartz_slab',
     wall: null
   },
   {
-    name: 'smooth_quartz_block',
-    block: 'minecraft:smooth_quartz_block',
+    name: 'smooth_quartz',
+    block: 'minecraft:smooth_quartz',
     stairs: 'minecraft:smooth_quartz_stairs',
     slab: 'minecraft:smooth_quartz_slab',
     wall: null
