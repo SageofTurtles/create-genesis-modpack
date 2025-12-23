@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:mangrove_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_japanese_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_barn_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_modern_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_cottage_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_classic_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_beach_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_paper_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_tropical_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_glass_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_stable_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_western_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_mystic_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_nether_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_waffle_door"
+    },
+    {
+      "item": "mcwdoors:mangrove_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

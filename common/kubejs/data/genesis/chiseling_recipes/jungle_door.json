@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:jungle_door"
+    },
+    {
+      "item": "mcwdoors:jungle_japanese_door"
+    },
+    {
+      "item": "mcwdoors:jungle_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:jungle_barn_door"
+    },
+    {
+      "item": "mcwdoors:jungle_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:jungle_modern_door"
+    },
+    {
+      "item": "mcwdoors:jungle_cottage_door"
+    },
+    {
+      "item": "mcwdoors:jungle_classic_door"
+    },
+    {
+      "item": "mcwdoors:jungle_paper_door"
+    },
+    {
+      "item": "mcwdoors:jungle_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:jungle_tropical_door"
+    },
+    {
+      "item": "mcwdoors:jungle_glass_door"
+    },
+    {
+      "item": "mcwdoors:jungle_stable_door"
+    },
+    {
+      "item": "mcwdoors:jungle_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:jungle_western_door"
+    },
+    {
+      "item": "mcwdoors:jungle_mystic_door"
+    },
+    {
+      "item": "mcwdoors:jungle_nether_door"
+    },
+    {
+      "item": "mcwdoors:jungle_swamp_door"
+    },
+    {
+      "item": "mcwdoors:jungle_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:jungle_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:jungle_waffle_door"
+    },
+    {
+      "item": "mcwdoors:jungle_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

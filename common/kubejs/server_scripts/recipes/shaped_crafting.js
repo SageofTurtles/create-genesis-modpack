@@ -242,7 +242,6 @@ ServerEvents.recipes(event => {
   eight_one('copycat_wooden_button', '#minecraft:wooden_buttons', 'copycats:copycat_block', 'copycats:copycat_wooden_button', 8)
   eight_one('crying_obsidian', 'minecraft:obsidian', 'minecraft:ghast_tear', 'minecraft:crying_obsidian', 8)
   eight_one('safe', 'create_ironworks:steel_ingot', '#minecraft:shulker_boxes', 'supplementaries:safe', 1)
-  four_one('bamboo_whispering_trapdoor', 'minecraft:bamboo_planks', 'mcwtrpdoors:print_whispering', 'mcwtrpdoors:bamboo_whispering_trapdoor', 4)
   four_one('brass_propeller', 'create:brass_sheet', 'create:propeller', 'immersive_aircraft:enhanced_propeller', 1)
   four_one('cannon_ball', 'minecraft:iron_ingot', 'minecraft:gunpowder', 'smallships:cannon_ball', 1)
   four_one('copycat_cogwheel', 'create:cogwheel', 'copycats:copycat_block', 'copycats:copycat_cogwheel', 4)
@@ -252,7 +251,6 @@ ServerEvents.recipes(event => {
   four_one('copycat_stone_pressure_plate', '#genesis:stone_pressure_plates', 'copycats:copycat_block', 'copycats:copycat_stone_pressure_plate', 4)
   four_one('copycat_wooden_pressure_plate', '#minecraft:wooden_pressure_plates', 'copycats:copycat_block', 'copycats:copycat_wooden_pressure_plate', 4)
   four_one('large_propeller', 'create:iron_sheet', 'create:propeller', 'immersive_aircraft:propeller', 1)
-  four_one('mesh_trapdoor_print', 'minecraft:paper', 'minecraft:bamboo_trapdoor', 'mcwtrpdoors:print_bamboo', 4)
   four_one('timber_frame', 'minecraft:stick', '#minecraft:planks', 'supplementaries:timber_frame', 2)
 
   // Add common pattern recipes
@@ -261,8 +259,6 @@ ServerEvents.recipes(event => {
   A_B_C('basic_engine', 'create:steam_engine', 'create:fluid_tank', 'create:blaze_burner', 'immersive_aircraft:boiler', 1)
   A_B_C('rotary_cannon', 'kubejs:gatling_gun_base', 'createaddition:copper_rod', 'create:copper_sheet', 'immersive_aircraft:rotary_cannon', 1)
   A_B_C('smart_compass', 'create:electron_tube', 'minecraft:compass', 'create:brass_sheet', 'naturescompass:naturescompass', 1)
-  A_B_C('warning_trapdoor', 'minecraft:yellow_dye', 'mcwtrpdoors:metal_trapdoor', 'minecraft:black_dye', 'mcwtrpdoors:metal_warning_trapdoor', 1)
-  A_B('bamboo_barn_trapdoor', 'minecraft:bamboo_planks', 'mcwtrpdoors:bamboo_glass_trapdoor', 'mcwtrpdoors:bamboo_barn_trapdoor', 1)
   A_B('electronic_gyroscope', 'createrailwaysnavigator:advanced_display_half_panel', 'immersive_aircraft:gyroscope', 'immersive_aircraft:gyroscope_hud', 1)
   A_BCB_D('kinetic_battery', 'create:electron_tube', 'create:shaft', 'createaddition:modular_accumulator', 'create:stockpile_switch', 'create_connected:kinetic_battery', 2)
   A_BCB_DDD('advanced_filter_upgrade', 'minecraft:diamond', 'minecraft:gold_ingot', 'sophisticatedbackpacks:filter_upgrade', 'minecraft:redstone', 'sophisticatedbackpacks:advanced_filter_upgrade', 1)
@@ -274,9 +270,7 @@ ServerEvents.recipes(event => {
   AAA_ABA('golden_horse_armor', 'minecraft:gold_ingot', 'minecraft:leather_horse_armor', 'minecraft:golden_horse_armor', 1)
   AAA_ABA('iron_horse_armor', 'minecraft:iron_ingot', 'minecraft:leather_horse_armor', 'minecraft:iron_horse_armor', 1)
   ABA_ABA('green_bamboo_fence', 'minecraft:bamboo_block', 'minecraft:bamboo', 'mcwfences:bamboo_fence', 3)
-  ABA_ABA('green_bamboo_trapdoor', 'minecraft:bamboo_block', 'minecraft:stick', 'mcwtrpdoors:bamboo_trapdoor', 4)
   ABA_ABA('hull', 'createdeco:andesite_sheet', '#minecraft:logs', 'immersive_aircraft:hull', 1)
-  ABA_ABA('metal_glass_trapdoor', 'minecraft:iron_ingot', 'minecraft:glass_pane', 'mcwtrpdoors:metal_trapdoor', 4)
   ABA_CDC('engine', 'create:brass_sheet', 'create:precision_mechanism', 'create:sturdy_sheet', 'immersive_aircraft:boiler', 'immersive_aircraft:engine', 1)
   ABA_CDC('lava_engine', 'createdeco:netherite_sheet', 'minecraft:lava_bucket', 'create_ironworks:steel_sheet', 'immersive_aircraft:boiler', 'immersive_aircraft:nether_engine', 1)
   ABA_CDC('water_engine', 'create:iron_sheet', 'minecraft:water_bucket', 'create:copper_sheet', 'immersive_aircraft:boiler', 'immersive_aircraft:eco_engine', 1)
@@ -290,15 +284,6 @@ ServerEvents.recipes(event => {
   custom('advanced_display_block', ['ABA', 'CCC', 'ABA'], { A: 'create:andesite_alloy', B: 'create:sturdy_sheet', C: 'create:display_board' }, 'createrailwaysnavigator:advanced_display_block', 4)
   custom('advanced_gyroscope', [' A ', 'BCB'], { A: 'createrailwaysnavigator:advanced_display_panel', B: 'immersive_aircraft:gyroscope', C: 'minecraft:clock' }, 'immersive_aircraft:gyroscope_dials', 1)
   custom('aerial_telescope', [' A ', ' B ', 'B B'], { A: 'minecraft:spyglass', B: 'createaddition:copper_rod' }, 'immersive_aircraft:telescope', 1)
-  custom('bamboo_bark_glass_door', ['AB', 'BB', 'AB'], { A: 'minecraft:bamboo_block', B: 'minecraft:glass_pane' }, 'mcwdoors:bamboo_bark_glass_door', 3)
-  custom('bamboo_barn_door', ['AA', 'BB', 'BB'], { A: 'minecraft:stick', B: 'minecraft:bamboo_planks' }, 'mcwdoors:bamboo_barn_door', 2)
-  custom('bamboo_barn_glassed_door', ['AA', 'BB', 'BB'], { A: 'minecraft:glass_pane', B: 'minecraft:bamboo_planks' }, 'mcwdoors:bamboo_barn_glass_door', 3)
-  custom('bamboo_glass_door', ['AB', 'BB', 'AB'], { A: 'minecraft:bamboo_planks', B: 'minecraft:glass_pane' }, 'mcwdoors:bamboo_glass_door', 3)
-  custom('bamboo_modern_door', ['AB', 'BB', 'AB'], { A: 'minecraft:glass_pane', B: 'minecraft:bamboo_planks' }, 'mcwdoors:bamboo_modern_door', 3)
-  custom('bamboo_shoji_door', ['AA', 'AA', 'BB'], { A: 'minecraft:paper', B: 'minecraft:bamboo_planks' }, 'mcwdoors:bamboo_japanese_door', 3)
-  custom('bamboo_shoji_whole_door', ['AA', 'AA', 'BB'], { A: 'minecraft:paper', B: 'minecraft:bamboo_slab' }, 'mcwdoors:bamboo_japanese2_door', 3)
-  custom('bamboo_stable_door', ['AA', 'BB', 'BB'], { A: 'minecraft:iron_bars', B: 'minecraft:bamboo_planks' }, 'mcwdoors:bamboo_stable_door', 3)
-  custom('bamboo_western_door', ['  A', 'ABA', 'AAA'], { A: 'minecraft:bamboo_planks', B: 'minecraft:bamboo_slab' }, 'mcwdoors:bamboo_western_door', 3)
   custom('battery_upgrade', ['ABA', 'CDC', 'ABA'], { A: 'minecraft:redstone', B: 'createaddition:modular_accumulator', C: 'createaddition:connector', D: 'sophisticatedbackpacks:upgrade_base' }, 'sophisticatedbackpacks:battery_upgrade', 1)
   custom('bee_nest', ['AAA', 'BBB', 'AAA'], { A: 'minecraft:honeycomb', B: '#minecraft:logs' }, 'minecraft:bee_nest', 1)
   custom('bell', [' A ', 'BCB', 'B B'], { A: 'create_ironworks:bronze_block', B: 'minecraft:stick', C: 'create_ironworks:bronze_ingot' }, 'minecraft:bell', 1)
@@ -319,7 +304,6 @@ ServerEvents.recipes(event => {
   custom('industrial_iron_window', ['ABA', 'BCB'], { A: 'minecraft:iron_nugget', B: 'createdeco:industrial_iron_ingot', C: '#forge:glass_colorless' }, 'create:industrial_iron_window', 2)
   custom('inert_ender_eye', [' A ', 'BCD', ' E '], { A: 'create_aquatic_ambitions:spiky_shell', B: 'create:powdered_obsidian', C: 'minecraft:ender_pearl', D: 'createaddition:diamond_grit', E: 'minecraft:blaze_powder' }, 'kubejs:inert_ender_eye', 1)
   custom('leather_horse_armor', [' AB', 'BBB', 'C C'], { A: '#minecraft:wool', B: 'minecraft:leather', C: 'farmersdelight:rope' }, 'minecraft:leather_horse_armor', 1)
-  custom('metal_warning_door', ['ABC'], { A: 'minecraft:yellow_dye', B: 'mcwdoors:metal_windowed_door', C: 'minecraft:black_dye' }, 'mcwdoors:metal_warning_door', 1)
   custom('ornate_iron_window', [' A ', 'ABA'], { A: 'minecraft:iron_nugget', B: '#forge:glass_colorless' }, 'create:ornate_iron_window', 1)
   custom('peculiar_bell', [' A ', 'BCB', 'B B'], { A: 'create:brass_block', B: 'minecraft:stick', C: 'create:brass_ingot' }, 'create:peculiar_bell', 1)
   custom('quadrocopter', ['ABA', 'CDC', 'AEA'], { A: 'create:propeller', B: 'create:andesite_alloy', C: '#minecraft:wooden_slabs', D: 'minecraft:scaffolding', E: 'immersive_aircraft:boiler' }, 'immersive_aircraft:quadrocopter', 1)
@@ -364,15 +348,12 @@ ServerEvents.recipes(event => {
   global.WOOD_TYPES.forEach(entry => {
     const { type, name, log, bark, stripped, stripped_bark, planks } = entry
     A_B(`${name}_seat`, `minecraft:${name}_slab`, `minecraft:${name}_fence`, `decorative_blocks:${name}_seat`, 2)
-    ABA_ABA(`${name}_bark_trapdoor`, log, 'minecraft:glass_pane', `mcwtrpdoors:${name}_bark_trapdoor`, 4)
-    ABA_ABA(`${name}_glass_trapdoor`, planks, 'minecraft:glass_pane', `mcwtrpdoors:${name}_glass_trapdoor`, 4)
     custom(`${name}_support`, ['AA', 'A '], { A: planks }, `decorative_blocks:${name}_support`, 4)
     one_by_one(`${name}_button`, planks, `minecraft:${name}_button`, 8)
     three_by_two(`${name}_palisade`, stripped, `decorative_blocks:${name}_palisade`, 6)
     two_by_one(`${name}_pressure_plate`, planks, `minecraft:${name}_pressure_plate`, 8)
     if (type != 'bamboo') {
       A_BCB_D(`${name}_ceiling_fan_light`, 'minecraft:iron_ingot', `minecraft:${name}_slab`, 'create:propeller', 'minecraft:redstone_lamp', `mcwlights:${name}_ceiling_fan_light`, 2)
-      ABA_ABA(`${name}_ranch_trapdoor`, log, 'minecraft:stick', `mcwtrpdoors:${name}_ranch_trapdoor`, 4)
     }
   })
 
@@ -395,10 +376,6 @@ ServerEvents.recipes(event => {
     if (wall != null) {
       three_by_two(`${name}_wall`, block, wall, 6)
     }
-  })
-
-  global.TRAPDOOR_PRINTS.forEach(entry => {
-    custom(`bamboo_${entry}_trapdoor`, ['A', 'B', 'A'], { A: 'minecraft:bamboo_planks', B: `mcwtrpdoors:print_${entry}` }, `mcwtrpdoors:bamboo_${entry}_trapdoor`, 1)
   })
 
   global.BASIC_DOORS.forEach(entry => {

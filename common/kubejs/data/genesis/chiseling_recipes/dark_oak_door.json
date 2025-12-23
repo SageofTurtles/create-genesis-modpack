@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:dark_oak_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_japanese_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_barn_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_modern_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_cottage_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_classic_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_beach_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_paper_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_tropical_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_glass_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_stable_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_western_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_mystic_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_nether_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_swamp_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_waffle_door"
+    },
+    {
+      "item": "mcwdoors:dark_oak_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

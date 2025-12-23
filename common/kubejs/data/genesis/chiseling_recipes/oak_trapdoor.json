@@ -1,0 +1,57 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:oak_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_barn_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_barred_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_beach_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_cottage_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_four_panel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_glass_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_mystic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_paper_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_tropical_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_swamp_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_bamboo_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_blossom_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_bark_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_ranch_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_barrel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:oak_whispering_trapdoor"
+    }
+  ],
+  "overwrite": true
+}

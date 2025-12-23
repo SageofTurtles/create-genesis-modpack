@@ -1,0 +1,57 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:spruce_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_barn_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_barred_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_beach_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_classic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_four_panel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_glass_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_mystic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_paper_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_tropical_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_swamp_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_bamboo_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_blossom_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_bark_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_ranch_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_barrel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:spruce_whispering_trapdoor"
+    }
+  ],
+  "overwrite": true
+}

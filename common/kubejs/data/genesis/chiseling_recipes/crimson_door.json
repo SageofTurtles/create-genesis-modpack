@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:crimson_door"
+    },
+    {
+      "item": "mcwdoors:crimson_japanese_door"
+    },
+    {
+      "item": "mcwdoors:crimson_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:crimson_barn_door"
+    },
+    {
+      "item": "mcwdoors:crimson_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:crimson_modern_door"
+    },
+    {
+      "item": "mcwdoors:crimson_cottage_door"
+    },
+    {
+      "item": "mcwdoors:crimson_classic_door"
+    },
+    {
+      "item": "mcwdoors:crimson_beach_door"
+    },
+    {
+      "item": "mcwdoors:crimson_paper_door"
+    },
+    {
+      "item": "mcwdoors:crimson_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:crimson_tropical_door"
+    },
+    {
+      "item": "mcwdoors:crimson_glass_door"
+    },
+    {
+      "item": "mcwdoors:crimson_stable_door"
+    },
+    {
+      "item": "mcwdoors:crimson_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:crimson_western_door"
+    },
+    {
+      "item": "mcwdoors:crimson_mystic_door"
+    },
+    {
+      "item": "mcwdoors:crimson_swamp_door"
+    },
+    {
+      "item": "mcwdoors:crimson_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:crimson_stem_glass_door"
+    },
+    {
+      "item": "mcwdoors:crimson_waffle_door"
+    },
+    {
+      "item": "mcwdoors:crimson_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

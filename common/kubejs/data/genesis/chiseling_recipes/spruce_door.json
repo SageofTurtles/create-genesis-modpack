@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:spruce_door"
+    },
+    {
+      "item": "mcwdoors:spruce_japanese_door"
+    },
+    {
+      "item": "mcwdoors:spruce_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:spruce_barn_door"
+    },
+    {
+      "item": "mcwdoors:spruce_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:spruce_modern_door"
+    },
+    {
+      "item": "mcwdoors:spruce_classic_door"
+    },
+    {
+      "item": "mcwdoors:spruce_beach_door"
+    },
+    {
+      "item": "mcwdoors:spruce_paper_door"
+    },
+    {
+      "item": "mcwdoors:spruce_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:spruce_tropical_door"
+    },
+    {
+      "item": "mcwdoors:spruce_glass_door"
+    },
+    {
+      "item": "mcwdoors:spruce_stable_door"
+    },
+    {
+      "item": "mcwdoors:spruce_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:spruce_western_door"
+    },
+    {
+      "item": "mcwdoors:spruce_mystic_door"
+    },
+    {
+      "item": "mcwdoors:spruce_nether_door"
+    },
+    {
+      "item": "mcwdoors:spruce_swamp_door"
+    },
+    {
+      "item": "mcwdoors:spruce_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:spruce_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:spruce_waffle_door"
+    },
+    {
+      "item": "mcwdoors:spruce_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

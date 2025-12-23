@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:oak_door"
+    },
+    {
+      "item": "mcwdoors:oak_japanese_door"
+    },
+    {
+      "item": "mcwdoors:oak_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:oak_barn_door"
+    },
+    {
+      "item": "mcwdoors:oak_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:oak_modern_door"
+    },
+    {
+      "item": "mcwdoors:oak_cottage_door"
+    },
+    {
+      "item": "mcwdoors:oak_beach_door"
+    },
+    {
+      "item": "mcwdoors:oak_paper_door"
+    },
+    {
+      "item": "mcwdoors:oak_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:oak_tropical_door"
+    },
+    {
+      "item": "mcwdoors:oak_glass_door"
+    },
+    {
+      "item": "mcwdoors:oak_stable_door"
+    },
+    {
+      "item": "mcwdoors:oak_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:oak_western_door"
+    },
+    {
+      "item": "mcwdoors:oak_mystic_door"
+    },
+    {
+      "item": "mcwdoors:oak_nether_door"
+    },
+    {
+      "item": "mcwdoors:oak_swamp_door"
+    },
+    {
+      "item": "mcwdoors:oak_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:oak_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:oak_waffle_door"
+    },
+    {
+      "item": "mcwdoors:oak_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

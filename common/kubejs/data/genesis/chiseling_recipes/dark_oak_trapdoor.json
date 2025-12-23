@@ -1,0 +1,57 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:dark_oak_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_barn_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_barred_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_beach_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_classic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_cottage_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_glass_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_mystic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_paper_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_tropical_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_swamp_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_bamboo_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_blossom_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_bark_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_ranch_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_barrel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:dark_oak_whispering_trapdoor"
+    }
+  ],
+  "overwrite": true
+}

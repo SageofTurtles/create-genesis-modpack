@@ -1,0 +1,57 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:warped_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_barn_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_barred_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_beach_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_classic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_cottage_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_four_panel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_glass_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_paper_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_tropical_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_swamp_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_bamboo_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_blossom_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_bark_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_ranch_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_barrel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:warped_whispering_trapdoor"
+    }
+  ],
+  "overwrite": true
+}

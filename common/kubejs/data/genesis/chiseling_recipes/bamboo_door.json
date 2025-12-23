@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:bamboo_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_japanese_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_barn_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_modern_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_cottage_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_classic_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_beach_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_paper_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_tropical_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_glass_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_stable_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_western_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_mystic_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_nether_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_swamp_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_waffle_door"
+    },
+    {
+      "item": "mcwdoors:bamboo_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

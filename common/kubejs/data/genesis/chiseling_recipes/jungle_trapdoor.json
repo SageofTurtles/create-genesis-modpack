@@ -1,0 +1,57 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:jungle_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_barn_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_barred_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_classic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_cottage_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_four_panel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_glass_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_mystic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_paper_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_tropical_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_swamp_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_bamboo_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_blossom_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_bark_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_ranch_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_barrel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:jungle_whispering_trapdoor"
+    }
+  ],
+  "overwrite": true
+}

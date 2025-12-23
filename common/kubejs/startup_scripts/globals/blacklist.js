@@ -58,7 +58,9 @@ global['REMOVED_REGEX_ITEMS'] = [
   /^structure_gel:.*/,
   /create_connected:fan_(withering|seething|sanding|ending|freezing|enriched)_catalyst.*/,
   /createdeco:.*_shipping_container$/,
+  /mcwdoors:print_.*/,
   /mcwlights:.*wall_lamp$/,
   /mcwlights:.*wall_lantern$/,
+  /mcwtrpdoors:print_.*/,
   /supplementaries:candle_holder.*/
 ]

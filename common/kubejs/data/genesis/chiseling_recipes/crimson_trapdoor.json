@@ -1,0 +1,57 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:crimson_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_barn_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_beach_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_classic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_cottage_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_four_panel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_glass_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_mystic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_paper_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_tropical_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_swamp_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_bamboo_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_blossom_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_bark_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_ranch_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_barrel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:crimson_whispering_trapdoor"
+    }
+  ],
+  "overwrite": true
+}

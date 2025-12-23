@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:birch_door"
+    },
+    {
+      "item": "mcwdoors:birch_japanese_door"
+    },
+    {
+      "item": "mcwdoors:birch_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:birch_barn_door"
+    },
+    {
+      "item": "mcwdoors:birch_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:birch_modern_door"
+    },
+    {
+      "item": "mcwdoors:birch_cottage_door"
+    },
+    {
+      "item": "mcwdoors:birch_classic_door"
+    },
+    {
+      "item": "mcwdoors:birch_beach_door"
+    },
+    {
+      "item": "mcwdoors:birch_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:birch_tropical_door"
+    },
+    {
+      "item": "mcwdoors:birch_glass_door"
+    },
+    {
+      "item": "mcwdoors:birch_stable_door"
+    },
+    {
+      "item": "mcwdoors:birch_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:birch_western_door"
+    },
+    {
+      "item": "mcwdoors:birch_mystic_door"
+    },
+    {
+      "item": "mcwdoors:birch_nether_door"
+    },
+    {
+      "item": "mcwdoors:birch_swamp_door"
+    },
+    {
+      "item": "mcwdoors:birch_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:birch_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:birch_waffle_door"
+    },
+    {
+      "item": "mcwdoors:birch_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

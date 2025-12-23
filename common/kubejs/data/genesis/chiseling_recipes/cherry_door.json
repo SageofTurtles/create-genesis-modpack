@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:cherry_door"
+    },
+    {
+      "item": "mcwdoors:cherry_japanese_door"
+    },
+    {
+      "item": "mcwdoors:cherry_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:cherry_barn_door"
+    },
+    {
+      "item": "mcwdoors:cherry_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:cherry_modern_door"
+    },
+    {
+      "item": "mcwdoors:cherry_cottage_door"
+    },
+    {
+      "item": "mcwdoors:cherry_classic_door"
+    },
+    {
+      "item": "mcwdoors:cherry_beach_door"
+    },
+    {
+      "item": "mcwdoors:cherry_paper_door"
+    },
+    {
+      "item": "mcwdoors:cherry_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:cherry_tropical_door"
+    },
+    {
+      "item": "mcwdoors:cherry_glass_door"
+    },
+    {
+      "item": "mcwdoors:cherry_stable_door"
+    },
+    {
+      "item": "mcwdoors:cherry_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:cherry_western_door"
+    },
+    {
+      "item": "mcwdoors:cherry_mystic_door"
+    },
+    {
+      "item": "mcwdoors:cherry_nether_door"
+    },
+    {
+      "item": "mcwdoors:cherry_swamp_door"
+    },
+    {
+      "item": "mcwdoors:cherry_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:cherry_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:cherry_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

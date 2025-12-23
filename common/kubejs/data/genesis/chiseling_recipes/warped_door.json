@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:warped_door"
+    },
+    {
+      "item": "mcwdoors:warped_japanese_door"
+    },
+    {
+      "item": "mcwdoors:warped_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:warped_barn_door"
+    },
+    {
+      "item": "mcwdoors:warped_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:warped_modern_door"
+    },
+    {
+      "item": "mcwdoors:warped_cottage_door"
+    },
+    {
+      "item": "mcwdoors:warped_classic_door"
+    },
+    {
+      "item": "mcwdoors:warped_beach_door"
+    },
+    {
+      "item": "mcwdoors:warped_paper_door"
+    },
+    {
+      "item": "mcwdoors:warped_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:warped_tropical_door"
+    },
+    {
+      "item": "mcwdoors:warped_glass_door"
+    },
+    {
+      "item": "mcwdoors:warped_stable_door"
+    },
+    {
+      "item": "mcwdoors:warped_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:warped_western_door"
+    },
+    {
+      "item": "mcwdoors:warped_nether_door"
+    },
+    {
+      "item": "mcwdoors:warped_swamp_door"
+    },
+    {
+      "item": "mcwdoors:warped_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:warped_stem_glass_door"
+    },
+    {
+      "item": "mcwdoors:warped_waffle_door"
+    },
+    {
+      "item": "mcwdoors:warped_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

@@ -1,0 +1,27 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:iron_door"
+    },
+    {
+      "item": "mcwdoors:metal_door"
+    },
+    {
+      "item": "mcwdoors:metal_warning_door"
+    },
+    {
+      "item": "mcwdoors:metal_hospital_door"
+    },
+    {
+      "item": "mcwdoors:metal_reinforced_door"
+    },
+    {
+      "item": "mcwdoors:metal_windowed_door"
+    },
+    {
+      "item": "mcwdoors:jail_door"
+    }
+  ],
+  "overwrite": true
+}

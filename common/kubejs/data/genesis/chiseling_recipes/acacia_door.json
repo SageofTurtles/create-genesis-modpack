@@ -1,0 +1,72 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:acacia_door"
+    },
+    {
+      "item": "mcwdoors:acacia_japanese_door"
+    },
+    {
+      "item": "mcwdoors:acacia_japanese2_door"
+    },
+    {
+      "item": "mcwdoors:acacia_barn_door"
+    },
+    {
+      "item": "mcwdoors:acacia_barn_glass_door"
+    },
+    {
+      "item": "mcwdoors:acacia_modern_door"
+    },
+    {
+      "item": "mcwdoors:acacia_cottage_door"
+    },
+    {
+      "item": "mcwdoors:acacia_classic_door"
+    },
+    {
+      "item": "mcwdoors:acacia_beach_door"
+    },
+    {
+      "item": "mcwdoors:acacia_paper_door"
+    },
+    {
+      "item": "mcwdoors:acacia_four_panel_door"
+    },
+    {
+      "item": "mcwdoors:acacia_glass_door"
+    },
+    {
+      "item": "mcwdoors:acacia_stable_door"
+    },
+    {
+      "item": "mcwdoors:acacia_stable_head_door"
+    },
+    {
+      "item": "mcwdoors:acacia_western_door"
+    },
+    {
+      "item": "mcwdoors:acacia_mystic_door"
+    },
+    {
+      "item": "mcwdoors:acacia_nether_door"
+    },
+    {
+      "item": "mcwdoors:acacia_swamp_door"
+    },
+    {
+      "item": "mcwdoors:acacia_bamboo_door"
+    },
+    {
+      "item": "mcwdoors:acacia_bark_glass_door"
+    },
+    {
+      "item": "mcwdoors:acacia_waffle_door"
+    },
+    {
+      "item": "mcwdoors:acacia_whispering_door"
+    }
+  ],
+  "overwrite": true
+}

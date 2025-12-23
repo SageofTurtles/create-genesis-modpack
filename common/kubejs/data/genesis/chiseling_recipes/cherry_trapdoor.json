@@ -1,0 +1,57 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "minecraft:cherry_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_barn_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_barred_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_beach_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_classic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_cottage_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_four_panel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_glass_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_mystic_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_paper_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_tropical_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_swamp_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_bamboo_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_bark_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_ranch_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_barrel_trapdoor"
+    },
+    {
+      "item": "mcwtrpdoors:cherry_whispering_trapdoor"
+    }
+  ],
+  "overwrite": true
+}
