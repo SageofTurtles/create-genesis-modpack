@@ -21,6 +21,9 @@
     },
     {
       "item": "mcwdoors:jail_door"
+    },
+    {
+      "item": "mcwdoors:store_door"
     }
   ],
   "overwrite": true

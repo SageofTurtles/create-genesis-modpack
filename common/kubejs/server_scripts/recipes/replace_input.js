@@ -35,6 +35,7 @@ ServerEvents.recipes(event => {
   id('create:mechanical_crafting/wand_of_symmetry', '#forge:glass', '#luminous_blocks:luminous_glass_blocks')
   id('create:mechanical_crafting/wand_of_symmetry', 'minecraft:ender_pearl', 'minecraft:echo_shard')
   id('farmersdelight:canvas', 'farmersdelight:straw', '#supplementaries:straw')
+  id('mcwdoors:iron_portcullis', 'minecraft:iron_bars', 'decorative_blocks:bar_panel')
   id('mcwfences:iron_cheval_de_frise', 'minecraft:iron_nugget', 'createaddition:iron_rod')
   id('minecraft:lodestone', 'minecraft:netherite_ingot', 'minecraft:iron_ingot')
   id('smallships:bamboo_galley', 'smallships:bamboo_cog', 'smallships:bamboo_galley')
@@ -50,8 +51,6 @@ ServerEvents.recipes(event => {
   id(/mcwbridges:rope_.*_bridge$/, 'minecraft:string', 'farmersdelight:rope')
   id(/mcwfences:.*_grass_topped_wall/, 'minecraft:dirt', 'minecraft:grass_block')
   id(/mcwfences:.*_wired_fence/, 'minecraft:iron_bars', 'createaddition:barbed_wire')
-  id(/mcwlights:.*_lantern/, 'minecraft:iron_ingot', '#genesis:cheap_metal_ingots')
-  id(/mcwlights:.*_lantern/, 'minecraft:iron_nugget', '#genesis:cheap_metal_nuggets')
   id(/mcwlights:.*garden_light/, 'minecraft:iron_ingot', '#genesis:cheap_metal_ingots')
   id(/mcwlights:.*garden_light/, 'minecraft:iron_nugget', '#genesis:cheap_metal_nuggets')
 
@@ -59,6 +58,7 @@ ServerEvents.recipes(event => {
   input('mcwlights:white_paper_lamp', 'mcwlights:white_paper_lamp', '#genesis:paper_lamps')
   input('mcwroofs:gutter_base', 'mcwroofs:gutter_base', '#genesis:gutters')
   input('mcwroofs:gutter_middle', 'mcwroofs:gutter_middle', '#genesis:downspouts')
+  input('mcwdoors:garage_white_door', 'mcwdoors:garage_white_door', '#genesis:garage_doors')
 
   // Add recipe modifications by input
   mod('interiors', 'minecraft:dried_kelp', 'create:belt_connector')

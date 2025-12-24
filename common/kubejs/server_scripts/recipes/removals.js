@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
   output(/decorative_blocks:.*_support$/)
   output(/luminousblocks:.*_glass$/)
   output(/mcwbridges:(iron|bamboo|dry_bamboo)_bridge_pier$/)
-  output(/mcwdoors:(oak|spruce|birch|jungle|acacia|dark_oak|crimson|warped|mangrove|cherry|bamboo|metal|jail).*_door$/)
+  output(/mcwdoors:(oak|spruce|birch|jungle|acacia|dark_oak|crimson|warped|mangrove|cherry|bamboo|metal|jail|store).*_door$/)
   output(/mcwlights:.*_candle_holder$/)
   output(/mcwlights:.*_ceiling_fan_light$/)
   output(/mcwlights:.*_ceiling_light$/)
@@ -163,6 +163,7 @@ ServerEvents.recipes(event => {
   custom({ output: /.*_door$/, not: { mod: 'mcwdoors' } })
   custom({ type: 'create:compacting', output: 'create:experience_block' })
   custom({ type: 'create:mixing', output: 'create:andesite_alloy' })
+  custom({ type: 'minecraft:crafting_shaped', output: /mcwlights:.*lantern$/ })
   custom({ type: 'minecraft:stonecutting', output: /mcwfences:.*railing.*/ })
 
   global.COPPER_OXIDIZATION.forEach(entry => {

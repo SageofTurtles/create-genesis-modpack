@@ -242,6 +242,7 @@ ServerEvents.recipes(event => {
   eight_one('copycat_wooden_button', '#minecraft:wooden_buttons', 'copycats:copycat_block', 'copycats:copycat_wooden_button', 8)
   eight_one('crying_obsidian', 'minecraft:obsidian', 'minecraft:ghast_tear', 'minecraft:crying_obsidian', 8)
   eight_one('safe', 'create_ironworks:steel_ingot', '#minecraft:shulker_boxes', 'supplementaries:safe', 1)
+  eight_one('white_garage_door', '#genesis:garage_doors', 'minecraft:white_dye', 'mcwdoors:garage_white_door', 8)
   four_one('brass_propeller', 'create:brass_sheet', 'create:propeller', 'immersive_aircraft:enhanced_propeller', 1)
   four_one('cannon_ball', 'minecraft:iron_ingot', 'minecraft:gunpowder', 'smallships:cannon_ball', 1)
   four_one('copycat_cogwheel', 'create:cogwheel', 'copycats:copycat_block', 'copycats:copycat_cogwheel', 4)
