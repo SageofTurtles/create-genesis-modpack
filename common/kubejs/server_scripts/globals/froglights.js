@@ -1,3 +1,5 @@
+// priority: 200
+
 global['FROGLIGHTS'] = [
   {
     name: 'ochre_froglight',

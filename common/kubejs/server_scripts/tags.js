@@ -1,4 +1,4 @@
-// priority: 150
+// priority: 250
 
 // FLUID TAGS
 ServerEvents.tags('fluid', event => {
@@ -125,6 +125,8 @@ ServerEvents.tags('item', event => {
   global.COLORS.forEach(entry => {
     add('genesis:luminous_glass_blocks', `luminousblocks:luminous_${entry}_stained_glass`)
     add('genesis:luminous_glass_panes', `luminousblocks:luminous_${entry}_stained_glass_pane`)
+    add('genesis:mosaic_glass_blocks', `mcwwindows:${entry}_mosaic_glass`)
+    add('genesis:mosaic_glass_panes', `mcwwindows:${entry}_mosaic_glass_pane`)
     add('genesis:paper_lamps', `mcwlights:${entry}_paper_lamp`)
   })
 })

@@ -1,3 +1,5 @@
+// priority: 200
+
 global['COLORS'] = [
   'white',
   'light_gray',

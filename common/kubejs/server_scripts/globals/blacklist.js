@@ -1,4 +1,4 @@
-// priority: 200
+// priority: 300
 
 global['REMOVED_ITEMS'] = [
   'bellsandwhistles:corrugated_metro_casing',
@@ -18,7 +18,9 @@ global['REMOVED_ITEMS'] = [
   'create_connected:control_chip',
   'create_connected:incomplete_control_chip',
   'create_enchantment_industry:experience_rotor',
+  'create_ironworks:bronze_sheet',
   'create_ironworks:charcoal_dust',
+  'create_ironworks:tin_sheet',
   'create:crushed_raw_tin',
   'create:refined_radiance',
   'create:shadow_steel',

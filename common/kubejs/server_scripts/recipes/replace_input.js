@@ -53,6 +53,7 @@ ServerEvents.recipes(event => {
   id(/mcwfences:.*_wired_fence/, 'minecraft:iron_bars', 'createaddition:barbed_wire')
   id(/mcwlights:.*garden_light/, 'minecraft:iron_ingot', '#genesis:cheap_metal_ingots')
   id(/mcwlights:.*garden_light/, 'minecraft:iron_nugget', '#genesis:cheap_metal_nuggets')
+  id(/mcwwindows:.*_mosaic_glass$/, /minecraft:.*_stained_glass/, '#genesis:mosaic_glass_blocks')
 
   // Add recipe modifications by input
   input('mcwlights:white_paper_lamp', 'mcwlights:white_paper_lamp', '#genesis:paper_lamps')

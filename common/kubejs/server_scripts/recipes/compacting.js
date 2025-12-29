@@ -48,12 +48,12 @@ ServerEvents.recipes(event => {
 
   // Add bulk recipes
   global.BASE_METALS.forEach(entry => {
-    const { name, block, ingot, nugget } = entry
+    const { name, block, ingot, nugget, sheet } = entry
     cool(`${name}_ingot_from_molten`, Fluid.of(`createmetalwork:molten_${name}`, 90), ingot, 1)
   })
 
   global.ALLOYS.forEach(entry => {
-    const { name, block, ingot, nugget, heat, base1, base2, amount } = entry
+    const { name, block, ingot, nugget, sheet, heat, base1, base2, amount } = entry
     cool(`${name}_ingot_from_molten`, Fluid.of(`createmetalwork:molten_${name}`, 90), ingot, 1)
   })
 

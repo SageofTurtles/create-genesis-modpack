@@ -80,6 +80,11 @@ ServerEvents.recipes(event => {
     add(`${output}_from_zinc_ingot`, 'create:zinc_ingot', `${modid}:${output}`, count)
   })
 
+  global.COLORS.forEach(entry => {
+    add(`${entry}_mosaic_glass_block`, `minecraft:${entry}_stained_glass`, `mcwwindows:${entry}_mosaic_glass`, 1)
+    add(`${entry}_mosaic_glass_pane`, `minecraft:${entry}_stained_glass_pane`, `mcwwindows:${entry}_mosaic_glass_pane`, 1)
+  })
+
   global.COLORS_PFX.forEach(entry => {
     add(`${entry}book_bundle_pile_from_block`, `packedup:${entry}book_bundle`, `packedup:${entry}book_pile`, 4)
     add(`${entry}book_bundle_pile_from_slab`, `packedup:${entry}book_bundle_slab`, `packedup:${entry}book_pile`, 2)

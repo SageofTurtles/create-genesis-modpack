@@ -1,3 +1,5 @@
+// priority: 200
+
 global['WILD_CROPS'] = [
   {
     tame: 'farmersdelight:cabbage',

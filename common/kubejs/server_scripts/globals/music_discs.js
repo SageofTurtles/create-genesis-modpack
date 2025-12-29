@@ -1,3 +1,5 @@
+// priority: 200
+
 global['MUSIC_DISCS'] = [
   {
     modid: 'minecraft',

@@ -1,3 +1,5 @@
+// priority: 200
+
 global['POTTERY_SHERDS'] = [
   'angler',
   'archer',

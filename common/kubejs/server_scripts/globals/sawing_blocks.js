@@ -1,3 +1,5 @@
+// priority: 200
+
 global['SAWING_BLOCKS'] = [
   {
     name: 'oak',

@@ -64,26 +64,35 @@ ServerEvents.recipes(event => {
 
   // Add bulk recipes
   global.BASE_METALS.forEach(entry => {
-    const { name, block, ingot, nugget } = entry
+    const { name, block, ingot, nugget, sheet } = entry
+    fluidHeat(`${name}_molten_from_block`, block, `createmetalwork:molten_${name}`, 810)
+    fluidHeat(`${name}_molten_from_ingot`, ingot, `createmetalwork:molten_${name}`, 90)
     if (nugget != null) {
       fluidHeat(`${name}_molten_from_nugget`, nugget, `createmetalwork:molten_${name}`, 10)
     }
-    fluidHeat(`${name}_molten_from_block`, block, `createmetalwork:molten_${name}`, 810)
-    fluidHeat(`${name}_molten_from_ingot`, ingot, `createmetalwork:molten_${name}`, 90)
+    if (sheet != null) {
+      fluidHeat(`${name}_molten_from_sheet`, sheet, `createmetalwork:molten_${name}`, 90)
+    }
   })
 
   global.ALLOYS.forEach(entry => {
-    const { name, block, ingot, nugget, heat, base1, base2, amount } = entry
+    const { name, block, ingot, nugget, sheet, heat, base1, base2, amount } = entry
     if (heat == 'low') {
       fluidHeat(`${name}_molten_from_block`, block, `createmetalwork:molten_${name}`, 810)
       fluidHeat(`${name}_molten_from_ingot`, ingot, `createmetalwork:molten_${name}`, 90)
       fluidHeat(`${name}_molten_from_nugget`, nugget, `createmetalwork:molten_${name}`, 10)
       fluidHeat(`alloying_molten_${name}`, [base1, base2], `createmetalwork:molten_${name}`, amount)
+      if (sheet != null) {
+        fluidHeat(`${name}_molten_from_sheet`, sheet, `createmetalwork:molten_${name}`, 90)
+      }
     } else if (heat == 'high') {
       fluidSuperheat(`${name}_molten_from_block`, block, `createmetalwork:molten_${name}`, 810)
       fluidSuperheat(`${name}_molten_from_ingot`, ingot, `createmetalwork:molten_${name}`, 90)
       fluidSuperheat(`${name}_molten_from_nugget`, nugget, `createmetalwork:molten_${name}`, 10)
       fluidSuperheat(`alloying_molten_${name}`, [base1, base2], `createmetalwork:molten_${name}`, amount)
+      if (sheet != null) {
+        fluidSuperheat(`${name}_molten_from_sheet`, sheet, `createmetalwork:molten_${name}`, 90)
+      }
     }
   })
 

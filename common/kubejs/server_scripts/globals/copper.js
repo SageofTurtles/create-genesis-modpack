@@ -1,3 +1,5 @@
+// priority: 200
+
 global['COPPER_OXIDIZATION'] = [
   {
     modid: 'minecraft',

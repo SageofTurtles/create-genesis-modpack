@@ -1,3 +1,5 @@
+// priority: 200
+
 global['OVERWORLD_ORES'] = [
   {
     name: 'coal_ore',

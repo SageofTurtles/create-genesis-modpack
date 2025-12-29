@@ -1,3 +1,5 @@
+// priority: 200
+
 global['STONECUTTING_BLOCKS'] = [
   {
     name: 'cobblestone',

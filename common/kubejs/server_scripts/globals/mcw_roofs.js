@@ -1,3 +1,5 @@
+// priority: 200
+
 global['MCW_ROOFS'] = [
   {
     input: 'minecraft:bamboo_mosaic',

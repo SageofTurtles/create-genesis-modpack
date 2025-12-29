@@ -1,3 +1,5 @@
+// priority: 200
+
 global['CHAINS'] = [
   {
     name: 'chain',

@@ -335,6 +335,7 @@ ServerEvents.recipes(event => {
 
   global.COLORS.forEach(entry => {
     custom(`${entry}_ceiling_light`, [' A ', 'BCB', ' B '], { A: '#minecraft:wooden_fences', B: `minecraft:${entry}_wool`, C: 'minecraft:redstone_lamp' }, `mcwlights:${entry}_ceiling_light`, 3)
+    eight_one(`${entry}_mosaic_glass_pane`, '#genesis:mosaic_glass_panes', `minecraft:${entry}_dye`, `mcwwindows:${entry}_mosaic_glass_pane`, 8)
     eight_one(`luminous_${entry}_stained_glass_pane`, '#genesis:luminous_glass_panes', `minecraft:${entry}_dye`, `luminousblocks:luminous_${entry}_stained_glass_pane`, 8)
     eight_one(`luminous_${entry}_stained_glass`, '#genesis:luminous_glass_blocks', `minecraft:${entry}_dye`, `luminousblocks:luminous_${entry}_stained_glass`, 8)
   })

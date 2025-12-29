@@ -1,3 +1,5 @@
+// priority: 200
+
 global['BANNER_PATTERNS'] = [
   {
     modid: 'minecraft',

@@ -1,3 +1,5 @@
+// priority: 200
+
 global['WOOD_TYPES'] = [
   {
     type: 'basic',
