@@ -1,6 +1,103 @@
 ItemEvents.tooltip(event => {
+  // Limited obtainability items
+  event.addAdvanced('minecraft:echo_shard', (item, advanced, text) => {
+    text.add(1, [
+      Text.red('Only obtainable by killing a Warden')
+    ])
+  })
 
-  // Add Cog stats
+  event.addAdvanced('minecraft:netherite_upgrade_smithing_template', (item, advanced, text) => {
+    text.add(2, [
+      Text.red('Only obtainable by trading with a master Toolsmith villager')
+    ])
+  })
+
+  event.addAdvanced('minecraft:dragon_egg', (item, advanced, text) => {
+    text.add(1, [
+      Text.red('Only obtainable by killing the Ender Dragon')
+    ])
+  })
+
+
+  // Arrow+ arrow effects
+  event.addAdvanced('arrowplus:arrow_plus', (item, advanced, text) => {
+    switch (item.nbt.arrow_data) {
+
+      case 'arrowplus:bone':
+        text.add(2, [
+          Text.aqua('Poisons'),
+          Text.darkAqua(' the target for '),
+          Text.aqua('5 seconds'),
+          Text.darkAqua('.')
+        ])
+        break;
+
+      case 'arrowplus:charcoal':
+        text.add(2, [
+          Text.gold('Briefly sets the target on fire.')
+        ])
+        break;
+
+      case 'arrowplus:copper':
+        text.add(2, [
+          Text.aqua('Stuns'),
+          Text.darkAqua(' the target for '),
+          Text.aqua('1 second'),
+          Text.darkAqua('.')
+        ])
+        break;
+
+      case 'arrowplus:diamond':
+        text.add(2, [
+          Text.aqua('Slows'),
+          Text.darkAqua(' the target for '),
+          Text.aqua('3 seconds'),
+          Text.darkAqua('.')
+        ])
+        break;
+
+      case 'arrowplus:gold':
+        text.add(2, [
+          Text.darkAqua('Gives the target '),
+          Text.aqua('weakness'),
+          Text.darkAqua(' for '),
+          Text.aqua('5 seconds'),
+          Text.darkAqua('.')
+        ])
+        break;
+
+      case 'arrowplus:netherite':
+        text.add(2, [
+          Text.darkAqua('Causes the target to '),
+          Text.aqua('bleed'),
+          Text.darkAqua(' for '),
+          Text.aqua('10 seconds'),
+          Text.darkAqua('.')
+        ])
+        break;
+
+      case 'arrowplus:obsidian':
+        text.add(2, [
+          Text.aqua('Blinds'),
+          Text.darkAqua(' the target for '),
+          Text.aqua('3 seconds'),
+          Text.darkAqua('.')
+        ])
+        break;
+
+      case 'arrowplus:prismarine':
+        text.add(2, [
+          Text.darkAqua('Gives the target '),
+          Text.aqua('mining fatigue'),
+          Text.darkAqua(' for '),
+          Text.aqua('10 seconds'),
+          Text.darkAqua('.')
+        ])
+        break;
+    }
+  })
+
+  // Small Ship stats
   Ingredient.of('#smallships:cogs').itemIds.forEach(cog => {
     event.addAdvanced(cog, (item, advanced, text) => {
       if (!event.shift) {
@@ -33,7 +130,6 @@ ItemEvents.tooltip(event => {
     })
   })
 
-  // Add Brigg stats
   Ingredient.of('#smallships:briggs').itemIds.forEach(brigg => {
     event.addAdvanced(brigg, (item, advanced, text) => {
       if (!event.shift) {
@@ -66,7 +162,6 @@ ItemEvents.tooltip(event => {
     })
   })
 
-  // Add Galley stats
   Ingredient.of('#smallships:galleys').itemIds.forEach(galley => {
     event.addAdvanced(galley, (item, advanced, text) => {
       if (!event.shift) {
@@ -99,7 +194,6 @@ ItemEvents.tooltip(event => {
     })
   })
 
-  // Add Drakkar stats
   Ingredient.of('#smallships:drakkars').itemIds.forEach(drakkar => {
     event.addAdvanced(drakkar, (item, advanced, text) => {
       if (!event.shift) {
