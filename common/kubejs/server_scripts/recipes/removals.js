@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
   id('apotheosis:book')
   id('create_aquatic_ambitions:channeling/sponge')
   id('create_aquatic_ambitions:compacting/calcite')
+  id('create_aquatic_ambitions:crushing/prismarine_bricks_to_lapis_and_copper')
   id('create_aquatic_ambitions:milling/limestone')
   id('create_aquatic_ambitions:mixing/prismarine_alloy')
   id('create_central_kitchen:sequenced_assembly/hamburger')
@@ -84,6 +85,7 @@ ServerEvents.recipes(event => {
   id(/create:.*_slab_recycling$/)
   id(/create:crafting\/materials\/.*_coral_block$/)
   id(/create:mixing\/(charcoal|coal)_deepslate$/)
+  id(/create:splashing\/(gravel|red_sand)$/)
   id(/createdeco:.*_hull$/)
   id(/minecraft:.*cut_copper.*_stonecutting$/)
   id(/petrolsparts:crafting\/double_cardan_shaft_(2|3|4)$/)
@@ -164,6 +166,7 @@ ServerEvents.recipes(event => {
   custom({ type: 'create:compacting', output: 'create:experience_block' })
   custom({ type: 'create:mixing', output: 'create:andesite_alloy' })
   custom({ type: 'minecraft:crafting_shaped', output: /mcwlights:.*lantern$/ })
+  custom({ type: 'minecraft:stonecutting', output: /.*copper_grate$/ })
   custom({ type: 'minecraft:stonecutting', output: /mcwfences:.*railing.*/ })
 
   global.COPPER_OXIDIZATION.forEach(entry => {
