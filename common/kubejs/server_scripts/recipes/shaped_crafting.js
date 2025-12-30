@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
   A_B_B('key', 'create_ironworks:bronze_ingot', 'create_ironworks:bronze_nugget', 'supplementaries:key', 1)
   A_B_B('lightning_rod', 'minecraft:copper_ingot', 'createaddition:copper_rod', 'minecraft:lightning_rod', 1)
   A_B_C('basic_engine', 'create:steam_engine', 'create:fluid_tank', 'create:blaze_burner', 'immersive_aircraft:boiler', 1)
-  A_B_C('rotary_cannon', 'kubejs:gatling_gun_base', 'createaddition:copper_rod', 'create:copper_sheet', 'immersive_aircraft:rotary_cannon', 1)
+  A_B_C('rotary_cannon', 'create:potato_cannon', 'create:large_cogwheel', 'create:copper_sheet', 'immersive_aircraft:rotary_cannon', 1)
   A_B_C('smart_compass', 'create:electron_tube', 'minecraft:compass', 'create:brass_sheet', 'naturescompass:naturescompass', 1)
   A_B('electronic_gyroscope', 'createrailwaysnavigator:advanced_display_half_panel', 'immersive_aircraft:gyroscope', 'immersive_aircraft:gyroscope_hud', 1)
   A_BCB_D('kinetic_battery', 'create:electron_tube', 'create:shaft', 'createaddition:modular_accumulator', 'create:stockpile_switch', 'create_connected:kinetic_battery', 2)
