@@ -1,0 +1,40 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/badges/admin.png",
+      "ascent": 7,
+      "chars": ["\uf880"]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/badges/host.png",
+      "ascent": 7,
+      "chars": ["\uf881"]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/badges/mod.png",
+      "ascent": 7,
+      "chars": ["\uf882"]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/badges/helper.png",
+      "ascent": 7,
+      "chars": ["\uf883"]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/badges/donor.png",
+      "ascent": 7,
+      "chars": ["\uf884"]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/badges/vet.png",
+      "ascent": 7,
+      "chars": ["\uf885"]
+    }
+  ]
+}
