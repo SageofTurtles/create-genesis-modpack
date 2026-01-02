@@ -14,13 +14,6 @@ ServerEvents.recipes(event => {
       newInput
     )
   }
-  const mod = (filter, originalInput, newInput) => {
-    event.replaceInput(
-      { mod: filter },
-      originalInput,
-      newInput
-    )
-  }
   const custom = (filters, originalInput, newInput) => {
     event.replaceInput(
       filters,
@@ -60,9 +53,6 @@ ServerEvents.recipes(event => {
   input('mcwroofs:gutter_base', 'mcwroofs:gutter_base', '#genesis:gutters')
   input('mcwroofs:gutter_middle', 'mcwroofs:gutter_middle', '#genesis:downspouts')
   input('mcwdoors:garage_white_door', 'mcwdoors:garage_white_door', '#genesis:garage_doors')
-
-  // Add recipe modifications by input
-  mod('interiors', 'minecraft:dried_kelp', 'create:belt_connector')
 
   // Add recipe modifications by custom filters
   custom(
