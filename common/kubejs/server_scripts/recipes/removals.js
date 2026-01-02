@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
   id(/create_ironworks:compat\/.*/)
   id(/create_ironworks:materials\/plates\/.*sheet2$/)
   id(/create_ironworks:materials\/tin\/crushed.*/)
-  id(/create:.*_slab_recycling$/)
+  id(/(create|bits_n_bobs):.*_slab_recycling$/)
   id(/create:crafting\/materials\/.*_coral_block$/)
   id(/create:mixing\/(charcoal|coal)_deepslate$/)
   id(/create:splashing\/(gravel|red_sand)$/)

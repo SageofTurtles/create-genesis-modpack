@@ -961,6 +961,104 @@ global['STONECUTTING_BLOCKS'] = [
     wall: 'supplementaries:lapis_bricks_wall'
   },
   {
+    name: 'granite_checkered_tile',
+    block: 'bits_n_bobs:granite_tiles',
+    stairs: 'bits_n_bobs:granite_tile_stairs',
+    slab: 'bits_n_bobs:granite_tile_slab',
+    wall: 'bits_n_bobs:granite_tile_wall'
+  },
+  {
+    name: 'diorite_checkered_tile',
+    block: 'bits_n_bobs:diorite_tiles',
+    stairs: 'bits_n_bobs:diorite_tile_stairs',
+    slab: 'bits_n_bobs:diorite_tile_slab',
+    wall: 'bits_n_bobs:diorite_tile_wall'
+  },
+  {
+    name: 'andesite_checkered_tile',
+    block: 'bits_n_bobs:andesite_tiles',
+    stairs: 'bits_n_bobs:andesite_tile_stairs',
+    slab: 'bits_n_bobs:andesite_tile_slab',
+    wall: 'bits_n_bobs:andesite_tile_wall'
+  },
+  {
+    name: 'calcite_checkered_tile',
+    block: 'bits_n_bobs:calcite_tiles',
+    stairs: 'bits_n_bobs:calcite_tile_stairs',
+    slab: 'bits_n_bobs:calcite_tile_slab',
+    wall: 'bits_n_bobs:calcite_tile_wall'
+  },
+  {
+    name: 'dripstone_checkered_tile',
+    block: 'bits_n_bobs:dripstone_tiles',
+    stairs: 'bits_n_bobs:dripstone_tile_stairs',
+    slab: 'bits_n_bobs:dripstone_tile_slab',
+    wall: 'bits_n_bobs:dripstone_tile_wall'
+  },
+  {
+    name: 'deepslate_checkered_tile',
+    block: 'bits_n_bobs:deepslate_tiles',
+    stairs: 'bits_n_bobs:deepslate_tile_stairs',
+    slab: 'bits_n_bobs:deepslate_tile_slab',
+    wall: 'bits_n_bobs:deepslate_tile_wall'
+  },
+  {
+    name: 'tuff_checkered_tile',
+    block: 'bits_n_bobs:tuff_tiles',
+    stairs: 'bits_n_bobs:tuff_tile_stairs',
+    slab: 'bits_n_bobs:tuff_tile_slab',
+    wall: 'bits_n_bobs:tuff_tile_wall'
+  },
+  {
+    name: 'asurine_checkered_tile',
+    block: 'bits_n_bobs:asurine_tiles',
+    stairs: 'bits_n_bobs:asurine_tile_stairs',
+    slab: 'bits_n_bobs:asurine_tile_slab',
+    wall: 'bits_n_bobs:asurine_tile_wall'
+  },
+  {
+    name: 'crimsite_checkered_tile',
+    block: 'bits_n_bobs:crimsite_tiles',
+    stairs: 'bits_n_bobs:crimsite_tile_stairs',
+    slab: 'bits_n_bobs:crimsite_tile_slab',
+    wall: 'bits_n_bobs:crimsite_tile_wall'
+  },
+  {
+    name: 'limestone_checkered_tile',
+    block: 'bits_n_bobs:limestone_tiles',
+    stairs: 'bits_n_bobs:limestone_tile_stairs',
+    slab: 'bits_n_bobs:limestone_tile_slab',
+    wall: 'bits_n_bobs:limestone_tile_wall'
+  },
+  {
+    name: 'ochrum_checkered_tile',
+    block: 'bits_n_bobs:ochrum_tiles',
+    stairs: 'bits_n_bobs:ochrum_tile_stairs',
+    slab: 'bits_n_bobs:ochrum_tile_slab',
+    wall: 'bits_n_bobs:ochrum_tile_wall'
+  },
+  {
+    name: 'scoria_checkered_tile',
+    block: 'bits_n_bobs:scoria_tiles',
+    stairs: 'bits_n_bobs:scoria_tile_stairs',
+    slab: 'bits_n_bobs:scoria_tile_slab',
+    wall: 'bits_n_bobs:scoria_tile_wall'
+  },
+  {
+    name: 'scorchia_checkered_tile',
+    block: 'bits_n_bobs:scorchia_tiles',
+    stairs: 'bits_n_bobs:scorchia_tile_stairs',
+    slab: 'bits_n_bobs:scorchia_tile_slab',
+    wall: 'bits_n_bobs:scorchia_tile_wall'
+  },
+  {
+    name: 'veridium_checkered_tile',
+    block: 'bits_n_bobs:veridium_tiles',
+    stairs: 'bits_n_bobs:veridium_tile_stairs',
+    slab: 'bits_n_bobs:veridium_tile_slab',
+    wall: 'bits_n_bobs:veridium_tile_wall'
+  },
+  {
     name: 'stone',
     block: 'minecraft:stone',
     stairs: 'minecraft:stone_stairs',
