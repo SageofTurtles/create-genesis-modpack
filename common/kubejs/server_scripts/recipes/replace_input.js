@@ -75,18 +75,18 @@ ServerEvents.recipes(event => {
     'kubejs:inert_ender_eye'
   )
   custom(
-    [
-      { type: 'minecraft:crafting_shaped' },
-      { id: /^smallships:.*/ }
-    ],
+    {
+      type: 'minecraft:crafting_shaped',
+      id: /^smallships:.*/
+    },
     'minecraft:lead',
     'comforts:rope_and_nail'
   )
   custom(
-    [
-      { type: 'minecraft:crafting_shaped' },
-      { id: /^smallships:.*/ }
-    ],
+    {
+      type: 'minecraft:crafting_shaped',
+      id: /^smallships:.*/
+    },
     'minecraft:string',
     'farmersdelight:rope'
   )

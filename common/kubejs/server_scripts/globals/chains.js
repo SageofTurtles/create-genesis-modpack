@@ -3,7 +3,7 @@
 global['CHAINS'] = [
   {
     name: 'chain',
-    inputNugget: 'genesis:cheap_metal_nuggets',
+    inputNugget: '#genesis:cheap_metal_nuggets',
     inputIngot: '#genesis:cheap_metal_ingots',
     output: 'minecraft:chain'
   },
