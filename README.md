@@ -12,7 +12,7 @@ For the **exploring adventurers**, Dungeons Enhanced, Terralith, Small Ships, Im
 
 If you're more of a builder, there’s a full toolbox of **vanilla-friendly building mods** like Rechiseled, Construction Wand, Another Furniture, and the Macaw’s series — perfect for turning your mechanical masterpieces into architectural art.
 
-You’ll also enjoy **quality-of-life mods** that make the experience smoother (AppleSkin, Sophisticated Backpacks, Curios, Elytra Trims, Vein Mining, and more!) and a **multiplayer-friendly experience** with BlueMap, JourneyMap, Open Parties and Claims, Simple Voice Chat, and PvP Flagging — all available for both collaboration and competition.
+You’ll also enjoy **quality-of-life mods** that make the experience smoother (AppleSkin, Sophisticated Backpacks, Curios, Vein Mining, and more!) and a **multiplayer-friendly experience** with BlueMap, JourneyMap, Open Parties and Claims, Simple Voice Chat, and PvP Flagging — all available for both collaboration and competition.
 
 Behind the scenes, **performance mods** like Embeddium, Radium Reforged, and Vanillin keep things running smoothly, while **aesthetic improvements**, including Colorwheel support for shaders, Particular Reforged, Dynamic Lights, and Distant Horizons, make your world look stunning.
 
