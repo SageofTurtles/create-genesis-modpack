@@ -1,0 +1,14 @@
+{
+  "sortnum": 5,
+  "name": "Just Enough Items (JEI)",
+  "category": "patchouli:user_interface",
+  "icon": "minecraft:writable_book",
+  "pages": [
+    "Just Enough Items is a recipe viewer mod, which you can use to look up {b}recipes{/} and other information for any item in the game.{pb}On the inventory screen, the JEI panel will display the list of items on the right sidebar. {c}Scroll{/c} while hovering over the panel or use the arrows to navigate through the pages of items.",
+    "At the bottom of the panel is a {b}search field{/}. Text typed in this box will filter out any items that don't match your search. {b}Spaces{/} separate search terms, but all entered terms must match to display as a result.{pb}You can enter a pipe ({b} | {/}) to search for optional terms. E.g. searching \"{b}A|B{/}\" will display all items matching {i}either{/} A or B, but searching \"{b}A B{/}\" will display only items matching {i}both{/} A and B.",
+    "Prefixing a search term with a minus sign ({b} - {/}) will {b}exclude{/} any results matching that term. E.g. searching \"{b}red{/}\" will display any items with \"red\" in their name, item ID, mod ID, or tooltip, including redstone items. But if you were to search \"{b}red -redstone{/}\", it will display any items that include the term \"red\" but {i}do not{/} include \"redstone\".",
+    "There are other characters you can prefix to your search terms to filter your results, including:{l1}{b}@{/} to search by {b}mod ID{/}{l1}{b}${/} to search by {b}tag{/}{l1}{b}%{/} to search by {b}creative mode tab{/}",
+    "Press {k:jei.showRecipe/k} when hovering over any item to see all recipes to craft that item, or press {k:jei.showUses/k} when hovering over an item to see all recipes that item can be used in. (You can also use {k:jei.showRecipe2/k} and {k:jei.showUses2/k} to do the same thing, even outside of the JEI panel!) When vin the recipe viewer, press {k:jei.recipeBack/k} to go back to the last recipe viewed.",
+    "{b}Bookmarked items{/} will display in the left sidebar for quick reference. Press {k:jei.bookmark/k} when hovering over an item to bookmark it. Press {k:jei.bookmark/k} again while hovering over an item in the left sidebar to {b}remove it{/} from your bookmarks.{pb}In the bottom corner of the left sidebar is a {b}Lookup History{/} button, which you can click to toggle a list of your {b}recently-viewed recipe items{/}."
+  ]
+}

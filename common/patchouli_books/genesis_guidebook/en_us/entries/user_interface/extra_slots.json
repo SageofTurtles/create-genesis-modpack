@@ -1,0 +1,10 @@
+{
+  "sortnum": 3,
+  "name": "Extra Equipment Slots",
+  "category": "patchouli:user_interface",
+  "icon": "minecraft:writable_book",
+  "pages": [
+    "In addition to the {b}4 armor slots{/} in the {l:user_interface/inventory}inventory{/l}, players have several more slots to equip items.{pb}Click on the icon in the top-right corner of the avatar window to expand the {b}Curios slots{/} to the left side of your inventory. An item that can be equipped in a Curios slot will say in its {l:user_interface/tooltips}tooltip{/l} which slot it can fill.",
+    "Press {k:cos.key.opencosarmorinventory/k} or click on the icon in the bottom-right of the avatar window in your {l:user_interface/inventory}inventory{/l} to toggle your {b}Cosmetic Armor{/} slots."
+  ]
+}

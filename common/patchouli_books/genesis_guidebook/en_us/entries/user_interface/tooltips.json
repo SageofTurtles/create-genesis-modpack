@@ -1,0 +1,9 @@
+{
+  "sortnum": 4,
+  "name": "Tooltips & Pondering",
+  "category": "patchouli:user_interface",
+  "icon": "minecraft:writable_book",
+  "pages": [
+    "This chapter hasn't been written yet!"
+  ]
+}

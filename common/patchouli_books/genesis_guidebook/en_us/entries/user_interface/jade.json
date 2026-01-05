@@ -1,0 +1,9 @@
+{
+  "sortnum": 6,
+  "name": "Jade",
+  "category": "patchouli:user_interface",
+  "icon": "minecraft:writable_book",
+  "pages": [
+    "This chapter hasn't been written yet!"
+  ]
+}

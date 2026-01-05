@@ -1,0 +1,12 @@
+{
+  "sortnum": 1,
+  "name": "Using This Book",
+  "category": "patchouli:user_interface",
+  "icon": "minecraft:writable_book",
+  "pages": [
+    "The {b}Book of the Mechanist{/} has some helpful features that make it easy to navigate!{pb}When you open the book, you'll be brought to the {b}home page{/}, where you'll find two buttons in the bottom-left corner. The first can change the {b}size{/} of the UI, and the second will open a list of {b}recently-viewed entries{/}.",
+    "On the right side, the guidebook {b}categories{/} will be displayed. Click on a category to open it, and then click on the {b}chapter{/} you would like to read. One of the categories is the {b}Entry Index{/}. From the index, begin typing anything to {b}search{/} the titles of all entries for a specific chapter or category.",
+    "At the bottom of the book will be arrows to {b}turn the page{/} forward or backward, if there are more pages in the chapter to view (you can also {c}scroll{/c} through pages). {b}Right-click{/} or click the back arrow at the bottom of the book to return to the {b}previous entry{/}. You can {b}shift-click{/} the back arrow to return to the home page.",
+    "Along the right edge of the book are your {b}bookmark tabs{/}, which you can click to go directly to that entry. Click the {b}[+]{/} tab to add a bookmark for the current page, or {b}shift-click{/} a bookmark to remove it.{pb}$(#9E33F5)$(l)$(n)Purple text{/} is a link, which can take you directly to the relevant entry when clicked. $(#CF1546)$(l)Red text{/} will show more information when you hover your mouse over it. Lastly, $(#BF7500)$(l)[gold text]{/} shows controls."
+  ]
+}
