@@ -4,6 +4,13 @@
   "category": "patchouli:user_interface",
   "icon": "minecraft:writable_book",
   "pages": [
-    "This chapter hasn't been written yet!"
+    "{b}Tooltips{/} are text boxes that display when you hold your mouse over an object, such as items in your inventory. Many of the items in this modpack have tooltips explaining how to use them. Some of these item tooltips are hidden, but can be revealed by holding {c}Shift{/c} or {c}Ctrl{/c}. (There will be a note letting you know if this is the case for an item).",
+    "When looking at a block or entity, you'll see a {l:user_interface/tooltips}tooltip{/l} display at the top of your screen with helpful information about it. This may include the name of the block or entity you're looking at, along with its inventory contents, health and armor, status effects, and more.",
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:goggles",
+      "text": "You can also use {k:jade.show_details/k} to see more details for some blocks or entities, or equip {b}engineer's goggles{/} for even more information."
+    },
+    "Another note you might see on a tooltip is \"{b}Hold {/}{k:ponder.ponder/k}{b} to Ponder{/}\". If you hold down {k:ponder.ponder/k}, it will open the {b}Ponder scene{/} related to that item.{pb}Ponder scenes are visual guides demonstrating how the item can be used in more detail. You can also open the full {b}Ponder Index{/} from the pause menu ({c}Esc{/c}) by clicking on the {b}engineer's goggles{/}. This index contains all ponder scenes in an organized library for easy reference."
   ]
 }
