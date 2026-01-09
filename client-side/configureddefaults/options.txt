@@ -200,7 +200,7 @@ key_key.immersive_aircraft.dismount:key.keyboard.r
 key_key.immersive_aircraft.boost:key.keyboard.z
 key_keybind.sophisticatedcore.item_highlight:key.keyboard.unknown
 key_keybind.sophisticatedcore.sort:key.mouse.middle
-key_keybind.sophisticatedcore.deposit_item:key.keyboard.apostrophe
+key_keybind.sophisticatedcore.deposit_item:key.keyboard.period
 key_keybind.sophisticatedcore.restock_item:key.keyboard.backslash
 key_placebo.toggleTrails:key.keyboard.unknown
 key_placebo.toggleWings:key.keyboard.unknown
