@@ -2,7 +2,7 @@
   "sortnum": 5,
   "name": "Just Enough Items (JEI)",
   "category": "patchouli:user_interface",
-  "icon": "minecraft:writable_book",
+  "icon": "minecraft:ender_eye",
   "pages": [
     "Just Enough Items is a recipe viewer mod, which you can use to look up {b}recipes{/} and other information for any item in the game.{pb}On the inventory screen, the JEI panel will display the list of items on the right sidebar. {c}Scroll{/c} while hovering over the panel or use the arrows to navigate through the pages of items.",
     "At the bottom of the panel is a {b}search field{/}. Text typed in this box will filter out any items that don't match your search. {b}Spaces{/} separate search terms, but all entered terms must match to display as a result.{pb}You can enter a pipe ({b} | {/}) to search for optional terms. E.g. searching \"{b}A|B{/}\" will display all items matching {i}either{/} A or B, but searching \"{b}A B{/}\" will display only items matching {i}both{/} A and B.",

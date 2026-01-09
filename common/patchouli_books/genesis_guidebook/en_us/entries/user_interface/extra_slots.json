@@ -2,7 +2,7 @@
   "sortnum": 3,
   "name": "Extra Equipment Slots",
   "category": "patchouli:user_interface",
-  "icon": "minecraft:writable_book",
+  "icon": "minecraft:golden_helmet",
   "pages": [
     "In addition to the {b}4 armor slots{/} in the {l:user_interface/inventory}inventory{/l}, players have several more slots to equip items.{pb}Click on the icon in the top-right corner of the avatar window to expand the {b}Curios slots{/} to the left side of your inventory. An item that can be equipped in a Curios slot will say in its {l:user_interface/tooltips}tooltip{/l} which slot it can fill.",
     "Press {k:cos.key.opencosarmorinventory/k} or click on the icon in the bottom-right corner of the avatar window in your inventory to toggle your {b}cosmetic armor{/} slots. These slots can have the same types of items equipped as your regular armor slots, but are for {b}purely aesthetic{/} purposes, and can determine what other players see you wearing. Enchantments and armor points won't apply for any gear equipped in these slots.",

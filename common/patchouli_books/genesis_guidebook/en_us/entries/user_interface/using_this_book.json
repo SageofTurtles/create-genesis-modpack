@@ -2,7 +2,7 @@
   "sortnum": 1,
   "name": "Using This Book",
   "category": "patchouli:user_interface",
-  "icon": "minecraft:writable_book",
+  "icon": "patchouli:guide_book{\"patchouli:book\":\"patchouli:genesis_guidebook\"}",
   "pages": [
     "The {b}Book of the Mechanist{/} has some helpful features that make it easy to navigate!{pb}When you open the book, you'll be brought to the {b}home page{/}, where you'll find two buttons in the bottom-left corner. The first can change the {b}size{/} of the UI, and the second will open a list of {b}recently-viewed entries{/}.",
     "On the right side, the guidebook {b}categories{/} will be displayed. Click on a category to open it, and then click on the {b}chapter{/} you would like to read. One of the categories is the {b}Entry Index{/}. From the index, begin typing anything to {b}search{/} the titles of all entries for a specific chapter or category.",

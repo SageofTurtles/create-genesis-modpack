@@ -1,0 +1,11 @@
+{
+  "sortnum": 8,
+  "name": "Player Parties",
+  "category": "patchouli:user_interface",
+  "icon": "minecraft:friend_pottery_sherd",
+  "pages": [
+    "Players can form {b}parties{/}, granting each other special access to their group's {l:user_interface/claims}claimed chunks{/l}. Party actions are mostly done by {b}commands{/}. The base command is {b}/openpac-parties{/} followed by one of these sub-commands:",
+    "{b}about{/} - Displays party members and allies.{pb}{b}ally{/} - Add or remove allies, who can have partial access to your party's claims.{pb}{b}chat{/} - Sends a message within your own party. (You can also use the command {b}/opm{/} to do this more quickly.){pb}{b}destroy{/} - Disbands the party entirely.{pb}{b}leave{/} - Removes yourself from the party.",
+    "{b}member{/} - Invites or removes party members, with full access to the party's claims.{pb}{b}transfer{/} - Gives ownership of your party to another player."
+  ]
+}
