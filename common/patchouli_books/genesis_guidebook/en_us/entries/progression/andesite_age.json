@@ -1,0 +1,11 @@
+{
+  "sortnum": 1,
+  "name": "The Andesite Age",
+  "category": "patchouli:progression",
+  "icon": "create:andesite_alloy",
+  "pages": [
+    "The {b}Andesite Age{/} is the early-game stage of Create: Genesis. This is where players will begin, with fewer resources and more primitive technology.{pb}Everything up until the player has access to {b}the Nether{/} would be considered part of the Andesite Age.",
+    "In this stage, gameplay will focus mostly on establishing a starter base, mining for resources, some essential farms, and a food source.{pb}In the Andesite Age, players will usually want to acquire larger quantities of {i}wood{/}, {i}iron{/}, {i}andesite{/}, and {i}copper{/} for crafting their components. {i}Kelp{/} will also become increasingly important as you advance toward the {l:progression/brass_age}Brass Age{/l}.",
+    "In order to advance to the Brass Age, you will need to go to the Nether by building a {b}Nether portal{/} from {i}obsidian{/}. Brass Age technology will require new crafting components, so make sure you bring an {i}empty blaze burner{/} with you when you go through the portal!"
+  ]
+}

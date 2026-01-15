@@ -1,0 +1,11 @@
+{
+  "sortnum": 3,
+  "name": "Connecting Components",
+  "category": "patchouli:create",
+  "icon": "create:millstone",
+  "pages": [
+    "There are two types of {b}components{/} that use rotational power: {!}generators{/} and {!}consumers{/}.{pb}Generators such as {i}water wheels{/}, {i}windmill bearings{/}, and {i}steam engines{/} will add to the available SU of the network they connect to. Consumers such as a {i}press{/}, {i}saw{/}, {i}mixer{/}, etc. will subtract from the network's available SU.",
+    "Some components must run at a certain {b}speed{/} to work (like the {i}mixer{/}, which requires at least 32 RPM). Most don't have a minimum requirement, but will work faster at higher speeds.{pb}Rotation speed{/} can be changed in several ways, like {!}gear ratios{/} using {i}cogwheels{/} and {i}large cogwheels{/}. Other common options include {i}rotational speed controllers{/} or {i}adjustable chain gearshifts{/}. Some components, like {i}gearshifts{/} or {i}clutches{/}, can stop or reverse the rotation direction.",
+    "Every component can connect by {i}shaft{/}, {i}cogwheel{/}, or both. This is usually easy to identify by looking for a shaft connector on the component itself, or a built-in cogwheel, like those on the {i}millstone{/} or {i}mechanical arm{/}.{pb}Components can also transfer power to each other using these connections, such as a row of adjacent {i}millstones{/}, or a {i}mechanical press{/} between two {i}shafts{/}."
+  ]
+}

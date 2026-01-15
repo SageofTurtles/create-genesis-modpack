@@ -1,0 +1,12 @@
+{
+  "sortnum": 4,
+  "name": "Electricity",
+  "category": "patchouli:create",
+  "icon": "createaddition:electric_motor",
+  "pages": [
+    "Once you've reached the {l:progression/brass_age}Brass Age{/l}, you will gain access to {b}electrical components{/}. These convert {l:create/rotational_power}rotational power{/l} into electricity, or convert electricity into rotational power.{pb}Electricity is measured in {t:forge energy per tick}FE/t{/t}.",
+    "To start, you'll need a source of rotational power. You can place an {i}alternator{/} on any shaft output to convert rotation to electricity, losing 5% of its SU in the process. The amount of energy produced by the {i}alternator{/} depends on the input rotation speed.{pb}To convert electricity back into rotational power, you can use an {i}electric motor{/}.",
+    "Electrical components can be networked together using {i}connectors{/} and {i}wire spools{/}.{pb}{i}Large connectors{/} can support more connected wires, but you'll need {i}gold spools{/} or {i}electrum spools{/} between two {i}large connectors{/}. These are {!}high-current wires{/}, which can reach further and transmit more power per line. {i}Small connectors{/} and {i}copper spools{/} have a more limited capacity.",
+    "Connectors have three modes: {b}push{/} power into the attached block, {b}pull{/} power from the attached block, or {b}none{/} (which will simply ignore the attached block). This will usually default to the correct mode, but can be changed with a {i}wrench{/} when needed.{pb}The {i}redstone relay{/} has two nodes (one pushing and one pulling). When given a {i}redstone{/} signal, the nodes connect and allow the current to pass through."
+  ]
+}

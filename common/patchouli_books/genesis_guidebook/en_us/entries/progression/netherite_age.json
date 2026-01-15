@@ -1,0 +1,10 @@
+{
+  "sortnum": 3,
+  "name": "The Netherite Age",
+  "category": "patchouli:progression",
+  "icon": "minecraft:netherite_ingot",
+  "pages": [
+    "The {b}Netherite Age{/} is the end-game stage of Create: Genesis. From the time a player reaches {b}the End{/} dimension, they are in this stage.{pb}Accessing the End unlocks new content for players to obtain more powerful items, such as {i}netherite gear{/}, craftable {i}spawners{/}, {i}elytra{/}, and {i}pale gold amulets{/}.",
+    "In order to reach the End, you will need {i}eyes of ender{/} to locate a stronghold and open its End portal.{pb}An {i}eye of ender{/} can only be obtained by crafting an {i}inert eye of ender{/} using valuable resources from the Overworld and Nether, and then using {k:use/k} on {i}reinforced deepslate{/} with the eye in your hand to activate it. Place an {i}eye of ender{/} on each {i}end portal frame{/} to open the portal."
+  ]
+}
