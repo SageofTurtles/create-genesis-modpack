@@ -1,0 +1,6 @@
+{
+  "sortnum": 4,
+  "name": "Factory Logistics",
+  "description": "This section contains guides on {b}storing items{/}, {b}tracking inventories{/}, and {b}automating production{/}.{pb}By learning these features, you can make your factories entirely self-sustaining!",
+  "icon": "create:stock_link"
+}

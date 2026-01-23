@@ -1,0 +1,21 @@
+{
+  "sortnum": 3,
+  "name": "Transporting Packages",
+  "category": "patchouli:logistics",
+  "icon": "create:package_frogport",
+  "pages": [
+    "In addition to other methods of transporting items, {i}package frogports{/} and {i}postboxes{/} can be used to {b}send{/} and {b}receive{/} {l:logistics/packages/}packages{/l} directly.",
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:package_frogport",
+      "title": "Frogports",
+      "text": "A {i}frogport{/} must be linked to a {i}chain conveyor{/}. It will {b}send{/} packages from the container it sits on to the {i}chain conveyor{/}, or {b}take{/} packages from the {i}chain conveyor{/} and deposit them into the container, if the {i}frogport's{/} {!}name{/} matches the {l:logistics/packages/}package address{/l}."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:white_postbox",
+      "title": "Postboxes",
+      "text": "Similarly, a {i}postbox{/} must be linked to a {i}train station{/}. Trains can {b}deliver{/} packages to a {i}postbox{/} with a matching {l:logistics/packages/}package address{/l} when it stops at the {i}station{/}, or {b}collect{/} packages from the {i}postbox{/} linked to that {i}station{/}."
+    }
+  ]
+}

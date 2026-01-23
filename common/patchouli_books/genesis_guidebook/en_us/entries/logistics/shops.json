@@ -1,0 +1,11 @@
+{
+  "sortnum": 4,
+  "name": "Shops",
+  "category": "patchouli:logistics",
+  "icon": "numismatics:cog",
+  "pages": [
+    "{i}Table cloths{/} and {i}table covers{/} can be used to create {b}shops{/}. (It is recommended to {!}lock{/} your {l:logistics/stock_networks/}stock network{/l} for your shops!){pb}You can {b}link{/} your {i}table cloth{/} to a stock network using {k:use/k} on a {b}stock keeper{/} to configure the items sold and the {l:logistics/packages/}package address{/l} orders should be sent to.",
+    "Place a {!}linked{/} {i}table cloth{/} where you want your shop to be, then use the GUI on its front to set the {b}price{/} per order.{pb}When a player uses {k:use/k} on the {i}table cloth{/}, they will receive a {b}shopping list{/} with their order. More orders from the same stock keeper can be added by using {k:use/k} on a {i}table cloth{/} again.",
+    "To {b}complete a purchase{/}, the player must use {k:use/k} with the shopping list on the stock keeper. The payment will be taken from their inventory, and the ordered items will be requested from the {l:logistics/stock_networks/}stock network{/l}.{pb}The shop's owner can use {k:use/k} on the {i}stock ticker{/} to {b}collect their profits{/}."
+  ]
+}

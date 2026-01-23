@@ -1,0 +1,12 @@
+{
+  "sortnum": 5,
+  "name": "Factory Gauges",
+  "category": "patchouli:logistics",
+  "icon": "create:factory_gauge",
+  "pages": [
+    "{i}Factory gauges{/} can {b}track{/} and {b}maintain{/} a certain quantity of the specified item. {i}Gauges{/} must be linked to a {l:logistics/stock_networks/}stock network{/l} in order to work.{pb}When attached to a {i}packager{/}, the {i}factory gauge{/} will display the amount of the matching item in that inventory. If the quantity drops below the set amount, it will {b}automatically request{/}",
+    "more from the network to be sent to the configured {l:logistics/packages/}package address{/l}.{pb}This can be used to automate {b}factory production{/} as well! Place two or more {i}factory gauges{/} on a wall, click \"{b}Add new connection{/}\" on the {!}output item{/} {i}gauge{/}, then use {k:use/k} on the {!}input item{/} {i}gauge(s){/} to connect them. This tells the network that the input item(s) can be requested to produce the output item.",
+    "For most recipe types, you'll only need to {!}connect{/} the items and set the {!}package address{/} where the items can be processed into the requested output.{pb}But for {b}crafting recipes{/}, you can configure the {i}factory gauge{/} to \"{b}Use mechanical crafting{/}\" and arrange the input items in the 3x3 grid to match the crafting recipe. At the receiving {l:logistics/packages/}package address{/l}, set up a",
+    "3x3 {!}joined{/} {i}mechanical crafter{/} grid to craft the items.{pb}You may need a {i}repackager{/} to combine the requested inputs, since the package put into the {i}mechanical crafters{/} must have the {!}exact number{/} of items for the crafting recipe."
+  ]
+}

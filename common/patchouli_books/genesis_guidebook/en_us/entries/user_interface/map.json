@@ -1,12 +1,12 @@
 {
-  "sortnum": 6,
+  "sortnum": 7,
   "name": "The Map",
   "category": "patchouli:user_interface",
   "icon": "supplementaries:globe",
   "pages": [
     "In the top-right corner of the screen is your {b}minimap{/}, which will display the current Minecraft {!}time{/}, your {!}coordinates{/}, and the {!}biome{/} you're in. The minimap radar will also show the locations of {!}nearby mobs and players{/}. If you want to hide the minimap, press {k:journeymap.minimap_toggle_alt/k}.",
     "The {b}world map{/} can be opened for more features by pressing {k:journeymap.map_toggle_alt/k}.{pb}On the world map, left side of the screen has controls for {b}zooming in or out{/} (which can also be done by {c}scrolling{/c} or using {k:journeymap.zoom_in/k} and {k:journeymap.zoom_out/k}) or {b}centering{/} the map on your location. Use the search button to quickly move the map to {b}specific coordinates{/}. {c}Left-click{/c} and drag the mouse to move around the map.",
-    "You can toggle different {b}map features and icons{/} on or off using the buttons at the top of the screen. The {b}[OP&C]{/} button on the right side of the screen can also be used to hide or display {l:user_interface/claims}chunk claims{/l} on the map.{pb}{c}Right-click{/c} on the world map to {b}teleport{/} to that location (if you have the required permissions), manage {b}waypoints{/}, or send a {b}chat message{/} with those coordinates.",
+    "You can toggle different {b}map features and icons{/} on or off using the buttons at the top of the screen. The {b}[OP&C]{/} button on the right side of the screen can also be used to hide or display {l:user_interface/claims/}chunk claims{/l} on the map.{pb}{c}Right-click{/c} on the world map to {b}teleport{/} to that location (if you have the required permissions), manage {b}waypoints{/}, or send a {b}chat message{/} with those coordinates.",
     "{b}Waypoints{/} are markers players can add to their maps to make it easier to find a location. Waypoints will display both on the map and as an overlay icon in the world (including your distance to that waypoint location).{pb}Use {k:journeymap.create_waypoint/k} to {b}add{/} a waypoint at your current location (or {c}double-click{/c} on the world map to add a one there), or {k:journeymap.fullscreen_waypoints/k} to open the {b}waypoint manager{/}. Pressing {k:journeymap.toggle_waypoints/k} will toggle the {b}visibility{/} of all waypoints."
   ]
 }

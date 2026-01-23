@@ -1,0 +1,30 @@
+{
+  "sortnum": 6,
+  "name": "Filters",
+  "category": "patchouli:logistics",
+  "icon": "create:filter",
+  "pages": [
+    "Many components have a small square GUI for a {b}filter slot{/} on it, which is highlighted when looking at it. You can place an item or {i}filter{/} in these slots to specify what the component will accept as an {!}input{/} or {!}output{/}.{pb}Some components, such as a {i}smart chute{/}, also allow a {!}quantity{/} to be set to limit its output.",
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:filter",
+      "text": "{i}List filters{/} can be set with {b}specific items{/} by dragging the item from your {l:user_interface/inventory/}inventory{/l} or {l:user_interface/jei/}JEI{/l} to the {i}filter's{/} GUI. These can be used to combine multiple {i}list{/} or {i}attribute filters{/} too. The {i}filter{/} can be set as an {b}allow-list{/} or a {b}deny-list{/}."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:attribute_filter",
+      "text": "{i}Attribute filters{/} check for {b}item properties{/} instead of particular items. These properties can include what {!}mod{/} an item is from, any {!}tags{/} it has, or what {!}type{/} of item it is. Drag an item into the {i}filter{/} to choose which properties to check for (you can select more than one)."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:package_filter",
+      "text": "{i}Package filters{/} can be set with a {l:logistics/packages/}package address{/l}, only allowing packages through which match that address.{pb}{i}Package filters{/} can also make use of {!}simplified RegEx{/}, to match multiple possible addresses (see next page)."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "RegEx Symbols",
+      "text": "{b}*{/} - A wildcard that matches any character(s). Ex: \"{b}a*{/}\" will match any address starting with \"{b}a{/}\", and \"{b}*b{/}\" will match any ending with \"{b}b{/}\".{pb}{b}?{/} - Any single character. Ex: \"{b}p?t{/}\" would match \"{b}pat{/}\", \"{b}pot{/}\", or \"{b}pit{/}\", but not \"{b}pout{/}\".{pb}Building on this, \"{b}???*{/}\" would match any address with at least 3 characters."
+    },
+    "{b}[ ]{/} - Any one of the enclosed characters. Ex: \"{b}p[ao]t{/}\" would match \"{b}pat{/}\" or \"{b}pot{/}\".{pb}{b}[! ]{/} - Any character {!}except{/} those enclosed. Ex: \"{b}p[!ao]t{/}\" would match \"{b}pit{/}\", but not \"{b}pat{/}\" or \"{b}pot{/}\".{pb}{b}{ }{/} - Any one of the enclosed words, separated by commas. Ex: \"{b}{pat,pot}-123{/}\" would match either \"{b}pat-123{/}\" or \"{b}po-123t{/}\"."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "sortnum": 6,
+  "name": "The Freecam",
+  "category": "patchouli:user_interface",
+  "icon": "minecraft:player_head",
+  "pages": [
+    "Players can toggle the {b}freecam{/} by pressing {k:freecam.toggle/k}. This allows the player to stop controlling their character and enter the perspective of a third-person flying camera.{pb}This tool allows players to move like in {b}spectator mode{/}, viewing builds from different perspectives. Players in freecam can't interact with their surroundings."
+  ]
+}

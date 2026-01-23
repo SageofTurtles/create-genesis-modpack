@@ -4,7 +4,7 @@
   "category": "patchouli:user_interface",
   "icon": "minecraft:chest",
   "pages": [
-    "The player {b}inventory{/} can be accessed from in-game by pressing {k:inventory/k}. From the inventory screen, you can see your items, equipped gear, and the {l:user_interface/jei}JEI{/l} panel.{pb}The four item slots to the left of your avatar window are for {b}wearable gear{/}, such as armor, hats, or diving equipment.",
+    "The player {b}inventory{/} can be accessed from in-game by pressing {k:inventory/k}. From the inventory screen, you can see your items, equipped gear, and the {l:user_interface/jei/}JEI{/l} panel.{pb}The four item slots to the left of your avatar window are for {b}wearable gear{/}, such as armor, hats, or diving equipment.",
     "To the right of the avatar window is a {b}2x2 crafting grid{/} for making simple items on the fly.{pb}Beneath the crafting grid is a single slot for your {b}off-hand{/}, which is often used for holding useful tools you want quick access to, such as a {i}shield{/}, {i}torches{/}, {i}totems of undying{/}, or food.{pb}Next to the off-hand item slot is the {b}recipe book button{/}, which toggles the JEI panel's visibility.",
     "The {b}main inventory{/} is a 9x4 grid, where each slot can hold up to 1 stack of items. The bottom row is your {b}hotbar{/}, which has your main-hand items that you can select by {c}scrolling{/c} or using your {b}number row{/} keys."
   ]

@@ -1,0 +1,12 @@
+{
+  "sortnum": 2,
+  "name": "Stock Networks",
+  "category": "patchouli:logistics",
+  "icon": "create:stock_ticker",
+  "pages": [
+    "{i}Stock links{/} placed on a {i}packager{/} can be {b}networked{/} together into a collective inventory.{pb}A {i}stock ticker{/} will allow players to access the inventory of the entire network using a mob on a {i}seat{/} or a {i}blaze burner{/} adjacent to it, which becomes the {b}stock keeper{/}.",
+    "A stock keeper's inventory list can be sorted into {b}categories{/} by applying {i}list filters{/} or {i}attribute filters{/} to the {i}stock ticker{/}.{pb}Items can be requested from the network using the stock keeper and sent to a specified {l:logistics/packages/}package address{/l}. You can also request {b}ingredients{/} to craft new items by clicking {b}[+]{/} on the desired recipe in {l:user_interface/jei/}JEI{/l}.",
+    "If a {i}clipboard{/} with a list of {b}package addresses{/} is placed on a {i}stock ticker{/}, you can auto-fill any address from that list when requesting packages from the stock keeper.{pb}Players can {b}lock{/} or {b}unlock{/} their stock network in the stock keeper's GUI. {!}Locked networks{/} will not allow other players to access the stock keeper (but they could still interact with storage containers directly).",
+    "You can change a {i}stock link's{/} network {b}priority{/} using a {i}redstone{/} signal. The stronger the signal, the lower the {i}stock link's{/} priority.{pb}Requested items will pull from the highest priority container first. A {i}stock link{/} with a {i}redstone{/} signal of 15 will be disabled, meaning its container's inventory won't show up in the network."
+  ]
+}
