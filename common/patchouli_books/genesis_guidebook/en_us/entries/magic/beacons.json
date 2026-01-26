@@ -1,0 +1,28 @@
+{
+  "sortnum": 2,
+  "name": "Beacons",
+  "category": "patchouli:magic",
+  "icon": "minecraft:beacon",
+  "pages": [
+    "A {i}beacon{/} is a block which can mark a {b}location{/} to be easily found, or grant a {l:magic/status_effects/}status effect{/l} within a certain radius.{pb}If the {i}beacon{/} is placed on a pyramid of metal or gem blocks, it will cast a {b}beam{/} into the sky (as long as there are no light-obstructing blocks above it). The {b}color{/} of the beam can be changed by placing {i}stained glass{/} above it.",
+    "The beacon pyramid cam have up to 4 layers, ranging from {b}3x3{/} to {b}9x9{/} blocks, with the {i}beacon{/} itself on top.{pb}To make use of the {b}status effect{/}, a player can use {k:use/k} on the {i}beacon{/} and deposit one of the requested materials in the GUI, then click the green checkmark to apply the selected effect. The taller the beacon's pyramid, the greater the radius of the effect. A full-sized pyramid can have a second effect applied.",
+    "To craft a {i}beacon{/}, you will need a {i}nether star{/}, which can only be obtained by spawning and killing a {b}wither{/}. (Be careful where you do this, because withers can cause great damage to the surrounding area!){pb}Spawning a wither requires 3 {i}wither skeleton skulls{/} (which may be dropped by wither skeletons when killed) and 4 blocks of {i}soul sand{/}.",
+    {
+      "type": "patchouli:multiblock",
+      "name": "Spawning the Wither",
+      "multiblock": {
+        "mapping": {
+          "W": "minecraft:wither_skeleton_skull[rotation=4]",
+          "S": "minecraft:soul_sand",
+          "0": "minecraft:soul_sand"
+        },
+        "pattern": [
+          ["WWW"],
+          ["SSS"],
+          [" 0 "]
+        ]
+      },
+      "text": "Place the {i}wither skeleton skulls{/} and {i}soul sand{/} in this arrangement to {b}spawn{/} the wither."
+    }
+  ]
+}

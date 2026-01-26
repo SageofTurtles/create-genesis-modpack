@@ -1,0 +1,38 @@
+{
+  "sortnum": 3,
+  "name": "Conduits",
+  "category": "patchouli:magic",
+  "icon": "create_aquatic_ambitions:mechanical_conduit",
+  "pages": [
+    "A {i}conduit{/} is a magical artifact that can be crafted from a {i}heart of the sea{/}, a rare item primarily found as loot in {b}buried treasure{/}. Many {b}shipwrecks{/} will have a {i}map{/} to find such treasure.{pb}When {b}awakened{/}, a {i}conduit{/} will grant nearby players the {!}night vision{/} and {!}waterbreathing{/} {l:magic/status_effects/}effects{/l} while in {!}water{/} or {!}rain{/}.",
+    "To awaken a {i}conduit{/}, you must surround it in {b}1{/}, {b}2{/}, or {b}3 rings{/} of either {i}prismarine{/}, {i}prismarine bricks{/}, {i}dark prismarine{/}, or {i}sea lanterns{/} (see next page for an example). The inside of the rings must be filled with {b}water{/} to awaken it.{pb}The more rings there are around the {i}conduit{/}, the greater its effects' {b}range{/} will be. A full-power conduit will also {b}harm{/} nearby mobs in {!}water{/} or {!}rain{/}.",
+    {
+      "type": "patchouli:multiblock",
+      "name": "Awakening a Conduit",
+      "multiblock": {
+        "mapping": {
+          "B": "minecraft:prismarine_bricks",
+          "D": "minecraft:dark_prismarine",
+          "P": "minecraft:prismarine",
+          "0": "minecraft:sea_lantern",
+          "S": "minecraft:sea_lantern",
+          "C": "minecraft:conduit"
+        },
+        "pattern": [
+          ["  D  ", "  D  ", "PPSPP", "  D  ", "  D  "],
+          ["  D  ", "     ", "P   P", "     ", "  D  "],
+          ["BBSBB", "B   B", "S C S", "B   B", "BBSBB"],
+          ["  D  ", "     ", "P   P", "     ", "  D  "],
+          ["  D  ", "  D  ", "PP0PP", "  D  ", "  D  "]
+        ],
+        "symmetrical": "true"
+      },
+      "text": "Remember that the inside of the structure must be filled with {b}water{/}!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create_aquatic_ambitions:mechanical_conduit",
+      "text": "The {i}conduit cage{/} is an advanced version of the {i}conduit{/}, not requiring the {b}rings{/} around it. Instead, the {i}conduit cage{/} is awakened by pumping water into it.{pb}It can also be used for {b}channeling{/} recipes with an {i}encased fan{/}, or to give {i}potion{/} {l:magic/status_effects/}effects{/l} to mobs or players nearby."
+    }
+  ]
+}

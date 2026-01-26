@@ -1,0 +1,17 @@
+{
+  "sortnum": 1,
+  "name": "Status Effects",
+  "category": "patchouli:magic",
+  "icon": "minecraft:potion{\"potion\":\"regeneration\"}",
+  "pages": [
+    "{b}Status effects{/} are temporary effects that can be given to players or other mobs by various means.{pb}Such means include {b}consumables{/} ({i}potions{/} or certain food items) and {i}tipped arrows{/}. Some {b}mobs{/} can also inflict status effects, such as {!}elder guardians{/}, {!}witches{/}, {!}pillager captains{/}, etc.",
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "patchouli:combat/armor_bonuses",
+        "patchouli:magic/beacons",
+        "patchouli:magic/conduits"
+      ]
+    }
+  ]
+}

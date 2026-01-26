@@ -1,0 +1,14 @@
+{
+  "sortnum": 1,
+  "name": "Armor Set Bonuses",
+  "category": "patchouli:combat",
+  "icon": "minecraft:netherite_chestplate",
+  "pages": [
+    "Many armor sets will give the player a {b}bonus effect{/} when wearing the full matching set ({i}helmet{/}, {i}chestplate{/}, {i}leggings{/}, and {i}boots{/}). These bonuses remain in effect until one or more pieces of the armor set is removed.{pb}If any of the worn pieces have the {l:magic/enchantments/}Mending enchantment{/l}, the bonus won't apply.",
+    {
+      "type": "patchouli:text",
+      "title": "Armor Set Effects",
+      "text": "{lb}{b}Leather{/}: {t:increases movement speed/}Speed I{/t}{lb}{b}Chainmail{/}: {t:increases jump height/}Jump Boost I{/t}{lb}{b}Copper{/}: {t:increases swim speed/}Dolphin's Grace{/t}{lb}{b}Iron{/}: {t:shorter cooldown between attacks/}+25% Attack Speed{/t}{lb}{b}Bronze{/}: {t:more damage per attack/}+25% Attack Damage{/t}{lb}{b}Gold{/}: {t:increases mining speed/}Haste I{/t}{lb}{b}Brass{/}: {t:increases mining speed/}Haste II{/t}{lb}{b}Rose Quartz{/}: {t:find better loot/}Luck II{/t}{lb}{b}Netherite{/}: {t:armor blocks more damage/}+20% Armor Toughness{/t}"
+    }
+  ]
+}

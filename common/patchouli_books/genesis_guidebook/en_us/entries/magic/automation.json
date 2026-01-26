@@ -1,0 +1,12 @@
+{
+  "sortnum": 5,
+  "name": "Automated Enchanting",
+  "category": "patchouli:magic",
+  "icon": "create_enchantment_industry:hyper_experience_bottle",
+  "pages": [
+    "{l:magic/enchantments/}Enchanting{/l} can be {b}automated{/}, and even {b}enhanced{/} beyond its normal limits, by use of the blaze enchanter.{pb}Give a {i}blaze burner{/} an {i}enchanting guide{/} to convert it into a {b}blaze enchanter{/}. If you pump {i}liquid experience{/} into it, the blaze enchanter will apply the enchantment from its {i}enchanting guide{/} to compatible items you give it.",
+    "In addition to automating these enchantments, blaze enchanters allow players to {b}hyper-enchant{/} items! This means applying enchantments {!}one level higher{/} than the maximum allowed.{pb}So if you give a blaze enchanter an {i}enchanted book{/} with {!}Unbreaking III{/}, and then feed it enough {i}liquid hyper experience{/}, it will apply {!}Unbreaking IV{/} to compatible items.",
+    "There are limitations to blaze enchanters:{pb}First, they can't {l:magic/enchantments/}enchant{/l} {i}books{/}, only components or equippable items.{pb}Second, they can only hyper-enchant items up to {b}one level{/} above the maximum limit.{pb}And third, hyper-enchanting doesn't work for enchantments with a {b}maximum level of 1{/} (such as Mending).",
+    "For {b}replicating{/} {i}books{/}, the {i}printer{/} is extremely useful. A {i}written book{/} can be quickly copied by filling the printer with {i}ink{/} and placing another {i}book{/} beneath it.{pb}But if you fill the {i}printer{/} with {i}liquid experience{/} and give it an {i}enchanted book{/}, it can even copy the {b}enchantment(s){/} onto the {i}book{/} placed beneath it."
+  ]
+}

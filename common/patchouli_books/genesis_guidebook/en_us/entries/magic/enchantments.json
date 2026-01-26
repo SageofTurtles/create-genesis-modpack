@@ -1,0 +1,12 @@
+{
+  "sortnum": 4,
+  "name": "Enchantments",
+  "category": "patchouli:magic",
+  "icon": "minecraft:enchanting_table",
+  "pages": [
+    "{b}Enchantments{/} are magical improvements that can be applied to {!}armor{/}, {!}weapons{/}, {!}tools{/}, and some {!}rotational components{/}.{pb}Enchantments can be applied to items in an {i}enchanting table{/} by spending {i}lapis lazuli{/} and experience. Place {i}bookshelves{/}, {i}books{/}, or {i}pedestals{/} with {i}end crystals{/} around it to increase the level of the enchantments.",
+    "Enchantments can also be found on or applied to {i}books{/}. This doesn't give the {i}enchanted book{/} any special effect, but they can be found as {b}loot{/} or used to {b}stack{/} enchantments.{pb}{i}Anvils{/} can be used to combine or rename equipment, apply enchantments from books or identical items, or repair items with the appropriate material. Each time you use an {i}anvil{/} to work on an item, the {b}experience cost{/} will increase.",
+    "If you {b}combine{/} two books with the same level enchantment on them in an {i}anvil{/}, the resulting book will have the enchantment at {!}one level higher{/} (up to the maximum allowed).{pb}If you wish to {b}remove{/} an enchantment from an item, you can use a {i}grindstone{/} or {i}disenchanter{/} to do so. Be aware that {!}curses{/} can't be removed from items.",
+    "{i}Enchanted books{/} can be obtained from trading with {b}librarian villagers{/}, who use a {i}lectern{/} as their workstation. The more valuable or powerful the enchantment, the higher the price will be to buy it."
+  ]
+}
