@@ -112,6 +112,7 @@ ServerEvents.recipes(event => {
   output('create:industrial_iron_window')
   output('create:ornate_iron_window')
   output('create:peculiar_bell')
+  output('createaddition:electrum_amulet')
   output('createrailwaysnavigator:navigator')
   output('decorative_blocks:bar_panel')
   output('decorative_blocks:rocky_dirt')

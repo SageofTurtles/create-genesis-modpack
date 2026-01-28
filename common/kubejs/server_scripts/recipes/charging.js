@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
 
   // Add individual recipes
   add('brass_rod', 'createaddition:brass_rod', 'minecraft:blaze_rod')
+  add('totem_of_undying', 'kubejs:inert_totem', 'minecraft:totem_of_undying')
 
   // Add bulk recipes
   global.COPPER_OXIDIZATION.forEach(entry => {

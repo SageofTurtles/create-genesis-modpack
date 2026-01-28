@@ -34,7 +34,8 @@ ServerEvents.recipes(event => {
         ]
       )
     ]
-  ).transitionalItem(hamburger).loops(1)
+  ).transitionalItem(hamburger)
+    .loops(1)
     .id('genesis:hamburger_assembly')
 
   // Netherite Scrap
@@ -69,6 +70,36 @@ ServerEvents.recipes(event => {
         netherite_scrap
       )
     ]
-  ).transitionalItem(netherite_scrap).loops(1)
+  ).transitionalItem(netherite_scrap)
+    .loops(1)
     .id('genesis:netherite_scrap_assembly')
+
+  // Pale Gold Amulet
+  let pale_gold_amulet = 'kubejs:incomplete_pale_gold_amulet'
+  event.recipes.create.sequenced_assembly(
+    'createaddition:electrum_amulet',
+    'minecraft:totem_of_undying',
+    [
+      event.recipes.create.filling(
+        pale_gold_amulet,
+        [
+          pale_gold_amulet,
+          Fluid.of('create_central_kitchen:dragon_breath', 500)
+        ]
+      ),
+      event.recipes.create.pressing(
+        pale_gold_amulet,
+        pale_gold_amulet
+      ),
+      event.recipes.createDeploying(
+        pale_gold_amulet,
+        [
+          pale_gold_amulet,
+          'createaddition:electrum_wire'
+        ]
+      )
+    ]
+  ).transitionalItem(pale_gold_amulet)
+    .loops(3)
+    .id('genesis:pale_gold_amulet_assembly')
 })

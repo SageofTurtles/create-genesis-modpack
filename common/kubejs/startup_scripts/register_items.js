@@ -2,9 +2,11 @@ Platform.mods.kubejs.name = 'Create: Genesis'
 
 // Register new items
 StartupEvents.registry('item', event => {
-  event.create('rough_diamond').displayName('Rough Diamond')
   event.create('empty_ink_sac').displayName('Empty Ink Sac')
+  event.create('incomplete_pale_gold_amulet').displayName('Incomplete Pale Gold Amulet')
   event.create('inert_ender_eye').displayName('Inert Eye of Ender')
+  event.create('inert_totem').displayName('Inert Totem')
+  event.create('rough_diamond').displayName('Rough Diamond')
   event.create('unfinished_netherite_scrap').displayName('Unfinished Netherite Scrap')
 })
 
