@@ -18,6 +18,11 @@ ItemEvents.tooltip(event => {
     ])
   })
 
+  event.addAdvanced('minecraft:nether_star', (item, advanced, text) => {
+    text.add(1, [
+      Text.red('Only obtainable by killing a Wither')
+    ])
+  })
 
   // Arrow+ arrow effects
   event.addAdvanced('arrowplus:arrow_plus', (item, advanced, text) => {
