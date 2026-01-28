@@ -1,6 +1,19 @@
 ServerEvents.commandRegistry(event => {
   const { commands: Commands } = event
 
+  // Function to get a Book of the Mechanist
+  function bookCommand(player) {
+    player.give(
+      Item.of('patchouli:guide_book', 1, { 'patchouli:book': 'patchouli:genesis_guidebook' })
+    )
+    player.tell(
+      Text.aqua({
+        text: 'Received 1x Book of the Mechanist!',
+      })
+    )
+    return 15
+  }
+
   // Function to open website
   function websiteCommand(player) {
     player.tell(
@@ -50,6 +63,11 @@ ServerEvents.commandRegistry(event => {
   }
 
   // Register commands
+  event.register(Commands.literal('book')
+    .requires(source => source.hasPermission(0))
+    .executes(ctx => bookCommand(ctx.source.player))
+  )
+
   event.register(Commands.literal('website')
     .requires(source => source.hasPermission(0))
     .executes(ctx => websiteCommand(ctx.source.player))
