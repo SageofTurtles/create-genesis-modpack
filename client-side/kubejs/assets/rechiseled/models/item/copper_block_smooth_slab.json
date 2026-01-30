@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "rechiseled:item/copper_block_smooth",
+    "top": "rechiseled:item/copper_block_smooth",
+    "side": "rechiseled:item/copper_block_smooth_slab"
+  }
+}

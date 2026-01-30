@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "rechiseled:item/copper_block_shafts",
+    "side": "rechiseled:item/copper_block_shafts",
+    "top": "rechiseled:item/copper_block_shafts_stairs"
+  }
+}

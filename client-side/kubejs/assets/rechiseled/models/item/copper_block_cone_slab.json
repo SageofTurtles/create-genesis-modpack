@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "rechiseled:item/copper_block_cone",
+    "top": "rechiseled:item/copper_block_cone",
+    "side": "rechiseled:item/copper_block_cone_slab"
+  }
+}
