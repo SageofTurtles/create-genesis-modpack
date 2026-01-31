@@ -1,0 +1,51 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    "minecraft:calcite",
+    {
+      "block": "create:cut_calcite",
+      "slab": "create:cut_calcite_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:cut_calcite_stairs"
+    },
+    {
+      "block": "create:cut_calcite_bricks",
+      "slab": "create:cut_calcite_brick_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:cut_calcite_brick_stairs"
+    },
+    {
+      "connecting_block": "create:layered_calcite"
+    },
+    {
+      "connecting_block": "create:calcite_pillar"
+    },
+    {
+      "block": "create:polished_cut_calcite",
+      "connecting_block": "rechiseledcreate:calcite_cut_polished_connecting",
+      "connecting_slab": "rechiseledcreate:calcite_cut_polished_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseledcreate:calcite_cut_polished_stairs_connecting",
+      "slab": "create:polished_cut_calcite_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:polished_cut_calcite_stairs"
+    },
+    {
+      "block": "create:small_calcite_bricks",
+      "connecting_block": "rechiseledcreate:calcite_cut_small_brick_connecting",
+      "connecting_slab": "rechiseledcreate:calcite_cut_small_brick_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseledcreate:calcite_cut_small_brick_stairs_connecting",
+      "slab": "create:small_calcite_brick_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:small_calcite_brick_stairs"
+    },
+    {
+      "block": "bits_n_bobs:calcite_tiles",
+      "slab": "bits_n_bobs:calcite_tile_slab",
+      "slab_worth": 0.5,
+      "stairs": "bits_n_bobs:calcite_tile_stairs"
+    }
+  ],
+  "overwrite": false
+}

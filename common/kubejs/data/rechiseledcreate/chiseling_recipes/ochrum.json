@@ -1,0 +1,51 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    "create:ochrum",
+    {
+      "block": "create:cut_ochrum",
+      "slab": "create:cut_ochrum_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:cut_ochrum_stairs"
+    },
+    {
+      "block": "create:cut_ochrum_bricks",
+      "slab": "create:cut_ochrum_brick_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:cut_ochrum_brick_stairs"
+    },
+    {
+      "connecting_block": "create:layered_ochrum"
+    },
+    {
+      "connecting_block": "create:ochrum_pillar"
+    },
+    {
+      "block": "create:polished_cut_ochrum",
+      "connecting_block": "rechiseledcreate:ochrum_cut_polished_connecting",
+      "connecting_slab": "rechiseledcreate:ochrum_cut_polished_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseledcreate:ochrum_cut_polished_stairs_connecting",
+      "slab": "create:polished_cut_ochrum_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:polished_cut_ochrum_stairs"
+    },
+    {
+      "block": "create:small_ochrum_bricks",
+      "connecting_block": "rechiseledcreate:ochrum_cut_small_brick_connecting",
+      "connecting_slab": "rechiseledcreate:ochrum_cut_small_brick_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseledcreate:ochrum_cut_small_brick_stairs_connecting",
+      "slab": "create:small_ochrum_brick_slab",
+      "slab_worth": 0.5,
+      "stairs": "create:small_ochrum_brick_stairs"
+    },
+    {
+      "block": "bits_n_bobs:ochrum_tiles",
+      "slab": "bits_n_bobs:ochrum_tile_slab",
+      "slab_worth": 0.5,
+      "stairs": "bits_n_bobs:ochrum_tile_stairs"
+    }
+  ],
+  "overwrite": false
+}

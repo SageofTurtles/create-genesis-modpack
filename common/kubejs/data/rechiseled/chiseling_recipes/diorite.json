@@ -1,0 +1,128 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "block": "minecraft:diorite",
+      "slab": "minecraft:diorite_slab",
+      "slab_worth": 0.5,
+      "stairs": "minecraft:diorite_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_brick_pattern",
+      "connecting_block": "rechiseled:diorite_brick_pattern_connecting",
+      "connecting_slab": "rechiseled:diorite_brick_pattern_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_brick_pattern_stairs_connecting",
+      "slab": "rechiseled:diorite_brick_pattern_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_brick_pattern_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_brick_paving",
+      "connecting_block": "rechiseled:diorite_brick_paving_connecting",
+      "connecting_slab": "rechiseled:diorite_brick_paving_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_brick_paving_stairs_connecting",
+      "slab": "rechiseled:diorite_brick_paving_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_brick_paving_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_bricks",
+      "connecting_block": "rechiseled:diorite_bricks_connecting",
+      "connecting_slab": "rechiseled:diorite_bricks_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_bricks_stairs_connecting",
+      "slab": "rechiseled:diorite_bricks_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_bricks_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_diagonal_bricks",
+      "connecting_block": "rechiseled:diorite_diagonal_bricks_connecting",
+      "connecting_slab": "rechiseled:diorite_diagonal_bricks_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_diagonal_bricks_stairs_connecting",
+      "slab": "rechiseled:diorite_diagonal_bricks_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_diagonal_bricks_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_dotted",
+      "connecting_block": "rechiseled:diorite_dotted_connecting",
+      "connecting_slab": "rechiseled:diorite_dotted_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_dotted_stairs_connecting",
+      "slab": "rechiseled:diorite_dotted_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_dotted_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_paving",
+      "connecting_block": "rechiseled:diorite_paving_connecting",
+      "connecting_slab": "rechiseled:diorite_paving_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_paving_stairs_connecting",
+      "slab": "rechiseled:diorite_paving_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_paving_stairs"
+    },
+    {
+      "block": "minecraft:polished_diorite",
+      "connecting_block": "rechiseled:diorite_polished_connecting",
+      "connecting_slab": "rechiseled:diorite_polished_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_polished_stairs_connecting",
+      "slab": "minecraft:polished_diorite_slab",
+      "slab_worth": 0.5,
+      "stairs": "minecraft:polished_diorite_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_rotated_bricks",
+      "connecting_block": "rechiseled:diorite_rotated_bricks_connecting",
+      "connecting_slab": "rechiseled:diorite_rotated_bricks_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_rotated_bricks_stairs_connecting",
+      "slab": "rechiseled:diorite_rotated_bricks_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_rotated_bricks_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_squares",
+      "connecting_block": "rechiseled:diorite_squares_connecting",
+      "connecting_slab": "rechiseled:diorite_squares_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_squares_stairs_connecting",
+      "slab": "rechiseled:diorite_squares_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_squares_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_tiles",
+      "connecting_block": "rechiseled:diorite_tiles_connecting",
+      "connecting_slab": "rechiseled:diorite_tiles_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_tiles_stairs_connecting",
+      "slab": "rechiseled:diorite_tiles_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_tiles_stairs"
+    },
+    {
+      "block": "rechiseled:diorite_wavy",
+      "connecting_block": "rechiseled:diorite_wavy_connecting",
+      "connecting_slab": "rechiseled:diorite_wavy_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:diorite_wavy_stairs_connecting",
+      "slab": "rechiseled:diorite_wavy_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:diorite_wavy_stairs"
+    },
+    {
+      "block": "bits_n_bobs:diorite_tiles",
+      "slab": "bits_n_bobs:diorite_tile_slab",
+      "slab_worth": 0.5,
+      "stairs": "bits_n_bobs:diorite_tile_stairs"
+    }
+  ],
+  "overwrite": false
+}

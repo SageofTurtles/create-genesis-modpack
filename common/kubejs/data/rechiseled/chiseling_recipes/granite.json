@@ -1,0 +1,128 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "block": "minecraft:granite",
+      "slab": "minecraft:granite_slab",
+      "slab_worth": 0.5,
+      "stairs": "minecraft:granite_stairs"
+    },
+    {
+      "block": "rechiseled:granite_brick_pattern",
+      "connecting_block": "rechiseled:granite_brick_pattern_connecting",
+      "connecting_slab": "rechiseled:granite_brick_pattern_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_brick_pattern_stairs_connecting",
+      "slab": "rechiseled:granite_brick_pattern_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_brick_pattern_stairs"
+    },
+    {
+      "block": "rechiseled:granite_brick_paving",
+      "connecting_block": "rechiseled:granite_brick_paving_connecting",
+      "connecting_slab": "rechiseled:granite_brick_paving_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_brick_paving_stairs_connecting",
+      "slab": "rechiseled:granite_brick_paving_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_brick_paving_stairs"
+    },
+    {
+      "block": "rechiseled:granite_bricks",
+      "connecting_block": "rechiseled:granite_bricks_connecting",
+      "connecting_slab": "rechiseled:granite_bricks_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_bricks_stairs_connecting",
+      "slab": "rechiseled:granite_bricks_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_bricks_stairs"
+    },
+    {
+      "block": "rechiseled:granite_diagonal_bricks",
+      "connecting_block": "rechiseled:granite_diagonal_bricks_connecting",
+      "connecting_slab": "rechiseled:granite_diagonal_bricks_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_diagonal_bricks_stairs_connecting",
+      "slab": "rechiseled:granite_diagonal_bricks_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_diagonal_bricks_stairs"
+    },
+    {
+      "block": "rechiseled:granite_dotted",
+      "connecting_block": "rechiseled:granite_dotted_connecting",
+      "connecting_slab": "rechiseled:granite_dotted_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_dotted_stairs_connecting",
+      "slab": "rechiseled:granite_dotted_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_dotted_stairs"
+    },
+    {
+      "block": "rechiseled:granite_paving",
+      "connecting_block": "rechiseled:granite_paving_connecting",
+      "connecting_slab": "rechiseled:granite_paving_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_paving_stairs_connecting",
+      "slab": "rechiseled:granite_paving_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_paving_stairs"
+    },
+    {
+      "block": "minecraft:polished_granite",
+      "connecting_block": "rechiseled:granite_polished_connecting",
+      "connecting_slab": "rechiseled:granite_polished_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_polished_stairs_connecting",
+      "slab": "minecraft:polished_granite_slab",
+      "slab_worth": 0.5,
+      "stairs": "minecraft:polished_granite_stairs"
+    },
+    {
+      "block": "rechiseled:granite_rotated_bricks",
+      "connecting_block": "rechiseled:granite_rotated_bricks_connecting",
+      "connecting_slab": "rechiseled:granite_rotated_bricks_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_rotated_bricks_stairs_connecting",
+      "slab": "rechiseled:granite_rotated_bricks_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_rotated_bricks_stairs"
+    },
+    {
+      "block": "rechiseled:granite_squares",
+      "connecting_block": "rechiseled:granite_squares_connecting",
+      "connecting_slab": "rechiseled:granite_squares_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_squares_stairs_connecting",
+      "slab": "rechiseled:granite_squares_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_squares_stairs"
+    },
+    {
+      "block": "rechiseled:granite_tiles",
+      "connecting_block": "rechiseled:granite_tiles_connecting",
+      "connecting_slab": "rechiseled:granite_tiles_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_tiles_stairs_connecting",
+      "slab": "rechiseled:granite_tiles_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_tiles_stairs"
+    },
+    {
+      "block": "rechiseled:granite_wavy",
+      "connecting_block": "rechiseled:granite_wavy_connecting",
+      "connecting_slab": "rechiseled:granite_wavy_slab_connecting",
+      "connecting_slab_worth": 0.5,
+      "connecting_stairs": "rechiseled:granite_wavy_stairs_connecting",
+      "slab": "rechiseled:granite_wavy_slab",
+      "slab_worth": 0.5,
+      "stairs": "rechiseled:granite_wavy_stairs"
+    },
+    {
+      "block": "bits_n_bobs:granite_tiles",
+      "slab": "bits_n_bobs:granite_tile_slab",
+      "slab_worth": 0.5,
+      "stairs": "bits_n_bobs:granite_tile_stairs"
+    }
+  ],
+  "overwrite": false
+}
