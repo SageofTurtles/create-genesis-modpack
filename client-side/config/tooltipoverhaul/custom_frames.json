@@ -1,0 +1,39 @@
+{
+  "frames": [
+    {
+      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "tags": [
+        "genesis:unobtainable"
+      ],
+      "gradientType": "custom",
+      "borderType": "static",
+      "gradientColors": ["#C551C3", "#C551C3", "#C551C3"],
+      "specialEffect": "metal_shining"
+    },
+    {
+      "texture": "tooltipoverhaul:textures/overlay/diamond_frame.png",
+      "tags": [
+        "genesis:netherite_age"
+      ],
+      "gradientType": "custom",
+      "borderType": "auto_gradient"
+    },
+    {
+      "texture": "tooltipoverhaul:textures/overlay/amber_frame.png",
+      "tags": [
+        "genesis:brass_age"
+      ],
+      "gradientType": "custom",
+      "borderType": "auto_gradient"
+    },
+    {
+      "texture": "tooltipoverhaul:textures/overlay/silver_frame.png",
+      "tags": [
+        "genesis:andesite_age"
+      ],
+      "gradientType": "custom",
+      "borderType": "gradient",
+      "gradientColors": ["#A9A9A9", "#999999", "#8F8F8F"]
+    }
+  ]
+}
