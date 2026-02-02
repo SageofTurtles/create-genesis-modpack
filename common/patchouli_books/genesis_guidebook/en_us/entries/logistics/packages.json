@@ -4,7 +4,7 @@
   "category": "patchouli:logistics",
   "icon": "create:cardboard_package_12x12",
   "pages": [
-    "{b}Packages{/} are the core of Create logistics. Each package can hold up to {b}9 stacks{/} of items.{pb}Packages can be {b}packed{/} using a {i}packager{/} or {i}repackager{/} attached to a container. They can be {b}unpacked{/} using another {i}packager{/}, {i}mechanical saw{/}, or by using {c}SHIFT + R-Click{/c}.",
+    "{b}Packages{/} are the core of Create logistics. Each package can hold up to {b}9 stacks{/} of items.{pb}Packages can be {b}packed{/} using a {i}packager{/} or {i}repackager{/} attached to a container, such as a {i}chest{/}, {i}barrel{/}, or {i}item vault{/}. They can be {b}unpacked{/} using another {i}packager{/}, {i}mechanical saw{/}, or by using {c}Shift + R-Click{/c}.",
     "Packages can be assigned a {b}package address{/} telling the {l:logistics/stock_networks/}network{/l} where it should go. When packed, the package address can be automatically added by a {i}sign{/} or {i}clipboard{/} attached to the {i}packager{/}. Otherwise, you can choose an address by requesting the package, such as with a stock keeper, {i}redstone requester{/}, or {i}factory gauge{/}.{pb}If you hold {k:use/k}, you can also {b}throw{/} the package in your hand."
   ]
 }
