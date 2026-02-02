@@ -11,7 +11,7 @@
 		#Used as the color for your claims. Set to 0 to use the default automatic color.
 		color = 16777215
 		#When enabled, the mod tries to protect your claimed chunks from other players. Workarounds are possible, especially with mods.
-		protectClaimedChunks = false
+		protectClaimedChunks = true
 		#The number of additional chunk claims that you can make on top of the normal limit.
 		bonusChunkClaims = 0
 		#The number of additional chunk claim forceloads that you can make on top of the normal limit.
@@ -33,7 +33,7 @@
 			#1) Every - protected from all entities not owned by a player that has chunk access.
 			#2) Not Party - all entities, except owned by a player in the same party as you.
 			#3) Not Ally - all entities, except owned by a player in any party allied by yours.
-			blocksFromMobs = 0
+			blocksFromMobs = 1
 			#When enabled, claimed chunk protection includes protection against non-living entities, who don't have access to the chunks, breaking/placing blocks. Should work for vanilla entity behavior, unless another mod breaks it. Modded entity behavior is likely not to be included. Keep in mind that explosions use separate explosion-related options.
 			#
 			#1) Every - protected from all entities not owned by a player that has chunk access.
@@ -46,7 +46,7 @@
 			#When enabled, claimed chunk protection includes block protection against explosions. Keep in mind that creeper explosions are also affected by the block mob protection option.
 			blocksFromExplosions = true
 			#When enabled, claimed chunk protection includes protection against fire spread.
-			fromFireSpread = true
+			fromFireSpread = false
 			#When enabled, claimed chunk protection includes protection against frost walking by players/entities who don't have access to the chunks.
 			#
 			#1) Every - protected from all players/entities that don't have chunk access.
@@ -131,7 +131,7 @@
 			#When enabled, claimed chunk protection includes friendly (+ server configured) entities in the chunks being protected against all explosions not directly activated by the chunk owner.
 			entitiesFromExplosions = true
 			#When enabled, claimed chunk protection includes friendly (+ server configured) entities in the chunks being protected against fire.
-			entitiesFromFire = true
+			entitiesFromFire = false
 			#When enabled, claimed chunk protection includes protection from village raids. It stops raiders from spawning inside the protected chunks, from entering them and from hurting protectable entities, even if entity protection is turned off.
 			raids = true
 			#When enabled, claimed chunk protection includes players being protected from player attacks.
@@ -147,41 +147,41 @@
 			#1) Every - protected from all players that don't have chunk access.
 			#2) Not Party - only players not in the same party as you.
 			#3) Not Ally - only players not in any party allied by yours.
-			playerLightning = 1
+			playerLightning = 0
 			#When enabled, claimed chunk protection includes chorus fruit teleportation prevention for entities/players who don't have access to the chunks.
 			#
 			#1) Every - protected from all players/entities that don't have chunk access.
 			#2) Not Party - only players/entities not in the same party as you.
 			#3) Not Ally - only players/entities not in any party allied by yours.
-			chorusFruitTeleport = 1
+			chorusFruitTeleport = 0
 			#When enabled, claimed chunk protection includes nether portal usage prevention for players who don't have access to the chunks. 
 			#
 			#1) Every - protected from all players that don't have chunk access.
 			#2) Not Party - only players not in the same party as you.
 			#3) Not Ally - only players not in any party allied by yours.
-			netherPortalsPlayers = 1
+			netherPortalsPlayers = 0
 			#When enabled, claimed chunk protection includes nether portal usage prevention for mobs who don't have access to the chunks. Even after the protection is turned off, a recently stopped entity is still on a short cooldown. You must let it finish without constantly retrying to push it through the portal, which restarts the cooldown.
 			#
 			#1) Every - protected from all entities not owned by a player that has chunk access.
 			#2) Not Party - all entities, except owned by a player in the same party as you.
 			#3) Not Ally - all entities, except owned by a player in any party allied by yours.
-			netherPortalsMobs = 1
+			netherPortalsMobs = 0
 			#When enabled, claimed chunk protection includes nether portal usage prevention for non-living entities who don't have access to the chunks. Even after the protection is turned off, a recently stopped entity is still on a short cooldown. You must let it finish without constantly retrying to push it through the portal, which restarts the cooldown.
 			#
 			#1) Every - protected from all entities not owned by a player that has chunk access.
 			#2) Not Party - all entities, except owned by a player in the same party as you.
 			#3) Not Ally - all entities, except owned by a player in any party allied by yours.
-			netherPortalsOther = 1
+			netherPortalsOther = 0
 			#When enabled, claimed chunk protection includes protection from right-click held item use. On Fabric, allowed item use means being able to place blocks on blocks that you can interact with, e.g. exception blocks, even if block protection is enabled! Right-click item use can also break blocks, if that is the item's right-click mechanic. Some item use in a chunk might also be prevented by neighbor item use protection in neighbor chunks.
 			#
 			#1) Every - protected from all players that don't have chunk access.
 			#2) Not Party - only players not in the same party as you.
 			#3) Not Ally - only players not in any party allied by yours.
-			itemUse = 1
+			itemUse = 0
 			#When enabled, the item use protection is extended to some right-click held item use in chunks directly next to the claimed ones. Item use affected by this is usually things that still work while looking at the sky (not block or entity) or item use with custom ray-tracing for blocks/fluids/entities (e.g. placing things on water), but also any item use of "additional banned items" configured on the server. Item use protection exceptions (e.g. food, potions etc) still apply.
-			neighborChunksItemUse = true
+			neighborChunksItemUse = false
 			#When enabled, claimed chunk protection includes protection against dispensers that are "touching" and facing the protected chunks from outside. This does not protect wilderness.
-			dispenserBarrier = true
+			dispenserBarrier = false
 			#When enabled, claimed chunk protection includes prevention of item tossing by players that don't have access to the chunks.
 			#Dying can be used to circumvent this, so it is recommended to enable keepInventory or use a gravestone mod.
 			#
@@ -240,7 +240,7 @@
 			#By default, all "mob griefing" game rule checks, except for evokers (sheep conversion spell) and for most item pickups, are overridden with the block protection option. By default, the game rule is not overridden for item pickups (e.g. piglins picking up gold) because the basic item protection is already enough for most cases. When using the Forge version of the mod, this can be used for modded mobs. The main server config can be used to change which options are checked (even all 3) for specific mobs. Fabric/Quilt does not fire an event for all mob griefing rule checks. Fabric/Quilt modded mobs would simply check the game rule directly, which cannot be overridden by this mod.
 			overrideMobGriefingRule = true
 			#When enabled, claimed chunk protection disables the natural spawning of hostile mobs.
-			naturalSpawnHostile = false
+			naturalSpawnHostile = true
 			#When enabled, claimed chunk protection disables the natural spawning of friendly mobs.
 			naturalSpawnFriendly = false
 			#When enabled, claimed chunk protection disables hostile mob spawners.
@@ -258,7 +258,7 @@
 			#1) Every - protected from all projectiles not owned by a player that has chunk access.
 			#2) Not Party - all projectiles, except owned by a player in the same party as you.
 			#3) Not Ally - all projectiles, except owned by a player in any party allied by yours.
-			projectileHitFriendlySpawn = 1
+			projectileHitFriendlySpawn = 0
 
 			[playerConfig.claims.protection.exceptionGroups]
 

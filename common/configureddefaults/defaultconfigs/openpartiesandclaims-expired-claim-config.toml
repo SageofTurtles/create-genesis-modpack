@@ -7,7 +7,7 @@
 		#The current sub-config ID used for new server chunk claims.
 		usedServerSub = "main"
 		#When not empty, used as the name for your claimed chunks.
-		name = ""
+		name = "expired"
 		#Used as the color for your claims. Set to 0 to use the default automatic color.
 		color = 0
 		#When enabled, the mod tries to protect your claimed chunks from other players. Workarounds are possible, especially with mods.
