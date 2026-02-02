@@ -118,7 +118,7 @@ ICON_BACKGROUND_TYPE = "slot_border"
 # Show rating text.
 # 
 # Default: false
-SHOW_RATING = false
+SHOW_RATING = true
 # Disable the item icon.
 # 
 # Default: false

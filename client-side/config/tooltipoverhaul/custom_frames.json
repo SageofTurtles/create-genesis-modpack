@@ -1,39 +1,52 @@
 {
   "frames": [
     {
-      "texture": "tooltipoverhaul:textures/overlay/amethyst_frame.png",
+      "texture": "tooltipoverhaul:textures/overlay/ruby_frame.png",
       "tags": [
         "genesis:unobtainable"
       ],
+      "itemRating": "Unobtainable",
+      "colorItemRating": "#b3000f",
+      "titleAlignment": "middle",
+      "borderType": "gradient",
       "gradientType": "custom",
-      "borderType": "static",
-      "gradientColors": ["#C551C3", "#C551C3", "#C551C3"],
-      "specialEffect": "metal_shining"
+      "gradientColors": ["#ff3344", "#ff0015", "#b3000f"]
     },
     {
       "texture": "tooltipoverhaul:textures/overlay/diamond_frame.png",
       "tags": [
         "genesis:netherite_age"
       ],
+      "itemRating": "Netherite Age",
+      "colorItemRating": "#3238a6",
+      "titleAlignment": "middle",
+      "borderType": "gradient",
       "gradientType": "custom",
-      "borderType": "auto_gradient"
+      "gradientColors": ["#4db7f1", "#2974c7", "#3238a6"]
     },
     {
       "texture": "tooltipoverhaul:textures/overlay/amber_frame.png",
       "tags": [
         "genesis:brass_age"
       ],
+      "itemRating": "Brass Age",
+      "colorItemRating": "#cfa333",
+      "titleAlignment": "middle",
+      "borderType": "gradient",
       "gradientType": "custom",
-      "borderType": "auto_gradient"
+      "gradientColors": ["#efd181", "#deb242", "#cfa333"]
     },
     {
       "texture": "tooltipoverhaul:textures/overlay/silver_frame.png",
       "tags": [
         "genesis:andesite_age"
       ],
-      "gradientType": "custom",
+      "itemRating": "Andesite Age",
+      "colorItemRating": "#6c6c6c",
+      "titleAlignment": "middle",
       "borderType": "gradient",
-      "gradientColors": ["#A9A9A9", "#999999", "#8F8F8F"]
+      "gradientType": "custom",
+      "gradientColors": ["#cfcfcf", "#a9a9a9", "#6c6c6c"]
     }
   ]
 }
