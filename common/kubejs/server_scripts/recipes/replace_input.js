@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
   // Add recipe modifications by ID
   id('create:crafting/schematics/schematicannon', 'minecraft:iron_block', 'create:industrial_iron_block')
   id('create:mechanical_crafting/extendo_grip', 'minecraft:stick', 'createaddition:iron_rod')
-  id('create:mechanical_crafting/wand_of_symmetry', '#forge:glass', '#luminous_blocks:luminous_glass_blocks')
+  id('create:mechanical_crafting/wand_of_symmetry', '#forge:glass', '#genesis:luminous_glass_blocks')
   id('create:mechanical_crafting/wand_of_symmetry', 'minecraft:ender_pearl', 'minecraft:echo_shard')
   id('farmersdelight:canvas', 'farmersdelight:straw', '#supplementaries:straw')
   id('mcwdoors:iron_portcullis', 'minecraft:iron_bars', 'decorative_blocks:bar_panel')
