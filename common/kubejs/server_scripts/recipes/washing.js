@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
 
   // Add recipes
   add('gravel', 'minecraft:gravel', [Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:iron_nugget').withChance(0.06)])
+  add('harpoon', 'createfisheryindustry:harpoon', 'createfisheryindustry:worn_harpoon')
   add('limesand', 'kubejs:limesand', [Item.of('minecraft:clay_ball').withChance(0.25), Item.of('create_ironworks:tin_nugget').withChance(0.06)])
   add('luminous_glass_blocks', '#genesis:luminous_glass_blocks', 'luminousblocks:luminous_glass')
   add('luminous_glass_panes', '#genesis:luminous_glass_panes', 'luminousblocks:luminous_glass_pane')

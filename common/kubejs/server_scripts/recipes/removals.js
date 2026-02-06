@@ -102,6 +102,7 @@ ServerEvents.recipes(event => {
 
   // Remove recipes by output item ID
   output('amendments:dragon_charge')
+  output('cmparallelpipes:pipe_wrench')
   output('comforts:rope_and_nail')
   output('create_aquatic_ambitions:prismarine_alloy_rod')
   output('create_connected:kinetic_battery')
@@ -131,6 +132,7 @@ ServerEvents.recipes(event => {
   output('minecraft:netherite_upgrade_smithing_template')
   output('minecraft:snow')
   output('naturescompass:natures_compass')
+  output('numismatics:banking_guide')
   output('smallships:cannon_ball')
   output('supplementaries:cage')
   output('supplementaries:flower_box')
