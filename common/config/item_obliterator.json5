@@ -76,6 +76,7 @@
     "sophisticatedbackpacks:stack_upgrade_omega_tier",
     "sophisticatedbackpacks:survival_infinity_upgrade",
     "sophisticatedbackpacks:xp_pump_upgrade",
+    "supplementaries:cage",
     "supplementaries:pancake",
     "supplementaries:rope"
   ],
@@ -87,8 +88,7 @@
   // 	
   // 	 You can also use regular expressions by starting the value with !
   "blacklisted_nbt": [
-    "!.*Potion:\"minecraft:luck\".*",
-    "{\"patchouli:book\":\"apotheosis:apoth_chronicle\"}"
+    "!.*Potion:\"minecraft:luck\".*"
   ],
   // -----------------------------------------------------------
   // Items here will not be able to be right-clicked (Interact)

@@ -50,6 +50,7 @@ global['REMOVED_ITEMS'] = [
   'sophisticatedbackpacks:stack_upgrade_omega_tier',
   'sophisticatedbackpacks:survival_infinity_upgrade',
   'sophisticatedbackpacks:xp_pump_upgrade',
+  'supplementaries:cage',
   'supplementaries:pancake',
   'supplementaries:rope'
 ]
