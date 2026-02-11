@@ -31,4 +31,12 @@ ServerEvents.recipes(event => {
     const { modid, disc } = entry
     keepItem(disc, '#minecraft:music_discs', `${modid}:${disc}`, `${modid}:${disc}`)
   })
+
+  global.BACKPACK_UPGRADES.forEach(entry => {
+    if (entry == 'smelting_upgrade' || entry == 'smoking_upgrade' || entry == 'blasting_upgrade') {
+      consumeItem(`auto_${entry}`, `sophisticatedbackpacks:${entry}`, 'create:brass_block', `sophisticatedbackpacks:auto_${entry}`)
+    } else {
+      consumeItem(`advanced_${entry}`, `sophisticatedbackpacks:${entry}`, 'create:brass_block', `sophisticatedbackpacks:advanced_${entry}`)
+    }
+  })
 })

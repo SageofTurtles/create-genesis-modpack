@@ -23,6 +23,7 @@ ServerEvents.recipes(event => {
   }
 
   // Add recipe modifications by ID
+  id('create_mob_spawners:empty_soul_catcher', 'minecraft:shulker_shell', 'create:brass_casing')
   id('create:crafting/schematics/schematicannon', 'minecraft:iron_block', 'create:industrial_iron_block')
   id('create:mechanical_crafting/extendo_grip', 'minecraft:stick', 'createaddition:iron_rod')
   id('create:mechanical_crafting/wand_of_symmetry', '#forge:glass', '#genesis:luminous_glass_blocks')
@@ -31,12 +32,11 @@ ServerEvents.recipes(event => {
   id('mcwdoors:iron_portcullis', 'minecraft:iron_bars', 'decorative_blocks:bar_panel')
   id('mcwfences:iron_cheval_de_frise', 'minecraft:iron_nugget', 'createaddition:iron_rod')
   id('minecraft:lodestone', 'minecraft:netherite_ingot', 'minecraft:iron_ingot')
+  id('railways:crafting/remote_lens', 'minecraft:ender_eye', 'minecraft:ender_pearl')
   id('smallships:bamboo_galley', 'smallships:bamboo_cog', 'smallships:bamboo_galley')
-  id('sophisticatedbackpacks:deposit_upgrade', 'minecraft:chest', 'create:smart_chute')
-  id('sophisticatedbackpacks:deposit_upgrade', 'minecraft:piston', 'create:chute')
+  id('sophisticatedbackpacks:everlasting_upgrade', 'minecraft:end_crystal', 'minecraft:netherite_ingot')
   id('sophisticatedbackpacks:inception_upgrade', 'minecraft:ender_eye', 'minecraft:echo_shard')
   id('sophisticatedbackpacks:pickup_upgrade', 'minecraft:sticky_piston', 'create:chute')
-  id('sophisticatedbackpacks:restock_upgrade', 'minecraft:sticky_piston', 'create:smart_chute')
   id('supplementaries:checker', 'minecraft:cobblestone', 'minecraft:calcite')
   id('supplementaries:relayer', 'minecraft:cobblestone', '#minecraft:stone_crafting_materials')
   id('supplementaries:sack', '#forge:crops/flax', 'farmersdelight:canvas')
@@ -67,7 +67,6 @@ ServerEvents.recipes(event => {
   )
   custom(
     [
-      { id: 'railways:crafting/remote_lens' },
       { id: 'minecraft:end_crystal' },
       { id: 'minecraft:ender_chest' }
     ],

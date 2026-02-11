@@ -14,6 +14,9 @@ ServerEvents.recipes(event => {
   const mod = (modid) => {
     event.remove({ mod: modid })
   }
+  const type = (typeid) => {
+    event.remove({ type: typeid })
+  }
   const custom = (parameters) => {
     event.remove(parameters)
   }
@@ -30,7 +33,6 @@ ServerEvents.recipes(event => {
   })
 
   // Remove recipes by ID
-  id('apotheosis:book')
   id('create_aquatic_ambitions:channeling/sponge')
   id('create_aquatic_ambitions:compacting/calcite')
   id('create_aquatic_ambitions:crushing/prismarine_bricks_to_lapis_and_copper')
@@ -107,6 +109,7 @@ ServerEvents.recipes(event => {
   output('create_aquatic_ambitions:prismarine_alloy_rod')
   output('create_connected:kinetic_battery')
   output('create_connected:sequenced_pulse_generator')
+  output('create_mob_spawners:mechanical_spawner')
   output('create:copper_shingles')
   output('create:copper_tiles')
   output('create:empty_blaze_burner')
@@ -131,12 +134,13 @@ ServerEvents.recipes(event => {
   output('minecraft:lightning_rod')
   output('minecraft:netherite_upgrade_smithing_template')
   output('minecraft:snow')
-  output('naturescompass:natures_compass')
+  output('naturescompass:naturescompass')
   output('numismatics:banking_guide')
   output('smallships:cannon_ball')
-  output('supplementaries:cage')
+  output('supplementaries:doormat')
   output('supplementaries:flower_box')
   output('supplementaries:key')
+  output('supplementaries:present')
 
   // Remove recipes by output regex
   output(/.*_trapdoor/)
@@ -159,8 +163,12 @@ ServerEvents.recipes(event => {
   output(/mcwroofs:(oak|spruce|birch|jungle|acacia|dark_oak|mangrove|cherry|bamboo|crimson|warped|thatch|grass).*/)
   output(/mcwroofs:gutter_(middle|base)$/)
   output(/packedup:.*book_bundle_slab.*/)
-  output(/sophisticatedbackpacks:(filter|advanced_filter|tank|battery|pump)_upgrade$/)
+  output(/sophisticatedbackpacks:(advanced|auto)_.*/)
+  output(/sophisticatedbackpacks:(filter|advanced_filter|deposit|restock|tank|battery|pump)_upgrade$/)
   output(/supplementaries:timber_(frame|brace|cross_brace)$/)
+
+  // Remove recipes by type
+  type('create_mob_spawners:spawning')
 
   // Remove recipes by custom parameters
   custom({ id: /createaddition:charging\/.*/, not: { id: /.*channeling$/ } })
