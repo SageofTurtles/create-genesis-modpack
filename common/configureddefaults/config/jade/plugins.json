@@ -51,6 +51,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "create_mobile_packages": {
+    "bee_port": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
   },
@@ -78,8 +81,8 @@
   "petrolpark": {
     "contamination": true
   },
-  "apotheosis": {
-    "spawner": true
+  "create_mob_spawners": {
+    "spawner_progress": true
   },
   "corpse": {
     "corpse": true
