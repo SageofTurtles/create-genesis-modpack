@@ -1,4 +1,9 @@
-// priority: 200
+// priority: 300
+
+global['ANDESITE_AGE_OVERRIDES'] = [
+  'minecraft:netherite_upgrade_smithing_template',
+  'railways:track_switch_andesite'
+]
 
 global['UNOBTAINABLE_ITEMS'] = [
   'create_connected:creative_fluid_vessel',
@@ -29,6 +34,7 @@ global['UNOBTAINABLE_ITEMS'] = [
 
 global['NETHERITE_AGE_ITEMS'] = [
   'amendments:dragon_charge',
+  'create_mob_spawners:mechanical_spawner',
   'createaddition:electrum_amulet',
   'minecraft:ancient_debris',
   'minecraft:chorus_flower',
@@ -45,12 +51,12 @@ global['NETHERITE_AGE_ITEMS'] = [
   'sophisticatedbackpacks:stack_upgrade_tier_4',
   'supplementaries:dragon_banner_pattern',
   'supplementaries:safe',
-  /.*end_brick.*/,
+  /.*(end|ender)_brick.*/,
   /.*end_stone.*/,
-  /.*netherite.*/, // (except minecraft:netherite_upgrade_smithing_template)
+  /.*netherite.*/,
   /.*purpur.*/,
-  /^create_mob_spawners:.*soul_catcher$/,
-  /^minecraft:.*shulker.*/
+  /^minecraft:.*shulker.*/,
+  /^railways:track_ender.*/
 ]
 
 global['BRASS_AGE_ITEMS'] = [
@@ -233,6 +239,7 @@ global['BRASS_AGE_ITEMS'] = [
   /^create_connected:.*_catalyst$/,
   /^create_ironworks:steel_.*/,
   /^create_ironworks:sturdy_.*/,
+  /^create_mob_spawners:.*soul_catcher$/,
   /^create_power_loader:.*brass_chunk_loader$/,
   /^create.*:.*chocolate.*/,
   /^createaddition:biomass.*/,
@@ -255,5 +262,6 @@ global['BRASS_AGE_ITEMS'] = [
   /^railways:.*buffer$/,
   /^railways:.*headstock.*/,
   /^railways:link_and_pin.*/,
-  /^railways:track_.*/ // (except for /railways:track_ender.*/)
+  /^railways:track.*/,
+  /^sophisticatedbackpacks:(advanced|auto)_.*/
 ]

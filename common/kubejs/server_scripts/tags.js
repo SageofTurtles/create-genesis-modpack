@@ -129,4 +129,36 @@ ServerEvents.tags('item', event => {
     add('genesis:mosaic_glass_panes', `mcwwindows:${entry}_mosaic_glass_pane`)
     add('genesis:paper_lamps', `mcwlights:${entry}_paper_lamp`)
   })
+
+  // Tooltip border groups
+
+  // Define tag groups (highest => lowest prioirity)
+  const rules = [
+    { tag: 'genesis:andesite_age', matches: global.ANDESITE_AGE_OVERRIDES },
+    { tag: 'genesis:unobtainable', matches: global.UNOBTAINABLE_ITEMS },
+    { tag: 'genesis:netherite_age', matches: global.NETHERITE_AGE_ITEMS },
+    { tag: 'genesis:brass_age', matches: global.BRASS_AGE_ITEMS }
+  ]
+
+  // Define 'assigned' boolean for all
+  Ingredient.all.itemIds.forEach(item => {
+    let assigned = false
+
+    // Check against 'rules.matches' arrays in order of priority, add tag for first match
+    for (let rule of rules) {
+      if (rule.matches.some(pattern =>
+        (typeof pattern === 'string' && item === pattern) ||
+        (pattern instanceof RegExp && pattern.test(item))
+      )) {
+        event.add(rule.tag, item)
+        assigned = true
+        break
+      }
+    }
+
+    // If no match is found, add to default tag
+    if (!assigned) {
+      event.add('genesis:andesite_age', item)
+    }
+  })
 })
