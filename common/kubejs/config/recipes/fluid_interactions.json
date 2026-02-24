@@ -1,0 +1,70 @@
+{
+  "recipes": [
+    {
+      "input1": {
+        "fluid": "minecraft:flowing_lava"
+      },
+      "input2": {
+        "fluid": "minecraft:flowing_water"
+      },
+      "output": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    {
+      "input1": {
+        "fluid": "minecraft:flowing_lava"
+      },
+      "input2": {
+        "fluid": "minecraft:water"
+      },
+      "output": {
+        "item": "minecraft:stone"
+      }
+    },
+    {
+      "input1": {
+        "fluid": "minecraft:flowing_water"
+      },
+      "input2": {
+        "fluid": "minecraft:lava"
+      },
+      "output": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    {
+      "input1": {
+        "fluid": "minecraft:lava"
+      },
+      "input2": {
+        "fluid": "create:honey"
+      },
+      "output": {
+        "item": "create:limestone"
+      }
+    },
+    {
+      "input1": {
+        "fluid": "minecraft:lava"
+      },
+      "input2": {
+        "fluid": "create:chocolate"
+      },
+      "output": {
+        "item": "create:scoria"
+      }
+    },
+    {
+      "input1": {
+        "fluid": "minecraft:lava"
+      },
+      "input2": {
+        "fluid": "create_enchantment_industry:ink"
+      },
+      "output": {
+        "item": "minecraft:blackstone"
+      }
+    }
+  ]
+}

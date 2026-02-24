@@ -1,0 +1,34 @@
+{
+  "recipes": [
+    {
+      "vent": "molten_vents:active_molten_asurine",
+      "output": "create:asurine",
+      "description": "Place a bucket of lava against an Active Molten Asurine vent and it will be converted to Asurine."
+    },
+    {
+      "vent": "molten_vents:active_molten_crimsite",
+      "output": "create:crimsite",
+      "description": "Place a bucket of lava against an Active Molten Crimsite vent and it will be converted to Crimsite."
+    },
+    {
+      "vent": "molten_vents:active_molten_ochrum",
+      "output": "create:ochrum",
+      "description": "Place a bucket of lava against an Active Molten Ochrum vent and it will be converted to Ochrum."
+    },
+    {
+      "vent": "molten_vents:active_molten_scorchia",
+      "output": "create:scorchia",
+      "description": "Place a bucket of lava against an Active Molten Scorchia vent and it will be converted to Scorchia."
+    },
+    {
+      "vent": "molten_vents:active_molten_scoria",
+      "output": "create:scoria",
+      "description": "Place a bucket of lava against an Active Molten Scoria vent and it will be converted to Scoria."
+    },
+    {
+      "vent": "molten_vents:active_molten_veridium",
+      "output": "create:veridium",
+      "description": "Place a bucket of lava against an Active Molten Veridium vent and it will be converted to Veridium."
+    }
+  ]
+}

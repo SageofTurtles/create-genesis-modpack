@@ -51,6 +51,7 @@ global['REMOVED_ITEMS'] = [
   'sophisticatedbackpacks:survival_infinity_upgrade',
   'sophisticatedbackpacks:xp_pump_upgrade',
   'supplementaries:cage',
+  'supplementaries:enderman_head',
   'supplementaries:pancake',
   'supplementaries:rope'
 ]

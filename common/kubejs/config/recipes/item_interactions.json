@@ -1,0 +1,12 @@
+{
+  "recipes": [
+    {
+      "input": {
+        "item": "minecraft:potion"
+      },
+      "output": {
+        "item": "minecraft:glass_bottle"
+      }
+    }
+  ]
+}

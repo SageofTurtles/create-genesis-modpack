@@ -1,0 +1,506 @@
+{
+  "recipes": [
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_rocket",
+        "count": 3,
+        "nbt": {
+          "Fireworks": {
+            "Flight": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_rocket",
+        "count": 3,
+        "nbt": {
+          "Fireworks": {
+            "Flight": 2
+          }
+        }
+      }
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_rocket",
+        "count": 3,
+        "nbt": {
+          "Fireworks": {
+            "Flight": 3
+          }
+        }
+      }
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:firework_star"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_rocket",
+        "count": 3,
+        "nbt": {
+          "Fireworks": {
+            "Flight": 1
+          }
+        }
+      },
+      "description": "Craft one or more firework stars into your rockets to give them colors and effects!"
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:firework_star"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_rocket",
+        "count": 3,
+        "nbt": {
+          "Fireworks": {
+            "Flight": 2
+          }
+        }
+      },
+      "description": "Craft one or more firework stars into your rockets to give them colors and effects!"
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:firework_star"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_rocket",
+        "count": 3,
+        "nbt": {
+          "Fireworks": {
+            "Flight": 3
+          }
+        }
+      },
+      "description": "Craft one or more firework stars into your rockets to give them colors and effects!"
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:red_dye"
+        },
+        {
+          "item": "minecraft:yellow_dye"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_star"
+      },
+      "description": "Craft gunpowder and at least one dye together for a colorful firework star."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:red_dye"
+        },
+        {
+          "tag": "#forge:heads"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_star"
+      },
+      "description": "Use a head to give a firework star the creeper face shape."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:red_dye"
+        },
+        {
+          "item": "minecraft:gold_nugget"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_star"
+      },
+      "description": "Use a gold nugget to give a firework star the star shape."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:red_dye"
+        },
+        {
+          "item": "minecraft:feather"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_star"
+      },
+      "description": "Use a feather to give a firework star the burst shape."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:red_dye"
+        },
+        {
+          "item": "minecraft:fire_charge"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_star"
+      },
+      "description": "Use a fire charge to give a firework star the large ball shape."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:red_dye"
+        },
+        {
+          "item": "minecraft:glowstone_dust"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_star"
+      },
+      "description": "Use glowstone dust to give a firework star the twinkle effect."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:gunpowder"
+        },
+        {
+          "item": "minecraft:red_dye"
+        },
+        {
+          "item": "minecraft:diamond"
+        }
+      ],
+      "output": {
+        "item": "minecraft:firework_star"
+      },
+      "description": "Use a diamond to give a firework star the trail effect."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:item_frame"
+        },
+        {
+          "item": "minecraft:blue_dye"
+        }
+      ],
+      "output": {
+        "item": "minecraft:item_frame",
+        "nbt": {
+          "display": {
+            "color": "3949738"
+          }
+        }
+      },
+      "description": "The background color of the frame can be changed by crafting it together with dyes."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:item_frame"
+        },
+        {
+          "item": "minecraft:blue_dye"
+        },
+        {
+          "item": "minecraft:red_dye"
+        }
+      ],
+      "output": {
+        "item": "minecraft:item_frame",
+        "nbt": {
+          "display": {
+            "color": "11359128"
+          }
+        }
+      },
+      "description": "The background color of the frame can be changed by crafting it together with dyes."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:glow_item_frame"
+        },
+        {
+          "item": "minecraft:green_dye"
+        }
+      ],
+      "output": {
+        "item": "minecraft:glow_item_frame",
+        "nbt": {
+          "display": {
+            "color": "6192150"
+          }
+        }
+      },
+      "description": "The background color of the frame can be changed by crafting it together with dyes."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:glow_item_frame"
+        },
+        {
+          "item": "minecraft:green_dye"
+        },
+        {
+          "item": "minecraft:yellow_dye"
+        }
+      ],
+      "output": {
+        "item": "minecraft:glow_item_frame",
+        "nbt": {
+          "display": {
+            "color": "12433452"
+          }
+        }
+      },
+      "description": "The background color of the frame can be changed by crafting it together with dyes."
+    },
+    {
+      "type": "shaped",
+      "key": {
+        "A": {
+          "item": "sophisticatedbackpacks:backpack"
+        },
+        "B": {
+          "item": "minecraft:yellow_dye"
+        }
+      },
+      "pattern": [
+        " A ",
+        "B  ",
+        "   "
+      ],
+      "output": {
+        "count": 1,
+        "item": "sophisticatedbackpacks:backpack",
+        "nbt": {
+          "borderColor": "6434330",
+          "clothColor": "16701501"
+        }
+      },
+      "description": "The main color can be changed with dye placed in the column to the LEFT of the backpack in the crafting grid."
+    },
+    {
+      "type": "shaped",
+      "key": {
+        "A": {
+          "item": "sophisticatedbackpacks:backpack"
+        },
+        "B": {
+          "item": "minecraft:yellow_dye"
+        }
+      },
+      "pattern": [
+        " A ",
+        "  B",
+        "   "
+      ],
+      "output": {
+        "count": 1,
+        "item": "sophisticatedbackpacks:backpack",
+        "nbt": {
+          "borderColor": "16701501",
+          "clothColor": "13394234"
+        }
+      },
+      "description": "The accent color can be changed with dye placed in the column to the RIGHT of the backpack in the crafting grid."
+    },
+    {
+      "type": "shaped",
+      "key": {
+        "A": {
+          "item": "sophisticatedbackpacks:backpack"
+        },
+        "B": {
+          "item": "minecraft:yellow_dye"
+        }
+      },
+      "pattern": [
+        " A ",
+        " B ",
+        "   "
+      ],
+      "output": {
+        "count": 1,
+        "item": "sophisticatedbackpacks:backpack",
+        "nbt": {
+          "borderColor": "16701501",
+          "clothColor": "16701501"
+        }
+      },
+      "description": "The full color can be changed with dye placed in the SAME column as the backpack in the crafting grid."
+    },
+    {
+      "type": "shaped",
+      "key": {
+        "A": {
+          "item": "minecraft:blue_dye"
+        },
+        "B": {
+          "item": "sophisticatedbackpacks:backpack"
+        },
+        "C": {
+          "item": "minecraft:yellow_dye"
+        }
+      },
+      "pattern": [
+        " A ",
+        " B ",
+        " C "
+      ],
+      "output": {
+        "count": 1,
+        "item": "sophisticatedbackpacks:backpack",
+        "nbt": {
+          "borderColor": "13942683",
+          "clothColor": "13942683"
+        }
+      },
+      "description": "Backpack colors can be mixed by using multiple dyes, or re-dyeing ones that are already colored."
+    },
+    {
+      "type": "shaped",
+      "key": {
+        "A": {
+          "tag": "#minecraft:decorated_pot_ingredients"
+        }
+      },
+      "pattern": [
+        " A ",
+        "A A",
+        " A "
+      ],
+      "output": {
+        "count": 1,
+        "item": "minecraft:decorated_pot"
+      },
+      "description": "Craft a blank pot with bricks, or use up to 4 pottery sherds to add designs."
+    },
+    {
+      "type": "shapeless",
+      "inputs": [
+        {
+          "item": "minecraft:written_book"
+        },
+        {
+          "item": "supplementaries:antique_ink"
+        }
+      ],
+      "output": {
+        "item": "minecraft:written_book",
+        "nbt": {
+          "AntiqueInk": "1b",
+          "generation": 3
+        }
+      },
+      "description": "A tattered book can't be copied. Its text is in the antiquable font."
+    }
+  ]
+}

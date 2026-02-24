@@ -52,7 +52,7 @@
 
 	[redstone.enderman_head]
 		enabled = false
-		drop_head = true
+		drop_head = false
 		#Time to increase 1 power level when being looked at
 		#Range: 0 ~ 10000
 		ticks_to_increase_power = 15

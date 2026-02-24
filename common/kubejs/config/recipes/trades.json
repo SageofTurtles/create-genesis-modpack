@@ -1,0 +1,20 @@
+{
+  "recipes": [
+    {
+      "profession": "entity.minecraft.villager.cartographer",
+      "level": "merchant.level.2",
+      "width": 25,
+      "input1": {
+        "item": "minecraft:emerald",
+        "count": 13
+      },
+      "input2": {
+        "item": "minecraft:compass"
+      },
+      "output": {
+        "item": "minecraft:filled_map",
+        "count": 2
+      }
+    }
+  ]
+}

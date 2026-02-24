@@ -1,0 +1,783 @@
+{
+  "recipes": [
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#minecraft:hoes"
+        },
+        "block": {
+          "tag": "#genesis:tillable_dirt"
+        }
+      },
+      "output": {
+        "item": "minecraft:farmland"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#minecraft:hoes"
+        },
+        "block": {
+          "tag": "#genesis:tillable_coarse_dirt"
+        }
+      },
+      "output": {
+        "item": "minecraft:dirt"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#minecraft:hoes"
+        },
+        "block": {
+          "item": "minecraft:rooted_dirt"
+        }
+      },
+      "output": {
+        "item": "minecraft:hanging_roots"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#minecraft:hoes"
+        },
+        "block": {
+          "item": "minecraft:gravel"
+        }
+      },
+      "output": {
+        "item": "supplementaries:raked_gravel"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "tag": "#genesis:beehives"
+        }
+      },
+      "output": {
+        "item": "minecraft:honeycomb"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:glass_bottle"
+        },
+        "block": {
+          "tag": "#genesis:beehives"
+        }
+      },
+      "output": {
+        "item": "minecraft:honey_bottle"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "kubejs:inert_ender_eye"
+        },
+        "block": {
+          "item": "minecraft:reinforced_deepslate"
+        }
+      },
+      "output": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "farmersdelight:red_mushroom_colony"
+        }
+      },
+      "output": {
+        "item": "minecraft:red_mushroom"
+      }
+    },
+    {
+      "type": "lclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "farmersdelight:red_mushroom_colony"
+        }
+      },
+      "output": {
+        "item": "farmersdelight:red_mushroom_colony"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "farmersdelight:brown_mushroom_colony"
+        }
+      },
+      "output": {
+        "item": "minecraft:brown_mushroom"
+      }
+    },
+    {
+      "type": "lclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "farmersdelight:brown_mushroom_colony"
+        }
+      },
+      "output": {
+        "item": "farmersdelight:brown_mushroom_colony"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:bowl"
+        },
+        "block": {
+          "item": "farmersdelight:roast_chicken_block"
+        }
+      },
+      "output": {
+        "item": "farmersdelight:roast_chicken"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:bowl"
+        },
+        "block": {
+          "item": "farmersdelight:stuffed_pumpkin_block"
+        }
+      },
+      "output": {
+        "item": "farmersdelight:stuffed_pumpkin"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:bowl"
+        },
+        "block": {
+          "item": "farmersdelight:honey_glazed_ham_block"
+        }
+      },
+      "output": {
+        "item": "farmersdelight:honey_glazed_ham"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:bowl"
+        },
+        "block": {
+          "item": "farmersdelight:shepherds_pie_block"
+        }
+      },
+      "output": {
+        "item": "farmersdelight:shepherds_pie"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:bowl"
+        },
+        "block": {
+          "item": "brewinandchewin:fiery_fondue_pot"
+        }
+      },
+      "output": {
+        "item": "brewinandchewin:fiery_fondue_pot"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:white_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:white_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:white_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:white_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:light_gray_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:light_gray_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:light_gray_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:light_gray_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:gray_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:gray_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:gray_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:gray_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:black_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:black_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:black_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:black_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:brown_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:brown_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:brown_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:brown_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:red_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:red_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:red_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:red_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:orange_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:orange_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:orange_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:orange_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:yellow_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:yellow_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:yellow_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:yellow_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:lime_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:lime_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:lime_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:lime_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:green_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:green_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:green_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:green_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:cyan_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:cyan_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:cyan_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:cyan_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:light_blue_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:light_blue_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:light_blue_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:light_blue_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:blue_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:blue_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:blue_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:blue_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:purple_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:purple_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:purple_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:purple_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:magenta_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:magenta_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:magenta_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:magenta_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:pink_book_bundle"
+        }
+      },
+      "output": {
+        "item": "packedup:pink_book_pile",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "item": "minecraft:shears"
+        },
+        "block": {
+          "item": "packedup:pink_book_bundle_slab"
+        }
+      },
+      "output": {
+        "item": "packedup:pink_book_pile",
+        "count": 2
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#minecraft:shovels"
+        },
+        "block": {
+          "item": "packedup:grass_turf"
+        }
+      },
+      "output": {
+        "item": "packedup:grass_turf_layer",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#minecraft:shovels"
+        },
+        "block": {
+          "item": "packedup:podzol_turf"
+        }
+      },
+      "output": {
+        "item": "packedup:podzol_turf_layer",
+        "count": 4
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#minecraft:shovels"
+        },
+        "block": {
+          "item": "packedup:mycelium_turf"
+        }
+      },
+      "output": {
+        "item": "packedup:mycelium_turf_layer",
+        "count": 4
+      }
+    }
+  ]
+}

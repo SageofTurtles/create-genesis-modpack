@@ -64,6 +64,7 @@ ServerEvents.recipes(event => {
   id('minecraft:cake')
   id('minecraft:dispenser')
   id('minecraft:dropper')
+  id('minecraft:firework_rocket_simple')
   id('minecraft:leather_horse_armor')
   id('minecraft:lever')
   id('minecraft:netherite_ingot')

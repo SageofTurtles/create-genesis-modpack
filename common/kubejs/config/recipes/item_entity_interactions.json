@@ -1,0 +1,28 @@
+{
+  "recipes": [
+    {
+      "input": {
+        "item": "minecraft:shears"
+      },
+      "entity": {
+        "name": "entity.minecraft.sheep",
+        "texture": "kubejs:textures/gui/entities/sheep.png"
+      },
+      "output": {
+        "item": "minecraft:white_wool"
+      }
+    },
+    {
+      "input": {
+        "item": "minecraft:bucket"
+      },
+      "entity": {
+        "name": "entity.minecraft.cow",
+        "texture": "kubejs:textures/gui/entities/cow.png"
+      },
+      "output": {
+        "item": "minecraft:milk_bucket"
+      }
+    }
+  ]
+}

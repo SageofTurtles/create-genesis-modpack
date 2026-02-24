@@ -15,6 +15,7 @@ global['UNOBTAINABLE_ITEMS'] = [
   'createaddition:creative_energy',
   'minecraft:barrier',
   'minecraft:bedrock',
+  'minecraft:chain_command_block',
   'minecraft:chorus_plant',
   'minecraft:command_block_minecart',
   'minecraft:command_block',
