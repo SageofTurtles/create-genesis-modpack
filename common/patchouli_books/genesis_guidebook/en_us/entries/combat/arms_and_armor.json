@@ -1,0 +1,10 @@
+{
+  "sortnum": 1,
+  "name": "Arms & Armor",
+  "category": "patchouli:combat",
+  "icon": "create_ironworks:steel_helmet",
+  "pages": [
+    "There are various materials from which players can craft their {b}armor{/}, {b}tools{/}, and {b}weapons{/}. Each material offers different levels of protection, damage, and other practical {l:combat/armor_bonuses/}bonus effects{/l}. Always choose the right gear for the occasion!{pb}These tiers are (in approximate order of strength): leather/wood, chainmail/stone, copper, iron, bronze, gold, brass, diamond, rose quartz, sturdy sheet, steel, and netherite.",
+    "In addition to equipment tiers, {i}arrows{/} also come in a number of variants.  Each base variant is crafted using a different material, having its own unique damage value and (in some cases) special effect.{pb}Arrows can be further enhanced by crafting them into {i}spectral arrows{/}, which cause the target to glow when struck, or even {i}tipped arrows{/} that carry a potion effect with them. For convenience, players can use a {i}quiver{/} to carry and cycle through their arrows on-the-go.{pb}Most equipment items and gear can also be {l:magic/enchantments}enchanted{/l} for further improvements!"
+  ]
+}

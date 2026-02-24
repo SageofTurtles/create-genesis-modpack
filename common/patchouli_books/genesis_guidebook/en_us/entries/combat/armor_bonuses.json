@@ -1,10 +1,10 @@
 {
-  "sortnum": 1,
+  "sortnum": 2,
   "name": "Armor Set Bonuses",
   "category": "patchouli:combat",
   "icon": "minecraft:netherite_chestplate",
   "pages": [
-    "Many armor sets will give the player a {b}bonus effect{/} when wearing the full matching set ({i}helmet{/}, {i}chestplate{/}, {i}leggings{/}, and {i}boots{/}). These bonuses remain in effect until one or more pieces of the armor set is removed.{pb}If any of the worn pieces have the {l:magic/enchantments/}Mending enchantment{/l}, the bonus won't apply.",
+    "Many {l:combat/arms_and_armor/}armor sets{/l} will give the player a {b}bonus effect{/} when wearing the full matching set ({i}helmet{/}, {i}chestplate{/}, {i}leggings{/}, and {i}boots{/}). These bonuses remain in effect until one or more pieces of the armor set is removed.{pb}If any of the worn pieces have the {l:magic/enchantments/}Mending enchantment{/l}, the bonus won't apply.",
     {
       "type": "patchouli:text",
       "title": "Armor Set Effects",

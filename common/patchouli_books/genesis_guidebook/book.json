@@ -1,7 +1,7 @@
 {
   "name": "Book of the Mechanist",
   "version": 1,
-  "landing_text": "Welcome, {b}{player}{/}! This book is an inspired guide to {b}Create: Genesis{/} and its wonders...{pb}You can browse by {b}category{/}, or use the {b}Entry Index{/} to search.{pb}$(#CF1546)If at any time you lose this book, you can get a new one by using the command {/}{b}/book{/}$(#CF1546) in the chat.",
+  "landing_text": "Welcome, {b}{player}{/}! This book is an inspired guide to {b}Create: Genesis{/} and its wonders...{pb}You can browse by {b}category{/}, or use the {b}Entry Index{/} to search.{pb}$(#CF1546)If at any time you lose this book, you can get a new one by entering the command {/}{b}/book{/}$(#CF1546) in the chat.",
   "creative_tab": "kubejs:tab",
   "use_resource_pack": false,
   "book_texture": "patchouli:textures/gui/book_cyan.png",
