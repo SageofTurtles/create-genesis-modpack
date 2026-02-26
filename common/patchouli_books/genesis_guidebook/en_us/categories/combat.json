@@ -1,6 +1,6 @@
 {
   "sortnum": 7,
   "name": "Combat",
-  "description": "This section explains the features surrounding combat.",
+  "description": "This section explains the features and strategic considerations surrounding {b}combat{/} with other {!}players{/} and {!}mobs{/}.",
   "icon": "minecraft:iron_sword"
 }

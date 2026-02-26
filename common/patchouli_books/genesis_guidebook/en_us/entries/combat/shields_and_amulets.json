@@ -8,12 +8,12 @@
     {
       "type": "patchouli:spotlight",
       "item": "minecraft:shield",
-      "text": "{i}Shields{/} can, as one expects, {!}shield{/} the player from attack damage. When in your {!}main hand{/} or {!}off hand{/}, {i}shields{/} grant a passive {b}15% damage reduction{/}. When actively holding {k:use/k} to block, they will instead grant {b}80% damage reduction{/}, but have a brief cooldown between blocked attacks.{pb}{i}Shields{/}, like most gear, can be improved with a variety of {l:magic/enchantments/}enchantments{/l}."
+      "text": "{i}Shields{/} protect the player from attack damage. When in your {!}main hand{/} or {!}off hand{/}, {i}shields{/} grant a passive {b}15% damage reduction{/}, or {b}80% damage reduction{/} when holding {k:use/k} to block (with a brief cooldown between blocks).{pb}Like most gear, {i}shields{/} can be improved with {l:magic/enchantments/}enchantments{/l}."
     },
     {
       "type": "patchouli:spotlight",
       "item": "createaddition:electrum_amulet",
-      "text": "The {i}pale gold amulet{/} is a {l:progression:netherite_age/}Netherite Age{/l} item. As such, it offers a powerful (though costly) defensive ability.{pb}When in the player's inventory, it grants the {b}absorption{/} and {b}luck{/} {l:magic/status_effects/}status effects{/l} whenever the player's health drops below 5 hearts, giving you an edge against your opponents."
+      "text": "The {i}pale gold amulet{/} is a powerful {l:progression/netherite_age/}Netherite Age{/l} item.{pb}When in the player's inventory, it grants the {b}absorption{/} and {b}luck{/} {l:magic/status_effects/}status effects{/l} whenever the player's health drops below 5 hearts, giving you an edge against your opponents."
     }
   ]
 }
