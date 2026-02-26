@@ -1,0 +1,12 @@
+{
+  "sortnum": 2,
+  "name": "Preparing Foods",
+  "category": "patchouli:food_and_crops",
+  "icon": "farmersdelight:stove",
+  "pages": [
+    "The {i}cooking pot{/} can be used for many {b}food recipes{/}, most of which will require a {i}bowl{/} to take a serving from the {i}pot{/}. Another option is the {i}skillet{/} for {b}cooking{/} food items.{pb}Both of these must be placed over a {b}heat source{/} to work, such as a {i}campfire{/}, {i}stove{/}, {i}fire{/}, {i}lava{/}, {i}magma block{/}, {i}heating cask{/}, or {i}blaze burner{/}.",
+    "Unlike the {i}cooking pot{/}, a {i}skillet{/} can simply be held in one hand over a heat source to cook the items in your other hand by holding {k:use/k}. Foods can also be cooked by placing them directly on a {i}campfire{/} or {i}stove{/}, instead of using a {i}skillet{/}, {i}furnace{/}, or {i}smoker{/}.",
+    "To {!}cut food{/}, {!}strip logs{/}, or {!}break down items{/} into their base resources, you can use a {i}cutting board{/} (or a {i}mechanical slicer{/}) with the corresponding tool. {k:use/k} with an item to {b}place{/} it on the {i}cutting board{/}, and then {k:use/k} again with the tool to {b}process{/} it.",
+    "Some food is prepared as a {b}feast meal{/}, which must be placed as a block. Players can take a serving by using {k:use/k}, although some of these meals need a {i}bowl{/} to dish up.{pb}For extra immersion, use {i}coasters{/} to hold up to 4 {i}food{/} or {i}drink{/} items on display!"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sortnum": 3,
+  "name": "Fermentation",
+  "category": "patchouli:food_and_crops",
+  "icon": "brewinandchewin:keg",
+  "pages": [
+    "Some snacks (and many drinks) are made by {b}fermenting{/} them in a {i}keg{/}. It takes about 8 minutes for the ingredients to ferment.{pb}This process also requires the {i}keg{/} to be kept at a certain {b}temperature{/} depending on the recipe.",
+    "The temperature can vary based on the {!}biome{/} it's in, but you can use {!}heat sources{/} ({i}campfires{/}, {i}magma blocks{/}, and {i}heating casks{/}) or {!}cold sources{/} ({i}ice{/} or {i}cooling crates{/}) to raise or lower the temperature of a {i}keg{/}."
+  ]
+}

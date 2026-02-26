@@ -1,0 +1,12 @@
+{
+  "sortnum": 1,
+  "name": "Growing Crops",
+  "category": "patchouli:food_and_crops",
+  "icon": "farmersdelight:wild_carrots",
+  "pages": [
+    "{b}Wild crops{/} can be found throughout the world growing in different biomes. When broken, these plants will drop their respective {i}seeds{/}, which can be {b}re-planted{/} to grow new crops.{pb}Most crops can be grown on {i}farmland{/}, which is made by using {k:use/k} on a {i}dirt{/} or {i}grass block{/}.",
+    "{i}Farmland{/} that isn't near {b}water{/} or is jumped on (\"{b}trampled{/}\") may revert back to {i}dirt{/}, breaking the crop planted there. Some plants need different conditions to grow:{pb}{i}Rice{/} must be planted in 1-block-deep water and can be harvested by breaking the top block when grown.{pb}{i}Sugarcane{/} must be planted on {i}dirt{/}, {i}sand{/}, {i}mud{/}, or {i}grass blocks{/} adjacent to water.",
+    "{i}Cactus{/} must be planted on {i}sand{/} and can't be directly adjacent to any block.{pb}{i}Tomato shrubs{/} can be planted on {i}farmland{/} like normal, but can grow up to 3 blocks tall if {i}rope{/} is hanging above it.{pb}{i}Bone meal{/} or {i}sprinklers{/} can be used to {b}accelerate plant growth{/}. Crops planted on {i}rich soil{/} will also grow faster, and the {i}rich soil{/} won't revert to dirt when trampled.",
+    "{i}Rich soil{/} is made by leaving {i}organic compost{/} blocks out over time (a process which speeds up when placed near {!}water{/}, {i}mushrooms{/}, or in {!}sunlight{/})."
+  ]
+}
