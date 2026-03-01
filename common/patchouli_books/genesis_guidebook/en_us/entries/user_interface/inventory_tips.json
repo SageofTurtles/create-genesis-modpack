@@ -1,0 +1,16 @@
+{
+  "sortnum": 3,
+  "name": "Inventory Tips",
+  "category": "patchouli:user_interface",
+  "icon": "sophisticatedbackpacks:backpack",
+  "pages": [
+    "There are a few more {b}helpful inventory tips{/} to be aware of!{pb}When hovering over an item that can be {b}equipped{/} in an armor slot, hold {k:tooltipoverhaul.binds.compare_bind/k} to see a side-by-side {b}comparison{/} with the current equipped item.{pb}If on a server, {b}showcase{/} a held item with {k:showcaseitem.showcaseitem/k}.",
+    "{i}Backpacks{/} can allow you to carry large amounts of items. They can be improved with {i}upgrades{/} to add new functions! The higher the tier, the more items and upgrades the {i}backpack{/} can hold.{pb}With some {b}containers{/} ({i}backpacks{/}, {i}shulker boxes{/}, {i}ender chests{/}, and {i}quivers{/}), item stacks can be moved between into or out of them using the {c}Right Click{/c} and {c}Scroll{/c} within your inventory.",
+    {
+      "type": "patchouli:text",
+      "title": "Searching For Items",
+      "text": "Press {k:sophisticateditemactions.item_highlight/k} to {b}highlight{/} containers with a matching item. Containers will be marked in {!}green{/} (exact match) or {!}blue{/} (same item with different NBT data).{pb}Press {k:sophisticateditemactions.deposit_item/k} to {b}deposit{/} items to the nearest container with the exact match, or (if there are none) the nearest container with a close match. {k:sophisticateditemactions.restock_item/k} will {b}restock{/} your inventory with an exact match for that item."
+    },
+    "Additionally, you can use {b}modifiers{/} when {!}depositing{/} or {!}restocking{/} items this way, even combining them as needed.{pb}Hold {c}Shift{/c} to deposit or restock the items in your {b}main inventory{/}.{pb}Hold {c}Alt{/c} to deposit or restock the items in your {b}hotbar{/}.{pb}Hold {c}Ctrl{/c} to ignore matching and fill {b}empty slots{/} in the container or inventory."
+  ]
+}
