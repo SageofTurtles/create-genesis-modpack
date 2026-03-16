@@ -4,7 +4,7 @@
   "category": "patchouli:logistics",
   "icon": "create:package_frogport",
   "pages": [
-    "In addition to other methods of transporting items, {i}package frogports{/} and {i}postboxes{/} can be used to {b}send{/} and {b}receive{/} {l:logistics/packages/}packages{/l} directly.",
+    "In addition to other methods of transporting items, {i}package frogports{/}, {i}postboxes{/}, and {i}robo bee ports{/} can be used to {b}send{/} and {b}receive{/} {l:logistics/packages/}packages{/l} directly.",
     {
       "type": "patchouli:spotlight",
       "item": "create:package_frogport",
@@ -16,6 +16,12 @@
       "item": "create:white_postbox",
       "title": "Postboxes",
       "text": "Similarly, a {i}postbox{/} must be linked to a {i}train station{/}. Trains can {b}deliver{/} packages to a {i}postbox{/} with a matching {l:logistics/packages/}package address{/l} when it stops at the {i}station{/}, or {b}collect{/} packages from the {i}postbox{/} linked to that {i}station{/}."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create_mobile_packages:bee_port",
+      "title": "Robo Bee Ports",
+      "text": "A {i}robo bee port{/} can send out {i}robo bees{/} to {b}automatically deliver{/} {l:logistics/packages/}packages{/l} directly to {!}players{/} or other {i}bee ports{/}.{pb}Use these together with a linked {i}portable stock ticker{/} to access your {l:logistics/stock_networks/}stock network{/l} from anywhere in the world!"
     }
   ]
 }

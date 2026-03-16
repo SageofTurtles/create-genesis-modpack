@@ -5,7 +5,7 @@
   "icon": "sophisticatedbackpacks:backpack",
   "pages": [
     "There are a few more {b}helpful inventory tips{/} to be aware of!{pb}When hovering over an item that can be {b}equipped{/} in an armor slot, hold {k:tooltipoverhaul.binds.compare_bind/k} to see a side-by-side {b}comparison{/} with the current equipped item.{pb}If on a server, {b}showcase{/} a held item with {k:showcaseitem.showcaseitem/k}.",
-    "{i}Backpacks{/} can allow you to carry large amounts of items. They can be improved with {i}upgrades{/} to add new functions! The higher the tier, the more items and upgrades the {i}backpack{/} can hold.{pb}With some {b}containers{/} ({i}backpacks{/}, {i}shulker boxes{/}, {i}ender chests{/}, and {i}quivers{/}), item stacks can be moved between into or out of them using the {c}Right Click{/c} and {c}Scroll{/c} within your inventory.",
+    "{i}Backpacks{/} can allow you to carry large amounts of items. They can be improved with {i}upgrades{/} to add new functions! The higher the tier, the more items and upgrades the {i}backpack{/} can hold.{pb}With some {b}containers{/} ({i}backpacks{/}, {i}shulker boxes{/}, {i}ender chests{/}, and {i}quivers{/}), item stacks can be moved between into or out of them using the {c}Right Click{/c} and {c}Scroll{/c} within your {l:user_interface/inventory/}inventory{/l}.",
     {
       "type": "patchouli:text",
       "title": "Searching For Items",
