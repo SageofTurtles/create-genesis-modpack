@@ -10,5 +10,7 @@
   "block.create.weathered_iron_window_pane": "Weathered Industrial Iron Window Pane",
   "block.create.andesite_bars": "Parallel Andesite Bars",
   "block.create.brass_bars": "Ornate Brass Bars",
-  "block.create.copper_bars": "Grate Copper Bars"
+  "block.create.copper_bars": "Grate Copper Bars",
+  "item.create.red_sand_paper": "Red Sandpaper",
+  "item.create.sand_paper": "Sandpaper"
 }
