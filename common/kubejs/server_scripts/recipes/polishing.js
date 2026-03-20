@@ -7,6 +7,12 @@ ServerEvents.recipes(event => {
     ).id(`genesis:${recipeId}_polishing`)
   }
 
-  // Add recipes
-  add('diamrough_diamondond', 'kubejs:rough_diamond', 'minecraft:diamond')
+  // Add individual recipes
+  add('diamond', 'kubejs:rough_diamond', 'minecraft:diamond')
+
+  // Add bulk recipes
+  global.LOCOMETAL.forEach(entry => {
+    const { tag, colorless } = entry
+    add(tag, `#railways:palettes/dye_groups/${tag}`, `railways:${colorless}`)
+  })
 })

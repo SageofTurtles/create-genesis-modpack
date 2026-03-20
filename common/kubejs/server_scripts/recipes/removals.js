@@ -144,7 +144,6 @@ ServerEvents.recipes(event => {
   output('supplementaries:present')
 
   // Remove recipes by output regex
-  output(/.*_trapdoor/)
   output(/.*button$/)
   output(/.*copycat.*/)
   output(/.*pressure_plate$/)
@@ -174,7 +173,8 @@ ServerEvents.recipes(event => {
   // Remove recipes by custom parameters
   custom({ id: /createaddition:charging\/.*/, not: { id: /.*channeling$/ } })
   custom({ mod: 'create_ironworks', type: 'create:mixing' })
-  custom({ output: /.*_door$/, not: { mod: 'mcwdoors' } })
+  custom({ output: /.*_door$/, not: { mod: 'mcwdoors', mod: 'railways' } })
+  custom({ output: /.*_trapdoor$/, not: { mod: 'railways' } })
   custom({ type: 'create:compacting', output: 'create:experience_block' })
   custom({ type: 'create:mixing', output: 'create:andesite_alloy' })
   custom({ type: 'minecraft:crafting_shaped', output: /mcwlights:.*lantern$/ })

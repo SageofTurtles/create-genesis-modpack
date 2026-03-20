@@ -778,6 +778,482 @@
         "item": "packedup:mycelium_turf_layer",
         "count": 4
       }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/riveted"
+        }
+      },
+      "output": {
+        "item": "railways:riveted_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/slashed"
+        }
+      },
+      "output": {
+        "item": "railways:slashed_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/brass_wrapped_slashed"
+        }
+      },
+      "output": {
+        "item": "railways:brass_wrapped_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/copper_wrapped_slashed"
+        }
+      },
+      "output": {
+        "item": "railways:copper_wrapped_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/iron_wrapped_slashed"
+        }
+      },
+      "output": {
+        "item": "railways:iron_wrapped_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/vent"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_vent"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/flat_riveted"
+        }
+      },
+      "output": {
+        "item": "railways:flat_riveted_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/flat_slashed"
+        }
+      },
+      "output": {
+        "item": "railways:flat_slashed_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/plated"
+        }
+      },
+      "output": {
+        "item": "railways:plated_locometal"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/pillar"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_pillar"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/smokebox"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_smokebox"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/brass_wrapped_smokebox"
+        }
+      },
+      "output": {
+        "item": "railways:wrapped_locometal_smokebox"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/copper_wrapped_smokebox"
+        }
+      },
+      "output": {
+        "item": "railways:copper_wrapped_locometal_smokebox"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/iron_wrapped_smokebox"
+        }
+      },
+      "output": {
+        "item": "railways:iron_wrapped_locometal_smokebox"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/boiler"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_boiler"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/brass_wrapped_boiler"
+        }
+      },
+      "output": {
+        "item": "railways:brass_wrapped_locometal_boiler"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/copper_wrapped_boiler"
+        }
+      },
+      "output": {
+        "item": "railways:copper_wrapped_locometal_boiler"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/iron_wrapped_boiler"
+        }
+      },
+      "output": {
+        "item": "railways:iron_wrapped_locometal_boiler"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/copper_wrapped_boiler"
+        }
+      },
+      "output": {
+        "item": "railways:copper_wrapped_locometal_boiler"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/flywheel"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_flywheel"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/end_ladder"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_end_ladder"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/rung_ladder"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_rung_ladder"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/trapdoor"
+        }
+      },
+      "output": {
+        "item": "railways:locometal_trapdoor"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/hinged_door"
+        }
+      },
+      "output": {
+        "item": "railways:hinged_locometal_door"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/sliding_door"
+        }
+      },
+      "output": {
+        "item": "railways:sliding_locometal_door"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/folding_door"
+        }
+      },
+      "output": {
+        "item": "railways:folding_locometal_door"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/round_pane_window"
+        }
+      },
+      "output": {
+        "item": "railways:round_pane_locometal_window"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/single_pane_window"
+        }
+      },
+      "output": {
+        "item": "railways:single_pane_locometal_window"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/two_pane_window"
+        }
+      },
+      "output": {
+        "item": "railways:two_pane_locometal_window"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/four_pane_window"
+        }
+      },
+      "output": {
+        "item": "railways:four_pane_locometal_window"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/hazard_stripes_diagonal_black"
+        }
+      },
+      "output": {
+        "item": "railways:hazard_stripes_diagonal_on_black"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/hazard_stripes_chevron_black"
+        }
+      },
+      "output": {
+        "item": "railways:hazard_stripes_chevron_on_black"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/hazard_stripes_diagonal_white"
+        }
+      },
+      "output": {
+        "item": "railways:hazard_stripes_diagonal_on_white"
+      }
+    },
+    {
+      "type": "rclick",
+      "input": {
+        "item": {
+          "tag": "#create:sandpaper"
+        },
+        "block": {
+          "tag": "#railways:palettes/dye_groups/hazard_stripes_chevron_white"
+        }
+      },
+      "output": {
+        "item": "railways:hazard_stripes_chevron_on_white"
+      }
     }
   ]
 }
