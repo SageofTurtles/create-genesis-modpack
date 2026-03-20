@@ -213,7 +213,7 @@ key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
-key_railways.keyinfo.cycle_menu:key.keyboard.unknown
+key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
 key_keys.reblured.toggle:key.keyboard.f10
 key_fullbrightnesstoggle.key.togglebrightness:key.keyboard.b
 key_key.smallships.ship_sail:key.keyboard.r
